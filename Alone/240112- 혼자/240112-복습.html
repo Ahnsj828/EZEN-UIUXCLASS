@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="http://localhost:3000/process_login" method="post">
+    <select name="selected" id="select01">
+      <option value="n">음료</option>
+      <option value="a">환타</option>
+      <option value="b">콜라</option>
+      <option value="c">사이다</option>
+    </select>
+    <select name="selected01" id="select02">
+      <option value="n">메인메뉴</option>
+      <!--optgroup / option = 옵션을 그룹핑하고자 할 때 사용하는 태그-->
+      <optgroup label="햄버거메뉴">
+        <option value="n">불고기버거</option>
+        <option value="a">빅맥</option>
+        <option value="b">치즈버거</option>
+        <option value="c">새우버거</option>
+      </optgroup>
+      <optgroup label="사이드메뉴">
+        <option value="n">감자튀김</option>
+        <option value="a">콘슬로우</option>
+        <option value="b">비스켓</option>
+        <option value="c">너겟</option>
+      </optgroup>
+    </select>
+  </form>
+
+  <div> input 종류
+   <form action="http://localhost:3000/process_login" method="post">
+    ID <input type="text" name="id"/>
+    PW <input type="password" />
+    <input type="submit" value="로그인하기" /> 제출-로그인하기
+    <br />
+    <input type="submit" /> 제출하기
+    <input type="file" /> 파일선택
+    <br/>
+    <input type="checkbox" /" 체크박스
+    <input type="radio" /> 체크 원
+    <input type="radio" /> 체크 원
+    <br/>
+    <input type="week" /> 주 선택
+    <input type="time" /> 시간 선택
+    <input type="month" /> 달 선택
+    <input type="text" />
+   </form>
+  </div>
+</body>
+</html>
