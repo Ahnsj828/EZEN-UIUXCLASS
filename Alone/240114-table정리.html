@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body> 
+
+  <h5> 1.table > tr > td / table>(tr>td*3)*3 </h5>
+    <table border="2"> <!-- table 테이블 만들때 가장 밖에 입력하는 태그 -->
+    <!-- table border :  테이블의 테두리 두께를 지정 -->
+   <tr> <!-- tr(table row) 테이블의 행을 정의할때 사용하는 태그 (row: 행) -->
+    <td>이름</td>  <td>성별</td>  <td>주소</td>
+   </tr>
+   <tr>
+    <td>A</td>    <td>여</td>   <td>서울</td>
+   </tr>
+   <tr>
+    <td>B</td>    <td>남</td>   <td>미국</td>
+       <!-- td(table date) 각행 or 각열의 일반 셀을 지칭할때 / 표 각각의 실제 데이터들을 의미 -->
+  </tr>
+    </table> 
+    <hr />
+    
+    
+  <h5> 2.table > thead(tr>th) + tbody + tfoot </h5>
+    <table border="2"> 
+
+      <thead> <!-- thead(table head) 표의 헤더부분 / 각 행 혹은 각 열의 대표성을 띄고있는 셀을 지칭하고자 할 때  -->
+        <tr> 
+          <th>이름</th>  <th>성별</th>  <th>주소</th> <th>회비</th>
+          <!-- th(table hdeader) 테이블헤더를 정의하는 데 사용되는 요소 / 테이블 헤더는 표의 각 열에 있는 제목을 나타낸다 / 주로 테이블 첫번째 행에 포함되어 사용되면 굵은글꼴로 표시된다 -->
+        </tr> 
+      </thead>
+
+      <tbody> <!-- tbody(table body) 표의 본문부분 / 테이블 본문을 정의하는 요소 / 테이블 본문은 표의 주요 데이터를 포함하고 있는 부분 -->
+        <tr>
+          <td>A</td>    <td>여</td>   <td>서울</td>  <td>1000</td>
+        </tr>
+        <tr>
+          <td>B</td>    <td>남</td>   <td>미국</td>  <td>500</td>
+        </tr>
+      </tbody>
+
+      <tfoot> <!-- tfoot(table foot) 표의 본문부분 / 합계, 총계 or 다른 요약 정보를 나타낸다 / 표의 마지막에 위치 -->
+        <tr>
+          <td>합계</td>    <td></td>   <td></td>  <td>1500</td>
+        </tr>
+      </tfoot>
+
+    </table>
+    <hr />
+
+
+  <caption> 3.table 병합 - rowspan , colspan </caption> 
+  <!-- caption 테이블의 제목을 나타내는 데 사용되는 태그. 테이블의 맨 위에 위치하며, 테이블의 내용에 대한 간단한 설명이나 제목을 제공하는 데에 활용 -->
+  <table border="2"> 
+ 
+    <thead> 
+      <tr> 
+        <th>이름</th>  <th>성별</th>  <th>주소</th> <th>회비</th>
+      </tr> 
+    </thead>
+
+    <tbody> 
+      <tr>
+        <td>A</td>    <td>여</td>   <td rowspan="2">청주</td>  <td>1000</td>
+        <!-- rowspan은 셀을 세로 방향으로 병합하는 데 사용 /행을 병합하고 싶을 때 -->
+      </tr>
+      <tr>
+        <td>B</td>    <td>남</td>   <!--여기 청주지우기-->  <td>500</td>
+        <!-- 병합시키려는 셀은 지워준다 -->
+      </tr>
+    </tbody>
+
+    <tfoot> 
+      <tr>
+        <td colspan="3">합계</td>   <!--여기 빈칸 두개-->   <td>1500</td>
+        <!-- colspan은 셀을 가로 방향으로 병합하는 데 사용 /열을 병합하고 싶을 때 -->
+        <!-- 병합시키려는 셀은 지워준다 -->
+      </tr>
+    </tfoot>
+
+  </table>
+  <hr />
+
+
+  <caption> 4.col과 colgroup </caption>
+    <table border="2"> 
+    <!-- <colgroup>태그 : 테이블의 열 그룹을 정의하는 데 사용되는 태그 / <colgroup> 태그는 <table> 요소의 하위 요소로 위치하며, <col> 요소들을 포함-->
+    <!-- <col>태그 : 테이블의 열을 정의하는 데 사용되는 태그 -->
+    <colgroup>
+      <col style="background-color: lightblue;">
+      <col style="background-color: lightgreen;">
+      <col style="background-color: lightyellow;">
+    </colgroup>
+   <tr> 
+    <td>이름</td>  <td>성별</td>  <td>주소</td>
+   </tr>
+   <tr>
+    <td>A</td>    <td>여</td>   <td>서울</td>
+   </tr>
+   <tr>
+    <td>B</td>    <td>남</td>   <td>미국</td>
+  </tr>
+    </table> 
+    <hr />
+
+
+    <table border="2"> <caption> 5.col 속성값 span </caption>
+    <!-- <col> 태그에 span 속성은 해당 열의 범위를 지정하는 데 사용. <col> 태그에 span 속성을 사용하면 여러 열을 하나의 열로 합치는 데에 활용된다. 
+      즉, span 속성을 사용하여 여러 개의 연속된 열을 그룹화할 수 있다 -->
+    <colgroup>
+      <col span="2" style="background-color: lightblue;">
+      <col style="background-color: lightgreen;">
+    </colgroup>
+   <tr> 
+    <td>이름</td>  <td>성별</td>  <td>주소</td>
+   </tr>
+   <tr>
+    <td>A</td>    <td>여</td>   <td>서울</td>
+   </tr>
+   <tr>
+    <td>B</td>    <td>남</td>   <td>미국</td>
+  </tr>
+    </table> 
+    <hr />
+
+    <table border="1"> <caption> 6.2024/01/11수업 </caption>
+    <colgroup>
+      <col span="2" style="background: red;">
+      <col style="background: blue;">
+    </colgroup>
+     <thead style="background: tomato;">      
+       <tr> 
+        <th colspan="2">table header</th>  
+        <th>table header</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+        <td rowspan="3">table date</td>
+        <td>table date</td>
+        <td>table date</td>
+       </tr>
+       <tr>
+        <td>table date</td>
+        <td>table date</td>
+       </tr>
+       <tr>
+        <td>table date</td>
+        <td>table date</td>
+       </tr>
+      </tbody>
+       <tfoot style="background: yellow;">
+       <tr>
+        <td>table date</td>
+        <td>table date</td>
+        <td>table date</td>
+       </tr>
+      </tfoot>
+    </table> 
+    <hr />
+</body>
+</html>
