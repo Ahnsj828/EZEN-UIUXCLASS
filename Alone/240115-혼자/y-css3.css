@@ -1,0 +1,22 @@
+div, span {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: red;
+}
+.container {
+  background: yellow;
+  left: 20px;
+  top: 20px;
+  position: relative;
+}
+.box {
+  background: blue;
+  left: 20px;
+  top: 20px;
+  /* position 기본값은 static */
+  /* position: relative; 그 자리에서 움직임 */
+  /* position: absolute; 내 아이템이 담겨있는 박스안에서 변경 */
+  /* position: fixed; 페이지상에서 변경 */
+  position: sticky; 원래 자리에서 있으면서 스크롤해도 그대로 남아있는것
+}
