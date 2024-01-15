@@ -1,0 +1,7 @@
+input: ([type= "password"]) {
+  background: #f00;
+}
+
+input:not([type="password"]) {
+  background: #f00;
+}
