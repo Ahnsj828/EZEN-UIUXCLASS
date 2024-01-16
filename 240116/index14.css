@@ -1,0 +1,36 @@
+div {
+  /* border: 1px solid #f00; */
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(
+    top bottom,
+    #f85032 1%,
+    #f156fc 50%,
+    #f6e90c 1%,
+    #e73827 100%
+  );
+}
+/* linear-gradient선형 그라디언트 */
+/* 크로스 브라우징?. */
+/* 이게 안먹는 이유 =>  *webkit : 웹 브라우저마다 사용하는 방법이 다른경우 접두어로 입력해서 사용하도록 만들어 놓은 문법체계 => 크로스 브라우징 */
+
+/* ----------------------------------------- */
+
+div {
+  /* border: 1px solid #f00; */
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  background: (
+    linear-gradient to bottom,
+    #f85032 1%,
+    #f156fc 50%,
+    #f6e90c 1%,
+    #e73827 100%
+  );
+}
+
+/* 코드가 잘못 됐다 나중에 다시 확인 */

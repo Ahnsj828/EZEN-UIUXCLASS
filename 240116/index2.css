@@ -1,0 +1,33 @@
+body {
+  background-image: url(https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_org.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90);
+  /* 배경에 이미지 넣기 */
+  /* 하나 넣었는데 바둑판식 배열된다
+background로 설정하면 기본값이 똑같이 배열된다 */
+
+}
+
+body {
+  background: url(https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_org.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90);
+  /* background해도 background-image해도 똑같이 나온다
+  background에 보면 여러개가 나온다
+  많아서 background해도 다 되게 했다 */
+
+  background-repeat: no-repeat;
+}
+
+body {
+  background: url(https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_org.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+body {
+  background: url(https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_org.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90)
+    center/cover no repeat;
+/* } 위가 너무 길어서 한줄로 나열한거다
+  나열 순서가 중요하다
+  순서헷갈리면 mdn가라 
+  https://developer.mozilla.org/ko/docs/Web/CSS/background 명세
+  https://drafts.csswg.org/css-backgrounds/#the-background */
+
