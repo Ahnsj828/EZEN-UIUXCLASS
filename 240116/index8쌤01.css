@@ -1,0 +1,50 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+body {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.a {
+  font-size: 32px;
+}
+
+.b {
+  font-size: 2em;
+}
+/* p기본은 16px 이다 32면 두배다 => 2em */
+
+/* .c {
+  font-size: large;
+}
+
+.d {
+  font-size: small;
+} */
+
+@font-face {
+  font-family: "Nexonv1";
+  src: url("./font/MiConv.com__NEXON\ Lv1\ Gothic\ OTF\ Bold.ttf");
+}
+
+body {
+  font-family: Nexonv1;
+}
+
+.a {
+  font-size: 32px;
+  font-style: normal;
+}
+
+.b {
+  font-size: 2em;
+}
+/* p기본은 16px 이다 32면 두배다 => 2em */
+
+.c {
+  font-size: large;
+}
+
+.d {
+  font-size: small;
+  font-weight: bold;
+}

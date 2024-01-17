@@ -1,0 +1,19 @@
+h1 {
+  color: rgb(255, 0, 0);
+}
+h1 {
+  color: #f00;
+}
+/* HEX코드 blue-#00f green-#0f0  */
+
+p {
+  background: rgb(255, 255, 255);
+}
+
+p {
+  background: rgba(0, 0, 0, 0.5);
+/* } rgba : rgb에 a알파값 / a는 투명도 0이 최저 1이 최대 0.5는 절반 */
+
+p {
+  background: hsla(33, 100%, 500%);
+/* } hsla에 a알파값 */

@@ -1,0 +1,46 @@
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  삼형제 */
+  border: 1px solid #000;
+  /* border: 이렇게 주면된다; */
+}
+
+.box {
+  border: 5px dotted #000;
+  width: 300px;
+  text-align: center;
+  padding: 10px o;
+}
+
+.box {
+  border: 5px solid #000;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 10px o;
+}
+
+.box {
+  border: 5px solid #000;
+  border-radius: 10px 20px 30px 40px;
+  width: 300px;
+  text-align: center;
+  padding: 10px o;
+}
