@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-image: url("./img/BackgroundFront.png"),
     url("./img/BackgroundBack.png");
@@ -48,4 +49,56 @@ body {
     background: url("./img/BackgroundFront.png") bottom/ 100% no-repeat fixed , url("./img/BackgroundBack.png") bottom/ 100% no-repeat fixed ,;
   }  /* 여러개를 간추릴 수있다 - 순서 : 이미지 포지션/ 사이즈 리피트 어테치먼트 */
 
+=======
+body {
+  background-image: url("./img/BackgroundFront.png"),
+    url("./img/BackgroundBack.png");
+} /* 이미지 중첩해서 불러진다 */
+
+body {
+  background-image: url("./img/BackgroundFront.png"),
+    url("./img/BackgroundBack.png");
+  background-size: 100%;
+/* } 이 이미지가 쓸 수있는 너비값 만큼만
+  웹 브라우저의 너비값 만큼만
+  웹브라우저 늘리면 사진 늘어남 */
+
+  body {
+    background-image: url("./img/BackgroundFront.png"),
+      url("./img/BackgroundBack.png");
+    background-size: 100% 250px;
+  } 
+
+  body {
+    background-image: url("./img/BackgroundFront.png"),
+      url("./img/BackgroundBack.png");
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+  } 
+
+  body {
+    background-image: url("./img/BackgroundFront.png"),
+      url("./img/BackgroundBack.png");
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 50%;
+    background-color: #e7e7e7;
+  } 
+  /* background-position: bottom; 사진이 바닥에 붙는다 */
+  /* background-position: 0 50; x좌표0 y좌표위로부터 50% */
+
+  body {
+    background-image: url("./img/BackgroundFront.png"),
+      url("./img/BackgroundBack.png");
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 50%;
+    background-color: #e7e7e7;
+
+    background: url("./img/BackgroundFront.png") bottom/ 100% no-repeat fixed , url("./img/BackgroundBack.png") bottom/ 100% no-repeat fixed ,;
+  }  /* 여러개를 간추릴 수있다 - 순서 : 이미지 포지션/ 사이즈 리피트 어테치먼트 */
+
+>>>>>>> eb43e3d60485f3b9321d812367a40d32bacad8c0
   
