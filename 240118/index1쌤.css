@@ -1,0 +1,127 @@
+@import url(./reset.css);
+
+/* header */
+#main_header {
+  height: 45px;
+  line-height: 45px;
+  background: url(./mobile/img/header_background.png);
+  position: relative;
+  text-align: center;
+}
+#main_header .left,
+#main_header .right {
+  position: absolute;
+  top: 7px;
+  height: 32px;
+  display: block;
+}
+#main_header .left {
+  left: 5px;
+  width: 62px;
+  background: url("./mobile/css_sprites.png");
+  background-position: -32px 0;
+  text-indent: -99999px;
+}
+/* ext-indent 들여쓰기 
+멀리보내서 찾지 못하기 두는거다
+text-indent: -99999px;
+토글 위치 자리구나 등등 위치만 알려주고 화면에 안보여주려고 */
+#main_header h1 {
+  color: #fff;
+}
+#main_header .right {
+  right: 5px;
+  width: 32px;
+  background: url("./mobile/css_sprites.png");
+  background-position: 0 0;
+  text-indent: -99999px;
+}
+
+/* gnb */
+#toggle {
+  display: none;
+}
+#toggle + #wrap > #toggle_gnb_wrap {
+  display: none;
+}
+/* 나중에 display: block; 을 display: none; 로 바꿔줄거다 */
+#toggle:checked + #wrap > #toggle_gnb_wrap {
+  display: block;
+}
+#toggle_gnb_wrap {
+  background: #b42111;
+  padding: 15px;
+}
+#toggle_gnb {
+  background: #fff;
+  padding: 5px;
+  text-align: center;
+}
+#toggle_gnb ul {
+  display: flex;
+  justify-content: space-around;
+}
+#top_gnb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #b43111;
+  height: 35px;
+}
+#top_gnb a {
+  color: #fff;
+}
+/* #top_gnb a {line-height: 35px;} 수적정렬 완벽한 방법x 
+#top_gnb {align-items: center;} 완벽한방법 */
+#bottom_gnb {
+  display: table;
+  width: 100%;
+  border: 1px solid #000;
+}
+#bottom_gnb > div {
+  display: table-cell;
+}
+/* 옛날방식
+#bottom_gnb {
+  display: table;
+  width: 100%;
+}
+#bottom_gnb > div {
+  display: table-cell;
+} */
+#bottom_gnb > div > a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #b42111;
+  position: relative; /* 2번 */
+}
+/* 전후문자선택자 사용할때 꼭 content가 있어야 나온다 before전 */
+#bottom_gnb > div > a::before {
+  content: "";
+  position: absolute; /* 절대 위치 좌표 */ /* 1번 */
+  top: 9px;
+  left: -1px;
+  width: 1px;
+  height: 15px;
+  display: block;
+  border-left: 1px solid #000;
+} /* 1번 주려면 2번을 줘야한다 */
+
+/* section */
+#section_header {
+  padding: 20px 0 0 20px;
+}
+#section_article {
+  padding: 20px;
+}
+
+/* footer */
+#main_footer {
+  border-top: 3px solid #000;
+  padding: 20px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
