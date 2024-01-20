@@ -1,0 +1,15 @@
+@import url(reset.css);
+@font-face {
+}
+
+body {
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrap {
+  width: 1200px;
+  height: 100vh;
+}
