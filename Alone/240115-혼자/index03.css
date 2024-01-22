@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#title {
+  background-color: black;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 13px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+}
+li {
+  list-style: none;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+li:nth-child(1) {
+  background-color: #dadada;
+}
+li:nth-child(5) {
+  background-color: #dadada;
+}
