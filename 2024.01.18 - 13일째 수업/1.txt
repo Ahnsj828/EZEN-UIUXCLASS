@@ -1,0 +1,49 @@
+벤치마킹할때 
+다른 누군가의 디자인에 '상업적인 목적'으로 카피를 해서 사용하는건 불법
+but, 학습이나 비상업적인 목적으로 정해진 기한(6개월) 안에 새로만드는건 힘드니까 누군가 잘 만들어놓은 디자인 및 레이아웃을 ui컨텐츠를 가져다가 "커스터마이징" 잘 해서 다듬어라 => 비상업적인 목적 / 포트폴리오 작업참고
+
+무에서 유를 창조하려면 오래걸린다 
+6개월안에 포폴만들기 힘들다 
+6개월안에 새롭게 좋은 컨텐츠 만드는사람 100중 2~3명이다
+그런애들은 
+박람회 전시회다닌다
+외국 웹페이지 보고
+서점에서 외국 레이아웃본다
+
+디자인이나 퀄리티말고 기한내로끝내는거!!!
+
+https://themeforest.net/ 
+이지하고 심플한게 많다
+충분히 벤치마킹하기 좋다
+여기를 추천!!!!!!!!!!!!!!
+
+
+fontawesome ( https://fontawesome.com/ )
+ -pro는유료
+flaction
+
+mobile simulator 확장프로그램 설치
+
+css sprite generator
+ 반복적인 이미지를 항상 가져오고
+
+
+------------외워라----------------------
+*inline 태그
+ - width / height 속성이 적용되지 않는다 사이즈 속성이 적용되지않는다
+ - margins & padding 좌우만 적용 가능하다
+이걸 해결하고자
+ => inline-block 태그를 쓴다
+  - width / height 속성이 적용된다
+ - margins & padding 상.하.좌.우 적용 가능하다
+ a태그 block
+
+ex >#bottom_gnb > div > a {
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #b42111;
+        position: relative; 
+         }
+-------------------------------
