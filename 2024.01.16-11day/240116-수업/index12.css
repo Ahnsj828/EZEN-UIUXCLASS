@@ -1,0 +1,107 @@
+<<<<<<< HEAD
+body {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 1px solid #f00; */
+}
+
+/* margin: 0 auto;
+상하축은 안주고
+좌우축은 960을 제외한 여백을 주겠다 */
+
+#aside {
+  width: 200px;
+  float: left;
+}
+#content {
+  width: 760px;
+  float: left;
+}
+/* 960-200 =760px */
+/* float: left; 해야 시작점이 같아진다 */
+
+section {
+  overflow: hidden;
+}
+
+/* -----------------------------------------------*/
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+li {
+  list-style: none;
+}
+body {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 1px solid #f00; */
+}
+
+#aside {
+  width: 200px;
+  float: left;
+}
+#content {
+  width: 760px;
+  float: left;
+}
+
+section {
+  overflow: hidden;
+}
+=======
+body {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 1px solid #f00; */
+}
+
+/* margin: 0 auto;
+상하축은 안주고
+좌우축은 960을 제외한 여백을 주겠다 */
+
+#aside {
+  width: 200px;
+  float: left;
+}
+#content {
+  width: 760px;
+  float: left;
+}
+/* 960-200 =760px */
+/* float: left; 해야 시작점이 같아진다 */
+
+section {
+  overflow: hidden;
+}
+
+/* -----------------------------------------------*/
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+li {
+  list-style: none;
+}
+body {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 1px solid #f00; */
+}
+
+#aside {
+  width: 200px;
+  float: left;
+}
+#content {
+  width: 760px;
+  float: left;
+}
+
+section {
+  overflow: hidden;
+}
+>>>>>>> eb43e3d60485f3b9321d812367a40d32bacad8c0

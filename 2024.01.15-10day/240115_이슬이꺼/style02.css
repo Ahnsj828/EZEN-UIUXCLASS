@@ -1,0 +1,19 @@
+/* @import url("./resetcss.css");
+->resetcss를 불러와서 적용하는 코드 */
+
+/* p::selection {
+  background: #f00;
+  color: #fff;
+} */
+/* a {
+  text-decoration: none;
+}
+a:visited {
+  color: #00f;
+}
+a:link::after {
+  content: " - " attr(href);
+} */
+/* input:not([type="password"]) {
+  background: red;
+} */

@@ -1,0 +1,72 @@
+/* h1 + h2 {
+  color: #fff;
+}
+h1 ~ h2 {
+  background: crimson;
+} */
+/* nth-child는 동위선택자 모두를 의미 따라가 h1 1개 + h2 2개 = 총 5개
+nth-of-type 타입을 지정하는 것. 속성이 동일한 h2중에서 몇번째를 의미 */
+/* h2:nth-child(3) {
+  color: aquamarine;
+}
+h2:nth-of-type(3) {
+  color: blueviolet;
+} */
+/* h1:hover {
+  color: blueviolet;
+}
+h1:active {
+  color: aquamarine;
+} */
+/* input:disabled {
+  background: orange;
+}
+input:enabled {
+  background: salmon;
+} */
+/* li {
+  list-style: none;
+  float: left;
+  padding: 15px;
+} */
+/* ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 15px;
+}
+li:nth-child(2n) {
+  background: crimson;
+}
+li:nth-child(2n + 1) {
+  background: teal;
+}
+li:first-child {
+  border-radius: 15px 0 0 15px;
+}
+li:last-child {
+  border-radius: 0 15px 15px 0;
+} */
+/* <첫번째 li에 있는 a태그에만 적용되는 코드>
+li:first-child > a {
+  color: red;
+} */
+/* h1:first-of-type {
+  color: aqua;
+}
+h2:last-of-type {
+  color: blue;
+}
+h3:first-of-type {
+  color: green;
+} */
+/* p::first-letter {
+  font-size: 40px;
+}
+p::first-line {
+  color: red;
+}
+p::after {
+  content: "- " attr(data-page) " page";
+} */

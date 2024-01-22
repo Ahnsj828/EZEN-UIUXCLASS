@@ -1,0 +1,44 @@
+"현재 내가 보고 있는 웹브라우저 안에 있는 모든 컨텐츠 내용은 html로 구성된 것이다.
+html : hyper text markup language
+=> html은 markup형식의 hyper 기능이 탑재된 text로 되어있는 language
+html은 모든것의 기본
+
+<html>
+         <head>
+</html>
+
+ Web Editor : html과 같은 코딩 언어를 보다 쉽고 효울적으로 작성할 수 있도록 만들어 놓은 프로그램
+과거에 Atom / Brackets / Pycharm(백엔드)
+F/E & PB => MS, 마이크로소프트에서 만듬 Visual Studio Code => VS Code
+*무로고 기능이 다양하다
+
+*root folder 
+
+*GUI 방식 - 더블클릭해서 실행 or 열기
+ - Graphic User Interface
+ - 사용자들 방식
+
+*CLI 방식 - 명령어로 실행 or 열기
+ - Command Line Interface
+ - 바탕화면에 폴더 만들때도 마우스 우클릭 no
+ 
+*키보드 => window 버튼 + R(run 실행시키다) cmd입력 enter
+
+*특정 위치로 이동하는 명령어 => cd (change directory?) desktop
+
+*작업폴더를 만들어주는 명령어 => mkdir (make directory?) 240110
+
+----다운을 받을것들 받아준다
+
+*vs code Live sever 에서 alt + L + O
+shift 1 느낌표
+alt + L + O
+
+-------------------이렇게 만들어져야되는구나만 느껴봐라  / 내일 문법
+
+박스 구조화 = Box Model
+
+
+html 뼈 
+stlye.css 스타일링
+서로 연동시켜야 작동이 된다. 

@@ -1,0 +1,97 @@
+<<<<<<< HEAD
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 10px;
+  /* 마진은 보더 밖에  */
+  padding: 30px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 0px 10px;
+  /* 마진은 보더 밖에  */
+  padding: 0px 30px;
+  /* 두개를쓰면 상하 좌우 */
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 10px 0px 10px;
+  /* 마진은 보더 밖에  */
+  padding: 30px 0px 30px;
+  /* 두개를쓰면 상단 좌우 하단 */
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 10px 20px 30px 40px;
+  /* 마진은 보더 밖에  */
+  padding: 10px 20px 30px 40px;
+  /* 두개를쓰면 위 우 하 좌 */
+  /* 최대한 효율성 따지면서 쓰기 / 4개 다 안써두됨 */
+}
+=======
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 10px;
+  /* 마진은 보더 밖에  */
+  padding: 30px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 0px 10px;
+  /* 마진은 보더 밖에  */
+  padding: 0px 30px;
+  /* 두개를쓰면 상하 좌우 */
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 10px 0px 10px;
+  /* 마진은 보더 밖에  */
+  padding: 30px 0px 30px;
+  /* 두개를쓰면 상단 좌우 하단 */
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  /* 선에 대한 두께 , 실선점선 , 선 색상 */
+  margin: 10px 20px 30px 40px;
+  /* 마진은 보더 밖에  */
+  padding: 10px 20px 30px 40px;
+  /* 두개를쓰면 위 우 하 좌 */
+  /* 최대한 효율성 따지면서 쓰기 / 4개 다 안써두됨 */
+}
+>>>>>>> eb43e3d60485f3b9321d812367a40d32bacad8c0

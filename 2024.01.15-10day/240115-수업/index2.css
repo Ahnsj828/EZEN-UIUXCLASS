@@ -1,0 +1,12 @@
+img[src$="png"] {
+  border: 4px solid #f00;
+}
+img[src$="jpg"] {
+  border: 4px solid #00f;
+}
+#header > h1 {
+  color: #0f0;
+}
+#header li {
+  color: #00f;
+}

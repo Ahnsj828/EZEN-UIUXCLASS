@@ -1,0 +1,99 @@
+/* p:nth-child(2) {
+  font-size: 100%;
+}
+p:nth-child(3) {
+  font-size: 150%;
+}
+p:nth-child(4) {
+  font-size: 200%;
+} */
+/* p:nth-child(2) {
+  font-size: 1em;
+}
+p:nth-child(3) {
+  font-size: 1.5em;
+}
+p:nth-child(4) {
+  font-size: 2em;
+} */
+/* p:nth-child(2) {
+  font-size: 16px;
+}
+p:nth-child(3) {
+  font-size: 24px;
+}
+p:nth-child(4) {
+  font-size: 32px;
+} */
+/* < * : 전체선택자로 기준점을 잡은 후 그 사이즈를 기준으로 폰트 사이즈를 조절함. 따라서 밑에 경우 3em=36px>
+* {
+  font-size: 12px;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.5em;
+} */
+/* p {
+  color: #00f !important;
+}
+p {
+  color: #f00;
+} */
+/* <text는 부모에 의해서 상속받았지만 class는 4순위 부모상속은 6순위라서 black이 적용되었음>
+#my-box {
+  color: #f00;
+}
+.text {
+  color: #000;
+} */
+/* #my-box .text {
+  color: #f00;
+}
+.black {
+  color: #000;
+} */
+/* * {
+  font-size: 30px;
+}
+div {
+  font-size: 20px;
+}
+p:nth-child(2) {
+  font-size: 2em;
+}
+p:nth-child(3) {
+  font-size: 50px;
+}
+p:nth-child(4) {
+  font-size: 200%;
+}
+p:nth-child(5) {
+  font-size: 2rem;
+} */
+/* #box1 {
+  width: 200px;
+  height: 200px;
+  background: #f00;
+}
+<vw / vh 는 반응형 > 
+#box2 {
+  background: #f00;
+  width: 50vw;
+  height: 30vh;
+} */
+/* <피그마에서 정한 메인 색상 스타일을 적용하기>
+:root {
+  --main-color: blue;
+}
+#box1 {
+  width: 200px;
+  height: 200px;
+  background: var(--main-color);
+}
+#box2 {
+  background: var(--main-color);
+  width: 50vw;
+  height: 30vh;
+} */
