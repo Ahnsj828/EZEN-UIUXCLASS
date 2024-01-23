@@ -1,0 +1,5 @@
+@impor url("./re")
+
+input:not([type="password"]) {
+  background: #f00;
+}

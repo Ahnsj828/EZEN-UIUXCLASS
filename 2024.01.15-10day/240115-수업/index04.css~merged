@@ -1,0 +1,4 @@
+p::selection {
+  background: #f00;
+  color: #fff;
+}

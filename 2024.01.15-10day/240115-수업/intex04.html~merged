@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index04.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- h1{Lorem Ipsum}+p*2 -->
+    <h1>Lorem Ipsum</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+      tempore a eius distinctio reiciendis cupiditate eos dolores provident
+      magnam libero eligendi ut, eaque, possimus eveniet et sequi rerum sit
+      consequatur? Eos neque quas minus maiores blanditiis illum vero doloribus
+      tenetur dignissimos, autem quidem ullam obcaecati vel quaerat laborum
+      consectetur natus at unde expedita ab accusantium? Eveniet ex nobis neque
+      quam? Autem praesentium dignissimos libero molestias quaerat unde magnam.
+      Accusantium aliquam nostrum repellendus quasi accusamus cupiditate
+      corporis odit tempora eum, architecto at sunt nemo animi reiciendis
+      aperiam! Placeat fugit illum eos!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi
+      necessitatibus, est ut quo voluptatibus at voluptatem ea expedita culpa
+      cupiditate neque consequuntur asperiores perferendis esse eligendi! Quam,
+      repudiandae in. Minima aliquam, ratione eius nesciunt voluptas debitis
+      consequatur mollitia necessitatibus nisi, possimus officia enim corporis?
+      Itaque inventore, nemo dicta perferendis accusantium consequuntur, porro,
+      exercitationem ipsa tempore quidem repellendus veniam ratione? Distinctio
+      unde autem dolorem totam accusantium laborum asperiores, molestias ratione
+      libero repellat obcaecati ipsum ex ducimus. Illo illum veniam tempore,
+      nostrum, ullam molestias blanditiis, officiis fugit aut incidunt cumque
+      fuga? Dolorem aspernatur eius ipsa deleniti consectetur sapiente
+      laboriosam deserunt eum maiores hic rerum, repellat natus mollitia
+      quibusdam delectus culpa odio saepe. Est nihil rerum blanditiis, itaque
+      quod magnam culpa voluptas! Ab earum amet excepturi tempora porro
+      veritatis esse id debitis eveniet, similique molestias maiores impedit
+      eaque corporis rerum explicabo quidem illum laboriosam dolore eum
+      necessitatibus sit est. Ab, optio libero?
+    </p>
+  </body>
+</html>

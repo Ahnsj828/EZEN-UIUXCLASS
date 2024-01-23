@@ -1,0 +1,12 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #00f;
+}
+a:link::after {
+  content: " - " attr(href);
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index1쌤.css" />
+    <title>Document</title>
+    <!-- <script defer src="./spript.js"></script> js맛보여주신거다 활성화하면 골치아파진다-->
+  </head>
+  <body>
+    <input type="checkbox" name="toggle" id="toggle" />
+    <div id="wrap">
+      <!--header-->
+      <header id="main_header">
+        <a class="left" href="#">Main</a>
+        <h1>Mobile</h1>
+        <label class="right" for="toggle">Toggle</label>
+      </header>
+      <!--gnb-->
+      <div id="toggle_gnb_wrap">
+        <div id="toggle_gnb">
+          <div class="gnbbox gnbtop">
+            <ul>
+              <li><a href="#">버튼</a></li>
+              <li><a href="#">버튼</a></li>
+              <li><a href="#">버튼</a></li>
+              <li><a href="#">버튼</a></li>
+            </ul>
+          </div>
+          <div class="gnbbox gnbbottom">
+            <ul>
+              <li><a href="#">버튼</a></li>
+              <li><a href="#">버튼</a></li>
+              <li><a href="#">버튼</a></li>
+              <li><a href="#">버튼</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav id="top_gnb">
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+      </nav>
+      <nav id="bottom_gnb">
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+        <div><a href="#">버튼</a></div>
+      </nav>
+      <!--Section-->
+      <section id="main_section">
+        <header id="section_header">
+          <h1>Lorem Ipsum</h1>
+          <p>2024-01-18 / Thursday</p>
+        </header>
+        <article id="section_article">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium illum incidunt magni consequatur aliquid. Ratione optio
+            voluptatibus, autem explicabo aperiam incidunt quaerat earum,
+            repellat dicta, ipsum vitae distinctio perspiciatis odit. Impedit
+            voluptatem saepe recusandae quis, quaerat hic alias sint tempora
+            deserunt ex, architecto odio sunt non ad! Tenetur repudiandae
+            tempore nemo hic dolores! Cum dolores voluptatem natus maiores
+            repudiandae necessitatibus? Delectus, quas animi laborum ratione
+            odit suscipit obcaecati, error nostrum earum dignissimos voluptatem
+            optio doloremque, sequi vitae facilis. Corrupti delectus molestiae
+            odio, impedit adipisci quam iusto tenetur maiores aspernatur fugiat!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            eligendi odit in nisi assumenda minus ipsa illum dolorem facere
+            officia omnis possimus, eum adipisci commodi asperiores consequuntur
+            aspernatur, dignissimos non? Aspernatur est ducimus ut laboriosam
+            nostrum officiis. Animi quibusdam necessitatibus iure soluta, quas
+            iusto eaque commodi a unde placeat inventore, modi praesentium
+            excepturi tempore harum nesciunt, expedita delectus quis quia?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero
+            optio ducimus sed perferendis iure dolorem? Consequatur quia
+            exercitationem earum magnam dolor nostrum, error quis iure at cum
+            expedita hic. Numquam voluptatum, voluptatem saepe aliquid impedit,
+            consequuntur repellat fugiat deserunt quo neque ea a in? Nulla
+            incidunt quia dignissimos autem. Quibusdam numquam distinctio
+            aperiam expedita dolores accusantium nisi ratione animi. Pariatur
+            dolor minus accusantium unde accusamus nulla, reprehenderit
+            quibusdam iure ex repellat dolorum, maiores rerum distinctio
+            laudantium. Repudiandae temporibus, voluptates exercitationem modi,
+            dignissimos ducimus natus ad, aliquam quasi expedita enim!
+          </p>
+        </article>
+      </section>
+
+      <!-- footer -->
+      <footer id="main_footer">
+        <h3>HTML5 + CSS3 Basic</h3>
+        <address>Website Layout Basic</address>
+      </footer>
+    </div>
+  </body>
+</html>
