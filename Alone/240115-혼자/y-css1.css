@@ -1,0 +1,33 @@
+/* selcetor {
+  property: value;
+} */
+
+* {
+  color: green;
+}
+li{
+  color:blue
+}
+li#special {
+  color: pink
+}
+.red {
+  background: yellow;
+  width: 100px;
+  height: 100px;
+}
+
+button:hover {
+  color: red;
+  background: beige;
+}
+a[href] {
+  color: orange;
+}
+
+a[href^="naver"] {
+  color: aquamarine;
+}
+a[href$=".com"] {
+ color: purple;
+}

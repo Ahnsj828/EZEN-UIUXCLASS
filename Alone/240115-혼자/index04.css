@@ -1,0 +1,15 @@
+:root {
+  --main-color: crimson;
+}
+#a {
+  width: 100px;
+  height: 100px;
+  background: var(--main-color);
+
+}
+#b {
+  width: 50vw;
+  height: 50vh;
+  background: var(--main-color);
+
+}

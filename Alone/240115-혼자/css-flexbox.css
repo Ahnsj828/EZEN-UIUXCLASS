@@ -1,0 +1,76 @@
+/* .container {
+  background: beige;
+  height: 100%;
+} 
+100% 컨테이너가 들어있는 부모의 높이의 100% 채우겠다
+이것만 하면 안나온다
+body, html {
+  height: 100%;
+}
+이것도 해줘야 나온다 */
+
+.container {
+  background: beige;
+  height: 100vh;/* <--부모와 상관없이 아이템을 보이는 뷰포트 높이를 100%쓰겠다 */
+  display: flex;/* <--야 너이제부터 플렉스박스야 라고 지정 */
+  
+  /* flec-direction 중심축 수평인지 수직인지 */ 
+  flex-direction: row;/* <--기본값(왼->오)행 */
+  flex-direction: row-reverse;/* <--기본값역순(왼<-오)행 */
+  flex-direction: column;/* <--반대방향으로하겠다(위->아래)열 */
+  flex-direction: column-reverse;/* <--반대방향역순(위<-아래)열 */
+  flex-direction: column;/* <--반대방향으로하겠다(위->아래)열 */
+
+  /* flex-wrap 한줄에 가득차면 다음줄 널어갈지*/
+  flex-wrap: nowrap;/* <--기본값 / 아이템이 한 줄에 빼곡하게 있는거 화면줄이면 크기가줄어든다 */
+  flex-wrap: wrap;/* <-- 아이템이 한 줄에 꽉차면 다음 라인으로 넘어간다 */
+  flex-wrap: wrap-reverse;/* <-- 반대로래핑 */
+  /* flex-flow: column nowrap; 얘도 속성값을 한줄에 다 쓸 수 있다 */
+
+  /* justify-content아이템들을 어떻게 배치할지 */ 
+  justify-content: flex-star; /* <--기본값 / 왼쪽에서 오른쪽으로/수직이중심이면->위에서아래로 */
+  justify-content: flex-end; /* <-- 반대로 / 순서 유지하고오른쪽부터 배치 */ /*이때 flex-direction:column; 하면 밑에서 아래족으로 배치*/
+
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end; /*이때 밑에서 아래로 배치*/
+  justify-content: center; /*가운데로 배치*/
+  justify-content: space-around; /*가운데로 배치*/
+} 
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.item1 {
+  background: #ef9a9a;
+}
+.item2 {
+  background: #f48fb1;
+}
+.item3 {
+  background: #ce93d8;
+}
+.item4 {
+  background: #b39ddb;
+}
+.item5 {
+  background: #90caf9;
+}
+.item6 {
+  background: #a5d6a7;
+}
+.item7 {
+  background: #e6ee9c;
+}
+.item8 {
+  background: #fff59d;
+}
+.item9 {
+  background: #ffcc80;
+}
+.item10 {
+  background: #ffab91;
+}
