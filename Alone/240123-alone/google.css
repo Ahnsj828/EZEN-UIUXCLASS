@@ -1,0 +1,37 @@
+@import url("./reset.css");
+@import url("./font.css");
+body {
+  background-color: #025B63;
+  font-family: GoogleSans;
+}
+nav {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  border: 1px solid #f00;
+  color: white;
+  font-family: GoogleSans;
+  padding: 20px;
+}
+.nav_top {
+  font-size: 12px;
+  margin: 0 15px;
+}
+.nav_top2 {
+  margin: 0 15px;
+}
+#usericon {
+  align-content: center;
+  text-align: center;
+  border: 1px solid #f00;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  padding: ;
+  margin: 0;
+  font-size: 20px;
+  background-color: #EF6C00;
+}
