@@ -1,0 +1,17 @@
+input[type="checkbox"]:checked + div {
+   height: 0px;
+}
+/* 속성선택자 상태선태 동위선택자 */
+
+div {
+ overflow: hidden;
+ width: 650px;
+ height: 300px;
+ transition-duration: 1s;
+}
+/* overflow: hidden; 해당요소의 내용이 부모요소의 영역을 벗어날 때 넘치는 부분을 숨기게하는 설정 */
+/* visiable scroll auto hidden이 있다
+visiable 기본값 - 내용을 숨기지않고 튀어나오게하는 설정
+scroll - 스크롤바를 표시하여 사용자가 스크롤할 수 있도록하는 설정
+auto - 스크롤바를 표시할지 여부를 자동으로 결정하는 속성
+ 벗어나면 스크롤바 표시/ 벗어나지않으면 표시하지 않음 */

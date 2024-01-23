@@ -1,0 +1,25 @@
+/* li {
+  list-style: none;
+  float: left;
+  padding: 20px;
+} */
+
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 20px;
+}
+li:nth-child(2n+1) {
+  background-color: rgb(255, 107, 119);
+}
+li:nth-child(2n) {
+  background-color: rgb(0, 193, 200);
+}
+li:first-child {
+ border-radius: 10px 0 0 10px;
+}
+li:last-child {
+  border-radius: 0 10px 10px 0;
+}

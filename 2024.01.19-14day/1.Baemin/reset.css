@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+/*링크 추가 시 밑줄 없애주기 위한 셋팅*/
+a {
+  text-decoration: none;
+}

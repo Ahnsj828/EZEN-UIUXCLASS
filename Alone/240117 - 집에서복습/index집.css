@@ -1,0 +1,86 @@
+/* reset.css */
+@import url("./reset.css");
+
+/* font style */
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+#title {
+  font-family: "Coiny", system-ui;
+}
+
+
+/* header */
+#main_header {
+  border: 1px solid #f00;
+  width: 960px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+#main_header > #title {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+#main_header > #main_gnb {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#main_header > #main_lnb {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+/* main_gnb */
+#main_gnb > ul {
+  overflow: hidden;
+}
+#main_gnb > ul > li {
+  float: left;
+}
+#main_gnb > ul > li > a {
+  display: block;
+  padding: 2px 10px;
+  border: 1px solid #000;
+}
+#main_gnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+#main_gnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+#main_gnb > ul > li > a:hover {
+  background: #000;
+  color: #fff;
+} 
+
+/* main_lnb */
+#main_lnb > ul {
+  
+}
+#main_lnb > ul > li {
+  float: left;
+}
+#main_lnb > ul > li > a{
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+#main_lnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+#main_lnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+#main_lnb > ul > li > a:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+/* --------------------------------------------- */
+
+
+/* content */
