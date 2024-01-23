@@ -1,0 +1,68 @@
+포폴만들때
+*여기어때 사이트 경우 media queries
+ - width : 1920~1281px : Big Desktop
+ - width : 1280px에서 한번 줬다 - 기획한 가로 너비사이즈
+ - width : 911px에서 한번 더 잡았다 - 태블릿 사용자들 사이즈
+ - width : 911px에서 한번 더 잡았다 - 모바일 사용자들 사이즈
+이런것들 있어야한다
+
+-----------------------------------------------------------------------
+웹&앱 포트폴리오 제작해서 취업할때
+1.responsive web => 반응형 웹페이지 를 제출
+- media queries 개념
+- media = 매체 (*desktop / tablet / mobile)
+- query = 질의, 질문, 요청
+반응형 웹페이지를 만들었다 (=meeia query를 정의 했다)
+보는 방법 F12(개발자모드) 상단에 점세개
+
+*여기어때 사이트 경우 media queries
+ - width : 1920~1281px : Big Desktop
+ - width : 1280px에서 한번 줬다 - 기획한 가로 너비사이즈
+ - width : 911px에서 한번 더 잡았다 - 태블릿 사용자들 사이즈
+ - width : 911px에서 한번 더 잡았다 - 모바일 사용자들 사이즈
+사이즈 참고 사이트 - https://gs.statcounter.com/screen-resolution-stats
+
+*미디어 쿼리 적용할 때 유의사항
+=> 앞에서 정의한 선택자를 그대로 사용 => 적용하고자 하는
+CSS 스타일 적용!!
+ 스타일 그대로 써라! 바꾸지면 안된다
+
+#slide h1 {
+ font-size: 20px
+}
+
+figure h1 {
+ font-seize:
+
+1200px /
+20px/1240 = 0.0161290322580645 => 1.6%
+4/1240= 0.0032258064516129‬ => 0.32%
+
+만약에, 모든 미디어 쿼리의 시작점을 max-width로 시작했거나, min-width로 시작하면 => 중복되는 선택자는 최초의 미디어쿼리에만 있어도 상관없다 = 선택자에 대한 부분도 마찬가지다 (선택자는 무조건 똑같이 가라!! 나중에 힘들어진다
+마치 id와 같은 개념이다 나중에 자바스크립트에서 충돌일어난다)
+
+2. 파비콘 (Favicon) :
+document에 icon
+- ico 확장자만 가능 => psd 
+- 확장자 png이미지
+15px(default) -> 30px(max size) -> 45px
+
+DOM : Document Object Model
+BOM : Browser Object Model
+
+3.웹 포트폴리오 : 클론(복제하다) 코딩
+=> 여기어때
+=> 배포하다 = deploy
+
+< 개인 발표때 해야한는거 >
+ 1. 반응형
+ 2. vscode alt + L + O
+
+배포하려면 서버가 필요하다
+서버에 내가 그동안 작업한 html, css, js를 올려야한다
+서버는 임대비를 내야한다 (월마다)
+무료로 배포하는 사이트 들이 있다
+cafe24/ 파일질라, netlify
+aws(아마존-유료, 서버 구축할때쓰는거) / firebasek(구글이 만든거, 무료) => 이 두가지가 인정받는다
+
+html에서 <a href="#"></a> #의 의미는 top으로 가겠다는 의미다
