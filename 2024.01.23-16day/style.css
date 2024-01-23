@@ -1,7 +1,6 @@
 @import url("./reset.css");
 @import url("./font.css");
 
-/* 매체명 @media screen or @media all / and 뒤에 사이즈 / (min-width: 1280px) 최소사이즈 */
 @media screen and (min-width: 1280px) {
   /* common css */
   body {
@@ -395,7 +394,8 @@
     font-weight: lighter;
     line-height: 1.5;
   }
-} /* 작업했던 css가 {안에 넣는다} */
+}
+
 @media screen and (max-width: 1279px) {
   /* common css */
   body {
@@ -437,6 +437,25 @@
     padding: 8px;
     width: 76px;
   }
+  #gnb {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -330px;
+    background: #fff;
+    width: 330px;
+    height: 100vh;
+    text-align: center;
+    padding: 80px 20px 0 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+  }
+  #gnb a {
+    color: #000;
+    display: block;
+    padding: 16px;
+    font-size: 18px;
+  }
   .trigger {
     display: none;
   }
@@ -444,7 +463,7 @@
   /* figure */
   figure {
     width: 100%;
-    height: 300px;
+    height: 529px;
     background: url("./img/1.main/main_04.jpg") center/cover no-repeat;
   }
   figure #slide {
@@ -453,24 +472,35 @@
     align-items: flex-start;
     gap: 39px;
     width: 100%;
-    height: 300px;
-    padding-top: 70px;
+    height: 529px;
+    padding-top: 200px;
     margin: 0 auto;
     color: #fff;
     line-height: 1.3;
     letter-spacing: 2px;
   }
-  #figure #slide h1 {
+  figure #slide h1 {
     width: 90%;
     margin: 0 auto;
-    font-size: 1.5em;
   }
   #schedule {
-    height: auto;
-    background: transparent;
+    width: 90%;
+    height: 145px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+    border-radius: 20px;
+    margin: 0 auto;
   }
   #schedule-title {
-    display: none;
+    color: #000;
+    width: 96.7%;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 1.6%;
   }
   #schedule-title span {
     word-spacing: -0.32%;
@@ -505,7 +535,7 @@
   }
   #schedule-bar {
     position: relative;
-    width: 100%;
+    width: 96.7%;
   }
   #schedule-bar form {
     width: 100%;
@@ -520,11 +550,10 @@
     border-radius: 10px;
     font-size: 18px;
     font-family: Travel;
-    padding-left: 4.6%;
+    padding-left: 3.6%;
   }
-
   #schedule-bar .search {
-    width: 100%;
+    width: 36.2%;
   }
   .fa-magnifying-glass {
     color: #c2c2c2;
@@ -538,7 +567,9 @@
     color: #c2c2c2;
   }
   #schedule-bar input[type="date"] {
-    display: none;
+    margin: 0 10px;
+    width: 23.8%;
+    position: relative;
   }
   #schedule-bar input[type="date"]::before {
     content: attr(placeholder);
@@ -548,9 +579,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  /* 말줄임표 white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; */
   #schedule-bar input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     left: -50px;
@@ -560,10 +588,18 @@
     cursor: pointer;
   }
   #schedule-bar .person {
-    display: none;
+    width: 300px;
+    margin-right: 10px;
+    cursor: pointer;
   }
   #schedule-bar input[type="submit"] {
-    display: none;
+    width: 120px;
+    height: 45px;
+    background: #1273e4;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
   /* section common */
@@ -622,7 +658,7 @@
 
   /* section-02local */
   .local .inner-content-slide img {
-    width: 100%; /* 14.9%가 아니다 */
+    width: 100%;
     border-radius: 10px;
   }
 
@@ -673,6 +709,7 @@
   .hot .inner-content-slide > div:nth-child(4) {
     width: 100%;
   }
+
   .inner-content-slide .slide-content-info {
     display: flex;
     flex-direction: column;
@@ -818,7 +855,8 @@
     font-weight: lighter;
     line-height: 1.5;
   }
-} /* 작업했던 css가 {안에 넣는다 - 그러고 살짝살짝 수정해준다} */
+}
+
 @media screen and (max-width: 980px) {
   /* common css */
   body {
@@ -846,9 +884,7 @@
     margin: 0 auto;
   }
   nav > div {
-    display: flex;
-    align-items: center;
-    gap: 44px;
+    display: none;
   }
   #icon-group {
     display: flex;
@@ -860,14 +896,36 @@
     padding: 8px;
     width: 76px;
   }
+  #gnb {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -330px;
+    background: #fff;
+    width: 330px;
+    height: 100vh;
+    text-align: center;
+    padding: 80px 20px 0 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+  }
+  #gnb.action {
+    right: 0;
+  }
+  #gnb a {
+    color: #000;
+    display: block;
+    padding: 16px;
+    font-size: 18px;
+  }
   .trigger {
-    display: blocp;
+    display: block;
     position: absolute;
     top: 25px;
     right: 25px;
     width: 20px;
     height: 12px;
-    display: block;
+    z-index: 99999;
   }
   .trigger span {
     position: absolute;
@@ -876,15 +934,20 @@
     height: 2px;
     background: #000;
   }
-  .trigger span: :nth-child(1) {
+  .trigger span:nth-child(1) {
     top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
   }
 
   /* figure */
   figure {
     width: 100%;
     height: 300px;
-    background: url("./img/1.main/main_04.jpg") center/cover no-repeat;
   }
   figure #slide {
     display: flex;
@@ -892,35 +955,24 @@
     align-items: flex-start;
     gap: 39px;
     width: 100%;
-    height: 529px;
-    padding-top: 200px;
+    height: 300px;
+    padding-top: 90px;
     margin: 0 auto;
     color: #fff;
     line-height: 1.3;
     letter-spacing: 2px;
   }
-  #figure #slide h1 {
+  figure #slide h1 {
     width: 90%;
     margin: 0 auto;
+    font-size: 1.5em;
   }
   #schedule {
-    width: 90%;
-    height: 145px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 37px;
-    border-radius: 20px;
-    margin: 0 auto;
+    height: auto;
+    background: transparent;
   }
   #schedule-title {
-    color: #000;
-    width: 96.7%;
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 1.6%;
+    display: none;
   }
   #schedule-title span {
     word-spacing: -0.32%;
@@ -955,7 +1007,7 @@
   }
   #schedule-bar {
     position: relative;
-    width: 96.7%;
+    width: 100%;
   }
   #schedule-bar form {
     width: 100%;
@@ -972,9 +1024,8 @@
     font-family: Travel;
     padding-left: 10%;
   }
-
   #schedule-bar .search {
-    width: 36.2%;
+    width: 100%;
   }
   .fa-magnifying-glass {
     color: #c2c2c2;
@@ -988,21 +1039,16 @@
     color: #c2c2c2;
   }
   #schedule-bar input[type="date"] {
-    margin: 0 10px;
-    width: 23.8%;
-    position: relative;
+    display: none;
   }
   #schedule-bar input[type="date"]::before {
     content: attr(placeholder);
     width: 100%;
-    padding-left: 1.6%;
+    padding-left: 10.6%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  /* 말줄임표 white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; */
   #schedule-bar input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     left: -50px;
@@ -1012,18 +1058,10 @@
     cursor: pointer;
   }
   #schedule-bar .person {
-    width: 300px;
-    margin-right: 10px;
-    cursor: pointer;
+    display: none;
   }
   #schedule-bar input[type="submit"] {
-    width: 120px;
-    height: 45px;
-    background: #1273e4;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    display: none;
   }
 
   /* section common */
@@ -1085,7 +1123,7 @@
 
   /* section-02local */
   .local .inner-content-slide img {
-    width: 156px; /* 14.9%가 아니다 */
+    width: 156px;
     border-radius: 10px;
   }
 
@@ -1105,7 +1143,7 @@
     gap: 20px;
   }
   #inner-content-titlegroup #badge {
-    display: flex;
+    width: 911px;
     gap: 10px;
   }
   #inner-content-titlegroup #badge span {
@@ -1114,13 +1152,14 @@
     border: 1px solid #efefef;
     border-radius: 20px;
     padding: 10px 20px;
+    font-size: 12px;
   }
   #inner-content-titlegroup #badge span:first-child {
     background: #1273e4;
     color: #fff;
   }
   .hot .inner-content-slide img {
-    width: 268%;
+    width: 268px;
     height: 173px;
     border-radius: 10px;
   }
@@ -1136,6 +1175,7 @@
   .hot .inner-content-slide > div:nth-child(4) {
     width: 100%;
   }
+
   .inner-content-slide .slide-content-info {
     display: flex;
     flex-direction: column;
