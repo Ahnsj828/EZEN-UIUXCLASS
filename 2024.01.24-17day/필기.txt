@@ -1,0 +1,78 @@
+1.CSS 심화내용!!
+- 정적인 형식의 CSS 문법
+(*레이아웃 정렬 / 선택자 / 스타일적용)
+- 애니메이션
+> 변형 : transition(*시간의 제약을 가지고 무언가가 변화를 일으키는 것)
+1) transition-duration : 특정시간동안 변형효과를 적용하고자 할 때
+2) trnsition-delay : 특정시간동안 지연효과를 적용하고자 할 때
+3) transition-timing-function : 가.감속 효과를 적용하고자 할 때
+4) transition-property : 특정요소의 변형값을 상이하게 적용하고자 할 때
+ 만약 이 네가지를 한번에 모두 사용하고 싶다면
+ 순서 => transition: property / duration / timeing-function / delay
+ 실무에서는 대부분 => trasition: all(속성을 모두다 주겠다) 0.3s(0.3초주겠다)
+ ex) trasition: background 0.3s ease-in 이렇게 쓰기도한다
+
+> animation 
+  transition이랑 똑같이 쓴다
+  animation-name: rint;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate
+ 만약 이 네가지를 한번에 모두 사용하고 싶다면
+ 순서 => animation: name / duration / function / delay / count / direct
+  
+
+
+
+
+ttf / otf
+
+CSS / JS
+퍼블리셔 / 프론트엔드 개발자 
+JS중에서 3D Animation하는 애들을 많이 구한다.(어렵고 빡세고 힘들다
+수확적 사고랑 공간감이 좋아야한다)쌤도 많이 추천 - 미래로보면 좋다
+(에니메이션만을 위한 자바스크립트를 다룬다)
+
+프론트엔드는 회사마다 다르다
+금융권회사 - 외부데이터를 화면에 어떻게 다룰까
+에이전시회사 - 시각적인거를 요구하니까 눈에 직접적 영향받는 기술들 (api 기술)
+si 기술을 다루는 회사 등등 여러 분야의 회사들이 있다
+
+
+
+-------------------------------------변환은 좀 더 어렵다-----------
+
+> 변환 : transform(*시간의 제약과 무관하게 무언가가 변화를 일으키는 것)
+ - 어떤 요소의 회전값을 적용할 때 : rotate 
+ - 어떤 요소의 위치값을 적용할 때 : translate
+ - 어떤 요소의 사이즈값을 적용할 때 : scale
+ - 어떤 요소의 기울기값을 적용할 때 : skew(거의 안쓴다)
+
+미션 - 위로부터 50px 떨어진 지점에서 60도 회전한 
+
+=> 위 3가지 요소(transition, animation, transform)가 한번에 다같이 사용되는 경우!!
+=> 3D 입체 도형을 만들고자 할 때
+
+
+사이트에 접속하면 서버에서 데이터를 보내주는 방식이였다
+그런데 그거의 단점이 동시에 다수가 접속해서 서버가 터져서 개발한게
+react다 (페북 마크주커버가 만듦)
+react - 페이스북이 만들었다
+ 서버가 터질까봐 동시에 다수가 접속하면
+csr ssr 
+서버의 의존도를 낮추기위해서 ㅆ는게 react 
+Next.js가 react대체하기위해 
+
+CSS @ :
+- @import
+- @font-face
+- @keyframes
+(이렇게 @썻던것들 정리해보기)
+
+
+
+------------------------------------------------------------
+JS / Google Chrome V8 검색엔진 / WEB
+ => Node =>Runtime (*실행환경)
+ => npm

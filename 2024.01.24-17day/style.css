@@ -1,0 +1,64 @@
+/* .box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+.box:active {
+  background: red;
+  transition: 2s;
+} */
+/* 반응선택자 */
+/* 색이 바뀌는데 2초가 걸린다 */
+/* transition-duration: 2s; 인데 trandition이라고 적어도된다 */
+
+/* ------------------------------------------------------------------------------- */
+
+#graph {
+  width: 618px;
+  border: 3px solid #000;
+}
+.bar {
+  width: 10px;
+  height: 50px;
+  background: orange;
+  margin: 5px;
+  transition-property: background width;
+  transition-duration: 1s, 5s;
+}
+
+/* transition-duration: 5s;를 #graph:hover > .bar가 아닌 원본인 .bar여기에 넣어야한다 */
+#graph:hover > .bar {
+  width: 600px;
+}
+
+/* 순차적으로 움직이게하고싶다 delay(지연, 연기) */
+#graph:hover > .bar:nth-child(1) {
+  background: red;
+  width: 100px;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+#graph:hover > .bar:nth-child(2) {
+  background: blue;
+  width: 300px;
+  transition-delay: 1s;
+  transition-timing-function: ease;
+}
+#graph:hover > .bar:nth-child(3) {
+  background: green;
+  width: 400px;
+  transition-delay: 2s;
+  transition-timing-function: ease-in;
+}
+#graph:hover > .bar:nth-child(4) {
+  background: yellow;
+  width: 200px;
+  transition-delay: 3s;
+  transition-timing-function: ease-in-out;
+}
+#graph:hover > .bar:nth-child(5) {
+  background: pink;
+  width: 400px;
+  transition-delay: 4s;
+  transition-timing-function: ease-in-out;
+}

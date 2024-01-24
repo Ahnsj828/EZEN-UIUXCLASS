@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("./reset.css");
+
+/* common */
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body.member1 {
+  background: #ebfaff;
+}
+body.member1 {
+  background: #edffeb;
+}
+body.member3 {
+  background: #fff3fd;
+}
+body.member4 {
+  background: #f5f0ff;
+}
+
+/* nav */
+section {
+  width: 340px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/* padding: 30px;
+hight; 30px;
+둘다 똑같은 효과가 나온다
+물론 상황마다 살짝은 다르다 */
+
+section .menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* display: flex;을 float으로도 왼쪽 오른쪽으로 보낼 수 있다 */
+/* section nav.menu 정석 section .menu약식 */
+/* justify-content: space-between; 양쪽으로 극단으로 */
+section {
+  font-size: 20px;
+  color: #666;
+}
+
+/* profile */
+section .profile {
+  width: 100%;
+  text-align: center;
+}
+/* 이미지를 줄이려면 부모요소를 */
+section .profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+  box-shadow: 5px 15px 30px rgba(173, 216, 230, 0.8);
+}
+section .profile h1 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #555;
+}
+section .profile h2 {
+  font-weight: normal;
+  font-size: 12px;
+  color: #bbb;
+  margin: 5px 0 30px;
+}
+section .btn {
+  display: block;
+  width: 180px;
+  height: 32px;
+
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 16px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.member1 section .profile img {
+  box-shadow: 5px 15px 30px rgba(173, 216, 230, 0.8);
+}
+.member2 section .profile img {
+  box-shadow: 5px 15px 30px rgba(189, 204, 183, 0.8);
+}
+.member3 section .profile img {
+  box-shadow: 5px 15px 30px rgba(252, 99, 214, 0.4);
+}
+.member4 section .profile img {
+  box-shadow: 5px 15px 30px rgba(183, 82, 250, 0.4);
+}
+
+.member1 section .btn {
+  background: linear-gradient(45deg, #4affff, #35e0f7);
+  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+.member1 section .btn {
+  background: linear-gradient(45deg, #a0ff9d, #55f5b2);
+  box-shadow: 5px 10px 20px rgba(33, 250, 105, 0.3);
+}
+.member1 section .btn {
+  background: linear-gradient(45deg, #ef74ff, #ff11c4);
+  box-shadow: 5px 10px 20px rgba(255, 17, 196, 0.3);
+}
+.member1 section .btn {
+  background: linear-gradient(45deg, #8e74ff, #a011ff);
+  box-shadow: 5px 10px 20px rgba(160, 17, 255, 0.4);
+}
+
+/* contact */
+section .contact {
+  margin: 20px 0 25px;
+}
+/* 위 좌우 아래 */
+section .contact li {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+section .contact li:last-child {
+  border-bottom: none;
+}
+section .contact li i {
+  width: 18%;
+  text-align: center;
+  text-shadow: 2px 2px 2px #ddd;
+  color: #555;
+  font-size: 16px;
+}
+section .contact li span {
+  font-family: "Orbitron", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+/* link */
+section .others {
+  width: 100%;
+  text-align: center;
+}
+section .others a {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0;
+  opacity: 0.4;
+  filter: saturate(0.7);
+}
+section .others a.on {
+  opacity: 1;
+  filter: saturate(1);
+}
+/*a는 inline태그 / 한줄에 같이 쓰고 싶을때 */
+section .others a:nth-of-type(1) {
+  background: #35e0f7;
+  box-shadow: 5px 5px 10px rgba(7, 255, 255, 0.7);
+}
+section .others a:nth-of-type(2) {
+  background: #55f5cd;
+  box-shadow: 5px 5px 10px rgba(85, 245, 178, 0.7);
+}
+section .others a:nth-of-type(3) {
+  background: #ff80df;
+  box-shadow: 5px 5px 10px rgba(255, 128, 233, 0.7);
+}
+section .others a:nth-of-type(4) {
+  background: #a794fd;
+  box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
+}
