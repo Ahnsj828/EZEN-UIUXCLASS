@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 < 쌤의 흘러가는 말들 >
 
 클론 코딩하거나 벤치마킹하기 좋은 사이트 (쌤추천)
@@ -9,3 +10,8 @@ flex로만 반응형 포폴 한개
 grid로만 반응형 포폴 한개
 
 inline . block . flex . grid . positino 은 바로바로 나올정도로 정확히 알아야한다
+=======
+클론 코딩하거나 벤치마킹하기 좋은 사이트 (쌤추천)
+ - 빙그레 https://www.bing.co.kr/
+ - 아시아나 https://flyasiana.com/C/KR/KO/index
+>>>>>>> 78d63de8fd393233183f9936d986dd5b03fcf0c2
