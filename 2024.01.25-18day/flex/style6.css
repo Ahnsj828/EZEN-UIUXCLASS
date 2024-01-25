@@ -1,0 +1,68 @@
+/* header {
+  background: yellowgreen;
+  flex-grow: ;
+}
+#section {
+  display: flex;
+  height: 500px;
+  align-items: center;
+}
+article {
+  background: whitesmoke;
+  flex-basis: 3;
+  height: 500px;
+}
+aside {
+  background: rgb(189, 189, 189);
+  flex-basis: 1;
+  height: 500px;
+}
+nav {
+  background: rgb(86, 86, 86);
+  flex-basis: 1;
+  height: 500px;
+}
+footer {
+  background: rgb(52, 52, 52);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+header {
+  background: yellowgreen;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+/* height: 150px;와 line-height: 150px; 똑같이 해야 높에 중앙에 온다 */
+section {
+  display: flex;
+}
+article,
+aside,
+nav {
+  height: calc(100vh - 300px);
+}
+article {
+  background: #eee;
+  flex: 3;
+}
+aside {
+  background: #ddd;
+  flex: 1;
+}
+nav {
+  background: #eee;
+  flex: 1;
+}
+footer {
+  background: gray;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}

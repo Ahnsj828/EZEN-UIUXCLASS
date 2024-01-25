@@ -1,0 +1,91 @@
+/* flex가 아닌 기존방식 - 전통적인 정렬방식
+body {
+  background: greenyellow;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+} */
+
+/* body {
+  background: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* justify-content: center; 랑 align-items: center; 이것만하면 가운데로 안온다
+/* height: 100vh; 이것도 있어야한다 */
+/* div {
+  width: 100px;
+  height: 100px;
+  background: #000;
+} */
+/* ------------------------------ */
+
+/* .parent {
+  border: 5px solid #0f0;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  /* flex-start flex-end */
+/* align-items: center;
+} */
+/* .child {
+  width: 300px;
+  height: 100px;
+  background-color: crimson;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  margin: 5px;
+} */
+
+/* ------------------------------ */
+
+/* .parent {
+  border: 5px solid #0f0;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-start flex-end center
+}
+.child {
+  width: 300px;
+  background-color: crimson;
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+}
+.child1 {
+  height: 100px;
+}
+.child2 {
+  height: 200px;
+} */
+
+/* ----------------------------- */
+.parent {
+  border: 5px solid #0f0;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  /* flex-start flex-end center */
+}
+.pattern div {
+  width: 300px;
+  background-color: crimson;
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+}
+.child {
+}
+.child1 {
+  height: 200px;
+}

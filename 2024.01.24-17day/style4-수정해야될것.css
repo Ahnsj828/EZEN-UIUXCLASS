@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 600px;
+  height: 100px auto;
+}
+#canvas {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  perspective: 150px;
+}
+/* 원근감 perspective: 1500px; */
+#merry {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  animation rint 15s infinite linear;
+  transform-style: preserve-3d;
+}
+@keyframes rint {
+  form {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.face {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -115px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.cell {
+  will-change: 230px;
+  height: 150px;
+  margin-bottom: 5px;
+  transition-duration: 0.5s;
+  background: url("https://img.khan.co.kr/news/2023/01/02/news-p.v1.20230102.1f95577a65fc42a79ae7f990b39e7c21_P1.png")
+    center/cover no-repeat;
+}
+.cell:hover {
+  transform: scale(1.2) translateZ(50px);
+}
+.face:nth-child(1) {
+  transform: reotateY(0deg) translateZ(370px);
+}
+.face:nth-child(2) {
+  transform: reotateY(36deg) translateZ(370px);
+}
+.face:nth-child(3) {
+  transform: reotateY(72deg) translateZ(370px);
+}
+.face:nth-child(4) {
+  transform: reotateY(108deg) translateZ(370px);
+}
+.face:nth-child(5) {
+  transform: reotateY(144deg) translateZ(370px);
+}
+.face:nth-child(6) {
+  transform: reotateY(180deg) translateZ(370px);
+}
+.face:nth-child(7) {
+  transform: reotateY(216ddg) translateZ(370px);
+}
+.face:nth-child(8) {
+  transform: reotateY(252ddg) translateZ(370px);
+}
+.face:nth-child(9) {
+  transform: reotateY(288ddg) translateZ(370px);
+}
+.face:nth-child(10) {
+  transform: reotateY(324ddg) translateZ(370px);
+}

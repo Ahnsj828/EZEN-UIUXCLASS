@@ -1,0 +1,141 @@
+/* .parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  background: coral;
+}
+.child1 {
+  flex-grow: 1;
+}
+flex-grow
+너비값의 비율 
+나머지공간을 너가 다 써라
+.child2 {
+  flex-grow: 5;
+}
+.child3 {
+  flex-grow: 1;
+} */
+
+/* ---------------------------- */
+/* 
+.parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  background: coral;
+}
+.child1 {
+  flex-shrink: 3;
+}
+줄어들때 비율 3배나 많이 가져가겠다
+
+.child2 {
+  flex-shrink: 2;
+}
+.child3 {
+  flex-shrink: 1;
+}
+본인고정 너비보다 적게 둘어들때 비율 */
+
+/* ----------------------------------- */
+
+/* .parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  background: coral;
+}
+.child1 {
+  flex-basis: 100px;
+}
+
+.child2 {
+  flex-basis: 200px;
+}
+.child3 {
+  flex-basis: 300px;
+}
+width값을 대신해서 이렇게 줄 수 있다 */
+
+/* ------------------------------------- */
+
+/* .parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+.child1 {
+  background: crimson;
+  flex: 1;
+  order: 3;
+}
+
+.child2 {
+  background: dodgerblue;
+  flex: 1;
+  order: 2;
+}
+.child3 {
+  background: yellowgreen;
+  flex: 1;
+  order: 1;
+}
+3번을 1번보다 먼저하고싶을때 */
+
+/* ------------------------------------------------- */
+
+.parent {
+  border: 5px solid green;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+}
+/* align-items: center;  align-items: flex-start; */
+.parent div {
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+.child1 {
+  background: crimson;
+  flex: 1;
+  order: 1;
+  align-self: flex-end;
+}
+
+.child2 {
+  background: dodgerblue;
+  flex: 1;
+  order: 2;
+}
+.child3 {
+  background: yellowgreen;
+  flex: 1;
+  order: 3;
+}

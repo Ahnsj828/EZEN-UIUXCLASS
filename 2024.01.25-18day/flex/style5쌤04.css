@@ -1,0 +1,79 @@
+/* .parent {
+  border: 5px solid green;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+} */
+/* --------------------------- */
+
+/* .parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}
+.child1 {
+  margin-right: auto;
+}
+부모요소에 margin을 주면 자식요소에 margin주면 안된다 */
+/* ------------------------------------ */
+/* .parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}
+.child3 {
+  margin-left: auto;
+} */
+
+/* ------------------------------------
+.parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}
+.child1 .child2 .child3 {
+  margin: auto;
+}
+space around */
+
+.parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}
+.child2 {
+  margin: auto;
+}
+/* space between */

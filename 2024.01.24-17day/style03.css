@@ -1,0 +1,58 @@
+@import url("./reset.css");
+body {
+  width: 700px;
+  height: 700px;
+  margin: 200px auto;
+}
+
+section {
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+  animation: rint 3s linear 0s infinite;
+  /* 자식요소의 공간감을 보여주기 위해 부모요소에 preserve-3d를 넣어주어야함 */
+  transform-style: preserve-3d;
+}
+@keyframes rint {
+  ftom {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(0360deg) rotateZ(360deg);
+  }
+}
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  /* 뒤쪽에 보여지는 모습을 감추기 위한 속성
+  backface-visibility: hidden; */
+}
+div:nth-child(1) {
+  background: red;
+  transform: rotateY(0deg) translate3d(0, 0, 100px);
+}
+div:nth-child(2) {
+  background: green;
+  transform: rotateY(90deg) translate3d(0, 0, 100px);
+}
+div:nth-child(3) {
+  background: blue;
+  transform: rotateY(180deg) translate3d(0, 0, 100px);
+}
+div:nth-child(4) {
+  background: yellow;
+  transform: rotateY(270deg) translate3d(0, 0, 100px);
+}
+div:nth-child(5) {
+  background: brown;
+  transform: rotateX(90deg) translate3d(0, 0, 100px);
+}
+div:nth-child(6) {
+  background: pink;
+  transform: rotateX(270deg) translate3d(0, 0, 100px);
+}

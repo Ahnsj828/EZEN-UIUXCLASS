@@ -1,0 +1,60 @@
+/* .parent {
+  border: 1px solid green;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.parent div {
+  width: 300px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+
+  margin: 5px;
+}
+.child1 {
+  background: crimson;
+}
+.child2 {
+  background: dodgerblue;
+}
+.child3 {
+  background: yellowgreen;
+} */
+
+/* ------------------------- */
+
+/* .parent {
+  border: 5px solid green;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 기본적으로 flex를 먹고간다
+반응형하면서 100px먹고갔으면 좋겠다 =>flex-wrap: wrap; */
+/* .child {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: #fff;
+  text-align: center;
+  background: crimson;
+}  */
+
+.parent {
+  border: 5px solid green;
+  display: flex;
+  flex-flow: row wrap;
+}
+/* flex-direction: row;
+  flex-wrap: wrap; 
+  이 둘을 같이 쓰는게 => flex-flow: row wrap; */
+.child {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: #fff;
+  text-align: center;
+  background: crimson;
+}

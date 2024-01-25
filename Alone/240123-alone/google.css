@@ -1,7 +1,7 @@
 @import url("./reset.css");
 @import url("./font.css");
 body {
-  background-color: #025B63;
+  background-color: #025b63;
   font-family: GoogleSans;
 }
 nav {
@@ -24,8 +24,24 @@ nav {
   margin: 0 15px;
 }
 #usericon {
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #f00;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 0;
+  font-size: 20px;
+  background-color: #ef6c00;
+}
+/* line-height: 20px; text에 대한 높이를 40(line-height: 20px; + font-size: 20px;)가져가겠다 */
+
+/* 내가 원래했던거
+#usericon {
   align-content: center;
   text-align: center;
+  justify-content: center;
   border: 1px solid #f00;
   border-radius: 20px;
   width: 20px;
@@ -33,5 +49,5 @@ nav {
   padding: ;
   margin: 0;
   font-size: 20px;
-  background-color: #EF6C00;
-}
+  background-color: #ef6c00;
+} */

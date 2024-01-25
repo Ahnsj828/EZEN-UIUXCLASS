@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+#container {
+  display: flex;
+}
+nav {
+  background: rgb(204, 204, 204);
+  flex: 1;
+}
+header {
+  background: rgb(18, 96, 92);
+  height: 100px;
+}
+article,
+aside {
+  height: calc(100vh - 200px);
+}
+article {
+  background: pink;
+  flex: 4;
+}
+aside {
+  background: yellow;
+  flex: 1;
+}
+footer {
+  background: gray;
+  height: 100px;
+}

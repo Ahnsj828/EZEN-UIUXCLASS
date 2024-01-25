@@ -1,0 +1,103 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  background: rgb(163, 0, 0);
+  height: 100px;
+}
+section {
+  justify-content: space-between;
+}
+#aside1 {
+  background: rgb(185, 185, 0);
+  flex-grow: 1;
+}
+p {
+  background: gray;
+  height: calc(100vh - 200px);
+  text-align: left;
+  flex-grow: 3;
+}
+#aside2 {
+  background: rgb(0, 182, 45);
+  flex-grow: 1;
+}
+footer {
+  background: rgb(0, 180, 215);
+  height: 100px;
+} */
+
+/* -------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 1200px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+header {
+  background: tomato;
+  padding: 2.6%;
+  text-align: center;
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+section article {
+  border: 1px solid #000;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* section article : display: flex; 안에 수평주기 위해서 */
+footer {
+  background: aqua;
+  padding: 2.6%;
+  text-align: center;
+}
+.left {
+  flex: 1;
+  background: yellow;
+}
+.main {
+  flex: 4;
+  background: gray;
+}
+.right {
+  flex: 1;
+  background: green;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  section {
+    flex-direction: column;
+  }
+  .left {
+    order: 2;
+  }
+  .main {
+    order: 1;
+  }
+  .right {
+    order: 3;
+  }
+}
