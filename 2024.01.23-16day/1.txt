@@ -8,7 +8,7 @@
 
 -----------------------------------------------------------------------
 웹&앱 포트폴리오 제작해서 취업할때
-1.responsive web => 반응형 웹페이지 를 제출
+1.필수!!! responsive web => 반응형 웹페이지 를 제출
 - media queries 개념
 - media = 매체 (*desktop / tablet / mobile)
 - query = 질의, 질문, 요청
@@ -32,20 +32,27 @@ CSS 스타일 적용!!
 }
 
 figure h1 {
- font-seize:
+ font-seize: 18px 안된다
+}
+#slide h1 {
+ Font-size : 18px
+}   로 해야된다
 
 1200px /
 20px/1240 = 0.0161290322580645 => 1.6%
 4/1240= 0.0032258064516129‬ => 0.32%
 
+
+
 만약에, 모든 미디어 쿼리의 시작점을 max-width로 시작했거나, min-width로 시작하면 => 중복되는 선택자는 최초의 미디어쿼리에만 있어도 상관없다 = 선택자에 대한 부분도 마찬가지다 (선택자는 무조건 똑같이 가라!! 나중에 힘들어진다
 마치 id와 같은 개념이다 나중에 자바스크립트에서 충돌일어난다)
+
 
 2. 파비콘 (Favicon) :
 document에 icon
 - ico 확장자만 가능 => psd 
 - 확장자 png이미지
-15px(default) -> 30px(max size) -> 45px
+15px(default) -> 30px(max size) -> 45px하면 30px로 된다
 
 DOM : Document Object Model
 BOM : Browser Object Model
@@ -54,12 +61,16 @@ BOM : Browser Object Model
 => 여기어때
 => 배포하다 = deploy
 
+
+
 < 개인 발표때 해야한는거 >
  1. 반응형
  2. vscode alt + L + O
 
+
 배포하려면 서버가 필요하다
 서버에 내가 그동안 작업한 html, css, js를 올려야한다
+
 서버는 임대비를 내야한다 (월마다)
 무료로 배포하는 사이트 들이 있다
 cafe24/ 파일질라, netlify

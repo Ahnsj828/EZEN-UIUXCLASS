@@ -1,4 +1,4 @@
-2 피그마
+ cvvv2 피그마
 2일째 html css vs코드
 11일 코드 
 html css 2주차
@@ -25,11 +25,12 @@ css심화
 5. Grid 예제사이트
 7. Grid 연습예제
 
-8. Bootstrap 이미 레이웃구조가 갖춰져있는 프레이머 :레이아웃 Framwork
+8. Bootstrap : 레이아웃 Framework
+   Bootstrap 이미 레이웃구조가 갖춰져있는 프레이머 :레이아웃 Framwork
 
-9. SCSS CSS 고급기능
+9. SCSS - CSS 고급기능
 
-중간에 =>CSS Variable 
+중간에 => CSS Variable 
 
 10. Figma를 활용해서 앱페이지(10개정도의 페이지) 기획하고 html & CSS & 간단한 JS
 
@@ -47,6 +48,15 @@ global Navigation bar / = GNB
 
 sprite generator > Toptal
 
+
+
+display : block : 
+=> 하나의 요소가 1개의 행을 다차지하게 만든다
+
+display : inline-block : inline + block
+
+
+
 display : block 
 => 하나의 요소가 1개의 행을 다 차지하게 만든다
 아예 블럭으로 만든다 (h, p..같이)
@@ -61,7 +71,9 @@ inline 요소를 가져가면서 block의 요소도 가져가겠다
 --------------------------------------------------------------
 *flex : 
 왜쓰냐 
-기존 css 문법상에서 아이템 요소들의 레이아웃 정렬을 진행토록 해주는 요소가 한정되어있었음 (float라던지 position이라던지 display라던지)
+기존 css 문법상에서 아이템 요소들의 레이아웃 정렬을 진행토록 해주는 요소가 한정되어있었음 
+(*float, position, display)
+(float라던지 position이라던지 display라던지)
  = >기본 탑재 : 웹브라우저 화면 반응형 기능
 
 1) float : 뉴스기사 (*이미지,컨텐츠) 를 효율적으로 분리시켜주기 위한 목적
@@ -70,6 +82,7 @@ inline 요소를 가져가면서 block의 요소도 가져가겠다
 이 세가지가 본연의 목적을 달성하지 않고 다른용도로 쓰게됐다
 
 => Cross Browing 불가했는데 이젠 다 가능
+
 
 
 < flex 세계관 유의사항 >
@@ -87,10 +100,10 @@ inline 요소를 가져가면서 block의 요소도 가져가겠다
  > 만약, 1개의 행에 여러개의 컨텐츠 아이템이 들어와있다면 ..
 양쪽 끝으로 컨텐츠 아이템 정렬 가능!!
 1) space-between : 양끝으로 컨텐츠를 몰아놓고, 각 컨텐츠간 간격을 맞춤
-2) space-around : 모든 컨텐츠의 좌,우측 공간을 동일하게 맞춰놓고 양쪽 끝으로 컨텐츠를 몰아 넣는 방식
+2) space-around : 모든 컨텐츠의 좌.우측 공간을 동일하게 맞춰놓고 양쪽 끝으로 컨텐츠를 몰아넣는 방식
 
-4) 교차축을 기준으로 수직정렬
- - align items (*부모요소에게 적용) / 별도의 너비,높이값을 적용해야된다
+4) 교차축을 기준으로 수직정렬 (*부모요소에게 적용)
+- align items / 별도의 너비/높이값을 부여해야만 적용!!!
 1) stretch : 만약 자식요소의 height값이 존재하지 않는 경우, 자동으로 부모요소의 높이값을 가져가도록 하고 싶을 때 사용
 
 5) 그렇다면, flex를 사용할 때, 중심축과 교차축을 직접 지정할 수 없을까?
@@ -100,9 +113,9 @@ inline 요소를 가져가면서 block의 요소도 가져가겠다
  > 중심축 & 교차축이 달라 질 수 있으며, 이에 따라서 justify-content & align-items의 역할이 달라질 수 있다!
 
 6) 만약 자식요소의 너비값을 보장해주지 못한다면?
- - flex-wrap : 기본값(no wrap) / wrap을 적용하면, 자식요소의 너비값을 보장해 주지 못하는 경우, 자동으로 줄바꿈을 시켜준다
+ - flex-wrap : 기본값(no wrap) / wrap을 적용하면, 자식요소의 너비값을 보장해 주지 못하는 경우, 자동으로 줄바꿈을 시켜준다!!!
 
-7) background / transition / animation 해당 3가지 속성의 공통 특징!!
+7) background / transition / animation 해당 3가지 속성의 공통 특징!!!
  => 개별요소의 속성을 가지고 있지만, 한 번에 속성을 사용할 수 있는 축약기법
   ( 여러속성을 한번에 쓸 수있다 )
  => flex-direction & flex-wrap을 한번에 작성할 수 있게 도와주는 속성
@@ -119,7 +132,7 @@ flex-shrink : flex의 자식요소들의 너비 비율을 설정 (*줄이고자�
 flex-basis : flex의 자식요소들의 너비 비율을 설정
 
 10) flex grow / shrink / basis => 한 번에 사용하고자 하는 경우!!
- 축약표기법 : flex: 1 1 50px (grow shirink basis)
+ 축약표기법 : flex: 1 1 50px (순성 -> grow shirink basis )
 실무에서 사용하는 방법 : flex: 1
 flex라는 축약표기법은 grow는 필수기재 요소이지만 
    / shrink & basis는 옵션이다 (써도되고 안써도 되고)

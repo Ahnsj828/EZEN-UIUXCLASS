@@ -43,3 +43,5 @@ fallback 기법!!!
 
 position : static(default) /relative 상대위치 좌표 / absolute 절대 위치 좌표 / fixed
 position: static = 기본값 = default 값 => html에서 작성한 순서에 맞춰
+
+pc : .slider_section > background 제거!
