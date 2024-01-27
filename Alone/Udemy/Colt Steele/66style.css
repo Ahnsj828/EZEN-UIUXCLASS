@@ -24,3 +24,7 @@ p {
 a {
   text-decoration: none;
 }
+#size_example {
+  font-size: xx-large;
+}
+/* small large medium smaller larger x-large x-small*/
