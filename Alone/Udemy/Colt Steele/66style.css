@@ -1,12 +1,26 @@
 h1 {
+  /* h1 너비 width: 50%; 페이지의 50% */
   text-align: center; 
+  /* text-align: center(right);*/ 
   font-weight: 400;
+  /* font-weight: normal; */
+  letter-spacing: 10px;
+  /* letter-spacing 글자 사이 간격 */
+  text-decoration: tomato underline wavy;
 }
-/* font-weight: normal; */
-/* text-align: center(right); 
-h1 너비 width: 50%; 페이지의 50% */
+/* text-decoration 텍스트 장식
+text-decoration: 
+     text-decoration: tomato 색상을 넣을 수 도 있다
+     underlin밑줄 line-through중앙에줄 overline위에줄
+     none,dashed,dotted,double,solid,wavy 안나온다 
+     text-decoration: wavy; 데코레이션 스타일*/
 
 p {
   text-align: right;
+  line-height: 3;
 }
 /* 문단에 텍스트 정렬 */
+
+a {
+  text-decoration: none;
+}
