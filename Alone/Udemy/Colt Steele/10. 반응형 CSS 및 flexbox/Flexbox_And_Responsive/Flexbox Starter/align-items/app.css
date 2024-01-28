@@ -6,15 +6,31 @@ h1 {
 }
 #container {
     background-color: #003049;
-    width: 90%;
-    height: 500px;
+    width: 40%;
+    height: 2000px;
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex; 
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: ;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+
+    flex-direction: row; /* 중심축이 수평(가로축)일때  */
+    align-items: stretch; 
+/* stretch : 기본값 flex-start 결과값 똑같다
+    flex-end
+    center
+    baseline 텍스트의 기준선에 맞춰서 정렬 */
+ 
+
+    flex-direction: column; /* 중심축이 수직(세로축)일때 */
+    align-items: stretch;
+/* stretch : 기본값 flex-start 결과값 똑같다
+    flex-end
+    center
+    baseline 텍스트의 기준선에 맞춰서 정렬 */
+
 }
 
 #container div {
