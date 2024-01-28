@@ -7,6 +7,7 @@ h1 {
   letter-spacing: 10px;
   /* letter-spacing 글자 사이 간격 */
   text-decoration: tomato underline wavy;
+  font-size: 50px;
 }
 /* text-decoration 텍스트 장식
 text-decoration: 
@@ -27,4 +28,22 @@ a {
 #size_example {
   font-size: xx-large;
 }
-/* small large medium smaller larger x-large x-small*/
+/* < absolute-size > values
+font-size: XX-small X-small small medium
+           large x-large xx-large xxx-large */
+
+/* < relative-size > values
+font-size: smaller larger */
+
+/* < length > values
+font-size: 12px / 0.8em */
+
+/* < percentage > values
+font-size: 80% */
+
+/* < Global values > values
+font-size: inherit initial unset */
+
+#size_example {
+  font-size: ;
+}
