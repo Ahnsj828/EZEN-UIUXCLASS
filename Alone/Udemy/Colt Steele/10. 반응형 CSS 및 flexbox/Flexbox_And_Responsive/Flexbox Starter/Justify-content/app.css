@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+    /* justify-content:주축을 기준으로 
+    요소와 컨텐츠를 어떻게 배치할지 결정하는 속성 
+    flex-start : 중심축 시작점(앞)로 보내기
+    flex-end : 중심축 끝점(뒤)으로 보내기
+    center : 중심축 중앙으로 보내기
+    space-between : 요소와 컨텐츠 사이에는 빈곳이없고
+    요소들 사이에만 빈곳이 생긴다 
+    space-around : 요소들한테 같은 면적의 여백을 부텨*/
+
+
+#container div {
+    width: 200px;
+    height: 200px;
+}

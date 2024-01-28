@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex; /* 세로로 나열된게 가로로 나열된다 */
+    /* divd의 부모요소인 #container한테 
+    display: flex;주면 좌우로 정렬된다 */
+    flex-direction: column-reverse;
+    /* flex-direction: row; 본축의 방향
+    row : 기본값(행중심으로 정렬) , 중심축의 방향이 좌에서 우로
+    row-reverse : 중심축의 방향이 반대로 우에서 좌로
+    column : 열중심으로 정렬 , 중심축의 방향이 상에서 하로
+    column-reverse : 중심축의 방향이 하에서 상으로 */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+}
