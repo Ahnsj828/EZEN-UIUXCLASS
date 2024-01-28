@@ -11,26 +11,14 @@ h1 {
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex; 
-
-    flex-direction: row; /* 중심축이 수평(가로축)일때 */
-    flex-wrap : wrap /* 새로운 행을 만들어 요소들을 정렬하는 속성 */
- /* no wrap : 기본값 - 요소들이 weith가  보장받지 못하고 줄어든 상태 
-    wrap 밑에 새로운 행을 만들어 요소를 정렬
-         => 중심축-좌우방향(가로축) , 교차축-상하방향(세로축)
-    wrap-reverse 바닥 왼쪽에서부터해서 행을 만들어 요소를 정렬
-                 => 중심축-좌우방향(가로축) 교차축-하상방향(세로축) */
-
-    flex-direction: column /* 중심축이 수직(세로축)일때 */
-    flex-wrap : wrap /* 새로운 열을 만들어 요소들을 정렬하는 속성 */
- /* no wrap : 기본값 - 요소들이 height가 보장받지 못하고 줄어든 상태 
-    wrap 오른쪽에 새로운 열을 만들어 요소를 정렬
-        => 중심축-상하방향(세로축) , 교차축-좌우방향(가로축)
-    wrap-reverse 오른쪽 위에서 부터해서 열을 만들어 요소를 정렬
-                => 중심축-상하방향(세로축) 교차축-우좌상방향(가로축) */
-
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: ;
 }
 
 #container div {
     width: 200px;
-    height: 200px;
+    font-size: 4em;
+    text-align: center;
 }
