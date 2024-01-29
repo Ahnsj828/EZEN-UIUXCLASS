@@ -1,0 +1,538 @@
+@import url("./reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Orbitron&display=swap");
+
+/* ==== mobile ==== */
+
+/* common */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+input,
+textarea,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+input,
+textarea {
+  width: 95%;
+  border: 0;
+  /* border-bottom: 1px solid #757575; */
+  color: #3f51b5;
+  font-size: 12px;
+  margin: 10px;
+  cursor: pointer;
+}
+hr {
+  height: 2;
+}
+.container {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+}
+.cfixed::after,
+.container::after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+/* ::after전후문자선택자에는 content가 꼭 넣어야한다 */
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.sec-tit {
+  font-size: 42px;
+  font-weight: normal;
+  color: #3f51b5;
+}
+.divider {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+  margin-top: 77px;
+  /* margain 77px auto 0 */
+  background: #eee;
+}
+.m-divider {
+  width: 20px;
+  margin: 77px auto 0;
+  background: #3f51b5;
+}
+
+/* headre */
+.header {
+  position: relative;
+  padding: 18px 5%;
+}
+.header .logo {
+  float: left;
+}
+.header .logo a {
+  font-size: 26px;
+  font-weight: normal;
+  color: #3f51b5;
+}
+.header .gnb {
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  width: 100%;
+  background: #3f51b5;
+}
+.header gnb.active {
+  display: block;
+}
+/* ---------------------- */
+/* .header .gnb li {
+  border-bottom: 1px solid #303f9f;
+}
+.header .gnb li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  padding: 14px 0 14px 5%;
+}
+.header .menu-toggle-btn {
+  float: right;
+  width: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.header .menu-toggle-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #3f51b5;
+}
+.header .menu-toggle-btn span:nth-child(2) {
+  margin: 5px 0;
+} */
+.header .menu_toggle-btn {
+  float: right;
+  width: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.header .menu_toggle-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #3f51b5;
+}
+.header .menu_toggle-btn span:not(2) {
+  margin: 5px 0;
+}
+/* display: none;평상시에 나오면 안되서 */
+
+.header .gnb li {
+  border-bottom: 1px solid #303f9f;
+}
+.header .gnb li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  padding: 14px 0 14px 5%;
+}
+/* ---------------------- */
+/* slider */
+.slider img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* display */
+.display-section {
+  margin-top: 59px;
+  text-align: center;
+}
+.display-section .sec-tit {
+  margin-bottom: 30px;
+}
+.display-section .desc {
+  color: #616161;
+  line-height: 1.9;
+}
+/*line-height: 1.9 본인들의 원래 높이보다 90%보다 더 쓰겠다 */
+
+/* promotion */
+.promotion-section {
+  margin-top: 68px;
+}
+.promotion-section .promo-list li {
+  margin-top: 52px;
+  text-align: center;
+}
+.promotion-section .promo-list li:first-child {
+  margin-top: 0;
+}
+.promotion-section .promo-list li img {
+  height: 52px;
+}
+.promotion-section .promo-list li h3 {
+  margin: 29px 0 20px;
+  color: #3f51b5;
+  font-weight: normal;
+}
+.promotion-section .promo-list li p {
+  color: #616161;
+  font-size: 14px;
+}
+/* work(work section) */
+.work-section {
+  margin-top: 73px;
+}
+.work-section .sec-tit {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  text-align: center;
+}
+.work-section .work-list li {
+  width: 100%;
+}
+.work-section .work-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.work-section .work-list a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: #3f51b5;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: all 0.3s;
+}
+/*transition: all 0.3s; 
+마우스오버할때 뺄때 딱딱 끊기는 느낌없앨때*/
+.work-section .work-list a:hover::befor {
+  opacity: 0.8;
+}
+.work-section .work-list li .info {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 23px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+/* z-index: 20;앞으로 튀어나오게 */
+.work-section .work-list li a:hover .info {
+  opacity: 1;
+  transform: translateY(23px);
+}
+/* transform: translateY(23px);
+위에서 마우스를 올릴때 글자가 내려오는 효과 */
+.work-section .work-list li .info h3 {
+  font-size: 23px;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.work-section .work-list li .info span {
+  color: #fff;
+  font-size: 11px;
+}
+.work-section .work-list li img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* blog */
+.blog-section {
+  margin-top: 77px;
+}
+.blog-section .sec-tit {
+  text-align: center;
+  margin-bottom: 47px;
+}
+.blog-section .blog-list li {
+  width: 100%;
+  margin-top: 45px;
+}
+.blog-section .blog-list li:first-child {
+  margin: 0;
+}
+.blog-section .blog-list li img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.blog-section .banner_list li time {
+  display: block;
+  margin: 11px 0;
+  font-size: 14px;
+  color: #9e9e9e;
+}
+.blog-section .blog-list li h3 {
+  color: #424242;
+  font-weight: normal;
+}
+
+/* contact */
+.contact-section {
+  margin-top: 109px;
+}
+.contact-section .sec-tit {
+  margin-bottom: 47px;
+  text-align: center;
+}
+.contact-section .form-box .form input {
+  margin-bottom: 38px;
+  padding-bottom: 13px;
+}
+.contact-section .form-box .form input:focus {
+  outline: none;
+  border-bottom: 1px solid #757575;
+}
+.contact-section .form-box .textarea textarea {
+  height: 165px;
+}
+.contact-section .form-box .textarea textarea:focus {
+  outline: none;
+}
+.contact-section .form-box .send-btn {
+  text-align: right;
+  margin-top: 36px;
+}
+.contact-section .form-box .send-btn button {
+  padding: 15px;
+  border: 0;
+  background: #3f51b5;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-section .form-box .send-btn button:hover {
+  background: #fff;
+  border: 1px solid #3f51b5;
+  color: #3f51b5;
+}
+
+/* footer */
+.footer {
+  margin-top: 68px;
+  padding: 2%;
+}
+.footer iframe {
+  width: 100%;
+  height: 320px;
+}
+.footer p {
+  margin: 20px 0;
+  text-align: center;
+  color: #3f51b5;
+}
+
+/*  */
+/*  */
+/* ==== tablet ==== */
+@media screen and (min-width: 768px) {
+  /* 위에서 정의한 선택자 그대로 가져와야한다 */
+  /* common */
+  .divider {
+    margin: 260px auto 0;
+  }
+  .m-divider {
+    margin: 124px auto 0;
+  }
+
+  /* header(tablet의 header) */
+  .header {
+    position: static;
+    padding: 28px 52px;
+  }
+  .header .gnb {
+    display: block;
+    position: static;
+    background: none;
+    float: right;
+    width: auto;
+    margin-top: 16px;
+  }
+  .header.gnb li {
+    float: left;
+    border-bottom: 0;
+    margin-left: 21px;
+  }
+  .header .gnb li a {
+    color: #3f51b5;
+    padding: 0;
+    font-size: 0ch;
+  }
+  .header .menu-toggle-btn {
+    display: none;
+  }
+  /* display */
+  .display-section {
+    margin: 95px;
+  }
+
+  /* promotion */
+  .promotion-section {
+    margin-top: 110px;
+  }
+  .promotion-section .promo-list li {
+    float: left;
+    width: 23.177%;
+    /* 반응형에 움직이게 하려고 px이 아니라 %줌 */
+    margin-left: 1.822%;
+    margin-top: 0;
+  }
+  .promotion-section .promo-list li:first-child {
+    margin-left: 0;
+  }
+
+  /* work */
+  .work-section {
+    margin-top: 118px;
+    overflow: hidden;
+  }
+  .work-section .sec-tit {
+    margin-bottom: 76px;
+  }
+  .work-section .work-list li {
+    width: 50%;
+    float: left;
+  }
+  .work-section .work-list li .info {
+    left: 37px;
+  }
+  .work-section .work-list li a:hover .info {
+    transform: translateY(37px);
+  }
+
+  /* blog */
+  .blog-section {
+    width: 100%;
+    margin-top: 124px;
+    overflow: hidden;
+  }
+  .blog-section .sec-tit {
+    margin-bottom: 76px;
+  }
+  .blog-section .blog-list li {
+    width: 31%;
+    float: left;
+    margin-top: 0;
+    margin-left: 2%;
+  }
+
+  /* contact */
+  .contact-section {
+    margin-top: 176px;
+  }
+  .contact-section .sec-tit {
+    margin-bottom: 76px;
+  }
+  .contact-section .form-box .form,
+  .contact-section .form-box .textarea {
+    float: left;
+    width: 48%;
+  }
+  .contact-section .form-box .form {
+    margin-right: 2%;
+  }
+  .contact-section .form-box .form input:last-child {
+    margin-bottom: 0;
+  }
+
+  /* footer */
+  .footer iframe {
+    height: 430px;
+  }
+  .footer p {
+    margin: 34px 0;
+  }
+}
+/*  */
+/*  */
+/* ==== desktop ==== */
+@media screen and (min-width: 1132px) {
+  /* display */
+  .display-section {
+    text-align: left;
+    overflow: hidden;
+  }
+  .display-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+  .display-section .desc {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    color: #616161;
+  }
+  .display-section .desc::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 44px;
+    background: #e0e0e0;
+    top: 9px;
+    left: 0;
+  }
+
+  /* promotion */
+  .promotion-section .promo-list li {
+    width: 23.674%;
+    margin-left: 1.76%;
+    /* 20px/1132 = 1.76 */
+  }
+
+  /* work */
+  .work-section .sec-tit {
+    text-align: left;
+  }
+  .work-section .work-list li {
+    width: 25%;
+  }
+  /* 모바일은 한줄에 하나라width: 100%; 
+  테블릿은 한줄에 두개라 width: 50%; 
+  데스크탑은 한줄에 네개라 width: 25%;*/
+
+  /* blog */
+  .blog-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+  .blog-section .blog-list {
+    float: right;
+    width: 74%;
+  }
+  .blog-section .blog-list li {
+    width: 31%;
+    margin-left: 2%;
+  }
+
+  /* contact */
+  .contact-section {
+    overflow: hidden;
+  }
+  .contact-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+  .contact-section .form-box {
+    float: right;
+    width: 73%;
+  }
+}
