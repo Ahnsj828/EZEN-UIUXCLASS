@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* li {
+  text-decoration: none ;
+}
+a {
+  font-style: none;
+} */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background: #eee;
+}
+header {
+  display: flex;
+  justify-content: center;
+  
+}
+.gnb {
+}
