@@ -1,0 +1,26 @@
+// variables
+$fs: 15px;
+$box-margin: 50px;
+$color-primary: #000;
+
+.frame {
+  border: 1px solid $color-primary;
+  // padding: 10px;
+  padding: ($box-margin %36);
+  // %는 피연산자 나눈값
+  margin: calc($box-margin / 2);
+  // 나눈값
+  h1 {
+    font-size: $fs * 3;
+  }
+  p {
+    border: 1px solid $color-primary;
+    font-size: calc($fs * 2);
+    margin: ($box-margin / 3);
+    padding: calc($box-margin / 2);
+  }
+}
+// 변수를 쓰면 연산을 할 수 있다
+// % 연산자만 calc 쓰면 안된다!!!
+// 나머지 연산자는 쓸 수 있다!!
+// css에서는 이런거 안됨

@@ -1,0 +1,35 @@
+.parent {
+  border: 1px solid #000;
+  display: grid;
+  grid: 100px 300px / auto auto auto;
+  /* column 이나 row값을 적용해줘야 바로 나온다 */
+  /* grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 300px; */
+}
+/* 두개의 열을 */
+/* grid-template-columns: auto auto;랑
+grid-template-columns: 1fr 1fr; 은 같은 뜻이다 */
+/* grid-template-columns: 100px 1fr 1fr; */
+
+.parent div {
+  border: 5px solid #fff;
+  background: yellowgreen;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* ---------------------------------------- */
+
+.parent {
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.parent div {
+  border: 5px solid #fff;
+  background: yellowgreen;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}

@@ -1,0 +1,13 @@
+.face-galler {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* auto-fil 사용자가 보는 너비에 맞춰서
+   자동적으로 알아서 맞춰라 */
+  /* 이미지의 최소사이즈 최대 어디까지
+  minmax(300px, 1fr) 디바이스가 넓어지면 최소 300px까지 줄인다 최대 1fr까지 늘린다
+  디바이사 줄어들면 사진 하나가 남을때까지로  */
+  grid-gap: 5px;
+}
+.face-galler img {
+  width: 100%;
+}

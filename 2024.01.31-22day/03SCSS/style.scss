@@ -1,0 +1,139 @@
+// h1 {
+//   color: crimson;
+// }
+
+// p {
+//   color: royalblue;
+//   span {
+//     font-size: 50px;
+//     color: yellowgreen;
+//   }
+// }
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+// li {
+//   list-style: none;
+// }
+// a {
+//   text-decoration: none;
+//   color: inherit;
+// }
+
+// body {
+//   font-size: 15px;
+//   background: #eee;
+// }
+// .sns {
+//   width: 600px;
+//   margin: 0 auto;
+//   li {
+//     float: left;
+//     width: 25%;
+//     a {
+//       text-transform: uppercase;
+//     }
+//   }
+// }
+// ------------------------------------------------
+// a {
+//   text-decoration: none;
+//   color: #fff;
+// }
+// body {
+//   background: #000;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+// }
+
+// .btn-outer {
+//   width: 300px;
+//   height: 50px;
+//   border: 1px solid #fff;
+//   .btn {
+//     display: block;
+//     text-decoration: uppercase;
+//     text-align: center;
+//     line-height: 50px;
+//     // .btn:hover 이렇게 써도 되지만 안쓴다
+//     // &:hover .btn을 말한다( & 앤퍼샌드는 부모요소를 찾아오는거다 )
+//     &:hover {
+//       color: aqua;
+//     }
+//   }
+// }
+
+// ---------------------------------------------------
+// .heading {
+//   background: crimson;
+//   width: 500px;
+//   padding: 10px;
+//   text-align: center;
+//   h1 {
+//     color: #fff;
+//     font-weight: 500;
+//     // span {} & span{} 둘다 맞는방법이다
+//     & span {
+//       display: block;
+//       color: #000;
+//       font-weight: bold;
+//     }
+//   }
+// }
+// // & 앤퍼샌드는 부모요소를 찾아오는거다
+// ----------------------------------------------------
+
+// < variable 변수 >
+// $primary: royalblue;
+// $confirm: yellowgreen;
+// $danger: crimson;
+// $btn-padding: 10px 30px;
+
+// .btns {
+//   text-align: center;
+//   .btn {
+//     border: none;
+//     border-radius: 5px;
+//     padding: $btn-padding;
+//     text-transform: uppercase;
+//     color: #fff;
+//   }
+//   .primary {
+//     background: $primary;
+//   }
+//   .secondary {
+//     background: $confirm;
+//   }
+//   .accent {
+//     background: $danger;
+//   }
+//   .optional {
+//     background: $primary;
+//   }
+// }
+
+// ---------------------------------
+.heading {
+  text-align: center;
+  position: relative;
+  padding-bottom: 12px;
+  span {
+    color: royalblue;
+  }
+  &::before {
+    // 부모요소인  .heading의 전후문자 선택자
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: crimson;
+  }
+}

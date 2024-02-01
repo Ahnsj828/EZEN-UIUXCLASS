@@ -1,0 +1,46 @@
+.parent {
+  background: khaki;
+  border: 5px solid #000;
+  display: grid;
+  /* grid-gap: 5px; */
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-areas: "item item item item item"; */
+  /* grid-area: item; 얘한테 어떻게 열을 주겠냐 */
+  /* grid-template-areas: "item item . . ."; */
+  grid-template-areas: ". . .item item" ". . .item item";
+}
+
+.parent div {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  /* background: lightblue; */
+  border: 1px solid #000;
+}
+
+/* .parent div:nth-child(1) {
+  order: 6;
+}
+.parent div:nth-child(2) {
+  order: 5;
+}
+.parent div:nth-child(3) {
+  order: 4;
+}
+.parent div:nth-child(4) {
+  order: 3;
+}
+.parent div:nth-child(5) {
+  order: 2;
+}
+.parent div:nth-child(6) {
+  order: 1;
+} */
+
+.item {
+  background: crimson;
+  grid-area: item;
+  /* grid-area: item; item이라는 닉네임 정해줌 */
+  /* grid-row: 2; */
+  /*grid-row 행에대한 위치값을 정해주는거 */
+}
