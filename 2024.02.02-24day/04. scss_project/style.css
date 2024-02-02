@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.portfolio {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  background: url("./img_20240202/9/background.png") top center no-repeat;
+}
+.portfolio .headlin-share {
+  margin-bottom: 50px;
+}
+.portfolio .items {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+.parent {
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  /* column 이나 row값을 적용해줘야 바로 나온다 */
+  /* grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 300px; */
+}
+
+.parent div {
+  border: 5px solid #fff;
+  background: yellowgreen;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}

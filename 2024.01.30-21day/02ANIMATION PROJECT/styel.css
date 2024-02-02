@@ -1,0 +1,196 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+/* 웹브라우저에 보여지는 화면만쓸거다
+w.h 없다 */
+/* common */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #b1e1e2;
+  animation: sky linear 20s infinite;
+}
+/* overflow: hidden; 해가 지면서 밑으로 내려가면서
+스크롤바가 생길까봐 */
+@keyframes sky {
+  0% {
+    background: #b88fcc;
+  }
+  25% {
+    background: #b1e1e2;
+  }
+  50% {
+    background: #fcd2e2;
+  }
+  75% {
+    background: #636888;
+  }
+  100% {
+    background: #b08fcc;
+  }
+}
+/* 이렇게 구간별로 나누려고 from to가 아니라
+수치로 주신거다 */
+h1 {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  text-align: center;
+  color: #fff;
+  font: bold 92px/1 "Poiret One";
+  animation: day linear 20s infinite;
+}
+@keyframes day {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+section {
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  /* transform: translateX(-50%);
+  transform: translateY(-50%); */
+}
+
+section .sky {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section .sky .sun {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  margin-left: -100px;
+  transform-origin: center 500px;
+  animation: sun linear 20s infinite;
+}
+@keyframes sun {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(30deg);
+  }
+  75% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+}
+section .sky .cloud1 {
+  position: absolute;
+  top: -30%;
+  left: 10%;
+  animation: flow linear 10s infinite;
+}
+section .sky .cloud2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  animation: flow linear 20s infinite;
+}
+
+section .town .circle {
+  position: absolute;
+  bottom: 104px;
+  left: 50%;
+  margin-left: -165px;
+  animation: rotation linear 20s infinite;
+}
+/*bottom: 104px; top줘도 된다 대신 수치값은 반대로 */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(365deg);
+  }
+}
+/* 회전한다 @keyframes */
+/* 0,100%나 from to나 둘다 똑같다 */
+
+section .town .night {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+section .town .day {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  animation: day linear 20s infinite;
+}
+
+section .people {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: day linear 20s infinite;
+}
+/* width: 100%;height: 100%;
+부모요소의 너비 높이를
+  그대로 쓴다는거다. */
+/* top: 0; left: 0; 대신
+  bottom, right 써도 된다
+  top, left 쓰는게 대중적이다
+  좌표계가 top, left이 0.0이라서 */
+section .people .man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: flow linear 10s infinite;
+}
+section .people .family {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: flow linear 20s infinite;
+}
+@keyframes flow {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,31 @@
+@import url("./reset.css");
+
+.parent {
+  border: 5px solid #000;
+  width: 900px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+/* grid-template-columns: auto auto; 
+똑같은 너비값을 주겠다 */
+/* justify-items: start; 왼쪽 상단에서 시작하겠다
+ justify-items 수평에서의 정렬을 시작을 앞? 중간? 뒤? */
+/* align-items 각각 아이템에 대한 정렬 / 수직정렬 */
+
+.parent div {
+  background: darkkhaki;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 100px;
+}
+.parent div:nth-child(2) {
+  justify-self: end;
+  align-self: end;
+}
