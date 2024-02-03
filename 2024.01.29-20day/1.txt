@@ -41,6 +41,7 @@
 <script src=".//script.js"></script>이걸 보면 js파일을 본다
 다보면 다시 html로 돌아와서 읽는다
 <<<<<<< HEAD
+<<<<<<< HEAD
 "비동기처리한다" 
 =======
 <<<<<<< HEAD
@@ -52,3 +53,6 @@
   font: bold 24px/1 "arial";
 >>>>>>> bed3017a3805ec468c1c1f1d7a14cb2ad4661beb
 >>>>>>> 498c6789d94f75869f73c11d710f8890d4f2c6bb
+=======
+"비동기처리한다" 
+>>>>>>> d5ae89f36bf1eaae6a59583bf46e100a978e8c61

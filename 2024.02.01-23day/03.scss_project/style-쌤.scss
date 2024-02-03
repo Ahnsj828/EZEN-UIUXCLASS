@@ -1,0 +1,61 @@
+// 전후 문자선택자로
+// 하트 반씩 만들고
+// 애니메이션 넣는다
+
+// 1. div 로 사각형만들고
+// 2. 전후문자선택자 = before/ after활용해서 => 각 원을 만들어서
+// 위치를 이동시킨다
+// 3. 하트문양으로 만든다
+// 4. animation을 만든다  => keyframes를 활용해서 일정시간에 맞춰서 크기를 조정한다 => scale( )
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heart-beat {
+  // color: #fff;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: #ff4757;
+  transform: rotate(45deg);
+  box-shadow: 0 -10px 100px #ff4757, 0 -10px 150px #ff4757,
+    0 -10px 200px #ff4757;
+  animation: heart-beat 0.5s linear infinite;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 100%;
+  }
+  &::before {
+    top: -50%;
+  }
+  &::after {
+    left: -50%;
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}

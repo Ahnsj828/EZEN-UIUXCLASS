@@ -1,0 +1,34 @@
+body {
+  background: #000;
+}
+body div {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background: green;
+  transition: rotateY(45deg);
+}
+body div::before {
+  content: "";
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: blue;
+}
+body div::after {
+  content: "";
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: crimson;
+}/*# sourceMappingURL=style.css.map */
