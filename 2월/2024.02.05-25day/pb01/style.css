@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.5rem;
+}
+.testimonial-section {
+  /* border: 1px solid #f00; */
+  width: 800px;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* 20px 그림자너비 */
+.testimonial-section h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.testimonial-section h1 span {
+  color: crimson;
+}
+.testimonial-pic img {
+  width: 100px;
+  /* width를 먼저 맞추고 heignt를 맞추는게 일반적이다 얘는 이미지라 h안줘도된다*/
+  filter: grayscale(1);
+  margin: 5px;
+  cursor: pointer;
+  /* 이미지 위에 마우스 올리면 손가락으로 바뀜 */
+  transition: all 0.3s;
+  /* 클릭했을때 필터값을 빼야된다 */
+}
+.testimonial-pic img.active {
+  filter: none;
+  border-radius: 100%;
+}
+/* active값을 갖고 있냐 마냐에따라서 */
+.testimonial .content.active {
+  display: block;
+}
+.testimonial .content {
+  display: none;
+}
+.testimonial .contentp:nth-child(2) {
+  font-weight: bold;
+}
