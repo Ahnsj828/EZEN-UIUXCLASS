@@ -1,9 +1,0 @@
-input[type="checkbox"]:checked + div[id="agree"] {
-  height: 0px;
-}
-div {
-  overflow: hidden;
-  width: 650px;
-  height: 200px;
-  transition-duration: 1s;
-}

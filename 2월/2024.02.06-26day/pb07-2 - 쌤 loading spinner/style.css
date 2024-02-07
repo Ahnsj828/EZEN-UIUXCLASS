@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading {
+  border: 1px solid #f00;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.loading span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  /* span이라서 */
+  width: 10px;
+  height: 10px;
+  animation: loading 1.5s infinite;
+}
+.loading span:nth-child(1) {
+  /* background: crimson; */
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.8s;
+  background: gray;
+}
+@media loading {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 10px);
+    /* 박스 높이가 10px이라 */
+    background: dodgdblue;
+  }
+  50% {
+    top: calc(100% - 10px);
+    left: calc(100% - 10px);
+    background: orange;
+  }
+  75% {
+    left: calc(100% - 10px);
+    left: calc(100% - 10px);
+    background: orange;
+  }
+  100% {
+  }
+}

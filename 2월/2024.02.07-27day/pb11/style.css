@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 한데로 묶어줘라
+w,h / border / font,font-size / position,left,right  */
+
+/* common */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  color: #222;
+}
+/* 바디는 전체 속성값만 정해주는 용도로 사용하라 */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section article {
+  width: 980px;
+  height: 500px;
+  /* border: 1px solid #f00; */
+  /* overflow: hidden; */
+}
+
+/* heading */
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.heading span {
+  color: crimson;
+  font-size: 24px;
+}
+.heading h1 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+/* margin-top보다는 margin-bottom을 더 많이 쓴다
+근데도 margin-top을 쓴 이유 => 상위가 span태그라 span태그에 display inline-block넣어줘야되서*/
+.heading h1 em {
+  font-style: normal;
+  position: relative;
+}
+/* 옵셔널한 무언가를쓸때 em을 많이쓴다 */
+/* i ,em 무언가 제재를 잘 안받아서 많이쓴다 */
+.heading h1 em::after {
+  content: url("./images/logo-kakao.png");
+  position: absolute;
+  top: -25px;
+  right: -30px;
+}
+
+/* content */
+.content {
+  overflow: hidden;
+}
+.content > div {
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+/* .content  div 안하고 .content > div한 이유
+=> 안그러면 conten 안에 div를 다 잡아서*/
+/* float: left; 주면 부모한테 overflow: hidden; 주기 */
+.title {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.title::after {
+  content: "\f105";
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+}
+.title.active::after {
+  transform: rotate(90deg);
+  color: orange;
+}
+.title:hover,
+.title.active {
+  background: #203049;
+  color: #fff;
+}
+
+.desc {
+  padding: 15px;
+  display: none;
+}
+/* display: none;평상시에는 숨어져 있어야하니까 */
+.desc.active {
+  display: block;
+}
+/* 해도 보이는 이유 => active 줬던애라 */
+.image {
+  text-align: right;
+}
+.image img {
+  height: 370px;
+}

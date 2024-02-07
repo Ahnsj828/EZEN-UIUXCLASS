@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-frame">
+        <video
+          src="./images/video-female.mp4"
+          autoplay
+          loop
+          muted
+          poster="./images/placeholder-female.jpg"
+        ></video>
+        <!-- audio 넣어서 muted한거다 -->
+        <!-- loop poster="./images/placeholder-female.jpg"
+        영상이 멈추는 잠깐의 수간간에 이미지로 대체 -->
+      </div>
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" />
+      </div>
+      <div class="heading">
+        <h1><span>Wave Ocean</span>The World's Ocean</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A aut cum
+          numquam molestiae dolore dolores, eveniet consectetur dolorem sed amet
+          maiores itaque hic labore laudantium neque fugit. Magnam, corporis
+          quae!
+        </p>
+        <a class="btn-book" href="#">Book Now</a>
+        <a class="btn-learn" href="#">Learn More</a>
+      </div>
+      <div class="anniversary"><em>Anniversary</em><span>60</span></div>
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="modal-gnb">
+        <div class="gnb">
+          <a href="#">Attractions</a>
+          <a href="#">Hotel & Spa</a>
+          <a href="#">Shop & Dine</a>
+          <a href="#">Celebrate</a>
+          <a href="#">Promotions</a>
+        </div>
+      </div>
+    </div>
+    <audio id="myAudio" src="./images/piano-bgm.mp3" autoplay loop></audio>
+    <!-- 영상만 나오고 오디오가 안나올 수도 있어서 오디오를 넣어주는거다 -->
+  </body>
+</html>
