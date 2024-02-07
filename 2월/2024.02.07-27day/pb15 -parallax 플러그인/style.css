@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#sky {
+  background: url("./imgs/bg1.png");
+  width: 100%;
+  height: 1500px;
+}
+#sky article {
+  position: absolute;
+  top: 750px;
+  left: 40%;
+}

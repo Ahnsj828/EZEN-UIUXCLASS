@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.profile01 {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid #f00;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 60%;
+}
+h1 {
+  position: absolute;
+  top: 0;
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+}
