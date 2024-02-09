@@ -1,0 +1,28 @@
+<<<2024.02.08 금>>>
+1. page scroll effect = velocity.js
+ - 개인프로젝트할때 사용하는건 괜찮다
+ - 커스텀하기 많이 힘들다
+ - 모바일 / pc => 개인포폴때 수정하느라 시간이 많이들거다
+ 플러그인은 개인적인 문법들이 있다
+
+2. scrollTo 이벤트(플러그인)
+ - 
+
+3. slick slider
+( https://kenwheeler.github.io/slick/  )
+html에서는 슬라이더 안만든다 (야매개념같은거다)
+
+4.feather light
+
+5.custom
+
+이런것들은 vanilla.js가 아니다 
+다들 시간이 없어서 이걸 포폴에 많이 넣는다 
+(이런게 수레바퀴다)
+=> 쌤비추
+하지만 시간이 없다! 그러니 써라!
+
+1) vanilla.js가 plug in보다 더 높게 쳐준다
+만약 하려면 빨리실행하라
+
+2) 유니크한 plug in은 높게 쳐준다! 이런건 추천
