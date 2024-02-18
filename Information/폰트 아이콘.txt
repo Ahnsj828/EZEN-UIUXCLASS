@@ -1,4 +1,5 @@
   <<< 폰트 >>>
+ * 아이콘 디자인 참고 자료 모음 -- https://brunch.co.kr/@chulhochoiucj0/27
 
  * 구글폰츠 https://fonts.google.com/ --- 폰트를 다운받거나 주소 연결하는 사이트
    - 원하는 폰트에 가서 원하는 두께를 선택하고 (400-normal 숫자가 커질수록 두꺼워지고 낮아질수록 얇아진다)
@@ -19,5 +20,15 @@
       1) HTML 에 <i class="fa-solid fa-house"></i> 클릭 카피하고 => HTML에 붙여넣기
       2) 아이콘 상단에 넘버 f015 복사 => ???
 
+ * HTML Symbols -- 특수기호 넣기 (쌤은 이거 말고 폰트어썸을 추천)
+   - https://www.toptal.com/designers/htmlarrows/symbols/
+   - https://www.w3schools.com/html/html_symbols.asp
+   - &copy; 이렇게 입력하면  ==>  ©  이렇게 나온다
+      Ex. <p>2024 EZEN IT &copy; copyright all right reserved.</p> 
+          => 2024 EZEN IT © copyright all right reserved.
 
+ * iconsax https://iconsax.io/ -- 무료 온라인 아이콘 라이브러리
+   - SVG(Scalable Vector Graphics) 형식으로 제공되는 다양한 벡터 아이콘을 포함
+   - 웹 개발자나 디자이너들이 프로젝트에서 사용할 수 있는 다양한 아이콘을 쉽게 찾고 적용할 수 있다.
+   - 피그마, XD, Sketch, CSS, Flutter, SVG, AI, Icon Jar 8가지 종류의 포맷을 다운로드할 수 있다.
 

@@ -18,7 +18,7 @@ figure : 슬라이드 & 옵셔널한 영역
  => ex. calc()
 
 CSS : 초급 수준만 배웠었다
- object-fit 이나 calc같은 애들도 남아있다
+ object-fit / calc( ) 애들도 남아있다
 
 비디오같은 소스
 영상과 같은 멀티미디어 소스 사용목적 : 대부분 특정 배경을 커버하고 싶어서
@@ -53,7 +53,7 @@ transform : 시간x
 
 
 animation 주고자 할때 
-@keyframes 뒤에 애니메이션 이름 줘야한다
+ => @keyframes 뒤에 애니메이션 이름 줘야한다
 
 
 ----------------test-------------------
@@ -85,7 +85,8 @@ align-items
  > 컴포넌트 (붕어빵틀) / 인스턴스 (붕어빵)
  > w / h 등  스타일 커스터 마이징!!
 
-iconsax
+iconsax : 무료로 사용할 수 있는 온라인 아이콘 라이브러리
+Iconsax는 SVG(Scalable Vector Graphics) 형식으로 제공되는 다양한 벡터 아이콘을 포함하고 있다. 이 라이브러리는 웹 개발자나 디자이너들이 프로젝트에서 사용할 수 있는 다양한 아이콘을 쉽게 찾고 적용할 수 있다.
 
 html, css 하려는 가장 큰 목적 => 레이아웃정렬
 inline / block
@@ -102,6 +103,9 @@ float < flex < grid
 
 fr = fraction = 파편 / 분자
  auto= 1fr= 1/2 두개중 하나
+
+ grid-template-columns: auto auto auto;
+ grid-template-rows: 100px 300px;
 
 축약
  - font / background / animation / transition / flex / flex-flow / grid ...
