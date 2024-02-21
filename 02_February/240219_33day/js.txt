@@ -73,7 +73,7 @@ JS 최대약점 -> 싱글스레드다 / 싱글 -> 1 , 스레드-> 길  => 1차�
  - 전개연산자 구문
  - 나머지 매개변수
  - 시간관련 내장함수
-(* setInterval / setTimeout)
+(* setInterval / clearInterval / setTimeout)
  - 재귀함수 
 
 // 자바스크립트 문법을 들으면 이해가 된다 
