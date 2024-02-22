@@ -1,0 +1,118 @@
+header
+nav
+section > article
+footer
+figure : 슬라이드 & 옵셔널한 영역
+         소주제 혹은 단락을 박싱할때
+
+버튼 => 반드시 한가지 방법만으로 생성하지 않는다
+=> input || buttom
+=> input:submit(쌤이 실무에서 많이 쓰던방법) => button(요즘많이 씀)
+=> div > a (이렇게도 가능하다)
+(* 클릭하고 행동이 => 특정 페이지로 이동 이라면 뭐든 상관없다)
+(* 서버로 데이터 전달하려는 목적이라면 input:submit)
+
+
+* gird / scss 
+고급 수준의 css를 다룰 수륵?  함수 & 변수 & 연산자 & 제어자
+ => ex. calc()
+
+CSS : 초급 수준만 배웠었다
+ object-fit / calc( ) 애들도 남아있다
+
+비디오같은 소스
+영상과 같은 멀티미디어 소스 사용목적 : 대부분 특정 배경을 커버하고 싶어서
+
+*불일치
+내가 가지고 있는 영상 소스의 w / h 값이 - 커버하고자 하는 배경 영역의 w / h 값이랑 불일치 할때!!
+ => !!! object-fit: cover; !!!
+부모요소의 너비 높이 값만큼을 풀로 쓰겠다
+
+
+------------------------------------------
+position: absolute 쓸때는
+top left등 위치를 정해줘야한다
+절대위치를 주는데 좌표를 안정해주면 안되는거니까 줘야한다
+무조건!!!!줘야한다!!!!
+position: absolute 자체가 위치를 준는거다
+어떤 위치로 가게끔 하고싶을때 쓰는거다
+좌표값이 없으면 아예 그 효과도 사라진다
+----------------------------------------------
+< object-fit >
+https://developer.mozilla.org/ko/docs/Web/CSS/object-fit
+object-fit: fill; 비율에 안맞게 늘리겠다
+object-fit: contain; 온전하게 준다 컨텐츠 보존하겠다
+object-fit: cover; (가장많이씀) 
+-----------------------------------------
+HTML Symbols (https://www.w3schools.com/charsets/ref_html_symbols.asp)
+----------------------------------------------
+
+translate : 시간제약
+animation
+transform : 시간x
+
+
+animation 주고자 할때 
+ => @keyframes 뒤에 애니메이션 이름 줘야한다
+
+
+----------------test-------------------
+1-3
+2-2
+3-3
+4-
+5-px
+6- 4
+7- flex-direction: column;
+8- 2
+9- align-items
+10- align-content는 flex-wrap: wrap 을해서 그룹이 되어 있는 요소들끼리 속성값이 적용되는 것이다. 그래서 align-content는 flex-wrap: wrap가 있어야지만 적용된다
+---정답-------10. 5 틀릴거라 예상 ---
+3
+2
+3
+가로
+작은 / 큰
+4 
+flex-direction
+3
+align-items
+
+
+----------------------------------------------
+컴포넌트 :  템플릿 무언가를 세팅 
+인스턴스 : 컴포넌트로 만들어 놓은 템플릿의 복제품!
+ > 컴포넌트 (붕어빵틀) / 인스턴스 (붕어빵)
+ > w / h 등  스타일 커스터 마이징!!
+
+iconsax : 무료로 사용할 수 있는 온라인 아이콘 라이브러리
+Iconsax는 SVG(Scalable Vector Graphics) 형식으로 제공되는 다양한 벡터 아이콘을 포함하고 있다. 이 라이브러리는 웹 개발자나 디자이너들이 프로젝트에서 사용할 수 있는 다양한 아이콘을 쉽게 찾고 적용할 수 있다.
+
+html, css 하려는 가장 큰 목적 => 레이아웃정렬
+inline / block
+w /h 
+position
+
+float < flex < grid
+>flex 레이아웃 시스템을 적용하려면, 부모
+>grid 레이아웃 시스템을 적용하려면, 부모
+
+ display: grid
+ grid-template-columns: auto auto;
+ grid-template-columns: 1fr 1fr;
+
+fr = fraction = 파편 / 분자
+ auto= 1fr= 1/2 두개중 하나
+
+ grid-template-columns: auto auto auto;
+ grid-template-rows: 100px 300px;
+
+축약
+ - font / background / animation / transition / flex / flex-flow / grid ...
+ - grid :  열 grid-template-columns / 행 grid-template-rows
+
+flex 아이템 간격 : gap 
+
+grid 아이템 간격
+  grid-column-gap: 30px
+ grid - row- gap : 30px
