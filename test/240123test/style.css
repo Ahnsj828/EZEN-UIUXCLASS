@@ -1,0 +1,30 @@
+@import url(./reset.css);
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  height: 70px;
+}
+#gnb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  height: 70px;
+}
+#a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  height: 70px;
+}
+#c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  height: 70px;
+}

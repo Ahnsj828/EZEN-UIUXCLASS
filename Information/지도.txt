@@ -1,0 +1,4 @@
+<< 페이지에 지도 넣는 방법 >>
+ * 구글 맵스 https://www.google.co.kr/maps/?hl=ko&entry=ttu --- 구글지도
+   - 구글 맵스에 들어가서 => 원하는 장소를 찾는다 => 공유를 누르고 => 지도 퍼가기
+     => Html에 붙여 넣는다 <iframe src="http://www.google.com/maps/..></iframe>  (0129)

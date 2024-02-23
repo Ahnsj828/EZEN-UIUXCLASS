@@ -1,0 +1,7 @@
+
+ * HTML Symbols -- 특수기호 넣기 (쌤은 이거 말고 폰트어썸을 추천)
+   - https://www.toptal.com/designers/htmlarrows/symbols/
+   - https://www.w3schools.com/html/html_symbols.asp
+   - &copy; 이렇게 입력하면  ==>  ©  이렇게 나온다
+      Ex. <p>2024 EZEN IT &copy; copyright all right reserved.</p> 
+          => 2024 EZEN IT © copyright all right reserved.
