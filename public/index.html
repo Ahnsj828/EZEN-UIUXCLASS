@@ -1,564 +1,89 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/logo_1.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-    <!-- fontawesome js-->
-    <script
-      defer
-      src="https://kit.fontawesome.com/3f2ea24883.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.8.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.8.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.8.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <!-- custom css & js -->
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
-    <title>
-      여기어때 | 해외여행, 호텔, 리조트, 캠핑, 펜션, 모텔, 풀빌라 예약
-    </title>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <!-- header -->
-      <header>
-        <div>
-          <span>
-            <a href="#">
-              <img width="100" src="./img/logo.png" alt="logo" />
-            </a>
-          </span>
-          <nav>
-            <div>
-              <span>이벤트</span>
-              <span>고객센터</span>
-              <span id="icon-group">
-                <span>
-                  <i class="fa-solid fa-bars"></i>
-                </span>
-                <span>
-                  <i class="fa-regular fa-user"></i>
-                </span>
-              </span>
-            </div>
-            <ul id="gnb">
-              <li><a href="#">회원가입/로그인</a></li>
-              <li><a href="#">비회원 예약조회</a></li>
-              <li><a href="#">이벤트</a></li>
-              <li><a href="#">고객센터</a></li>
-            </ul>
-          </nav>
-          <div class="trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </header>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-      <!-- figure -->
-      <figure>
-        <div id="slide">
-          <h1>국내부터 해외까지<br />여행할때 여기어때</h1>
-          <div id="schedule">
-            <div id="schedule-title">
-              <span>국내 숙소</span>
-              <span>해외 숙소</span>
-            </div>
-            <div id="schedule-bar">
-              <form action="http://localhost/3000/search" method="post">
-                <span>
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-                <input
-                  class="schedule-item search"
-                  type="text"
-                  placeholder="여행지나 숙소를 검색해보세요"
-                />
-                <input
-                  class="schedule-item month"
-                  type="date"
-                  placeholder="01.22 월 - 01.26 금 (4박)"
-                />
-                <select class="schedule-item person" name="person" id="person">
-                  <option value="2">인원 2</option>
-                  <option value="3">인원 3</option>
-                  <option value="4">인원 4</option>
-                  <option value="5">인원 5</option>
-                  <option value="6">인원 6</option>
-                </select>
-                <input type="submit" value="검색" />
-              </form>
-            </div>
-          </div>
-        </div>
-      </figure>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-      <!-- section -->
-      <section id="contents">
-        <article class="inner-content event">
-          <div class="inner-content-title">
-            <h3>이벤트</h3>
-            <h5>더보기</h5>
-          </div>
-          <div class="inner-content-slide">
-            <img src="./img/2.event/event_01.jpg" alt="event01" />
-            <img src="./img/2.event/event_02.jpg" alt="event02" />
-            <img src="./img/2.event/event_03.jpg" alt="event03" />
-          </div>
-          <div id="list">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </article>
-        <article class="inner-content local">
-          <div class="inner-content-title">
-            <h3>국내 인기 여행지</h3>
-            <h5>더보기</h5>
-          </div>
-          <div class="inner-content-slide">
-            <div>
-              <img src="./img/3.korean/korean_01.jpg" alt="korean01" />
-              <div class="slide-title">강릉</div>
-            </div>
-            <div>
-              <img src="./img/3.korean/korean_02.jpg" alt="korean02" />
-              <div class="slide-title">경주</div>
-            </div>
-            <div>
-              <img src="./img/3.korean/korean_03.jpg" alt="korean03" />
-              <div class="slide-title">부산</div>
-            </div>
-            <div>
-              <img src="./img/3.korean/korean_04.jpg" alt="korean04" />
-              <div class="slide-title">서울</div>
-            </div>
-            <div>
-              <img src="./img/3.korean/korean_05.jpg" alt="korean05" />
-              <div class="slide-title">인천</div>
-            </div>
-            <div>
-              <img src="./img/3.korean/korean_06.jpg" alt="korean06" />
-              <div class="slide-title">제주도</div>
-            </div>
-          </div>
-        </article>
-        <article class="inner-content ouside">
-          <div class="inner-content-title">
-            <h3>해외 인기 여행지</h3>
-            <h5>더보기</h5>
-          </div>
-          <div class="inner-content-slide">
-            <div>
-              <img src="./img/4.travel/travel_01.jpg" alt="travel01" />
-              <div class="slide-title">괌</div>
-            </div>
-            <div>
-              <img src="./img/4.travel/travel_02.jpg" alt="travel02" />
-              <div class="slide-title">나트랑/나짱</div>
-            </div>
-            <div>
-              <img src="./img/4.travel/travel_03.jpg" alt="travel03" />
-              <div class="slide-title">다낭</div>
-            </div>
-            <div>
-              <img src="./img/4.travel/travel_04.jpg" alt="travel04" />
-              <div class="slide-title">도쿄/동경</div>
-            </div>
-            <div>
-              <img src="./img/4.travel/travel_05.jpg" alt="travel05" />
-              <div class="slide-title">오사카</div>
-            </div>
-            <div>
-              <img src="./img/4.travel/travel_06.jpg" alt="travel06" />
-              <div class="slide-title">후쿠오카</div>
-            </div>
-          </div>
-        </article>
-        <article class="inner-content hot">
-          <div class="inner-content-title">
-            <div id="inner-content-titlegroup">
-              <h3>인기 추천 숙소</h3>
-              <div id="badge">
-                <span>전체</span>
-                <span>호텔</span>
-                <span>호텔/리조트</span>
-                <span>펜션/풀빌라</span>
-                <span>프리미엄 블랙</span>
-                <span>캠핑/글램핑</span>
-                <span>홈&빌라</span>
-                <span>게하/한옥</span>
-              </div>
-            </div>
-            <h5>더보기</h5>
-          </div>
-          <div class="inner-content-slide">
-            <div>
-              <img
-                src="./img/5.favorite room/favorite_01.jpg"
-                alt="favorite01"
-              />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>블랙.특급.호텔</div>
-                  <div>세인트존스 호텔</div>
-                  <div>강릉시.강릉 강문해변 앞</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.0</i>
-                    </span>
-                    <span> 6,159명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div>쿠폰적용시</div>
-                  <div>
-                    <span>995,000원</span>
-                    <span>1,045,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                src="./img/5.favorite room/favorite_02.jpg"
-                alt="favorite02"
-              />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>모텔</div>
-                  <div>구월 반월 아시아드호텔</div>
-                  <div>인천터미널역 도보 14분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.5</i>
-                    </span>
-                    <span> 8,286명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div>쿠폰적용시</div>
-                  <div>
-                    <span>85,100원</span>
-                    <span>90,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                src="./img/5.favorite room/favorite_03.jpg"
-                alt="favorite03"
-              />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>모텔</div>
-                  <div>구월동 구월호텔</div>
-                  <div>인천터미널역 도보 14분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.5</i>
-                    </span>
-                    <span> 9,027명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div>쿠폰적용시</div>
-                  <div>
-                    <span>85,100원</span>
-                    <span>90,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                src="./img/5.favorite room/favorite_04.jpg"
-                alt="favorite04"
-              />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>모텔</div>
-                  <div>길동 MARI-마리</div>
-                  <div>길동역 도보 3분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.4</i>
-                    </span>
-                    <span> 660명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div>쿠폰적용시</div>
-                  <div>
-                    <span>78,000원</span>
-                    <span>85,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="inner-content special">
-          <div class="inner-content-title">
-            <h3>오늘 체크인 호텔 특가</h3>
-            <h5>더보기</h5>
-          </div>
-          <div class="inner-content-slide">
-            <div>
-              <img src="./img/6.today hotel/hotel_01.jpg" alt="hotel01" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>블랙.특급.호텔</div>
-                  <div>세인트존스 호텔</div>
-                  <div>강릉시.강릉 강문해변 앞</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.0</i>
-                    </span>
-                    <span> 6,159명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div>쿠폰적용시</div>
-                  <div>
-                    <span>995,000원</span>
-                    <span>1,045,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="./img/6.today hotel/hotel_02.jpg" alt="hotel02" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>특급.호텔</div>
-                  <div>더 스테이트 선유 호텔</div>
-                  <div>영등포구.선유도역 도보 2분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.4</i>
-                    </span>
-                    <span> 4,016명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div style="visibility: hidden">쿠폰적용시</div>
-                  <div>
-                    <span
-                      style="
-                        text-decoration: none;
-                        font-weight: 400;
-                        font-size: 16px;
-                      "
-                      >다른 날짜 확인</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="./img/6.today hotel/hotel_03.jpg" alt="hotel03" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>가족호텔.호텔</div>
-                  <div>센텀마크 호텔 양양</div>
-                  <div>양양군.양양종합터미널 차량 3분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.3</i>
-                    </span>
-                    <span> 703명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div>쿠폰적용시</div>
-                  <div>
-                    <span>85,250원</span>
-                    <span>95,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="./img/6.today hotel/hotel_04.jpg" alt="hotel04" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>특1급.호텔</div>
-                  <div>유탑 마리나 호텔 & 리조트 여수</div>
-                  <div>여수시.여수엑스포역 차량 2분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.3</i>
-                    </span>
-                    <span> 2,478명 평가</span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div>쿠폰적용시</div>
-                  <div>
-                    <span>208,116원</span>
-                    <span>270,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="inner-content pension">
-          <div class="inner-content-title">
-            <h3>이번 주 HOT 인기 펜션</h3>
-            <h5>더보기</h5>
-          </div>
-          <div class="inner-content-slide">
-            <div>
-              <img src="./img/7.hot pension/pension_01.jpg" alt="pension01" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>펜션</div>
-                  <div>가평 어거스트청평</div>
-                  <div>가평군.청평호 차량 11분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.0</i>
-                    </span>
-                    <span> 54명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div style="visibility: hidden">쿠폰적용시</div>
-                  <div>
-                    <span>127,500원</span>
-                    <span style="visibility: hidden">1,045,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="./img/7.hot pension/pension_02.jpg" alt="pension02" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>펜션</div>
-                  <div>영종도 블루오션펜션</div>
-                  <div>중구.영종역사관 차량 3분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.3</i>
-                    </span>
-                    <span> 39명 평가</span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div style="visibility: hidden">쿠폰적용시</div>
-                  <div>
-                    <span>250,000원</span>
-                    <span style="visibility: hidden">1,045,000원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="./img/7.hot pension/pension_03.jpg" alt="pension03" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>펜션</div>
-                  <div>제주 와홀 팽나무집</div>
-                  <div>제주시.함덕해수욕장 차량 16분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.7</i>
-                    </span>
-                    <span> 6명 평가</span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div style="visibility: hidden">쿠폰적용시</div>
-                  <div>
-                    <span style="visibility: hidden"></span>
-                    <span
-                      style="
-                        text-decoration: none;
-                        font-weight: 400;
-                        font-size: 16px;
-                      "
-                      >다른 날짜 확인</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="./img/7.hot pension/pension_04.jpg" alt="pension_04" />
-              <div class="slide-content-info">
-                <div class="slide-content-info-top">
-                  <div>펜션</div>
-                  <div>화천 스카이밸리 펜션</div>
-                  <div>화천군.곡운구곡 차량 18분</div>
-                  <div>
-                    <span>
-                      <i class="fa-solid fa-star"> 9.6</i>
-                    </span>
-                    <span> 25명 평가 </span>
-                  </div>
-                </div>
-                <div class="slide-content-info-bottom">
-                  <div style="visibility: hidden">쿠폰적용시</div>
-                  <div>
-                    <span style="visibility: hidden"></span>
-                    <span
-                      style="
-                        text-decoration: none;
-                        font-weight: 400;
-                        font-size: 16px;
-                      "
-                      >다른 날짜 확인</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="inner-content blackdeal">
-          <div class="inner-content-title">
-            <div id="subtitle">
-              <h3>이번 주 블랙 PICK</h3>
-              <h4>나를 위한 근사한 휴가, 여기어때 프리미엄 숙소</h4>
-            </div>
-          </div>
-          <div class="inner-content-slide">
-            <div class="slide-content">
-              <img src="./img/8.black pick/pick_01.jpg" alt="pick01" />
-            </div>
-            <div class="slide-content">
-              <img src="./img/8.black pick/pick_02.jpg" alt="pick02" />
-            </div>
-            <div class="slide-content">
-              <img src="./img/8.black pick/pick_03.jpg" alt="pick03" />
-            </div>
-            <div class="slide-content">
-              <img src="./img/8.black pick/pick_04.jpg" alt="pick04" />
-            </div>
-          </div>
-        </article>
-        <article class="inner-content banner">
-          <div id="bannerbg">
-            <div class="slide-banner">
-              <h2>앱 다운로드 받고<br />더 많은 혜택 받으세요</h2>
-              <h5>
-                국내/해외 숙소부터 항공권까지<br />실시간 최저가로 예약하세요.
-              </h5>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- top btn -->
-      <a class="gototop" href="#">
-        <i class="fa-solid fa-angle-up"></i>
-      </a>
-    </main>
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
   </body>
 </html>

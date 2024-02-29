@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 팝업창만들거다 => 내용이 방대하지않아서 인라인 할거다 -->
+    <style>
+      body {
+        background: url(./images/event-bg.png) center/cover no-repeat;
+        /* cover position이다 */
+        background-size: auto;
+      }
+      h1 {
+        font-size: 60px;
+        color: #fff;
+      }
+      button {
+        position: fixed;
+        right: 50px;
+        bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>이벤트 안내</h1>
+    <button onclick="window.close()">닫기</button>
+    <!-- 버튼을 클릭하게된다면 -->
+    <!-- close( ) : 현재 열려있는 창을 닫고자 할 때 -->
+  </body>
+</html>

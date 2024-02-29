@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("./images/bg-1.jpg") center/cover no-repeat;
+  /* 에뛰드 메인페이지에 전면 이미지가 아무리 확대하고 축소해도 원래 사이즈대로 가려는거 */
+}
+h1 {
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px #222;
+  background: rgba(255, 255, 255, 0.6);
+}

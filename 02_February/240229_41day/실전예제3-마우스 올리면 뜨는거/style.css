@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icon {
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+  position: relative;
+}
+.icon span {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  text-align: center;
+  /* 수평의 정렬로 들어오게 */
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  /* 평상시에는 안나오다가 */
+  transition: all 0.3s;
+  /* 부드럽게 나오게 */
+}
+.icon span::after {
+  /* 말풍선처럼 밑에 방향표시 만들려고 */
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: #000;
+  background: #000;
+}
+.icon:hover span {
+  opacity: 1;
+  /* 마우스 올리면 나오게 */
+}

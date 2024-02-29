@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* li {
+  list-style: none;
+} */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#crat {
+  width: 600px;
+  margin: 50px auto;
+  padding: 10px 20px;
+}
+#cart h1 {
+  margin-bottom: 20px;
+}
+#products p {
+  line-height: 3;
+  font-size: 1.2rem;
+}

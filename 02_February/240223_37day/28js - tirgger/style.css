@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  overflow: hidden;
+}
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: #639;
+  color: #fff;
+  padding: 15px;
+  /* display: none; */
+  transform: all 0.3s;
+}
+button.active {
+  transform: translateX(-110px);
+}
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #639;
+  height: 100vh;
+  padding: 2em;
+  /* display: none; */
+  transform: translateX(100%);
+  /* 본인의 너비 값만큼 움직여야한다 */
+  transition: transform 0.3s;
+  /*transform말고 all을 줘도 된다  */
+}
+nav.active {
+  transform: translateX(0);
+}
+/* 가상클래스 -클릭이 되면 이렇게 되어라 */
+
+/* 평상시에는 button만 있고(display: block;)
+nav는 숨어있다가(display: none;)
+누르면 nav가 튀어나오게  */
+nav li {
+  padding: 1rem 0;
+}
+nav li a {
+  color: #fff;
+}
