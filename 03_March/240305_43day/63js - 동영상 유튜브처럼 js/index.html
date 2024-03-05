@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="player">
+      <!-- <video src="./sample.mp4"></video> -->
+      <!-- 이것만 영상가져올 수 있는건 아니다 -->
+      <video>
+        <source src="./sample.mp4" type="video/mp4" />
+      </video>
+      <!-- video에서 src 해서 영상가져오는거랑 / video에 source에서 영상가져오는거랑 둘다 같다 -->
+      <!-- but, 2번방법에서는 꼭 뒤에 영상 소스에 대한 형식을 적어줘야한다 -->
+      <div class="controls">
+        <div class="progress">
+          <!-- 프로그래스바 -->
+          <!-- 스트리밍방식 : 100mb영상을 5mb을 분할해서 가져오는거 -->
+          <!-- 스트리밍 방식에서는 프로그래스바가 점점 늘어난다 -->
+          <div class="bar">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="menu">
+            <!-- 재생버튼 / 배속버튼 -->
+            <button class="play-pause">▶</button>
+            <span class="rate" data-rate="0.5">x 0.5</span>
+            <span class="rate" data-rate="1">x 1.0</span>
+            <span class="rate" data-rate="1.5">x 1.5</span>
+            <span class="rate" data-rate="2">x 2.0</span>
+          </div>
+          <div class="menu">
+            <!-- 음향 컨트롤 -->
+            <input
+              type="range"
+              name="volume"
+              id="volume"
+              min="0.0"
+              max="1.0"
+              step="0.1"
+              value="0.5"
+            />
+            <!-- min="0.0"최소값 / max="1.0"최대값  // 반드시 실수형태로 입력해야한다 -->
+            <!-- step="0.1" 0.0부터 1.0인데 0.1씩 나눴으니까 총 10단계로 움직인다 / 움직일때마다 한단계씩 움직인다 -->
+            <!-- value="0.5" / 처음 시작할때 값 / 중간 -->
+            <div class="time">
+              <!-- 영상 재생 시간 -->
+              <div class="current">00:00:00</div>
+              <!-- 00시 00분 00초 -->
+              <!-- 영상 재생 되고 있는 시간 -->
+              <div>/</div>
+              <div class="duration">00:00:00</div>
+              <!-- 영상 전체 총 시간 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

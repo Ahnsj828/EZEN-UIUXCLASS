@@ -1,0 +1,51 @@
+:root {
+  --white: #fff;
+  --black: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /* 마우스 휠을 위아래로 움직이면 비디오는 그대로 , 나머지요소만 */
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  /* 전체 다 가득차게 */
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font: bold 2rem/1 "arial";
+}
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 100%;
+  background: var(--black);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+/*video에 고정값(position: fixed;)을 주게되면 나머지요소(h1, button)들에게 정의해주지않으면 나머지 요소들은 안보인다 */
+/* z-index는 모든 아이템이 포지션이 동일할때주는거다
+지금은 position이다  */

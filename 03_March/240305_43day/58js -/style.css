@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* 수평의정렬 */
+  width: 100%;
+}
+.container {
+  width: 60%;
+  max-width: 400px;
+  /* width: 60%; 부모요소의 60% 따라가긴하는데 전체 너비가 400px을 넘어가면 400넘지 않게 하겠다 */
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container button {
+  width: 100%;
+  padding: 12px;
+}
+.sort-buttons {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* 아래방향으로 가게 */
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+.container ul li div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
