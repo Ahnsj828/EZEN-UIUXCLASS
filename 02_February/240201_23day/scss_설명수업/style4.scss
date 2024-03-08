@@ -1,0 +1,13 @@
+.frame {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  @at-root.heading {
+    color: crimson;
+    font-size: 36px;
+  }
+}
+
+// 1이랑 2한테도 똑같은 효과를 주고싶을때 @at-root
+// .frame 안에 있는 h1 (1)이랑
+// .frame 밖에 있는 h1(1)이랑 형제요소인 h1(2)한테 동일한 효과 주고싶을때 =>  @at-root

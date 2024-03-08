@@ -1,0 +1,23 @@
+.portfolio {
+  color: crimson;
+}
+.portfolio h1 {
+  color: #000;
+}
+
+.headline {
+  color: crimson;
+}
+.headline h1 {
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=style8.css.map */

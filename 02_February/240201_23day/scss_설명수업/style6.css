@@ -1,0 +1,29 @@
+:is(header, section, footer) h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+:is(header, section, footer) h1:before {
+  content: "";
+  width: 10px;
+  height: 30px;
+  background: crimson;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 10px;
+  transform: translateY(3px);
+}
+
+.frame p {
+  font-size: 20px;
+}
+.frame span {
+  font-size: 20px;
+}
+
+.frame :is(p, span) p {
+  font-size: 20px;
+}
+.frame :is(p, span) span :is(p, span) {
+  font-size: 20px;
+}/*# sourceMappingURL=style6.css.map */
