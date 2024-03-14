@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  /* height =>  나중에 js 처리 */
+  /* height: 100%; */
+  overflow: hidden;
+  position: relative;
+  /* < slide를 만들려면 필요한 총 3가지 > */
+  /* 1. 부모요소의 너비를 받아와야한다  width: 100%; */
+  /* 2. 영역을 넘어가는 슬라이드를 안보이게 해줘야한다 overflow: hidden; */
+  /* 3. position:relative */
+}
+.slider-container {
+  width: 100%;
+  /* height =>  나중에 js 처리 */
+  /* height: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 안보이는 이유 height: ; 안줘서 */
+  /* 부모요소도 height주고 얘한테도 height줘야 나온다 */
+}
+.slider-container.animated {
+  transition: left 0.3s ease-in;
+  /* ease-in 가속도 */
+  /* animated 가상클래스가 적용되게 된다면 이 내용을 실행시켜라  */
+}
+.slide {
+  width: 50%;
+  position: absolute;
+  /* 하나의 위치값을 갖게 된다 */
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  /* 수평정렬 */
+  padding: 0 5%;
+  /* border: 1px solid crimson; */
+}
+blockquote {
+  color: #636363;
+  font: italic 18px/ 1 "arial";
+  margin-bottom: 1.5rem;
+}
+cite {
+  font: normal 14px/1 "arial";
+}
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: 100%;
+  opacity: 0.5;
+  transition: all 0.3s ease-in;
+}
+#prev {
+  background: url("./img/arrow-left-out.svg") center/cover no-repeat;
+  margin-left: -25%;
+  /* 수직과 수평의 정렬 center / 전체 이미지 cover / 반복없이 no-repeat */
+}
+#prev:hover {
+  background: url("./img/arrow-left-over.svg") center/cover no-repeat;
+}
+#next {
+  background: url("./img/arrow-right-out.svg") center/cover no-repeat;
+  margin-left: 25%;
+}
+#next:hover {
+  background: url("./img/arrow-right-over.svg") center/cover no-repeat;
+}
+#prev.diabled,
+#next.diabled {
+  /* 만약 가상클래스가 적용된다면 */
+  display: none;
+}

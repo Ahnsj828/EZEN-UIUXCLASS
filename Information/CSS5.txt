@@ -1,0 +1,109 @@
+< 폰트 축약 >- 폰트웨이트 폰트사이즈 라인하이트 폰트페밀리
+  font: bold 24px/1 "arial";
+
+
+ Input, 
+ texture, 
+ button { 
+   font-family: "Montserrat", sans-serif;
+ }      
+      => 저 셋은 독자적인 애들이라 따로 잡아줘야한다 (0129)
+
+
+ /* common */
+ Body {
+   font-family: "Montserrat", sans-serif;
+ }   
+ Input, 
+ texture, 
+ button { 
+   font-family: "Montserrat", sans-serif;
+ }   
+ Hr {
+   Height: 2;
+ }                            => 공통효과주고싶을때 common (0129)
+
+
+-----------------------------------------------------------
+<< 미디어쿼리 >>
+/* === tablet === */
+@media screen and (min-width: 768px) {
+}
+/* === desktop === */
+@media screen and (min-width: 1132px) {
+}
+
+---------------------------------------------------------(0130)
+버튼 => 반드시 한가지 방법만으로 생성하지 않는다
+=> input || buttom
+=> input:submit(쌤이 실무에서 많이 쓰던방법) => button(요즘많이 씀)
+=> div > a (이렇게도 가능하다)
+(* 클릭하고 행동이 => 특정 페이지로 이동 이라면 뭐든 상관없다)
+(* 서버로 데이터 전달하려는 목적이라면 input:submit)
+
+*불일치
+내가 가지고 있는 영상 소스의 w / h 값이 - 커버하고자 하는 배경 영역의 w / h 값이랑 불일치 할때!!
+ => !!! object-fit: cover; !!!
+부모요소의 너비 높이 값만큼을 풀로 쓰겠다
+
+translate : 시간제약
+animation
+transform : 시간x
+
+
+animation 주고자 할때 
+ => @keyframes 뒤에 애니메이션 이름 줘야한다
+ ex. section .town .circle {
+      position: absolute;
+      bottom: 104px;
+      left: 50%;
+      margin-left: -165px;
+      animation: rotation linear 20s infinite;
+     }
+     @keyframes rotation {
+       0% {
+         transform: rotate(0deg);
+       }
+       100% {
+         transform: rotate(360deg);
+       }
+     }
+
+
+축약
+ - font / background / animation / transition / flex / flex-flow / grid ...
+ - grid :  열 grid-template-columns / 행 grid-template-rows
+
+컴포넌트 :  템플릿 무언가를 세팅 
+인스턴스 : 컴포넌트로 만들어 놓은 템플릿의 복제품!
+ > 컴포넌트 (붕어빵틀) / 인스턴스 (붕어빵)
+ > w / h 등  스타일 커스터 마이징!!
+
+iconsax
+
+html, css 하려는 가장 큰 목적 => 레이아웃정렬
+inline / block
+w /h 
+position
+
+float < flex < grid
+>flex 레이아웃 시스템을 적용하려면, 부모
+>grid 레이아웃 시스템을 적용하려면, 부모
+
+ display: grid
+ grid-template-columns: auto auto;
+ grid-template-columns: 1fr 1fr;
+
+fr = fraction = 파편 / 분자
+ auto= 1fr= 1/2 두개중 하나
+
+축약
+ - font / background / animation / transition / flex / flex-flow / grid ...
+ - grid :  열 grid-template-columns / 행 grid-template-rows
+
+flex 아이템 간격 : gap 
+
+grid 아이템 간격
+  grid-column-gap: 30px
+ grid - row- gap : 30px
+

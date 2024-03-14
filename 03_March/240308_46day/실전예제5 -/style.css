@@ -1,0 +1,183 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+/* main */
+main {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+}
+
+/* header */
+main header {
+  width: 20%;
+  height: 100%;
+  /* border: 10px solid pink; */
+  padding: 10vh 5vw;
+  /* 10%와 5% 주겠다 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+main header h1 {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main header h1 i {
+  font-size: 5vw;
+  margin-bottom: 15px;
+}
+main header h1 span {
+  font: normal 0.8vw/1 "arial";
+}
+main header address {
+  font: normal 11px/1.2 "arial";
+  /* 1.2 = 120% */
+  color: #888;
+}
+
+/* nav */
+main nav {
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  z-index: 3;
+  /* border: 10px solid aqua; */
+}
+main nav ul {
+  display: flex;
+}
+main nav ul li a {
+  font-size: 18px;
+  color: #bbb;
+  margin-right: 30px;
+}
+
+/* section */
+main section {
+  width: 80%;
+  height: 100%;
+  /* border: 10px solid yellow; */
+  display: flex;
+  padding-top: 140px;
+  z-index: 1;
+  position: relative;
+}
+main section article {
+  position: relative;
+  flex: 1;
+  /* 각각 1/4씩 너비를 가져가겠다 */
+  padding: 70px 40px 100px;
+  opacity: 0.6;
+  transition: flex 1s, opacity 1s;
+  /* 이거 한번에 all 1s하면 안되나? */
+  z-index: 1;
+  cursor: pointer;
+}
+main section article:hover {
+  flex: 1.5;
+  opacity: 1;
+  z-index: 2;
+  /* 마우스 올린애가 너비를 조금더 차지하고 투명도 진해지고 다른요소 위로올라오게 */
+}
+main section article::before {
+  content: "";
+  display: block;
+  /* 전후문자선택자는 인라인요소다 */
+  width: 80%;
+  height: 95%;
+  background: #444;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  /*opacity: 1; / after => opacity:0; */
+  opacity: 0;
+  transition: all 1s;
+}
+main section article:hover::before {
+  left: 0;
+  opacity: 1;
+}
+main section article .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  position: relative;
+}
+main section article .inner .txt {
+  width: 100%;
+  transition: all 0.5s;
+}
+main section article .inner .txt:hover .inner .txt {
+  width: 75%;
+}
+main section article .inner .txt h2 {
+  color: #fff;
+  font: normal 2vw/1 "arial";
+  margin-bottom: 40px;
+  padding-top: 70px;
+  transition: all 1s;
+}
+main section article:hover .inner .txt h2 {
+  font-size: 5vw;
+  padding-top: 0;
+}
+main section article .inner .txt h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #777;
+  margin-top: 20px;
+  transition: all 1.5s;
+}
+main section article:hover .inner .txt h2::after {
+  width: 120px;
+  background: orange;
+}
+main section article .inner .txt p {
+  color: #999;
+  font: normal 14px/1.4 "arial";
+}
+
+/* figure */
+main section article .inner figure {
+  width: 100%;
+  height: 15%;
+  transform-origin: left center;
+  /* 중심축이 왼족 중간이다 */
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  filter: saturate(10%);
+  transition: all 1s;
+}
+main section article .inner figure {
+  height: 25vh;
+  filter: saturate(120%);
+  transform: translateY(3vh);
+}
+main section article .inner figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #dce35b, #45b649);
+}
+/* 위에서부터 180deg아래로, #dce35b시작 색, #45b649끝나는 색 */
+.gnb {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.gnb a {
+  /* a는 기본적으로 inline이다 */
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  width: 80px;
+  height: 30px;
+  position: relative;
+  /* border: 1px solid #f00; */
+  /* 빨간박스 밖으로 나가는 순간 컨텐츠 안보이게 할거다 */
+  overflow: hidden;
+}
+.gnb a::before,
+.gnb a::after {
+  content: attr(data-link);
+  /* attr 매개변수 데이터 대신 속성에 매칭되는 value값을 찾아올수 있다 /생성자할수로 만든애를 끌고온거다*/
+  position: absolute;
+  /* 같은 위치에 같이 주고싶어서 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+/* 평상시에는 ::before만 나오고 ::after는 안나올거다 */
+.gnb a::before {
+  top: 0;
+  left: 0;
+}
+.gnb a::after {
+  top: 100%;
+  left: 0;
+  color: #45b649;
+}
+.gnb a:hover::before {
+  top: -100%;
+}
+.gnb a:hover::after {
+  top: 0;
+}
+/* 전후문자선택자는 css고유의 선택자다 / 굳이 JS로 가져갈 필요없다 */

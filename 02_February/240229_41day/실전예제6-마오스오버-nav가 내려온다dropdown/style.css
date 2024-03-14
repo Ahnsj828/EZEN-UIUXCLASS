@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+.dropdown {
+  width: 200px;
+  padding: 20px;
+}
+.dropdown-btn {
+  width: inherit;
+  padding: 10px;
+  font-size: 18px;
+  background: yellowgreen;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-submenu {
+  display: none;
+  /* 평상시에 나오면 안되고 마우스 호버하면 메뉴가 나열된다 */
+  width: inherit;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.dropdown-submenu a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.dropdown:hover .dropdown-submenu {
+  display: block;
+}
+.dropdown-submenu a:hover {
+  background: #eee;
+  /* 마우스를 올리면 백그라운드 색이 들어간다 */
+}

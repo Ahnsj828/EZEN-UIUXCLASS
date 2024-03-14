@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+.gallery {
+  display: flex;
+  height: 100vh;
+}
+.gallery li {
+  border-right: 5px solid #000;
+  flex: 1;
+  /* n분의 1로 가져가게 */
+  overflow: hidden;
+  /* 자식요소인 글자들이 평상시에는 없다가 호버하면 튀어나오게 하려고 */
+  position: relative;
+  transition: all 0.5s;
+}
+.gallery li:last-child {
+  border-right: none;
+}
+.gallery li:nth-child(1) {
+  background: url("./images/artistic-image-01.jpg") center center no-repeat;
+  /* x축 center Y축 center */
+}
+.gallery li:nth-child(2) {
+  background: url("./images/artistic-image-02.jpg") center center no-repeat;
+}
+.gallery li:nth-child(3) {
+  background: url("./images/artistic-image-03.jpg") center center no-repeat;
+}
+.gallery li:nth-child(4) {
+  background: url("./images/artistic-image-04.jpg") center center no-repeat;
+}
+.gallery li:nth-child(5) {
+  background: url("./images/artistic-image-05.jpg") center center no-repeat;
+}
+
+.gallery:hover li {
+  flex: 1;
+  /* 모든 요소 너비가 1이다 */
+}
+.gallery li:hover {
+  flex: 3;
+  /* 마우스를 올리면 너비가 3/5(60%)이 된다  */
+  filter: saturate(0.2);
+  /* 채도값을 0.2로 낮춘다 */
+}
+.content {
+  position: absolute;
+  bottom: -320px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  padding-top: 50px;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  transition: all 0.5s;
+}
+/* 평상시에 나타나면 안된다 */
+/* 마우스오버하기전에 나타나면 안된다 / 마우스 오버하면 나온다 */
+.content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background: #000;
+  width: 100%;
+  height: 40px;
+  transform: rotate(-3deg) scale(1.3);
+}
+.sns i {
+  color: #333;
+}
+.gallery li:hover .content {
+  bottom: 0;
+}
