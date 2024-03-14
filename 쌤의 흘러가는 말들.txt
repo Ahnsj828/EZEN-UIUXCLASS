@@ -416,6 +416,7 @@ ex. 사 vs 웹툰작가
 jini / ala828@naver.com / 824612ss
 
 구글에 검색 =>  https://www.themoviedb.org/?language=ko (영화 정보 가져오는곳)
+<<<<<<< HEAD
 
 
 
@@ -429,3 +430,5 @@ ala828 / 824612ss
 검색기능
 
 html, css, js, 타입스크립트, 리액트  => 이렇게 있는 포폴 준비하기!!!
+=======
+>>>>>>> 774f69c2133d2074cb4fafaa937b7b8c0d6e1f9e
