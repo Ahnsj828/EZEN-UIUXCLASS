@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 - 웹접근성 준수</title>
+</head>
+<body>
+  <form action="" method="post">
+    <!-- action은 사용자가 작성한 폼을 전송하는 주소를 입력하는곳
+    method는 전송방식 -->
+  <!-- method
+  보안이 중요한경우 post
+  검색어 전달방식 get -->
+  <fieldset>
+    <!--fieldset은 한 덩어리다 / 필수입력사항을 적거나 선택사항을 적는다 / 그때 fieldset이라는 덩어리로 사용할 수 있다  -->
+    <legend>로그인</legend>
+    <!-- fieldset의 제목은 legend -->
+    <ol>
+      <!-- 순서형 목록 / 순서가 중요할때사용 -->
+      <li>
+        <label for="user Id">아이디</label>
+        <!-- 아이디를 입력하는 입력폼은 input -->
+        <input type="text" id="userId" />
+        <!-- input은 타입이 여러개다  -->
+        <!-- input text는 글자를 입력할 수 있게되어져있다 -->
+        <!-- 이때 id는 고유한 식별자이다  -->
+        <!-- 웹접근성에 준수해서 label만 선택해도 input이 선택이 된다 => 그 이유는 label for와 input의 id를 일치시켰기 때문이다 / 누구를 위한 label인가 했을때 고유한 id식별자를 갖고 있는 input과 연결이 되는거다-->
+      </li>
+      <li>
+        <label for="userPw">비밀번호</label>
+        <input type="password" id="userPw" />
+        <!-- 비밀번호는 input 타입이 password이다 -->
+        <!-- 고유한 식별자인 id도 지정해줘야한다
+        label과 input의 id동일하게 해줘야한다 -->
+      </li>
+      <li>
+        <input type="submit" value="로그인" />
+        <!-- input타입의 submit속성은 id,pw를 입력하고 submit을 누르면 서버로 제출할 수 있게 된다(입력 양식을 전송할 주소 - form에서 action의 주소) -->
+        <!-- input에 value가 들어가는 input타입 submit형태의 input은 label을 사용하지 않아도 된다 -->
+      </li>
+    </ol>
+  </fieldset>
+  <fieldset>
+    <legend>검색</legend>
+    <ul>
+      <li>
+        <label for="srch">자료검색</label>
+        <input type="search" id="srch" />
+        <!-- 검색에 관련된 입력 타입은 search라는 타입이 있다 -->
+        <!-- 이때도 label id와 input의 id를 동일하게 -->
+        <!-- input타입의 search에서는 검색어를 입력하면 x표시가 뜬다 -->
+        <input type="image" src="" alt="검색이미지">
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>회원가입양식</legend>
+    <ol>
+      <li>
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" />
+      </li>
+        <li>
+          <label for="emailAddr">이메일주소</label>
+          <input type="email" id="emailAddr" /> @
+          <select name="이메일 도메인 선택" id="">
+            <!-- input에는 label이 들어가는 것 처럼
+            select에도 label을 지정해줘야한다 title이라도 넣어줘야한다 name이 그런개념 -->
+            <!-- select에는 option이 들어간다 select > option -->
+            <option value="">직접선택</option>
+            <option value="">naver.com</option>
+            <option value="">google.com</option>
+            <option value="">daum.net</option>
+            <!-- select에 option을 누르면 선택을 할 수있게된다 -->
+            <!-- option의 value는 option을 선택했을때 그 값이 서버로 전송된다 -->
+          </select>
+        </li>
+        <li>
+          <input type="radio" id="sms" name="receive" />
+          <label for="sms">sms 문자수신</label>
+          <!-- radio에서는 label이 input뒤에 들어간다 -->
+          <input type="radio" id="email" name="receive" />
+          <label for="email">이메일수신</label>
+          <!-- name을 일치시켜주면 두개의 라디오버튼에 동일한 name을 사용하게되면 둘중에 하나만  선택하게된다 -->
+        </li>
+    </ol>
+  </fieldset>
+</form>
+</body>
+</html>
