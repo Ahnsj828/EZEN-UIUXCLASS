@@ -1,0 +1,70 @@
+@import url("./reset.css");
+
+body {
+  background: #186752;
+  overflow: hidden;
+  /* 스크롤바 없애려고 */
+}
+.gateBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* flex 말고 이렇게 중앙정렬도 있다 */
+  width: 400px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.top {
+  padding: 30px 30px;
+  text-align: center;
+  border: 2px dashed #fff;
+}
+.bottm {
+  border: 2px dashed #fff;
+  border-top: none;
+  /* top에도 border가 있고 bottom에도 border가 있어서 겹쳐지면 안예뻐보여서 */
+  display: flex;
+  justify-content: space-around;
+}
+.bottm a {
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+  transition: all 0.3s;
+}
+.bottm a:hover {
+  background: #fff;
+  color: #000;
+}
+.line {
+  border: 1px dashed #fff;
+}
+
+/* 마우스 따라다니는 애 */
+.cursorItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  /* 예 아니오 갔을때 마우스 효과가 위로 올라오게하려고 */
+}
+.circle {
+  position: fixed;
+  /* 위치 확인해보려고 / position: absolute;줘도 상관없다 */
+  /* position값을 형제중 하나만 주고 다른애는 안주면 안보인다 /  다 안줘도 보이고 다줘야 보인다 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 120px;
+  height: 120px;
+  background: yellowgreen;
+  border-radius: 100%;
+  margin: -60px -60px;
+  /* 마우스효과가 마우스 중앙이 아닌 오른쪽 하단 대각선에 위치한다 => 마우스 정중앙에 위치시키려고 */
+  opacity: 0.5;
+  transition: all 0.2s;
+  /* 나중에 마우스가 네와 아니오에 가면 마우스 크기가 달라져서 미리줬다 */
+}

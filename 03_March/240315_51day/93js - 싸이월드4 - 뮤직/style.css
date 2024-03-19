@@ -11,7 +11,7 @@
   align-items: center;
 }
 .outerbox {
-  background: url("./contents/outerbox.png") center/cover no-repeat;
+  background: url("./contents/cy3.png") center/cover no-repeat;
   /* center 수직과 수평 정렬 */
   width: 808px;
   height: 544px;
@@ -66,7 +66,7 @@
 .left_body_header_gray {
   width: 148px;
   height: 133px;
-  background: url("./contents/Aimages.jfif") center/cover no-repeat;
+  background: url("./contents/cy1.jpeg") center/cover no-repeat;
 }
 .left_body_header_line {
   width: 80%;
