@@ -1,0 +1,102 @@
+@import url("./reset.css");
+
+/* Header */
+.mainHeader {
+  position: absolute;
+  /* 전체 body에 대한 위치를 정하려고 주는거다 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.mainHeader.fixed {
+  /* 가상클래스 - js에서 컨트롤할거다 */
+  /* 가상클래스인 fixed가 적용될때만 아래효과들이 적용될거다 */
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+}
+.mainHeader.fixed .progressWrap {
+  display: block;
+  /* mainHeader가 fixed가 되어지면 progressWrap는 display: none; => display: block; 될거다 */
+}
+.mainHeader.fixed .headerWrap h1 {
+  color: #000;
+  /* mainHeader가 fixed가 되어지면 .headerWrap h1 color: #fff; => color: #000; 될거다 */
+}
+.headerWrap {
+  position: relative;
+  padding: 10px 20px;
+}
+.headerWrap h1 {
+  font-size: 15px;
+  color: #fff;
+}
+.progressWrap {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #d0d0d0;
+  display: none;
+}
+.bar {
+  position: absolute;
+  /* 이걸 썻다는건 top과 left를 줘야되는데 js에서 컨트롤할거다 */
+  width: 0;
+  height: 100%;
+  background: crimson;
+  transition: all 0.4s;
+}
+
+/* cover */ /* 연어 영역 */
+.coverWrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 800px; */
+  /* height는 JS에서 컨트롤할거다 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./bg.gif") center/cover no-repeat;
+}
+.dimd {
+  /* 스크롤하면 오버레이될거다 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.coverTitle {
+  position: relative;
+  /* 옵셔널한거라 안줘도 됐던건다 */
+  /* 위치값을 먹을 준비가 됐다고 알리기 위해 줬다 */
+  /* 스크롤 내렸을때 반대로 위치값을 주기 위해서 */
+  /* 위치를 알려줘야되서 position  */
+  /* absolute 는 아니라 relative*/
+  text-align: center;
+  z-index: 10;
+}
+.coverTitle h1 {
+  color: #fff;
+}
+.coverTitle p {
+  color: #cecece;
+}
+
+/* content */
+.contentWrap {
+  position: relative;
+  background: #fff;
+  z-index: 10;
+}
+.contentInnerWrap {
+  margin: 0 auto;
+  padding: 30px;
+  width: 700px;
+}
+.contentInnerWrap h4 {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}

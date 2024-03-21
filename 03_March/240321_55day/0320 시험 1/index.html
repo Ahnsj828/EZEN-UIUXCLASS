@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tab-inner">
+      <div class="tabs">
+        <div class="items">
+          <div>
+            <h1 class="active">EAT</h1>
+            <!-- active 가상클래스  -->
+            <!-- 나타나게하려고 -->
+            <!-- 기본값으로 먼저 나와야하니까 첫번째한테만준거다 -->
+            <!-- 선택한 요소한테 번갈아가면서 주려고(pray 선택하면 pray한테 주고..) -->
+          </div>
+          <div>
+            <h1>PRAY</h1>
+          </div>
+          <div>
+            <h1>LOVE</h1>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <label class="active" for="tab1">EAT</label>
+        <!-- 선택한 요소한테 스타일적용하려고 -->
+        <label for="tab2">PRAY</label>
+        <label for="tab3">LOVE</label>
+      </div>
+    </div>
+  </body>
+</html>

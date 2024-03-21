@@ -1,0 +1,52 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  height: 100vh;
+  flex-direction: column;
+  gap: 30px;
+}
+.total {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+}
+.total:focus {
+  outline: none;
+}
+.choose {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+}
+.choose:focus {
+  outline: none;
+}
+.chooseButton {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+}
+.delete {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+}
+#result {
+  display: flex;
+  border: 1px solid #000;
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+}
