@@ -1,0 +1,56 @@
+* 프로그래밍 혹은 코딩학습
+ - 백문이 불여일타
+ - 눈과 머리로 하는 공부는 20%
+ - 손으로하는 공부가 80%
+ - 외워서 공부 하지마라
+
+* 웹 에디터!!
+ - atom (쌤실무에서 많이 사용했었다)
+ - eclips (백엔드들이 많이 사용)
+ - inj
+ - pycharm (매니아층이 있다) = 백엔드 연계해서 
+ - vs code (프론트엔드나 퍼블리셔들이 많이 사용)
+
+자바스크립트 console에 알림창에
+노랑색 - 작동되긴하는데 정식 문법이 아니라는 내용
+빨강색 - 안된다
+
+축약형 쓰지말라고 알림메세지다
+#000 말고 #000000 쓰라고
+
+< 128js >
+*fullpage jQuery 사용할거다
+ > 설치
+*anime jQuery 사용할거다
+각각의 페이지 스타일링!!
+
+<1. fullpage.js>
+1. cdn.js > fullpage 검색
+ - fullpage.js(3.1버전) & css URL > html 설치
+ - script defer
+
+2. fullpage.js Docs 내용 초기화!!
+ - html에서 : fullpage ID / class section
+ - script에서 : fullpage( )초기화
+
+3. fullpage.js 네비게이션 활성화!!
+ - script : navigation : true로 해줬다
+ - #fp-nav ul li a span > #fff 흰색으로해줬따
+
+4. 우측 상단, 토글버튼 & 네비게이션
+ - css를 활용해서 작업
+ - 링크 연결 : script안에 anchors를 활용했다
+
+5. 각 섹션별 타이틀 트랜지션 효과를 줬다!!
+ - 플러그인 특유의 css문법을 有
+ - 해당 섹션이 웹브라우저 중심으로 들어온 경우, 자동으로 active 클래스가 적용!!
+ - active 클래스를 활용
+
+6. 슬라이드 효과!!
+ - slider_wrap 클래스 & slide > slide_inner
+
+7. 특정 섹션, afterLoad 효과를 적용!
+ - 이미 지나간 섹션 & 새롭게 들어온 섹션에 따라 조건문을 활용해서 결과값을 다르게 도출할수 있었다
+    > wow.js와 같은 효과를 연출!!
+
+<2. >

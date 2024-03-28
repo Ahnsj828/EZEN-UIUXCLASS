@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js">
+      // html에 선택자를 찾아와야되서 => defer
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="toolbar">
+        <div>
+          <!-- 여기서는 form태그 안써도 무방하다 => 서버로 데이터 전송하는게 아니라서 -->
+          <label for="stroke">색상</label>
+          <input type="color" name="stroke" id="stroke" value="#000000" />
+          <!-- value="#000" 기본값을 지정할 수 있다 -->
+
+          <label for="lWidth">선굵기</label>
+          <input
+            type="number"
+            name="lWidth"
+            id="lWidth"
+            min="1"
+            max="50"
+            value="2"
+          />
+        </div>
+        <button id="reset">지우기😜</button>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>
+<!-- 웹사이트에 복권긁기도 같은 방식이다 -->

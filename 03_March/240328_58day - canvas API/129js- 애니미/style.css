@@ -1,0 +1,22 @@
+@import url("./reset.css");
+
+section {
+  background: brown;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+}
+li {
+  width: 100px;
+  height: 100px;
+  background: #fff8dc;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
