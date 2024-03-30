@@ -1,0 +1,54 @@
+@import url("./reset.css");
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg {
+  fill: none;
+  /* fill지정 안하면 기본값인 검정으로 된다 */
+  /* stroke: #fff; */
+  stroke: #30cfd0;
+  stroke-width: 2;
+  width: 1200px;
+  min-width: 1200px;
+  /* 비례해서 같이 줄지 않게 하려고 / 비율을 그대로 유지하려고 */
+  /* flex에서 min-width, max-width를 사용하는 경우가 많다 */
+}
+.circle {
+  position: absolute;
+  top: calc(50% - 310px);
+  left: calc(50% - 610px);
+  /* 위치는 선에 맞춰서 정해줘야한다 */
+  width: 16px;
+  height: 16px;
+  /* background: #fff; */
+  background: #30cfd0;
+  border-radius: 100%;
+}
+.eye {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 430px);
+  /* width: 20px; */
+  width: 45px;
+  /* height: 20px; */
+  height: 35px;
+  background: #fff;
+  background: #30cfd0;
+  border-radius: 100%;
+  animation: ani 1s infinite alternate ease-in-out;
+}
+@keyframes ani {
+  0% {
+    height: 35px;
+  }
+  100% {
+    height: 25px;
+    transform: skew(20deg);
+  }
+}

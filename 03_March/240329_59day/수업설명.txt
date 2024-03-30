@@ -1,0 +1,23 @@
+anime.js => 가장 보편적이고 무난하고 쉽다
+gsap.js => 중급기능이고 기능이 다양하다 (anime.js 에 난이도를 주고싶다라면 이걸 사용)
+three.js => 2D + 3D 그래픽 / 고급 / 기능이 정말 다양하다
+  => 이제는 4D까지도 가능하단다
+
+SVG 이미지 
+ > jpg / png
+ > figma => feather icons에서 내려받았을때 
+ > width / height 변경해도 화질 저하 및 손상이 없었다
+
+네이버 주소가 https://www.naver.com 다 여기에서
+www를 만든 회사는 => w3c다
+
+svg도 인라인형식으로 주는경우가 많다
+svg가 canvas의 원조다
+
+SVG > xml
+React.js > JS 가상 라이브러리
+ > JSX라는 문법(js and xml) : 얘네만의 고유문법
+
+fullpage 정도는 포폴할때 넣어도 인정해준다
+
+fullpage 는 제이쿼리가 아니다 js다

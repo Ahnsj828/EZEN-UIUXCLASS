@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- svg도 인라인형식으로 주는경우가 많다 -->
+    <svg
+      version="1.1"
+      baseProfile="full"
+      width="300"
+      height="200"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <!--xmlns에 ns 는 일종의 라벨이다 -->
+      <!-- xmlns="http://www.w3.org/2000/svg"없어도 작동한다 /  관례다 -->
+      <rect width="100%" height="100%" fill="red" />
+      <!-- xnl 방식으로 준다 -->
+      <circle cx="150" cy="100" r="80" fill="green" />
+      <!-- cx : center x -->
+      <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">
+        SVG
+      </text>
+      <!-- 이건 xml 문법이다 -->
+    </svg>
+  </body>
+</html>

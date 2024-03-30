@@ -1,0 +1,32 @@
+@import url("./reset.css");
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    150deg,
+    #ff8177 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%
+  );
+}
+svg {
+  width: 1024px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.svg1 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  transform: translate(-48%, -48%);
+  z-index: 1;
+}
+.svg2 {
+  fill: rgba(178, 42, 92, 0.7);
+  transform: translate(-48.5%, -48.5%);
+  /* 원래 소수점 안쓰는게 정석이긴하다 */
+}
