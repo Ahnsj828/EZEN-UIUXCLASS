@@ -1,0 +1,5 @@
+.slide_icons li {
+  text-indent: -9999px;
+}
+
+npi
