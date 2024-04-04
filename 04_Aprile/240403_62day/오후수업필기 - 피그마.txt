@@ -1,0 +1,16 @@
+*레이아웃 그리드 활용
+ : 1190px
+ : 좌.우측 패딩 365
+
+12 * 90 = 1080
+11 * 10 = 110
+1080 + 110 = 1090
+
+ header
+ - gnb
+ - slider
+ - info
+ - feature
+ - articel
+ - footer
+

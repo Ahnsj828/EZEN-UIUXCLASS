@@ -1,0 +1,52 @@
+231204_NinethProject
+
+*웹 UI/UX 분야!!!
+**웹 & 앱페이지 이미지 제작
+***Figma : 프레임 / 툴바 이미지 x
+A 크게 / B 간격 / C 색상
+D 컨텐츠....
+메인 / 58회수정!!!
+와이어 : 선!!!
+프레임 : 컨텐츠 및 아이템을 담을 수 있는 공간
+
+*와이어프레임 / 와이어프레이밍
+*프로토타입 : 1~2 (*메인 = 인덱스페이지)
+
+*실제 UI디자인 작업을 개시하기 전에 함께 작업하는 동료 혹은 클라이언트와의 협의를 하기 위한 목적!!!!
+
+*그날의 감정 & 기분 -> 디자인 작업 / 페이지별 컬러 & 레이아웃 / 자간 / 사이즈 상이하게 디자인 / 각각의 독립적인 페이지를 하나로 종합했을 때, 통일성 없어보이는 문제!!!
+
+1) 다수간의 협업
+2) UI디자인 진행 시, 방향성 정립!!!!
+
+Status
+Enabled
+Active
+Disabled
+Button_main : 스네이크 표기법
+Button-main
+Button/main
+ButtonMain : 카멜 표기법
+Button(Main)
+
+
+Switch / Toggle
+-
+-
+-
+(*햄버거)
+Font/Title/Size/14
+Text/Title/30
+Color/Button/Solid/Main
+
+Font/Title/Size/24
+Color/Button/Main/Solid
+Color/Button/Main/Gray
+Color/Button/Sub/Solid
+Color/Button/Sub/Gray
+Color/Text/White
+Color/Text/SubMenu
+Color/Text/SubTitle
+Color/Text/MainMenu
+Color/Text/MainTitle
+Color/Text/Black
