@@ -1,0 +1,22 @@
+@import url("./reset.css");
+/* body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+} */
+.container_wrap {
+  border: 1px solid #f00;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+/* header {
+  width: 100vw;
+} *//*# sourceMappingURL=style.css.map */

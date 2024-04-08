@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" href="./imgs/naver_favicon.png" />
+    <!-- custome css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container_wrap">
+      <header class="header">
+        <a href="http://www.naver.com" class="logo">
+          <img src="./imgs/naver_logo.png" alt="naver_logo" />
+        </a>
+        <select name="" id="">
+          <option value="ㅏㄱ">한국어</option>
+          <option value="">English</option>
+          <option value="zh-Hans_CN">中文(简体)</option>
+          <option value="zh-Hant_TW">中文(台灣)</option>
+        </select>
+      </header>
+      <aside>
+        <img src="" alt="" />
+        PC방 등 공유PC라면 QR코드 로그인이 더 안전해요.
+      </aside>
+      <section class="wrapper">
+        <ul class="navigation">
+          <li id="idLogin" class="navigation_item">ID 로그인</li>
+          <li id="disposableLogin" class="navigation_item">일회용 번호</li>
+          <li id="qrLogin" class="navigation_item">QR코드</li>
+        </ul>
+        <article class="wrapper_inner">
+          <!-- ID 로그인 -->
+          <iframe id="contentFrame" src="./id.html" frameborder="0"></iframe>
+          <!-- 일회용 번호 -->
+          <iframe
+            id="contentFrame"
+            src="./disposable.html"
+            frameborder="0"
+          ></iframe>
+          <!-- QR코드 -->
+          <iframe id="contentFrame" src="./qr.html" frameborder="0"></iframe>
+        </article>
+      </section>
+      <section class="">
+        <a
+          href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR"
+          target="_blank"
+          >비밀번호 찾기</a
+        >
+        <a
+          href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR"
+          target="_blank"
+          >아이디 찾기</a
+        >
+        <a
+          href="https://nid.naver.com/user2/join/agree?lang=ko_KR&domain=www.naver.com"
+          target="_blank"
+          >회원가입</a
+        >
+      </section>
+      <section class="banner">
+        <img src="./imgs/naver_banner.jpg" alt="banner" />
+      </section>
+      <footer>
+        <section>
+          <ul class="info">
+            <li>
+              <a
+                href="https://policy.naver.com/rules/service.html"
+                target="_blank"
+                >이용약관
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://policy.naver.com/rules/privacy.html"
+                target="_blank"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://policy.naver.com/rules/disclaimer.html"
+                target="_blank"
+                >책임의 한계와 법적고지</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.naver.com/service/5640/category/bookmark?lang=ko"
+                target="_blank"
+                >회원정보 고객센터</a
+              >
+            </li>
+          </ul>
+          <ul class="company_info">
+            <li>
+              <a
+                href="https://www.navercorp.com/"
+                target="_blank"
+                class="logo_bottom"
+              >
+                <img src="./imgs/naver_logo.png" alt="naver_logo" />
+              </a>
+            </li>
+            <li>Copyright</li>
+            <li>&#169; NAVER Corp.</li>
+            <li>All Rights Reserved</li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

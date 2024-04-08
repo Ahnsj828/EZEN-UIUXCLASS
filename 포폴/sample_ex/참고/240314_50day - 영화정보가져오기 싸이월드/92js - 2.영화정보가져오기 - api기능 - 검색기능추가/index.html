@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" defer src="./script.js"></script>
+    <!-- 모듈의 형식인지를 인지하기 위해서 type="module" -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>
+          <a href="#">The Movie</a>
+          <!-- 클릭하면 메인페이지로 -->
+        </h1>
+        <form
+          name="searchPage"
+          action="http://localhost:5500/search.js"
+          method="post"
+        >
+          <input
+            class="search"
+            type="search"
+            placeholder="검색어를 입력하세요"
+          />
+          <!-- 검색바 -->
+          <!-- search와 text 생긴건 똑같지만 백엔드영역에서는 다르다 -->
+        </form>
+      </div>
+      <div class="contents">
+        <!-- 영화 데이터가 출력되야할 곳 -->
+      </div>
+    </div>
+  </body>
+</html>

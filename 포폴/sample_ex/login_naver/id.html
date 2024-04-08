@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custome css -->
+    <!-- custome css & js -->
+    <link rel="stylesheet" href="./id.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost/3000/login" method="post">
+      <div class="input_id">
+        <span class="id_icon"></span>
+        <input type="text" placeholder="아이디" />
+      </div>
+      <div class="input_pw">
+        <span class="pw_icon"></span>
+        <input type="password" placeholder="비밀번호" />
+      </div>
+      <ul class="login_setting">
+        <li class="state">
+          <span class="state_icon"></span>
+          <label for="login_setting">로그인 상태유지</label>
+        </li>
+        <li class="ip">
+          <a
+            href="https://nid.naver.com/login/ext/help_ip3.html"
+            target="_blank"
+            >IP보안</a
+          >
+          <span class="ip_button">
+            <span class="ip_button_circle"></span>
+          </span>
+        </li>
+      </ul>
+      <input type="submit" value="로그인" />
+    </form>
+  </body>
+</html>

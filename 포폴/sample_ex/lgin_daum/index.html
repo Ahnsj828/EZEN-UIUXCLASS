@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imgs/kakao_icon.png" />
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="logo">
+      <img src="./imgs/kakao_logoB.png" alt="logo" />
+    </header>
+    <section>
+      <form action="http://localhost/3000/login" method="post">
+        <input type="id" placeholder="카카오메일 아이디, 이메일, 전화번호" />
+        <input type="password" placeholder="비밀번호" />
+        <input type="checkbox" id="dataSave" />
+        <label for="dataSave">
+          간편로그인 정보 저장
+          <img src="./imgs/info_icon.png" alt="info_icon" />
+          <span class="info_text">
+            <h4>
+              로그인한 계정의 정보가 저장됩니다. 개인정보 보호를 위해 개인
+              기기에서만 사용해 주세요.
+              <a
+                href="https://cs.kakao.com/helps?category=166&locale=ko&service=52&articleId=1073206315&device=423"
+                >도움말 보기</a
+              >
+            </h4>
+          </span>
+        </label>
+        <input type="submit" placeholder="로그인" />
+      </form>
+      <div class="devider">
+        <span class="devider left"></span>
+        <h4>또는</h4>
+        <span class="devider right"></span>
+      </div>
+      <button>
+        <a href="./"></a>
+        QR코드 로그인
+      </button>
+    </section>
+  </body>
+</html>

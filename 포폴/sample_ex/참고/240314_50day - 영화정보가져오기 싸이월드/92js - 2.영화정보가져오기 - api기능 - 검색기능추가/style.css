@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  padding: 2rem 3rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+.contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* 총 몇개의 열을 만들거냐 / 부모요소한테 주는거 / auto-fill해당 요소의 너비값이 보장되어질때까지 줄어들거다*/
+  /* 최소한의 너비를 250px 보장하겠다 */
+  /* 1fr가장 넓어지면 n분의1씩 보장하겠다 */
+  gap: 20px;
+  /* 각각의 너비값 */
+  padding: 2rem;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.movie img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 2 / 3;
+  /* 종횡비 */ /* 2 너비 3 높이 */ /* 1 / 1 은 정사각형이다 */
+  /* 이걸 안주면 이미지들의 비율이 다르면 다 가지각색대로 다르게 나온다 */
+  /* 만약 같은 비율로 주고싶으면 aspect-ratio를 주면된다 */
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+.detail .info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+}
+.detail h3 {
+  font-size: 18px;
+  color: crimson;
+}
