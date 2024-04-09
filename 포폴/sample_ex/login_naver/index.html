@@ -11,60 +11,63 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container_wrap">
-      <header class="header">
+    <div class="wrapper">
+      <!-- header -->
+      <header>
         <a href="http://www.naver.com" class="logo">
-          <img src="./imgs/naver_logo.png" alt="naver_logo" />
+          <!-- <img src="./imgs/naver_logo.png" alt="naver_logo" /> -->
         </a>
-        <select name="" id="">
-          <option value="ㅏㄱ">한국어</option>
-          <option value="">English</option>
-          <option value="zh-Hans_CN">中文(简体)</option>
-          <option value="zh-Hant_TW">中文(台灣)</option>
+        <select name="language" id="">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+          <option value="ch">中文(简体)</option>
+          <option value="ch2">中文(台灣)</option>
         </select>
       </header>
       <aside>
         <img src="" alt="" />
         PC방 등 공유PC라면 QR코드 로그인이 더 안전해요.
       </aside>
-      <section class="wrapper">
-        <ul class="navigation">
-          <li id="idLogin" class="navigation_item">ID 로그인</li>
-          <li id="disposableLogin" class="navigation_item">일회용 번호</li>
-          <li id="qrLogin" class="navigation_item">QR코드</li>
-        </ul>
-        <article class="wrapper_inner">
-          <!-- ID 로그인 -->
-          <iframe id="contentFrame" src="./id.html" frameborder="0"></iframe>
-          <!-- 일회용 번호 -->
-          <iframe
-            id="contentFrame"
-            src="./disposable.html"
-            frameborder="0"
-          ></iframe>
-          <!-- QR코드 -->
-          <iframe id="contentFrame" src="./qr.html" frameborder="0"></iframe>
+      <section class="container">
+        <article class="kind_of_login">
+          <ul class="navigation">
+            <li id="idLogin" class="navigation_item">ID 로그인</li>
+            <li id="disposableLogin" class="navigation_item">일회용 번호</li>
+            <li id="qrLogin" class="navigation_item">QR코드</li>
+          </ul>
+          <article class="wrapper_inner">
+            <!-- ID 로그인 -->
+            <iframe id="contentFrame" src="./id.html" frameborder="0"></iframe>
+            <!-- 일회용 번호 -->
+            <iframe
+              id="contentFrame"
+              src="./disposable.html"
+              frameborder="0"
+            ></iframe>
+            <!-- QR코드 -->
+            <iframe id="contentFrame" src="./qr.html" frameborder="0"></iframe>
+          </article>
         </article>
-      </section>
-      <section class="">
-        <a
-          href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR"
-          target="_blank"
-          >비밀번호 찾기</a
-        >
-        <a
-          href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR"
-          target="_blank"
-          >아이디 찾기</a
-        >
-        <a
-          href="https://nid.naver.com/user2/join/agree?lang=ko_KR&domain=www.naver.com"
-          target="_blank"
-          >회원가입</a
-        >
-      </section>
-      <section class="banner">
-        <img src="./imgs/naver_banner.jpg" alt="banner" />
+        <article class="another">
+          <a
+            href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR"
+            target="_blank"
+            >비밀번호 찾기</a
+          >
+          <a
+            href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR"
+            target="_blank"
+            >아이디 찾기</a
+          >
+          <a
+            href="https://nid.naver.com/user2/join/agree?lang=ko_KR&domain=www.naver.com"
+            target="_blank"
+            >회원가입</a
+          >
+        </article>
+        <article class="banner">
+          <img src="./imgs/naver_banner.jpg" alt="banner" />
+        </article>
       </section>
       <footer>
         <section>
