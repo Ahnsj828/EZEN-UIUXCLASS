@@ -11,3 +11,26 @@ section? ar..?
 문서에서 사진의 설명을 추가하기 위해 사용됩니다. 
 ‘Caption’이라는 단어 자체가 이미지에 대한 간략한 설명을 의미하는 만큼, 
 <figcaption>은 <figure>에 대한 간략한 설명입니다.
+
+
+
+scss문법들
+js 문법들 대부분 사용가능한것같은..?
+mixin 말고?
+
+Sass의 사전전 의미는 종속형 시트(CSS)로 해석 및 컴파일되는 스크립트 언어입니다.
+SassScript는 그 자체로 스크립트 언어이며, CSS pre-processor(전처리기)로서 
+CSS의 한계점을 극복하기 위한 CSS언어의 확장 언어입니다.
+파일 확장자는 .scss 이며, 
+SCSS는 2010년 5월 버전 3으로 업그레이드하면서 갖춰진 새로운 문법 체계입니다 .
+SCSS는 기존 Sass 문법의 기능을 보다 강화하고, 
+CSS 문법은 그대로 살렸다는 의도를 함께 담은 'Sass CSS'로도 해석할 수 있습니다.
+Sass의 공식 구현채는 오픈 소스이며, 루비로 코딩되어 있습니다.
+Sass는 중첩(Nesting), 변수(Variables), 믹스인(Mixin), 불러오기(Import), 
+셀렉터 상속의 메커니즘을 제공합니다.
+출처: https://www.biew.co.kr/entry/Sass
+ ㆍSCSS-솔직한-장ㆍ단점-소개-및-설치방법
+    [웹퍼블리싱 - 퍼블리싱 이야기 맑은커뮤니케이션:티스토리]
+
+
+https://ljh62044217.medium.com/scss%EC%9D%98-%EA%B0%80%EC%9E%A5-%EA%B0%95%EB%A0%A5%ED%95%9C-%EB%8F%84%EA%B5%AC-mixin%EA%B3%BC-include%EC%99%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-3b23540c1780

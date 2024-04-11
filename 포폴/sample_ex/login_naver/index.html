@@ -15,7 +15,7 @@
       <!-- header -->
       <header>
         <a href="http://www.naver.com" class="logo">
-          <!-- <img src="./imgs/naver_logo.png" alt="naver_logo" /> -->
+          <img src="./imgs/naver_logo.png" alt="naver_logo" />
         </a>
         <select name="language" id="">
           <option value="ko">한국어</option>
@@ -24,16 +24,30 @@
           <option value="ch2">中文(台灣)</option>
         </select>
       </header>
-      <aside>
-        <img src="" alt="" />
-        PC방 등 공유PC라면 QR코드 로그인이 더 안전해요.
-      </aside>
       <section class="container">
+        <aside>
+          <span>
+            PC방 등 공유PC라면 QR코드 로그인이 더 안전해요.
+          </span>
+          <img src="./imgs/x_icon.png" alt="x_icon" />
+        </aside>
         <article class="kind_of_login">
           <ul class="navigation">
-            <li id="idLogin" class="navigation_item">ID 로그인</li>
-            <li id="disposableLogin" class="navigation_item">일회용 번호</li>
-            <li id="qrLogin" class="navigation_item">QR코드</li>
+            <li id="idLogin" class="navigation_item">
+              <img class="idLogin_icon login_click" src="./imgs/id_login_icon_click.png" alt="ID 로그인 click">
+              <img class="idLogin_icon login_noClick" src="./imgs/x_icon.png" alt="ID 로그인">
+              <span>ID 로그인</span>
+            </li>
+            <li id="disposableLogin" class="navigation_item">
+              <img class="disLogin_icon login_click" src="./imgs/x_icon.png" alt="일회용 번호 click">
+              <img class="disLogin_icon login_noClick" src="./imgs/dis_login_icon.png" alt="일회용 번호">
+              <span>일회용 번호</span>
+            </li>
+            <li id="qrLogin" class="navigation_item">
+              <img class="qrLogin_icon login_click" src="./imgs/x_icon.png" alt="QR코드 click">
+              <img class="qrLogin_icon login_noClick" src="./imgs/qr_login_icon.png" alt="QR코드">
+              <span>QR코드</span>
+            </li>
           </ul>
           <article class="wrapper_inner">
             <!-- ID 로그인 -->
