@@ -47,11 +47,11 @@
 // disposableLogin.addEventListener("click", disposableChange);
 // qrLogin.addEventListener("click", qrChange);
 
-// // 
-// // 
-// // 
-// // 
-// // 
+//
+//
+// --------- Login 방법 선택 => 안에 요소들 변경 => i태그변경 -----
+//
+//
 
 // //  << navigation >>
 // const idLogin = document.querySelector("#idLogin");
@@ -77,11 +77,11 @@
 // disposableLogin.addEventListener("click", disposableChange);
 // qrLogin.addEventListener("click", qrChange);
 
-// 
-// 
-// 
-// 
-// 
+//
+//
+// --------- Login 방법 선택 => icon변경 추가 -----
+//
+//
 
 //  << navigation >>
 const idLogin = document.querySelector("#idLogin");
@@ -99,7 +99,6 @@ document.querySelector(".disLogin_icon.login_noClick").style.display = "inline";
 document.querySelector(".qrLogin_icon.login_click").style.display = "none";
 document.querySelector(".qrLogin_icon.login_noClick").style.display = "inline";
 
-
 // ID 로그인 - 클릭
 const idChange = () => {
   contentFrame.setAttribute("src", "./id.html");
@@ -107,30 +106,32 @@ const idChange = () => {
   // ID 로그인 이미지 보이기, 나머지 이미지 숨기기
   document.querySelector(".idLogin_icon.login_click").style.display = "inline";
   document.querySelector(".idLogin_icon.login_noClick").style.display = "none";
-  
+
   document.querySelector(".disLogin_icon.login_click").style.display = "none";
-  document.querySelector(".disLogin_icon.login_noClick").style.display = "inline";
+  document.querySelector(".disLogin_icon.login_noClick").style.display =
+    "inline";
 
   document.querySelector(".qrLogin_icon.login_click").style.display = "none";
-  document.querySelector(".qrLogin_icon.login_noClick").style.display = "inline";
+  document.querySelector(".qrLogin_icon.login_noClick").style.display =
+    "inline";
 };
-
 
 // 일회용번호 로그인 - 클릭
 const disposableChange = () => {
   contentFrame.setAttribute("src", "./disposable.html");
 
-   // 일회용 번호 이미지 보이기, 나머지 이미지 숨기기
+  // 일회용 번호 이미지 보이기, 나머지 이미지 숨기기
   document.querySelector(".idLogin_icon.login_click").style.display = "none";
-  document.querySelector(".idLogin_icon.login_noClick").style.display = "inline";
-  
+  document.querySelector(".idLogin_icon.login_noClick").style.display =
+    "inline";
+
   document.querySelector(".disLogin_icon.login_click").style.display = "inline";
   document.querySelector(".disLogin_icon.login_noClick").style.display = "none";
 
   document.querySelector(".qrLogin_icon.login_click").style.display = "none";
-  document.querySelector(".qrLogin_icon.login_noClick").style.display = "inline";
+  document.querySelector(".qrLogin_icon.login_noClick").style.display =
+    "inline";
 };
-
 
 // QR 로그인 - 클릭
 const qrChange = () => {
@@ -138,10 +139,12 @@ const qrChange = () => {
 
   // QR코드 이미지 보이기, 나머지 이미지 숨기기
   document.querySelector(".idLogin_icon.login_click").style.display = "none";
-  document.querySelector(".idLogin_icon.login_noClick").style.display = "inline";
-  
+  document.querySelector(".idLogin_icon.login_noClick").style.display =
+    "inline";
+
   document.querySelector(".disLogin_icon.login_click").style.display = "none";
-  document.querySelector(".disLogin_icon.login_noClick").style.display = "inline";
+  document.querySelector(".disLogin_icon.login_noClick").style.display =
+    "inline";
 
   document.querySelector(".qrLogin_icon.login_click").style.display = "inline";
   document.querySelector(".qrLogin_icon.login_noClick").style.display = "none";
