@@ -68,56 +68,81 @@ body {
       position: relative;
       width: 100%;
       width: 460px;
-      // aside {
-      //   border: 1px solid #f00;
-      //   position: absolute;
-      //   top: -17px;
-      //   right: -37px;
-      //   height: 25px;
-      //   padding: 4px 20px 3px 9px;
-      //   border-radius: 12px;
-      //   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-      //   border: solid 1px #03c75a;
-      //   background-color: #fff;
-      //   box-sizing: border-box;
-      //   z-index: 10;
-      //   span {
-      //     display: inline-block;
-      //     font-size: 10px;
-      //     font-weight: 500;
-      //     line-height: 14px;
-      //     letter-spacing: -0.56px;
-      //     white-space: nowrap;
-      //     color: #03c75a;
-      //     vertical-align: top;
-      //     color: var(--maincolor);
-      //     font-family: -apple-system, "system-ui", helvetica,
-      //       "Apple SD Gothic Neo", sans-serif;
-      //   }
-      // }
+      aside {
+        position: absolute;
+        top: -17px;
+        right: -23px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        // padding: 4px 20px 3px 9px;
+        padding: 3px 0 4px 9px;
+        // padding: 4px;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px #03c75a;
+        background-color: #fff;
+        box-sizing: border-box;
+        z-index: 10;
+        span {
+          display: inline-block;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 14px;
+          letter-spacing: -0.56px;
+          white-space: nowrap;
+          color: #03c75a;
+          vertical-align: top;
+          color: var(--maincolor);
+          font-family: -apple-system, "system-ui", helvetica,
+            "Apple SD Gothic Neo", sans-serif;
+        }
+        img {
+          // position: absolute;
+          width: 3%;
+          margin-left: 5px;
+          cursor: pointer;
+        }
+      }
 
       // < id 일회용 qr코드 tab & inner >
       .kind_of_login {
-        // @include JccAic;
-        // display: table;
-        // table-layout: fixed;
-        // width: 100%;
-        // border-collapse: collapse;
-
         // < id 일회용 qr코드 tab>
         .navigation {
           @include JccAic;
           flex-direction: row;
-
-          // display: table;
-          // table-layout: fixed;
-          // width: 100%;
-          // border-collapse: collapse;
-          #idLogin {
+          border-top: 1px solid #e3e3e3;
+          border-radius: 6px 6px 0 0;
+          .navigation_item {
             @include navigation_item;
+            span {
+              margin-left: 10px;
+            }
+          }
+          #idLogin {
+            border-radius: 6px 0 0 0;
+            flex: 1;
             .idLogin_icon {
               @include navigation_tab_icon;
             }
+          }
+          #disposableLogin {
+            border-radius: 0;
+            flex: 1;
+            .disLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          #qrLogin {
+            border-radius: 0 6px 0 0;
+            flex: 1;
+            .qrLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          .click_nav {
+            @include click_nav;
           }
         }
         // < id 일회용 qr코드 inner >
