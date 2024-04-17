@@ -1,0 +1,9 @@
+*Component / Instance
+*Autolayout
+*Grid-layout system
+- Grid -> 일정한 간격으로 구획이 나눠져 있는 바둑판과 같은 레이아웃 시스템
+*column 형식 그리드 레이아웃 시스템
+*User Research : 지금 기획.제작하고자 하는 웹.앱서비스의 주요 타겟 고객을 대상으로 어떤 컬러를 좋아하는지, 어떤 레이아웃 디자인을 선호하는지, 어떤 연령 / 성별 / 직업군
+*FGI
+*390px / 좌우측 여백 20px
+
