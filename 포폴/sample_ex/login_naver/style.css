@@ -115,11 +115,15 @@ body .wrapper .container aside img {
   margin-left: 5px;
   cursor: pointer;
 }
+body .wrapper .container .kind_of_login {
+  width: 100%;
+}
 body .wrapper .container .kind_of_login .navigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   border-top: 1px solid #e3e3e3;
   border-radius: 6px 6px 0 0;
@@ -140,6 +144,10 @@ body .wrapper .container .kind_of_login .navigation .navigation_item {
   letter-spacing: -0.5px;
   color: #777;
   z-index: 2;
+  height: 65px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 0px;
   cursor: pointer;
 }
 body .wrapper .container .kind_of_login .navigation .navigation_item span {
@@ -181,19 +189,78 @@ body .wrapper .container .kind_of_login .navigation .click_nav {
   border-bottom: none;
   border-color: #c6c6c6;
   background-color: #fff;
-  height: 55px;
-  font: 500 16px/20px;
+  height: 65px;
+  font: 600 16px/20px;
   letter-spacing: -0.5px;
   border-radius: 6px 6px 0 0;
   color: #333;
-  z-index: 5;
+  z-index: 4;
 }
 body .wrapper .container .kind_of_login .wrapper_inner {
-  padding: 20px 28px;
+  padding: 20px 24px;
   border: 1px solid #c6c6c6;
-  border-top: none;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
   z-index: 3;
+  position: relative;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .container .kind_of_login .wrapper_inner #contentFrame {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .container .another {
+  padding: 20px 0 35px;
+  text-align: center;
+}
+body .wrapper .container .another a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #888;
+}
+body .wrapper .container .another a:nth-child(2), body .wrapper .container .another a:nth-child(3) {
+  position: relative;
+  padding-left: 28px;
+}
+body .wrapper .container .another a:nth-child(2)::before, body .wrapper .container .another a:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 1px;
+  height: 12px;
+  border-radius: 0.5px;
+  background-color: #dadada;
+}
+body .wrapper .container .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 460px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+body .wrapper .container .banner img {
+  width: 100%;
+  height: auto;
+}
+body .wrapper footer {
+  padding: 63px 0 32px;
+  letter-spacing: -0.5px;
+  color: var(--fontcolor2);
+}
+body .wrapper footer section {
+  position: relative;
+  text-align: center;
+}
+body .wrapper footer section .info {
+  display: flex;
+}
+body .wrapper footer section .company_info {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

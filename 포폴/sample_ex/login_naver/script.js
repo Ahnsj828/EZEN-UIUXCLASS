@@ -21,12 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   disposableLogin.classList.remove("click_nav");
   qrLogin.classList.remove("click_nav");
   // 초기 설정 : 추가 효과
-  idLogin.style = "border-radius: 6px 6px 0 0; border-right: none; ";
-  disposableLogin.style = "border-radius: 0 0 0 6px;";
-  // qrLogin.style =
-  //   "height: 65px; padding-bottom:10px; z-index: 2; position:relative; top: 10px;";
-  // 위가 추가 아래가 원본
-  qrLogin.style = "border-radius: 0;";
+  idLogin.style = "border-radius: 6px 6px 0 0; border-right: none;";
+    disposableLogin.style = "border-radius: 0 0 0 6px;";
+    qrLogin.style = "border-radius: 0;";
 
   // ID 로그인 - 클릭
   const idChange = () => {
@@ -60,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const disposableChange = () => {
     contentFrame.setAttribute("src", "./disposable.html");
 
-    // 일회용 번호 이미지 보이기, 나머지 이미지 숨기기
+    // 일회용번호 이미지 보이기, 나머지 이미지 숨기기
     document.querySelector(".idLogin_icon.login_click").style.display = "none";
     document.querySelector(".idLogin_icon.login_noClick").style.display =
       "inline";

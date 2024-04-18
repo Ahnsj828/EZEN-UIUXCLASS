@@ -1,7 +1,12 @@
-
+// @import url("./reset.css");
+// @import "reset.scss";
 @import "reset";
 @import "mixin";
 // font-family -apple-system, "system-ui", helvetica, "Apple SD Gothic Neo", sans-serif
+
+// .bg {
+//   @include bg;
+// }
 
 :root {
   --maincolor: #03c75a;
@@ -9,6 +14,11 @@
   --fontcolor3: #333;
 }
 
+// body {
+//   background-color: var(--maincolor);
+// }
+
+// -------------------참고--
 body {
   width: 100vw;
   height: 100%;
@@ -101,11 +111,9 @@ body {
       }
       .kind_of_login {
         // < id 일회용 qr코드 tab & inner >
-        width: 100%;
         .navigation {
           // < id 일회용 qr코드 tab 모아둔>
           @include JccAic;
-          align-items: flex-start;
           flex-direction: row;
           border-top: 1px solid #e3e3e3;
           border-radius: 6px 6px 0 0;
@@ -114,7 +122,6 @@ body {
           .navigation_item {
             // < id 일회용 qr코드 tab >
             @include navigation_item;
-            // z-index: 1;
             span {
               margin-left: 10px;
             }
@@ -149,69 +156,13 @@ body {
         }
         .wrapper_inner {
           // < id 일회용 qr코드 inner >
-          padding: 20px 24px;
+          padding: 20px 28px;
           border: 1px solid #c6c6c6;
+          border-top: none;
           border-radius: 6px;
           background-color: #fff;
           box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
-          z-index: 3; 
-          position: relative;
-          top: -10px;
-          width: 100%;
-            height: 100%;
-          #contentFrame {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-      .another {
-        padding: 20px 0 35px;
-        text-align: center;
-        a {
-          font-size: 14px;
-          line-height: 17px;
-          color: #888;
-        }
-        & a:nth-child(2),& a:nth-child(3) {
-          position: relative;
-          padding-left: 28px;
-          &::before {
-            content: '';
-            position: absolute;
-            top: 3px;
-            left: 12px;
-            width: 1px;
-            height: 12px;
-            border-radius: .5px;
-            background-color: #dadada;
-          }
-        }
-      }
-      .banner {
-        @include JccAic;
-        width: 460px;
-        height: auto;
-        margin: 0 auto;
-        text-align: center;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-    footer {
-      padding: 63px 0 32px;
-      letter-spacing: -.5px;
-      color: var(--fontcolor2);
-      section {
-        position: relative;
-        text-align: center;
-        .info {
-          display: flex;
-        }
-        .company_info {
-          display: flex;
+          z-index: 3; // 추가한거 뺄지 말지
         }
       }
     }

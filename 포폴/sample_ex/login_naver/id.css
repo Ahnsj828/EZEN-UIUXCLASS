@@ -1,1 +1,24 @@
-@import url("./reset.css");/*# sourceMappingURL=id.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  border: 1px solid #00f;
+}
+
+form {
+  border: 1px solid #f00;
+  width: 100%;
+}/*# sourceMappingURL=id.css.map */
