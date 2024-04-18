@@ -51,12 +51,16 @@ body {
         min-width: 95px;
         height: 30px;
         padding: 4px 10px 6px 8px;
-        // text-align: center;
         font: 400 12px/18px "";
         color: var(--fontcolor3);
         cursor: pointer;
         z-index: 1;
         outline: none;
+        appearance: none;
+        background-image: url("./imgs/select_icon.png");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 13%;
         option {
           min-height: 1.2em;
           padding: 0px 2px 1px;
@@ -71,7 +75,7 @@ body {
       aside {
         position: absolute;
         top: -17px;
-        right: -23px;
+        right: -35px;
         height: 25px;
         display: flex;
         align-items: center;
@@ -105,16 +109,18 @@ body {
           cursor: pointer;
         }
       }
-
-      // < id 일회용 qr코드 tab & inner >
       .kind_of_login {
-        // < id 일회용 qr코드 tab>
+        // < id 일회용 qr코드 tab & inner >
         .navigation {
+          // < id 일회용 qr코드 tab 모아둔>
           @include JccAic;
           flex-direction: row;
           border-top: 1px solid #e3e3e3;
           border-radius: 6px 6px 0 0;
+          background-color: #f8f9fa;
+          // align-items: top;
           .navigation_item {
+            // < id 일회용 qr코드 tab >
             @include navigation_item;
             span {
               margin-left: 10px;
@@ -122,21 +128,24 @@ body {
           }
           #idLogin {
             border-radius: 6px 0 0 0;
-            flex: 1;
+            // flex: 1;
+            width: calc(100% / 3);
             .idLogin_icon {
               @include navigation_tab_icon;
             }
           }
           #disposableLogin {
             border-radius: 0;
-            flex: 1;
+            // flex: 1;
+            width: calc(100% / 3);
             .disLogin_icon {
               @include navigation_tab_icon;
             }
           }
           #qrLogin {
             border-radius: 0 6px 0 0;
-            flex: 1;
+            // flex: 1;
+            width: calc(100% / 3);
             .qrLogin_icon {
               @include navigation_tab_icon;
             }
@@ -145,8 +154,15 @@ body {
             @include click_nav;
           }
         }
-        // < id 일회용 qr코드 inner >
         .wrapper_inner {
+          // < id 일회용 qr코드 inner >
+          padding: 20px 28px;
+          border: 1px solid #c6c6c6;
+          border-top: none;
+          border-radius: 6px;
+          background-color: #fff;
+          box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
+          z-index: 3; // 추가한거 뺄지 말지
         }
       }
     }

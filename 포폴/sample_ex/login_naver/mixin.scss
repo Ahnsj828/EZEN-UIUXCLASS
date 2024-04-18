@@ -21,10 +21,12 @@
   letter-spacing: -0.5px;
   color: #777;
   z-index: 2;
+
   cursor: pointer;
 }
 
 @mixin click_nav {
+  // position: absolute;
   @include JccAic;
   flex-direction: row;
   text-align: center;

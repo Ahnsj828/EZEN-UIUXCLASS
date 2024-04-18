@@ -62,6 +62,13 @@ body .wrapper header select {
   cursor: pointer;
   z-index: 1;
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("./imgs/select_icon.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 13%;
 }
 body .wrapper header select option {
   min-height: 1.2em;
@@ -79,7 +86,7 @@ body .wrapper .container {
 body .wrapper .container aside {
   position: absolute;
   top: -17px;
-  right: -23px;
+  right: -35px;
   height: 25px;
   display: flex;
   align-items: center;
@@ -116,6 +123,7 @@ body .wrapper .container .kind_of_login .navigation {
   flex-direction: row;
   border-top: 1px solid #e3e3e3;
   border-radius: 6px 6px 0 0;
+  background-color: #f8f9fa;
 }
 body .wrapper .container .kind_of_login .navigation .navigation_item {
   display: flex;
@@ -139,7 +147,7 @@ body .wrapper .container .kind_of_login .navigation .navigation_item span {
 }
 body .wrapper .container .kind_of_login .navigation #idLogin {
   border-radius: 6px 0 0 0;
-  flex: 1;
+  width: 33.3333333333%;
 }
 body .wrapper .container .kind_of_login .navigation #idLogin .idLogin_icon {
   width: 16px;
@@ -147,7 +155,7 @@ body .wrapper .container .kind_of_login .navigation #idLogin .idLogin_icon {
 }
 body .wrapper .container .kind_of_login .navigation #disposableLogin {
   border-radius: 0;
-  flex: 1;
+  width: 33.3333333333%;
 }
 body .wrapper .container .kind_of_login .navigation #disposableLogin .disLogin_icon {
   width: 16px;
@@ -155,7 +163,7 @@ body .wrapper .container .kind_of_login .navigation #disposableLogin .disLogin_i
 }
 body .wrapper .container .kind_of_login .navigation #qrLogin {
   border-radius: 0 6px 0 0;
-  flex: 1;
+  width: 33.3333333333%;
 }
 body .wrapper .container .kind_of_login .navigation #qrLogin .qrLogin_icon {
   width: 16px;
@@ -179,4 +187,13 @@ body .wrapper .container .kind_of_login .navigation .click_nav {
   border-radius: 6px 6px 0 0;
   color: #333;
   z-index: 5;
+}
+body .wrapper .container .kind_of_login .wrapper_inner {
+  padding: 20px 28px;
+  border: 1px solid #c6c6c6;
+  border-top: none;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
+  z-index: 3;
 }/*# sourceMappingURL=style.css.map */
