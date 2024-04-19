@@ -4,6 +4,12 @@
   justify-content: center;
   align-items: center;
 }
+@mixin JccAic_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 @mixin navigation_tab_icon {
   width: 16px;
   height: 16px;
@@ -21,9 +27,9 @@
   letter-spacing: -0.5px;
   color: #777;
   z-index: 2;
-  height: 65px; 
-  padding-bottom:10px; 
-  position:relative; 
+  height: 65px;
+  padding-bottom: 10px;
+  position: relative;
   top: 0px;
 
   cursor: pointer;
@@ -39,13 +45,35 @@
   border-bottom: none;
   border-color: #c6c6c6;
   background-color: #fff;
-  height: 65px; 
+  height: 65px;
   font: 600 16px/20px;
   letter-spacing: -0.5px;
   border-radius: 6px 6px 0 0;
   color: #333;
   z-index: 4;
-
-  
 }
 
+@mixin f-info {
+  @include JccAic_row;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #222;
+  font-size: 14px;
+}
+@mixin f-info-detail {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+}
+
+@mixin info-before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -4px;
+  width: 1px;
+  height: 11px;
+  background-color: #dadada;
+}

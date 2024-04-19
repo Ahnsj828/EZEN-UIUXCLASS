@@ -260,7 +260,50 @@ body .wrapper footer section {
 }
 body .wrapper footer section .info {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #222;
+  font-size: 14px;
 }
-body .wrapper footer section .company_info {
+body .wrapper footer section .info li {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+}
+body .wrapper footer section .info li:nth-child(2),
+body .wrapper footer section .info li:nth-child(3),
+body .wrapper footer section .info li:nth-child(4) {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  padding-left: 13px;
+  border: 1px solid #f00;
+}
+body .wrapper footer section .info li:nth-child(2) a::before,
+body .wrapper footer section .info li:nth-child(3) a::before,
+body .wrapper footer section .info li:nth-child(4) a::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 1px;
+  height: 11px;
+  background-color: #dadada;
+}
+body .wrapper footer section .info .company_info {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #222;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
