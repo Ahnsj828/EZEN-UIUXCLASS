@@ -1,0 +1,140 @@
+npx json-server --watch db.json --port 3004
+
+json-sever 에 검색기능은 json-sever에 내장되어 있는 기능이다
+가상의 서버를 가져다쓰기만 하면된다
+
+
+매일 어제꺼 복붙해서 수업을 하면 안될수 있다 => npm 업데이트해서 안될 수 있다
+npm i 를 치면된다
+
+npm uninstall -g json-server
+-g 전역요소에서 
+npm uninstall json-server
+로컬 프로젝트상에서도 날리는거다
+
+npm i -g json-server@0.17.0
+여기는 검색기능이 있다
+그래서 이 버전을 다운받는다
+전역요소에 설치한거다
+
+npm i json-server@0.17.0
+이걸 쳐야 설치된게 보인다
+
+요즘에는 -s -d는 안쓴다=> node를 배워야 알 수 있다
+
+----------------------------------------------------------기능, 흐름 다 알아야한다
+
+1. 네비바 컴포넌트 만들었다
+ - 로고 만들었다
+ - GNB 영역
+ - 상품검색바
+ - 로그인
+
+(*로그인 버튼 클릭 => state)
+ app.js에서 const [authenticate, setAuthenticate] = useState(false); 
+
+로그인 했는지 안했는지에 따른 페이지 변화를 줬다
+
+2. 상품정보
+ - json server 페이크 서버
+ - api
+
+3. 로그인 여부에 따라서 > 상품페이지  || 로그인
+  > Private Route
+
+4. 리액트 부트스트랩 & 리액트 폰트어썸
+   - UI 구현 라이브러리를 가져다썼다
+
+5. 검색기능
+ - json server에 자체적으로 검색기능이 있었다
+   RestFul API 형식
+
+=> 이번 프로젝트가 버릴게 없단다 => 대여섯번해봐라
+
+이제 배포할거다
+netlify 로 배포할거다
+
+배포 3대장 
+1. filezila 옛날에 많이 썼다 
+2. cafe24 은근 많이 쓴다
+===>1,2는 고전적 방식으로 배포하는 방식 / 현업에서는 많이 안쓴다 / 배포야매
+3. netlify
+4. firebase 현업에서 종종 쓴다
+5. aws 실무 현업모드
+
+
+지금 이상황에서 배포했을 때 문제점 => db.json이 문제다
+  =>이걸 사용하려면 json server를 다시 키고 해야되나? 매번 3004서버를 켜야하나?
+
+
+6. 호스팅
+ => 서버 공간에 data업로드 => 호스팅했다 / 호스팅이 되었다
+ => my json server  / 페이크 서버다 / 프론트엔드 학습용이다
+      > 여기에 db.json 올릴거다
+
+
+7. 개인 포폴에 my json server를 쓰려고 하지마라
+ - 용량 제한있다 10mb까지만 된다 / 이미지나 용량 높은거 안된다! 
+ - json 에 key 값도 몇개 제한있다
+
+
+https://github.com/typicode/json-server/tree/v0
+https://www.npmjs.com/package/json-server
+https://my-json-server.typicode.com/
+https://app.netlify.com/sites/musinsashop/overview
+https://musinsashop.netlify.app/
+
+
+----------------------------------------------------------------------------------------------------
+
+
+* Redux 를할거다
+ - React.js의 라이브러리다
+   리액트가 자바스크립트 라이브러리다
+   그럼 redux는 라이브러리의 라이브러리? O
+
+> Redux를 사용하지 않아도 React.js를 사용하는데 문제가 없다
+> 만약, 프론트앤드 개발자로 네카라쿠배토당배 간다면 Redux는 필수다!
+
+리액트의 마지막 redux
+
+> 리덕스랑 시스템 비슷한애 => useReducer( ) => Redux
+1.
+useReducer( ) 
+ => component 안에 useReducer( ) 라는 훅함수를 썼다
+ =>  const [state, dispatch라는 함수] = useReducer( reducer라는 함수 ,초기값value )
+dispatch = 상태변화를 감지하는 촉발함수 / 어떤 이벤트가 발생하게 되면 실행되게끔했다
+
+type & action 객체
+
+2. 컴포넌트 밖에서 대기하고 있는 reducer함수 > action객체를 받아서 실제  실행!
+실행된 결과값을 컴포넌트 안에 state에게 값을 업데이트!
+
+독립적인 state data 관리를 시켜주고 싶다면 
+data 용량이 크다
+
+사이즈 크고 괜찮은 회사를 가고싶면 => reduce를 쓸 수 있는 회사를 가라
+
+*Redux => 단점 : 동기적인 처리밖에 못한다
+프론트엔트의 꽃은 api인데
+qpi는 비동기로 해도 될까말까인데 동기처리한다?
+redux 비동기적인 처리 방법 
+   => Redux Saga(Redux Thnuk에 + / 규모있는 회사들이 사용) / Redux Thnuk(우린 이걸쓸거다)
+Redux Thnuk 쓰면 리액트의 큰 사이클이 된다
+
+사용자가 웹브라우저 화면에서 어떤 행위를 했따 => 이벤트 발생 => 액션 발생 => 
+액션객체가 같은 컴포넌트 위로 가는데 리덕스는 별도로 빼내
+*Redux =>파일을 쪼개서 관리한다
+
+https://ko.redux.js.org/introduction/installation에서
+npm install redux 을 복사해서 터미널에 치기
+
+리덕스를 리액트 훅으로 사용하려면 
+https://react-redux.js.org/introduction/getting-started에
+npm install react-redux 을 복사해서 터미널에 치기
+
+
+
+미션 -버튼이 있는데 증가 버튼을 클릭할 때마다 숫자가 1개씩 
+증가하는 컴포넌트(정식명칭은 앱이 맞다)를 완성해보기
+
