@@ -1,0 +1,25 @@
+파라미터 & 쿼리스트링
+http://localhost:3000/
+http://localhost:3001/cosmetic
+http://localhost:3002/accessory
+http://localhost:3003/goods
+특정한 경로로 가고싶을때 파라미터를 사용한다
+동적경로를 구현한다 => 파라미터를 사용한다
+
+만약 gnb로 활용해서 가는게 아니라 검색창에 원하는 물품을 검색해서 바로 가고자할 때는
+그때는 동적인 경로가 중요한것이 아니라 쿼리스트링을 사용한다
+http://localhost:3000/product?q=nike
+http://localhost:3000/product?q=nike&q1=shoes
+
+
+URL / URI / URN 개념 도 있다 => 셋은 다른개념이다
+
+http://localhost:3000/
+localhost는 기본으로 설정되어 있다
+기본적인 도메인이다
+3000 => 프로그래밍이 / 리액트가 편의상 만든 넘버다
+
+html파일을 할때 기본 페이지를 index로 하는거랑 같은 개념이다
+
+윈도우를 기반으로 프로그램을 만들어서 로컬 서버를 구현하겠다
+=> 서버의 기본 IP default 포트 넘버 : 8080 
