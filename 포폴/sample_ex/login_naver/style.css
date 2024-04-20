@@ -264,46 +264,56 @@ body .wrapper footer section .info {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 14px;
   letter-spacing: -0.5px;
   color: #222;
-  font-size: 14px;
 }
 body .wrapper footer section .info li {
   text-align: center;
-  color: #888;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.5px;
+  color: #888;
 }
 body .wrapper footer section .info li:nth-child(2),
 body .wrapper footer section .info li:nth-child(3),
 body .wrapper footer section .info li:nth-child(4) {
+  display: inline-block;
+  position: relative;
   text-align: center;
-  color: #888;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.5px;
+  color: #888;
   padding-left: 13px;
-  border: 1px solid #f00;
 }
-body .wrapper footer section .info li:nth-child(2) a::before,
-body .wrapper footer section .info li:nth-child(3) a::before,
-body .wrapper footer section .info li:nth-child(4) a::before {
+body .wrapper footer section .info li:nth-child(2) a,
+body .wrapper footer section .info li:nth-child(3) a,
+body .wrapper footer section .info li:nth-child(4) a {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+}
+body .wrapper footer section .info li:nth-child(2)::before,
+body .wrapper footer section .info li:nth-child(3)::before,
+body .wrapper footer section .info li:nth-child(4)::before {
   content: "";
   position: absolute;
   top: 4px;
-  left: 4px;
-  width: 1px;
+  left: 7px;
+  width: 0.5px;
   height: 11px;
   background-color: #dadada;
 }
-body .wrapper footer section .info .company_info {
+body .wrapper footer section .company_info {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 14px;
   letter-spacing: -0.5px;
   color: #222;
-  font-size: 14px;
+  margin-top: 9px;
 }/*# sourceMappingURL=style.css.map */

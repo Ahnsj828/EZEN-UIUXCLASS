@@ -56,24 +56,39 @@
 @mixin f-info {
   @include JccAic_row;
   text-align: center;
+  font-size: 14px;
   letter-spacing: -0.5px;
   color: #222;
-  font-size: 14px;
 }
-@mixin f-info-detail {
+@mixin f-info-li {
   text-align: center;
-  color: #888;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.5px;
+  color: #888;
 }
-
-@mixin info-before {
+@mixin f-info-li234 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+  padding-left: 13px;
+}
+@mixin info-li-a {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -.5px;
+  color: #888;
+}
+@mixin info-li-before {
   content: "";
   position: absolute;
   top: 4px;
-  left: -4px;
-  width: 1px;
+  left: 7px;
+  width: 0.5px;
   height: 11px;
   background-color: #dadada;
 }

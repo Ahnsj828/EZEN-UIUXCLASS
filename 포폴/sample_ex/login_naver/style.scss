@@ -209,32 +209,24 @@ body {
         text-align: center;
         .info {
           @include f-info;
-          // position: relative;
           li {
-            @include f-info-detail;
+            @include f-info-li;
           }
           li:nth-child(2),
           li:nth-child(3),
           li:nth-child(4) {
-            @include f-info-detail;
-            padding-left: 13px;
-            border: 1px solid #f00;
-            a {
-              &::before {
-                // @include info-before;
-                content: "";
-                position: absolute;
-                top: 4px;
-                left: 4px;
-                width: 1px;
-                height: 11px;
-                background-color: #dadada;
-              }
+            @include f-info-li234;
+            a{
+              @include info-li-a;
+            }
+            &::before {
+              @include info-li-before;
             }
           }
-          .company_info {
-            @include f-info;
-          }
+        }
+        .company_info {
+          @include f-info;
+          margin-top: 9px;
         }
       }
     }
