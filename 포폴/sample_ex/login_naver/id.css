@@ -33,6 +33,8 @@ body form article .input_id {
   padding: 14px 17px 13px;
   border: 1px solid #dadada;
   border-radius: 6px 6px 0 0;
+  display: flex;
+  flex-direction: row;
 }
 body form article .input_id .idIcons {
   display: table-cell;
@@ -79,6 +81,23 @@ body form article .input_id input::placeholder {
 }
 body form article .input_id input:focus {
   outline: none;
+}
+body form article .input_id .xGray_button {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 35px;
+  height: 35px;
+  z-index: 5;
+  display: none;
+}
+body form article .input_id .xGray_button .xGray {
+  display: inline-block;
+  position: -179px -182px;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  margin: 8px 0 0 8px;
 }
 body form article .input_pw {
   position: relative;
@@ -137,6 +156,23 @@ body form article .input_pw input::placeholder {
 }
 body form article .input_pw input:focus {
   outline: none;
+}
+body form article .input_pw .xGray_button {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 35px;
+  height: 35px;
+  z-index: 5;
+  display: none;
+}
+body form article .input_pw .xGray_button .xGray {
+  display: inline-block;
+  position: -179px -182px;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  margin: 8px 0 0 8px;
 }
 body form article .input_click {
   border: 1px solid #03c75a;

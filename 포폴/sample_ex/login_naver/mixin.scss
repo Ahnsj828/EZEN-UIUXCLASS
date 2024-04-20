@@ -130,16 +130,33 @@
 }
 @mixin input_idpw {
   display: table-cell;
-    padding-right: 30px;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: -.5px;
-    color: #222;
-    box-sizing: border-box;
-    z-index: 4;
-    border-radius: 0;
-    border: none;
-    background: 0 0;
+  padding-right: 30px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -.5px;
+  color: #222;
+  box-sizing: border-box;
+  z-index: 4;
+  border-radius: 0;
+  border: none;
+  background: 0 0;
+}
+
+@mixin xGray_button {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 35px;
+  height: 35px;
+  z-index: 5;
+}
+@mixin xGray {
+  display: inline-block;
+  position: -179px -182px;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  margin: 8px 0 0 8px;
 }

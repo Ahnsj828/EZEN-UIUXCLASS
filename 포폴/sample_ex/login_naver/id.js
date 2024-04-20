@@ -1,86 +1,114 @@
-// -----  id& pw 선택 => icon변경 추가 -----
-//  << id & pw >>
+// -----  id& pw 선택 => icon변경 , border효과 변경 -----
+//  < id 요소 >
 const idDiv = document.querySelector(".input_id")
 const idInput = document.querySelector(".input_id input");
-
+//  < id 아이콘 >
 const idIconNoClick = document.querySelector(".idIcon_noClick");
 const idIconClick = document.querySelector(".idIcon_click");
-
+// xGray_button_id 버튼 선택
+const xGrayButtonId = document.querySelector('.xGray_button_id');
+//  < pw 요소 >
 const pwDiv = document.querySelector(".input_pw")
 const pwInput = document.querySelector(".input_pw input");
-
+//  < pw 아이콘 >
 const pwIconNoClick = document.querySelector(".pwIcon_noClick");
 const pwIconClick = document.querySelector(".pwIcon_click");
+// xGray_button_pw 버튼 선택
+const xGrayButtonPw = document.querySelector('.xGray_button_pw');
 
-
-// 초기 설정: ID 로그인 이미지만 보이기
-
+// < 초기 설정: border효과 기본 상태로 적용 >
 idDiv.classList.remove("input_click")
 pwDiv.classList.remove("input_click")
 
-// // ID input - 클릭
-// const idInputClick = () => {
-//   document.querySelector(".idIcon_noClick").style.display = "none";
-//   document.querySelector(".idIcon_click").style.display = "inline";
 
-//   document.querySelector(".pwIcon_noClick").style.display = "inline";
-//   document.querySelector(".pwIcon_click").style.display = "none";
-
-//   idDiv.classList.add("input_click")
-//   pwDiv.classList.remove("input_click")
-// };
-
-
-//  ID input - 클릭(포커스) - 아이디 입력 요소에 포커스 이벤트 리스너 추가
+// < ID input 클릭(포커스) > 아이디 입력 요소에 포커스 이벤트 리스너 추가
 idInput.addEventListener("focus", () => {
   // 포커스가 되었을 때 input_click 클래스 추가
   idDiv.classList.add("input_click");
-
+  // 아이콘 이미지 변경
   idIconNoClick.classList.remove("idIcon_noClick");
   idIconClick.classList.remove("idIcon_click");
 });
 
-//  ID input - 클릭 해제(포커스 아웃) - 아이디 입력 요소에 포커스 아웃 이벤트 리스너 추가
+// < ID input 클릭 해제(포커스 아웃) > 아이디 입력 요소에 포커스 아웃 이벤트 리스너 추가
 idInput.addEventListener("blur", () => {
   // 포커스가 해제되었을 때 input_click 클래스 제거
   idDiv.classList.remove("input_click");
-
+  // 아이콘 이미지 변경
   idIconNoClick.classList.add("idIcon_noClick");
   idIconClick.classList.add("idIcon_click");
 });
 
 
-//  PW input - 클릭(포커스) - 비밀번호 입력 요소에 포커스 이벤트 리스너 추가
+// < PW input 클릭(포커스) > 비밀번호 입력 요소에 포커스 이벤트 리스너 추가
 pwInput.addEventListener("focus", () => {
   // 포커스가 되었을 때 input_click 클래스 추가
   pwDiv.classList.add("input_click");
-
+  // 아이콘 이미지 변경
   pwIconNoClick.classList.remove("pwIcon_noClick");
   pwIconClick.classList.remove("pwIcon_click");
 });
 
-//  PW input - 클릭 해제(포커스 아웃) - 비밀번호 입력 요소에 포커스 아웃 이벤트 리스너 추가
+// < PW input 클릭 해제(포커스 아웃) > 비밀번호 입력 요소에 포커스 아웃 이벤트 리스너 추가
 pwInput.addEventListener("blur", () => {
   // 포커스가 해제되었을 때 input_click 클래스 제거
   pwDiv.classList.remove("input_click");
-
+  // 아이콘 이미지 변경
   pwIconNoClick.classList.add("pwIcon_noClick");
   pwIconClick.classList.add("pwIcon_click");
 });
 
-// // pw input - 클릭
-// const pwInputClick = () => {
-//   document.querySelector(".idIcon_noClick").style.display = "inline";
-//   document.querySelector(".idIcon_click").style.display = "none";
+// 
+// 
+// -----  input 내용 입력 => x아이콘 => 클릭하면 없어지게 -----
 
-//   document.querySelector(".pwIcon_noClick").style.display = "none";
-//   document.querySelector(".pwIcon_click").style.display = "inline";
+// < ID 입력 요소 입력 이벤트 > ID 입력시 : x버튼 생성
+idInput.addEventListener('input', () => {
+  // if (idInput.value.trim() !== '') {
+  //   xGrayButtonId.style.display = 'inline-block';
+  //   // 입력된 내용이 있을 경우 xGray_button_id 버튼 보이기
+  // } else {
+  //   xGrayButtonId.style.display = 'none';
+  //   // 입력된 내용이 없을 경우 xGray_button_id 버튼 안 보이기
+  // }
+  if (idInput.value.trim() == '') {
+    xGrayButtonId.style.display = 'none';
+    // 입력된 내용이 없을 경우 xGray_button_id 버튼 안 보이기
+  } else {
+    xGrayButtonId.style.display = 'inline-block';
+    // 입력된 내용이 있을 경우 xGray_button_id 버튼 보이기
+  }
+});
 
-//   // idDiv.classList.remove("input_click")
-//   // pwDiv.classList.add("input_click")
-// };
+// < xGray_button_id 버튼 클릭 이벤트 > 버튼 클릭 시 : 기입된 내용과 버튼 숨기기
+xGrayButtonId.addEventListener("click", () => {
+  // 입력된 내용과 버튼 숨기기
+  idInput.value = ""; // 입력 내용 초기화
+  xGrayButtonId.style.display = "none"; // 버튼 숨기기
+});
 
 
+// < PW 입력 요소 입력 이벤트 > PW 입력시 : x버튼 생성
+pwInput.addEventListener('input', () => {
+  // if (pwInput.value.trim() !== '') {
+  //   xGrayButtonPw.style.display = 'inline-block';
+  //   // 입력된 내용이 있을 경우 xGray_button_pw 버튼 보이기
+  // } else {
+  //   xGrayButtonPw.style.display = 'none';
+  //   // 입력된 내용이 없을 경우 xGray_button_pw 버튼 안 보이기
+  // }
+  if (pwInput.value.trim() == '') {
+    xGrayButtonPw.style.display = 'none';
+    // 입력된 내용이 없을 경우 xGray_button_pw 버튼 안 보이기
+  } else {
+    xGrayButtonPw.style.display = 'inline-block';
+    // 입력된 내용이 있을 경우 xGray_button_pw 버튼 보이기
+  }
+});
 
-// idInput.addEventListener("click", idInputClick);
-// pwInput.addEventListener("click", pwInputClick);
+// < xGray_button_pw 버튼 클릭 이벤트 > 버튼 클릭 시 : 기입된 내용과 버튼 숨기기
+xGrayButtonPw.addEventListener("click", () => {
+  // 입력된 내용과 버튼 숨기기
+  pwInput.value = ""; // 입력 내용 초기화
+  xGrayButtonPw.style.display = "none"; // 버튼 숨기기
+});

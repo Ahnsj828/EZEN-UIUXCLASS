@@ -11,6 +11,7 @@
   </head>
   <body>
     <form action="http://localhost/3000/login" method="post">
+      <!-- id & pw 입력란 -->
       <article>
         <div class="input_id input_click">
           <span class="idIcons">
@@ -18,6 +19,9 @@
             <img class="idIcon idIcon_click" src="./imgs/id_icon_click.png" alt="id_icon_click" />
           </span>
           <input type="text" placeholder="아이디" />
+          <span class="xGray_button xGray_button_id">
+            <img class="xGray xGray_id" src="./imgs/xGray_icon.png" alt="xGray_icon">
+          </span>
         </div>
         <div class="input_pw input_click">
           <span class="pwIcons">
@@ -33,9 +37,12 @@
             />
           </span>
           <input type="password" placeholder="비밀번호" />
+          <span class="xGray_button xGray_button_pw">
+            <img class="xGray xGray_pw" src="./imgs/xGray_icon.png" alt="xGray_icon">
+          </span>
         </div>
       </article>
-
+      <!-- 로그인 setting  -->
       <ul class="login_setting">
         <li class="state">
           <span class="state_icon"></span>
@@ -52,7 +59,9 @@
           </span>
         </li>
       </ul>
-      <input type="submit" value="로그인" />
+      <!-- 로그인 버튼 -->
+      <!-- <input type="submit" value="로그인" /> -->
+      <button>로그인</button>
     </form>
   </body>
 </html>
