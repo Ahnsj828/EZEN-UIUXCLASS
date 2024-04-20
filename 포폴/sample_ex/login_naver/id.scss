@@ -14,10 +14,16 @@ body {
     article {
       .input_id {
         @include div_input;
-        .id_icon {
+        .idIcons {
           @include icons;
           .idIcon{
             @include icon_idpw;
+          }
+          .idIcon_noClick{
+            display: inline;
+          }
+          .idIcon_click{
+            display: none;
           }
         }
         input {
@@ -33,10 +39,16 @@ body {
       .input_pw {
         @include div_input;
         border-radius: 0 0 6px 6px;
-        .pw_icon {
+        .pwIcons {
           @include icons;
           .pwIcon {
             @include icon_idpw;
+          }
+          .pwIcon_noClick {
+            display: inline;
+          }
+          .pwIcon_click {
+            display: none;
           }
         }
         input {

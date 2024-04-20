@@ -34,13 +34,13 @@ body form article .input_id {
   border: 1px solid #dadada;
   border-radius: 6px 6px 0 0;
 }
-body form article .input_id .id_icon {
+body form article .input_id .idIcons {
   display: table-cell;
   vertical-align: middle;
   width: 24px;
   text-align: left;
 }
-body form article .input_id .id_icon .idIcon {
+body form article .input_id .idIcons .idIcon {
   position: absolute;
   top: 50%;
   left: 17px;
@@ -49,6 +49,12 @@ body form article .input_id .id_icon .idIcon {
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
+}
+body form article .input_id .idIcons .idIcon_noClick {
+  display: inline;
+}
+body form article .input_id .idIcons .idIcon_click {
+  display: none;
 }
 body form article .input_id input {
   display: table-cell;
@@ -86,13 +92,13 @@ body form article .input_pw {
   border-radius: 6px 6px 0 0;
   border-radius: 0 0 6px 6px;
 }
-body form article .input_pw .pw_icon {
+body form article .input_pw .pwIcons {
   display: table-cell;
   vertical-align: middle;
   width: 24px;
   text-align: left;
 }
-body form article .input_pw .pw_icon .pwIcon {
+body form article .input_pw .pwIcons .pwIcon {
   position: absolute;
   top: 50%;
   left: 17px;
@@ -101,6 +107,12 @@ body form article .input_pw .pw_icon .pwIcon {
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
+}
+body form article .input_pw .pwIcons .pwIcon_noClick {
+  display: inline;
+}
+body form article .input_pw .pwIcons .pwIcon_click {
+  display: none;
 }
 body form article .input_pw input {
   display: table-cell;
