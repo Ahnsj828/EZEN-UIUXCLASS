@@ -12,7 +12,6 @@ body {
     height: 100%;
     height: auto;
     article {
-   
       .input_id {
         @include div_input;
         .id_icon {
@@ -30,9 +29,6 @@ body {
             outline: none;
           }
         }
-        &:focus {
-          border: #0f0;
-        }
       }
       .input_pw {
         @include div_input;
@@ -43,7 +39,15 @@ body {
             @include icon_idpw;
           }
         }
-        input {}
+        input {
+          @include input_idpw;
+          &::placeholder {
+            color: #929294;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
       }
       .input_click {
         border: 1px solid #03c75a;

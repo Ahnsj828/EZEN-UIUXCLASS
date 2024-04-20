@@ -74,9 +74,6 @@ body form article .input_id input::placeholder {
 body form article .input_id input:focus {
   outline: none;
 }
-body form article .input_id:focus {
-  border: #0f0;
-}
 body form article .input_pw {
   position: relative;
   display: table;
@@ -104,6 +101,30 @@ body form article .input_pw .pw_icon .pwIcon {
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
+}
+body form article .input_pw input {
+  display: table-cell;
+  padding-right: 30px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #222;
+  box-sizing: border-box;
+  z-index: 4;
+  border-radius: 0;
+  border: none;
+  background: 0 0;
+}
+body form article .input_pw input::-moz-placeholder {
+  color: #929294;
+}
+body form article .input_pw input::placeholder {
+  color: #929294;
+}
+body form article .input_pw input:focus {
+  outline: none;
 }
 body form article .input_click {
   border: 1px solid #03c75a;

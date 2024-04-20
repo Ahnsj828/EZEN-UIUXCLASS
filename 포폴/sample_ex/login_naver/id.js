@@ -1,7 +1,10 @@
 // -----  id& pw 선택 => icon변경 추가 -----
 //  << id & pw >>
 const idDiv = document.querySelector(".input_id")
-const idInput = document.querySelector(".input_id input");
+// const idInput = document.querySelector(".input_id input");
+// 아이디 입력 요소 가져오기
+const idInput = document.querySelector('input[type="text"]');
+
 const idIconNoClick = document.querySelector(".idIcon_noClick");
 const idIconClick = document.querySelector(".idIcon_click");
 
@@ -17,21 +20,33 @@ document.querySelector(".idIcon_click").style.display = "none";
 document.querySelector(".pwIcon_noClick").style.display = "inline";
 document.querySelector(".pwIcon_click").style.display = "none";
 
-idDiv.classList.remove(".input_click")
-pwDiv.classList.remove(".input_click")
+idDiv.classList.remove("input_click")
+pwDiv.classList.remove("input_click")
 
-// ID input - 클릭
-const idInputClick = () => {
-  document.querySelector(".idIcon_noClick").style.display = "none";
-  document.querySelector(".idIcon_click").style.display = "inline";
+// // ID input - 클릭
+// const idInputClick = () => {
+//   document.querySelector(".idIcon_noClick").style.display = "none";
+//   document.querySelector(".idIcon_click").style.display = "inline";
 
-  document.querySelector(".pwIcon_noClick").style.display = "inline";
-  document.querySelector(".pwIcon_click").style.display = "none";
+//   document.querySelector(".pwIcon_noClick").style.display = "inline";
+//   document.querySelector(".pwIcon_click").style.display = "none";
 
-  // idDiv.style = "border: 1px solid #03c75a;"
-  idDiv.classList.add(".input_click")
-  pwDiv.classList.remove(".input_click")
-};
+//   // idDiv.classList.add("input_click")
+//   // pwDiv.classList.remove("input_click")
+// };
+
+
+// 아이디 입력 요소에 포커스 이벤트 리스너 추가
+idInput.addEventListener("focus", () => {
+  // 포커스가 되었을 때 input_click 클래스 추가
+  idInput.classList.add("input_click");
+});
+
+// 아이디 입력 요소에 포커스 아웃 이벤트 리스너 추가
+idInput.addEventListener("blur", () => {
+  // 포커스가 해제되었을 때 input_click 클래스 제거
+  idInput.classList.remove("input_click");
+});
 
 // pw input - 클릭
 const pwInputClick = () => {
@@ -41,11 +56,11 @@ const pwInputClick = () => {
   document.querySelector(".pwIcon_noClick").style.display = "none";
   document.querySelector(".pwIcon_click").style.display = "inline";
 
-
-  // pwDiv.style = "border: 1px solid #03c75a;"
-  idDiv.classList.remove(".input_click")
-  pwDiv.classList.add(".input_click")
+  // idDiv.classList.remove("input_click")
+  // pwDiv.classList.add("input_click")
 };
+
+
 
 idInput.addEventListener("click", idInputClick);
 pwInput.addEventListener("click", pwInputClick);
