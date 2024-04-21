@@ -101,6 +101,7 @@
   color: #888;
 }
 
+// -----< ID 로그인 >-----
 @mixin div_input {
   position: relative;
   display: table;
@@ -142,6 +143,7 @@
   border-radius: 0;
   border: none;
   background: 0 0;
+  cursor: pointer;
 }
 
 @mixin xGray_button {
@@ -159,4 +161,29 @@
   width: 18px;
   height: 18px;
   margin: 8px 0 0 8px;
+}
+
+@mixin ip_button {
+  display: block;
+  position: relative;
+  top: -1px;
+  width: 33px;
+  height: 18px;
+  border-radius: 12px;
+  background-color: #c3c8c9;
+  margin-left: 4px;
+  transition: all 0.2s ease;
+}
+@mixin ip_button_circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+  transition: all .1s ease;
+  box-sizing: border-box;
 }

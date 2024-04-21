@@ -42,25 +42,27 @@
           </span>
         </div>
       </article>
+
       <!-- 로그인 setting  -->
       <ul class="login_setting">
         <li class="state">
-          <span class="state_icon"></span>
-          <label for="login_setting">로그인 상태유지</label>
+          <input id="state_icon" type="checkbox">
+          <span class="state_button state_button_click"></span>
+          <label class="state_check" for="state_icon">로그인 상태유지</label>
         </li>
         <li class="ip">
-          <a
-            href="https://nid.naver.com/login/ext/help_ip3.html"
-            target="_blank"
-            >IP보안</a
-          >
-          <span class="ip_button">
-            <span class="ip_button_circle"></span>
-          </span>
+          <a 
+          href="https://nid.naver.com/login/ext/help_ip3.html" target="_blank" >
+            IP보안
+          </a>
+          <input id="ip_icon" type="checkbox">
+          <label class="ip_button ip_button_check" for="ip_icon">
+            <span class="ip_button_circle ip_button_circle_check"></span>
+          </label>
         </li>
       </ul>
+
       <!-- 로그인 버튼 -->
-      <!-- <input type="submit" value="로그인" /> -->
       <button>로그인</button>
     </form>
   </body>

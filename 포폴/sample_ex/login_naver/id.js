@@ -60,6 +60,8 @@ pwInput.addEventListener("blur", () => {
 
 // 
 // 
+// 
+// 
 // -----  input 내용 입력 => x아이콘 => 클릭하면 없어지게 -----
 
 // < ID 입력 요소 입력 이벤트 > ID 입력시 : x버튼 생성
@@ -111,4 +113,51 @@ xGrayButtonPw.addEventListener("click", () => {
   // 입력된 내용과 버튼 숨기기
   pwInput.value = ""; // 입력 내용 초기화
   xGrayButtonPw.style.display = "none"; // 버튼 숨기기
+});
+
+// 
+// 
+// 
+// 
+// ----- 로그인 상태 유지 체크 => 클릭시 버튼이 바뀌게 -----
+const stateItems = document.querySelectorAll(".state");
+const stateBtn = document.querySelector(".state_button");
+
+stateBtn.classList.remove("state_button_click");
+
+stateItems.forEach(stateItem => {
+  stateItem.addEventListener("click", () => {
+    if (stateBtn.classList.contains("state_button_click")) {
+      stateBtn.classList.remove("state_button_click");
+    } else {
+      stateBtn.classList.add("state_button_click");
+    }
+  });
+});
+
+// 
+// 
+// 
+// 
+// ----- IP보안 상태 체크 => 클릭시 버튼이 바뀌게 -----
+const ipBtn = document.querySelector(".ip label");
+const ipBtnCircle = ipBtn.querySelector(".ip label span");
+
+ipBtn.classList.remove("ip_button_check");
+ipBtnCircle.classList.remove("ip_button_circle_check");
+
+ipBtn.addEventListener("click", () => {
+  if (ipBtn.classList.contains("ip_button_check")) {
+    ipBtn.classList.remove("ip_button_check");
+    ipBtnCircle.classList.remove("ip_button_circle_check");
+    ipBtnCircle.classList.add("ip_button_circle");
+
+    ipBtnCircle.style.cssText = "transition: all 2s ease;"
+  } else {
+    ipBtn.classList.add("ip_button_check");
+    ipBtnCircle.classList.remove("ip_button_circle");
+    ipBtnCircle.classList.add("ip_button_circle_check");
+    
+    ipBtnCircle.style.cssText = "transition: all 2s ease;"
+  }
 });
