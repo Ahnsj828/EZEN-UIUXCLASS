@@ -50,8 +50,8 @@ body {
   font-size: 26px;
 }
 .user-alarm {
-  color: #fff;
   font-size: 22px;
+  color: #fff;
 }
 .user-alarm span {
   display: inline-block;
@@ -74,11 +74,10 @@ body {
   font-style: normal;
   /* em태그가 이테릭스타일이라 정상스타일로 바꾼거다 */
   font-size: 10px;
-  /* transform: translateY; */
   font-family: var(--primary-en);
   position: absolute;
   top: -20%;
-  left: -28%;
+  left: 28%;
 }
 .header-iframe {
   width: 100%;
@@ -243,7 +242,7 @@ body {
 .signup-field {
   margin: 20px 0;
 }
-.signup-field:fist-child {
+.signup-field:first-child {
   margin-top: 0;
 }
 .signup-field span {
@@ -271,37 +270,23 @@ body {
 .signup-field.birth div > * {
   /* 직계 선택의 전체 선택자 */
   /* signup-field클래스중 birth클래스를 갖은 애 안에 div 안에 태그들 => input, select, select*/
-  width: 33.33%;
-  border: 1px solid var(--gainsboro);
-  border-radius: 3px;
-  padding: 7px;
-  text-align: center;
-  color: var(--silver-gray);
-}
-.signup-field.birth div input:focus {
-  outline: none;
-}
-.signup-field.phone div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
   margin-top: 8px;
 }
-.signup-field.phone > div:last-child {
-  margin-bottom: ;
-}
 .signup-field.phone > div input {
-  width: 250%;
+  width: 250px;
   margin-bottom: 4px;
   padding: 7px;
   border: 1px solid var(--gainsboro);
   border-radius: 3px;
 }
+.signup-field.phone > div input:last-child {
+  margin-bottom: 0;
+}
 .signup-field.phone > div input:focus {
   outline: none;
 }
 .btn-getcode {
-  width: 100%;
+  width: 100px;
   padding: 4px;
   background: #fff;
   border: none;

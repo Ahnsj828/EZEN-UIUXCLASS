@@ -1,7 +1,7 @@
 // store를 완성하려면 reducer가 있어야한다
 // reducer는 함수다
 
-import { act } from "react-dom/test-utils";
+// import { act } from "react-dom/test-utils";
 
 const initialState = {
   count: 0,
@@ -30,10 +30,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "INCREMENT":
       return { ...state, count: state.count + action.payload.num };
-
     case "DECREMENT":
       return { ...state, count: state.count - action.payload.num };
-
     case "LOGIN":
       return {
         ...state,

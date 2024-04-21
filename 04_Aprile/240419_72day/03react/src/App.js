@@ -27,7 +27,7 @@
 
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
-import Box from "./component/Box";
+import Box from "./Box";
 
 function App() {
   const count = useSelector((state) => state.count);
@@ -45,6 +45,7 @@ function App() {
       payload: { num: 5 },
     });
   };
+
   const increase = () => {
     dispatch({
       // useDispatc에는 객체가 담겨있어야한다 =>그래서 action객체라고 부르는거다
@@ -60,7 +61,7 @@ function App() {
       payload: { id: "david", password: "1234" },
     });
   };
-
+  
   return (
     <div className="App">
       <h1>{count}</h1>

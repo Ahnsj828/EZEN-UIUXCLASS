@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,6 @@
       src="https://kit.fontawesome.com/3f2ea24883.js"
       crossorigin="anonymous"
     ></script>
-    <!-- custom css & js-->
     <link rel="stylesheet" href="../css/style.css" />
     <script defer src="../script.js"></script>
   </head>
@@ -23,18 +22,18 @@
         ></iframe>
         <div class="signup-content">
           <div class="signup-field id-pw">
-            <span>이메일<em>*</em></span>
+            <span>이메일 <em>*</em></span>
             <input type="email" placeholder="이메일 입력" />
           </div>
           <div class="signup-field id-pw">
-            <span>비밀번호<em>*</em></span>
+            <span>비밀번호 <em>*</em></span>
             <input
               type="password"
               placeholder="비밀번호 입력(영문, 숫자, 특수기호 조합 8~16자리)"
             />
           </div>
           <div class="signup-field id-pw">
-            <span>비밀번호 확인<em>*</em></span>
+            <span>비밀번호 확인 <em>*</em></span>
             <input
               type="password"
               placeholder="비밀번호 입력(영문, 숫자, 특수기호 조합 8~16자리)"
@@ -62,11 +61,11 @@
             <div class="authenticate">
               <div>
                 <input
-                  class="userPhone"
+                  class="userphone"
                   type="text"
-                  placeholder="휴대전화번호 입력"
+                  placeholder="휴대 전화번호 입력"
                 />
-                <button class="btn-getcode receive">인증번호받기</button>
+                <button class="btn-getcode receive">인증번호 받기</button>
               </div>
               <div>
                 <input type="text" placeholder="인증번호 입력" />
@@ -74,30 +73,30 @@
               </div>
             </div>
           </div>
-          <div class="agree-term custom-check">
+          <div class="agree-term custom-chk">
             <!-- div.agree-term.custom-check -->
             <label for="first">
               <input id="first" type="checkbox" />
-              <em></em> 모든 약관에 동의 합니다
+              <em></em> 모든 약관에 동의합니다.
             </label>
             <label for="second">
               <input id="second" type="checkbox" />
-              <em></em> (필수) 이용약관과 개인 정보 수집 및 이용에 동의합니다.
+              <em></em> (필수) 이용약관과 개인정보 수집 및 이용에 동의합니다.
             </label>
             <label for="third">
               <input id="third" type="checkbox" />
-              <em></em> (필수) 이메일 및 SNS 마케팅 정보 수신에 동의합니다.
+              <em></em> (필수) 이메일 및 SMS 마케팅 정보 수신에 동의합니다.
             </label>
           </div>
           <button class="btn-primary btn-signup">가입하기</button>
           <!-- button.btn-primary.btn-signup{가입하기} -->
         </div>
+        <iframe
+          class="gnb-iframe"
+          src="../include/gnb.html"
+          frameborder="0"
+        ></iframe>
       </div>
-      <iframe
-        class="gnb-iframe"
-        src="../include/gnb.html"
-        frameborder="0"
-      ></iframe>
     </div>
   </body>
 </html>
