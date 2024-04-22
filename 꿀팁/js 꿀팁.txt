@@ -1,0 +1,4 @@
+단축키 확장프로그램이 많다
+vs에서 확장프로그램에서 Turbo JS 도 있다
+ ex) cl => console.log( )
+
