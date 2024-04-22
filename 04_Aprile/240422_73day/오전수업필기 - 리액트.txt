@@ -1,0 +1,102 @@
+1.redux
+  https://ko.redux.js.org/introduction/getting-started/ 에서
+  npm install redux 복붙
+2. react-redux
+ js 구현하는 모든곳에서 사용가능하다
+ https://react-redux.js.org/introduction/getting-started 에서
+  npm install react-redux 복붙
+3.react-bootstrap
+  https://react-bootstrap.netlify.app/docs/getting-started/introduction 에서
+    npm install react-bootstrap bootstrap
+  => 세개를 다운받아야한다
+
+*Redux를 활용해서 연락처 앱을 만들거다
+ > 검색기능도 넣을거다
+
+react-bootstrap => 퍼블리셔는 쓰지말아라 => ui/ux 를 다루는 직군이라
+react를 사용한다 => 프론트엔드 니까 => ui/ux 신경쓸 필요없다
+
+
+* UI관리하는영역 => 이벤트 => 객체의 형태 정의
+UI 관리하는 영역에서 이벤트가 발생한다 => 객체의 형태로 정의 
+(*useSelector 라는 훅 함수를 활용)
+ useSelector 값을 찾아오는역할
+
+*dispatch(action 객체)
+이 이벤트가 dispatch(action 객체)함수에 담겨서
+
+*action 객체 : type / payload
+action은 객체다!!!
+객체를 끄집어내서 쓰고싶다? => 구조분해할당
+
+*reducer
+reducer로 간다
+
+*store
+데이터를 보관하고 저장하과 관리하는 공간
+
+ > 장점 
+   - 컴포넌트간 data전달 : 일방향 (*부모 => 자식)
+   - props에 대한 Driling을 하지 않아도 된다 
+
+
+*데이터가 담길 자료구조!! 👇🏼 
+[
+{이름 : "안성진", 전화번호 : "01012345678"} 
+{이름 : "박보꾸", 전화번호 : "01018445678"} 
+이런 데이터가 여러개 있을거다
+]
+이건 배열이다 / 왜 배열이냐? 그냥 배열이 최적이란다
+
+
+*상단에 URL 주소값 => useParams( )와 useSearchParams( )를 많이 사용한다
+> useParams( ) : 동적경로를 설정할 때 사용한다
+    ./goods 해당경로(해당key)값 안에는 key값과 value값이 있어야한다
+    ./goods : {
+      key: value,
+      key: value,
+      key: value,
+    }
+
+    http://localhost:3000/goods/stationany/kids
+    http://localhost:3000/goods
+    http://localhost:3000/shoes
+    http://localhost:3000/pants
+      어떠한 페이지로 이동할때 사용한다
+
+> useSearchParams( ) : 
+여러페이지에서 검색하고 값을 찾아올때 사용
+ex) CGV 페이지에서 검색하면 나오는거
+
+하나의 단일페이지에서 검색하고 보여줄지 말지할때에는 useSearchParams를 쓸 필요가없다
+
+
+
+
+< Redux Middleware > 업계에서 많이 쓰인다
+  > 왜필요한가? 
+   >Redux : 순차적으로 작동을 하는 매커니즘을 가지고 있다
+     1) 이벤트가 발생
+     2) 그 값을 dispatch에 담아서
+     3) reducer로 이송
+        '범죄도시 4 API' 
+     4) store 저장
+     5) UI 송출
+
+위가 진행되면서 프로젝트에서 동시에 운영되어야하는 다른 기타 요소들과의 실행순서를 정의하고자 할 때
+=> 비동기적으로 처리할 수 있어야 한다!!
+
+Redux & API 데이터를 호출해와야하는 상황이 발생!!
+Redux는 기다려주지않는다
+=> 그래서 Middleware 가 필요하다
+
+Hardware와 Software의 중간정도다 
+ 
+Middleware : 프로그래밍 과정 가운데, 중간에서 어떠한 역할을 해주는 요소!!
+  일종의 컨셉이다 / 지칭 명사 아니고 동사도 아니다
+
+*대표적인 redux 미들웨어
+ - redux thunk : 작은 규모의 프로젝트에서 사용
+     ex) 사람들이 많이 참여하지 않을 프로젝트
+ - redux saga : 큰규모의 프로젝트에서 사용(데이터가많다 => 처리해야할 용량이 많다 / 기능도많다)
+    ex) 쿠팡, 배민....

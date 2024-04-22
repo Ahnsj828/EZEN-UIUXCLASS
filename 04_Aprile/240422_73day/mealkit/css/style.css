@@ -1,0 +1,469 @@
+/* reset */
+@import url("./reset.css");
+
+/* variables */
+@import url("./variables.css");
+
+/* common */
+body {
+  font-family: var(--primary-kr);
+  color: var(--dark-black);
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  position: relative;
+}
+.preloading,
+.signin {
+  height: 100vh;
+}
+.logo {
+  font-family: var(--logo-en);
+}
+.btn-primary {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* main header */
+.main-header {
+  height: 80px;
+  background: var(--crimson);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-back {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+.main-header .logo {
+  color: #fff;
+  font-size: 26px;
+}
+.user-alarm {
+  font-size: 22px;
+  color: #fff;
+}
+.user-alarm span {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  position: relative;
+}
+.user-alarm span em {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--royalblue);
+  border-radius: 100%;
+}
+.user-alarm span em::before {
+  content: attr(data-count);
+  /* attr이 매개변수값을 받는다 */
+  font-style: normal;
+  /* em태그가 이테릭스타일이라 정상스타일로 바꾼거다 */
+  font-size: 10px;
+  font-family: var(--primary-en);
+  position: absolute;
+  top: -20%;
+  left: 28%;
+}
+.header-iframe {
+  width: 100%;
+  height: 80px;
+}
+
+/* gnb */
+.gnb-iframe {
+  width: 100%;
+  height: 55px;
+}
+.gnb {
+  border-top: 1px solid var(--cloudy-gray);
+  padding-top: 8px;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+.gnb a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+.gnb a i {
+  font-size: 18px;
+}
+
+/* preloading */
+.preloading-inner {
+  height: inherit;
+  background: url("../images/preloading-back.jpg") top left / cover no-repeat;
+  position: relative;
+}
+.heading-preloading {
+  position: absolute;
+  top: 180px;
+  left: 30px;
+}
+.heading-preloading .logo {
+  font-size: 32px;
+  color: var(--crimson);
+  margin-bottom: 26px;
+}
+.slogan span {
+  display: block;
+  font-family: var(--secondary-kr);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+/* signin */
+.signin-photo {
+  background: url("../images/signin-header.jpg") no-repeat;
+  height: 250px;
+}
+.signin-header {
+  text-align: center;
+  margin: 20px 0;
+}
+.signin-header .logo {
+  font-size: 26px;
+  margin: 10px 0;
+}
+.signin-header p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.signin-field input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border: 1px solid var(--gainsboro);
+  border-radius: 30px;
+}
+.signin-field input:focus {
+  outline: none;
+  border-color: var(--yellowgreen);
+}
+.signin-field input::placeholder {
+  color: var(--silver-gray);
+  transition: all 0.3s;
+}
+.signin-field input:focus::placeholder {
+  opacity: 0;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.custom-chk label input[type="checkbox"] {
+  display: none;
+}
+.custom-chk label input[type="checkbox"] + em {
+  /* 체크박스의 형제 요소 em태그 */
+  /* border: 2px solid rgba(255, 0, 0, 0.5); */
+  border: 2px solid var(--light-gray);
+  border-radius: 16px;
+  display: inline-block;
+  /* 기본적으로 인라인 요소라 너비가 안먹어서  */
+  width: 20px;
+  height: 20px;
+  transform: translateY(4px);
+  margin-right: 2px;
+}
+.custom-chk label input[type="checkbox"] + em::before {
+  content: "\f00c";
+  font-family: fontawesome;
+  font-style: normal;
+  color: var(--light-gray);
+  font-size: 12px;
+  text-align: center;
+  width: 20px;
+  position: absolute;
+  left: -2px;
+  bottom: -3px;
+  display: inline-block;
+}
+.custom-chk label input[type="checkbox"]:checked + em::before {
+  background: var(--crimson);
+  border-color: none;
+  border-radius: 16px;
+  color: #fff;
+}
+.btn-signin {
+  margin: 10px 0;
+  background: var(--yellowgreen);
+}
+.join-member {
+  text-align: center;
+  margin: 15px 0;
+}
+.join-member a {
+  text-decoration: underline;
+}
+.easy-signin {
+  text-align: center;
+  margin-top: 20px;
+}
+.easy-signin span {
+  color: var(--light-gray);
+}
+.social-btn {
+  margin: 10px 0;
+}
+.social-btn a {
+  margin: 2px;
+}
+
+/* signup */
+.signup-content {
+  padding: 10px;
+}
+.signup-field {
+  margin: 20px 0;
+}
+.signup-field:first-child {
+  margin-top: 0;
+}
+.signup-field span {
+  display: block;
+}
+.signup-field span em {
+  color: var(--crimson);
+}
+.signup-field.id-pw input {
+  /* signup-field중에서 birth클래스를 갖고 있는 애들 */
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--gainsboro);
+  padding: 8px 0;
+}
+.signup-field.id-pw input:focus {
+  outline: none;
+}
+.signup-field.birth div {
+  /* signup-field중에서 birth클래스를 갖고 있는 애들 */
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.signup-field.birth div > * {
+  /* 직계 선택의 전체 선택자 */
+  /* signup-field클래스중 birth클래스를 갖은 애 안에 div 안에 태그들 => input, select, select*/
+  margin-top: 8px;
+}
+.signup-field.phone > div input {
+  width: 250px;
+  margin-bottom: 4px;
+  padding: 7px;
+  border: 1px solid var(--gainsboro);
+  border-radius: 3px;
+}
+.signup-field.phone > div input:last-child {
+  margin-bottom: 0;
+}
+.signup-field.phone > div input:focus {
+  outline: none;
+}
+.btn-getcode {
+  width: 100px;
+  padding: 4px;
+  background: #fff;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.btn-getcode:hover {
+  color: var(--crimson);
+}
+.agree-term {
+  margin-bottom: 25px;
+}
+.agree-term label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.btn-signup {
+  background: var(--crimson);
+  margin-bottom: 14px;
+}
+
+/* category */
+.category-accordion {
+  font-size: 16px;
+  height: 620px;
+}
+.category-accordion .title {
+  border-bottom: 1px solid var(--cloudy-gray);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--crimson);
+  position: relative;
+  padding: 0 20px;
+}
+.category-accordion .title::after,
+.user-shortcut a::after {
+  content: "\f078";
+  font-family: fontawesome;
+  background: var(--funchia);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.category-accordion .title::after {
+  background: transparent;
+  transform: rotateX(180deg);
+  top: 50%;
+}
+.category-accordion .detail {
+  display: none;
+  padding: 7px 20px;
+  background: var(--snow);
+}
+.category-accordion .detail a {
+  display: block;
+  padding: 2px 0;
+}
+
+/* mypage */
+.user-info {
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+}
+.user-avatar {
+  flex: 1;
+  /* => 1 / (1+4) = 1/5*/
+}
+.user-avatar img {
+  width: 60px;
+  border-radius: 100%;
+}
+.user-summary {
+  flex: 4;
+  /* =>  / (1+4) = 1/5*/
+}
+.rating {
+  overflow: hidden;
+  /* .btn-setting을 오른쪽으로 보내서 넘어가는거 안보이게 */
+}
+.rating b {
+  text-transform: uppercase;
+  /* 대문자로 */
+  color: var(--limegreen);
+}
+.rating span {
+  font-weight: 600;
+}
+.btn-setting {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  float: right;
+  color: var(--silver-gray);
+}
+.nickname {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.point-coupon {
+  display: flex;
+  gap: 5px;
+}
+.point-coupon div {
+  background: var(--cloudy-gray);
+  padding: 2px 15px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.point-coupon div span {
+  font-size: 13px;
+}
+.point-coupon div span:last-child {
+  color: var(--crimson);
+  font-weight: 600;
+}
+.delivering {
+  padding: 20px;
+}
+.delivering h2 {
+  font-size: 16px;
+}
+.delivering-items {
+  border: 1px solid var(--cloudy-gray);
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 5px;
+}
+.delivering-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--cloudy-gray);
+}
+.delivering-item:last-child {
+  border: none;
+}
+.delivering-item .thum {
+  width: 60px;
+  height: 60px;
+}
+.delivering-item .thum img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+}
+.delivering-item .desc b {
+  display: block;
+  color: var(--limegreen);
+  font-size: 14px;
+}
+.mypage .banner a img {
+  width: 100%;
+}
+.user-shortcut a {
+  display: block;
+  border-bottom: 1px solid var(--cloudy-gray);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 15px;
+}
+.user-shortcut a span {
+  main-left: 8px;
+}
+.user-shortcut {
+  background: var(--gainsboro);
+}
