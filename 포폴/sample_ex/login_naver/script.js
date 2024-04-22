@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   qrLogin.classList.remove("click_nav");
   // 초기 설정 : 추가 효과
   idLogin.style = "border-radius: 6px 6px 0 0; border-right: none;";
-    disposableLogin.style = "border-radius: 0 0 0 6px;";
-    qrLogin.style = "border-radius: 0;";
+  disposableLogin.style = "border-radius: 0 0 0 6px;";
+  qrLogin.style = "border-radius: 0;";
 
   // ID 로그인 - 클릭
   const idChange = () => {
