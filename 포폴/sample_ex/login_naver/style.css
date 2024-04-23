@@ -118,6 +118,7 @@ body .wrapper .container aside img {
 }
 body .wrapper .container .kind_of_login {
   width: 100%;
+  margin-bottom: -15px;
 }
 body .wrapper .container .kind_of_login .navigation {
   display: flex;
@@ -206,7 +207,7 @@ body .wrapper .container .kind_of_login .wrapper_inner {
   position: relative;
   top: -10px;
   width: 100%;
-  height: auto;
+  height: 295px;
   z-index: 3;
 }
 body .wrapper .container .kind_of_login .wrapper_inner #contentFrame {

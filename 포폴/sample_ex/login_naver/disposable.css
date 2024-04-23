@@ -1,1 +1,37 @@
-@import url("./reset.css");/*# sourceMappingURL=disposable.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00f;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border: 1px solid #f00;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+}/*# sourceMappingURL=disposable.css.map */
