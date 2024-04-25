@@ -1,0 +1,25 @@
+순수 바닐라 자바스크립트할때 => fetch함수
+fetch( ) : 웹 브라우저 내 외부 API
+node.js를 활용해서 구축한 서버를 운영할 때에는 fetch( ) 함수를 사용하려면 별도의 라이브러리 설치 필요!
+nodeFetch라는 mpm?이 있다 => 설치해서 가져오기 번거롭다
+> 기본 공통으로 사용되는 UPL 값을 계속 반복적으로 작성하는데에 불편하다
+> data를 가져올 때, 디버깅(*console로 해서 잘 왔는지 확인했었다)
+
+리덕스를 사용할때는
+Axios를 사용하자
+
+jQuery에서는 외부데이터를 가져올 때 Ajax( )가 가장 좋다
+
+
+tmdb - popular
+ 우측 
+tmdb 위 guides - application
+curl example 형식 
+
+프로필 api => api키
+
+.env (환경설정)
+API_KEY=내 키값(띄어쓰기없어야한다)
+앞에 접두어가 있어야한다
+REACT_APP_API_KEY=내 키값
+
