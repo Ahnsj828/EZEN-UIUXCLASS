@@ -111,7 +111,7 @@ const calculator = {
   }
 }
 
-calculator.add(3, 2)
-calculator.min(3, 2)
-calculator.div(3, 2)
-calculator.powerof(3, 2)
+calculator.add(3, 2) // 5
+calculator.min(3, 2) // 1
+calculator.div(3, 2) // 1.5
+calculator.powerof(3, 2) // 9
