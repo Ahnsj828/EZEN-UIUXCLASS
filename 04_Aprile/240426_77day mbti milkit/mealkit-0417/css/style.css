@@ -70,9 +70,7 @@ body {
 }
 .user-alarm span em::before {
   content: attr(data-count);
-  /* attr이 매개변수값을 받는다 */
   font-style: normal;
-  /* em태그가 이테릭스타일이라 정상스타일로 바꾼거다 */
   font-size: 10px;
   font-family: var(--primary-en);
   position: absolute;
@@ -568,13 +566,14 @@ body {
   line-height: 2rem;
   font-size: 15px;
   counter-reset: rank;
+  padding-left: 8px;
   /* 부모요소한테 이렇게 주고 */
 }
 .search-increase-list li::before {
-  content: counter(rank);
+  content: counter(rank) ".";
   counter-increment: rank;
   /* 자식요소한테 전후문자로 이렇게 주면 앞에 숫자가 생긴다 */
-  margin-right: 6px;
+  margin-right: 4px;
   font-weight: 500;
 }
 
