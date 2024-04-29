@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+    <label for="range">
+      <b> Generate a number between 0 and </b>
+    </label>
+    <input id="range" type="number" />
+    <br />
+    <label for="userPick">Guess the number:</label>
+    <input id="userPick" type="number" />
+    <button>play!</button>
+    <br />
+    <span>
+      you chose
+      <span class="resultUser"></span>
+      ,
+    </span>
+    <span>
+      the machine chose:
+      <span class="resultMachine"></span>
+      .
+    </span>
+    <b>
+      <div class="result"></div>
+    </b>
+  </body>
+</html>
