@@ -147,12 +147,54 @@
 
 // -----------------------------------------------------------------
 
+// const calculator = {
+//   plus: function(a, b) {
+//   // plus: function(2, 3) {
+//     // alert(a + b)
+//     return a + b
+//     // return 2 + 3
+//     // return 5
+//   },
+// } // 여기 plus function이 있는 calculator object가 있다 
+
+// const plusResult = calculator.plus(2, 3)
+// // const plusResult = 5
+// console.log(plusResult)  // 5
+
+// // 이 function을 a와 b를 argument로 갖는다
+// // 2를 a에 보내고 3을 b에 보낸다
+
+// -----------------------------------------------------------------
+
 const calculator = {
   plus: function(a, b) {
-    // alert(a + b)
     return a + b
   },
+  minus: function(a, b) {
+    return a - b
+  },
+  times: function(a, b) {
+    return a * b
+  },
+  divide: function(a, b) {
+    return a / b
+  },
+  power: function(a, b) {
+    return a ** b
+  },
 }
+const plusResult = calculator.plus(2, 3) 
+// const plusResult = 2+3 = 5 
+// const plusResult = 5 (반환값은 5가 된다)
+const minusResult = calculator.minus(plusResult, 10) 
+// const minusResult = calculator.minus(5, 10) = 5-10 = -5 
+// const minusResult = -5 (반환값은 -5가 된다)
+const timesResult = calculator.times(10, minusResult) // 10*-5 =-50
+// const timesResult = calculator.minus(10, -5) = 10*-5 = -50
+// const timesResult = -50 (반환값은 -50이 된다)
+const divideResult = calculator.divide(timesResult, plusResult) // -50/5=-10
+const powerResult = calculator.power(divideResult, minusResult) // -10**-5 =
+// => 이것들은 '상호 의존적'이다 / plus의 결과 값을 얻지 못했었다 console에서만 plus의 결과값을 알 수 있었다 / console에서 값을 가져올 수는 없었다 / console은 그냥 보여주기 위한것 뿐
+// => 전 까지만해도 코드에서 결과 값을 알 수 없었다 => 지금 이 코드는 서로 의존하고 있다
 
-const plusResult = calculator.plus(2, 3)
-console.log(plusResult)  // 5
+// console창에 가면 아무것도 안나온다 But, plusResult를 검색하면 값이 나온다 
