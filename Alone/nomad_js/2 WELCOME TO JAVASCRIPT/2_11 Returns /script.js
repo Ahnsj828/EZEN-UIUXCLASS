@@ -198,3 +198,4 @@ const powerResult = calculator.power(divideResult, minusResult) // -10**-5 =
 // => 전 까지만해도 코드에서 결과 값을 알 수 없었다 => 지금 이 코드는 서로 의존하고 있다
 
 // console창에 가면 아무것도 안나온다 But, plusResult를 검색하면 값이 나온다 
+// plusResult라는 variable은 value가 있다
