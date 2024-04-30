@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "strict": true,
+    "moduleDetection": "force",
+    // 서로다른 변수로 인식시키기 위해
+    "esModuleInterop": true,
+    // CJS를 ESC로 가져오기 위해
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "downlevelIteration": true,
+    // 반복문 쓸때 에러생기는거
+    "noImplicitAny": true,
+    "allowJs": true,
+    "skipLibCheck": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
