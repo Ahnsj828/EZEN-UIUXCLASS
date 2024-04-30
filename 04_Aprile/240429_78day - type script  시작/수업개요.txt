@@ -1,0 +1,17 @@
+React.js : JS 라이브러리
+react 1차 끝
+
+MealKit : Figma, Html, CSS, JS
+JS 2~3개 남았다
+
+-------------------------------------------------
+
+오늘부터 TS할거다
+TS + React.js
+
+JS 문법만 완벽하다면 하나도 어렵지 않을거다
+FE 진입하려면 TS는 필수다 / 요즘 시대는 더욱 더
+
+https://2022.stateofjs.com/en-US
+
+ts는 js기반이다
