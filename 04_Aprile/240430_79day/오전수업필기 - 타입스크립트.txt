@@ -54,6 +54,19 @@ tsconfig.json에서 =>
 package.json에서 =>
 "type": "module",
 
+===============================
+
+새폴더 만들기
+package-lock.json  package.json   tsconfig.json  복붙
+package-lock.json  package.json에 "name": "1_ts", 맞추기
+터미널 열기
+cmd 열기
+npm i 입력
+
+src폴더 만들기
+파일 만들기
+
+=======================================
 
 TS에서 class를 생성하거나 상속하거나 받는 개념 거의 동일하나, 살짝 "접근제어자 + 타입정의"만 상이함!
 거의 똑같다 근데 "접근제어자 문법 + 타입정의"가 들어간다
