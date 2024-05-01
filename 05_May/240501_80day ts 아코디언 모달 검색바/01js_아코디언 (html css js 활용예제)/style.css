@@ -8,11 +8,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 body {
   background: #eee;
   color: #222;
 }
+
 .tab-inner {
   width: 700px;
   margin: 50px auto;
@@ -57,7 +57,7 @@ body {
   transition: all 0.3s;
 }
 .tab h2 {
-  text-decoration: uppercase;
+  text-transform: uppercase;
 }
 .tab img {
   width: 100%;

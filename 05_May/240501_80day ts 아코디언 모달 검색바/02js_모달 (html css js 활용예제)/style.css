@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -45,7 +46,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #999;
 }
 .btn-guide {
@@ -55,6 +56,7 @@ body {
   color: #fff;
   margin-top: 15px;
   padding: 5px;
+  font-size: 16px;
   border-radius: 5px;
 }
 .modal.active {
@@ -63,7 +65,7 @@ body {
 
 // 딱딱 끊어지지않게
 /* 이건 js말고 css로 해라 */
-@keyframs slidefade {
+@keyframes slidefade {
   0% {
     opacity: 0;
     margin-top: -100px;
