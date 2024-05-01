@@ -80,3 +80,20 @@ align-items: center;
 
 vs코드 에밋
 https://s-bug.tistory.com/43
+
+--------------------------------------------------------------------------
+
+searchBar.addEventListener("focus", () => {
+  
+});
+
+이거와
+
+searchBar.addEventListener("focus", function () {
+  const element = this.parentElement.parentElement.nextElementSibling;
+  // 부모의 부모로 가서 다음번째 형제
+  // console.log(element);
+  element.style.display = "block";
+});
+
+이거 차이는? this가 들어가면 화살표함수 대신 function?
