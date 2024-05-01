@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 18px;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* 모달창 클릭했을때 전체 가득차게 */
+  /* after : block -> none; */
+  display: none;
+  /* 평상시에는 안나타나다가 클릭하면 나오게 */
+}
+.modal-content {
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  /* 사방으로 그림자 지게 */
+  text-align: center;
+  animation: slidefade 0.3s linear;
+}
+.modal-content img {
+  margin: 20px auto;
+}
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.1rem;
+  color: #999;
+}
+.btn-guide {
+  display: block;
+  /* a 태그 인라인이라 패딩 안먹어서  */
+  background: #616bee;
+  color: #fff;
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.modal.active {
+  display: block;
+}
+
+// 딱딱 끊어지지않게
+/* 이건 js말고 css로 해라 */
+@keyframs slidefade {
+  0% {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}

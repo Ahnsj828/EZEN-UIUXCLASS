@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a1bc702629.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custome css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="./logo.jpg" alt="logo" />
+          </div>
+          <div class="search-box">
+            <i class="open-search fa-solid fa-magnifying-glass"></i>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <h1>Section Content</h1>
+      </section>
+    </div>
+    <div class="modal-search">
+      <!-- 모달창 -->
+      <i class="close-search fa-solid fa-x"></i>
+      <!-- 검색바 -->
+      <div class="search">
+        <div class="field">
+          <form action="http://localhost:3000" method="get">
+            <input type="search" placeholder="What are you looking for?" />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+        <p class="hash-tag">#퍼블리셔 #UIUX #포트폴리오 #프론트엔드</p>
+      </div>
+    </div>
+  </body>
+</html>
