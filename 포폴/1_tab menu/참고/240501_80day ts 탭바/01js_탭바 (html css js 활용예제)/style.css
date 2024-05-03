@@ -1,0 +1,72 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background: #eee;
+  color: #222;
+}
+
+.tab-inner {
+  width: 700px;
+  margin: 50px auto;
+}
+.tab-btn a {
+  /* a태그는 inline태그라 마진,패딩, 위드 주기 힘들다 */
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  margin-right: -2px;
+  padding: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  transition: all 0.3s;
+}
+.tab-btn a:hover {
+  color: royalblue;
+}
+.tab-btn a.active {
+  /* a태그가 active됐을때 */
+  background: #fff;
+  color: royalblue;
+  border-top: 3px solid royalblue;
+}
+.tab-content {
+  position: relative;
+}
+.tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 25px;
+  /* opacity: 1; */
+  opacity: 0;
+  /* visibility: visible; */
+  visibility: hidden;
+  /* CSS visibility속성은 문서의 레이아웃을 변경하지 않고 요소를 표시하거나 숨깁니다. 이 속성은 에서 행이나 열을 숨길 수도 있습니다 <table>. */
+  transition: all 0.3s;
+}
+.tab h2 {
+  text-transform: uppercase;
+}
+.tab img {
+  width: 100%;
+}
+.tab:target {
+  opacity: 1;
+  visibility: visible;
+}
+.tab:nth-child(1) {
+  opacity: 1;
+  visibility: visible;
+}
