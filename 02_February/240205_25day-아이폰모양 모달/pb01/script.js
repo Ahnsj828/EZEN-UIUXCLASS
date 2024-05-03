@@ -39,8 +39,8 @@ pics.forEach((pic) => {
       // forEach반복문 / 반복하는 함수
       content.classList.remove("active");
     });
-    const targetContentID = this.getAttribute("data-alt");
-    const targetContent = document.querySelector("#${targetContentId}");
+    const targetContentId = this.getAttribute("data-alt");
+    const targetContent = document.querySelector(`#${targetContentId}`);
     if (targetContent) {
       targetContent.classList.add("active");
     }

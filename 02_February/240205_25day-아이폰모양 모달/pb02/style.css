@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 
 /* reset */
 * {
@@ -16,7 +16,7 @@ a {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  background: #f4f4f4f4;
+  background: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;

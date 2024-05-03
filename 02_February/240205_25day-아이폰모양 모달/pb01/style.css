@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: #222;
@@ -20,7 +21,6 @@ body {
   line-height: 1.5rem;
 }
 .testimonial-section {
-  /* border: 1px solid #f00; */
   width: 800px;
   text-align: center;
   background: #fff;
@@ -57,6 +57,6 @@ body {
 .testimonial .content {
   display: none;
 }
-.testimonial .contentp:nth-child(2) {
+.testimonial .content p:nth-child(2) {
   font-weight: bold;
 }

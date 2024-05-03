@@ -26,6 +26,7 @@ body {
   border: none;
   padding: 10px;
 }
+
 .login input[type="text"] {
   border-bottom: 1px solid #ddd;
 }

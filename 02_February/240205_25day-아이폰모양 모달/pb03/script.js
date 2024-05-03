@@ -2,7 +2,8 @@ const button = document.querySelector("#button");
 const input = document.querySelector("#userAge");
 // console.log(input); ctrl shif J
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+  e.preventDefault();
   const num = input.value;
   // console.log(num);
   if (num === "") {
