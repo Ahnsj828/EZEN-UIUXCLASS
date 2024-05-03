@@ -368,7 +368,8 @@ tsc
 }
 ts가 js를 끌고 오고 싶을때
 
-
++
+"noImplicitThis": false
 
 ====> 이정도의 옵션까지는 알고 있어야 한다
 

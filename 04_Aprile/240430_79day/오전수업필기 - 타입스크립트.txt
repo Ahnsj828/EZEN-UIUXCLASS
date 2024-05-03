@@ -43,7 +43,8 @@ tsconfig.json에서 =>
     // 반복문 쓸때 에러생기는거
     "noImplicitAny": true,
     "allowJs": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noImplicitThis": false
   },
   "ts-node": {
     "esm": true
@@ -65,6 +66,13 @@ npm i 입력
 
 src폴더 만들기
 파일 만들기
+
+===============================
+
+터미널에
+tsx src/file.ts
+tsx src/파일명.ts
+컴파일링 명령어
 
 =======================================
 
