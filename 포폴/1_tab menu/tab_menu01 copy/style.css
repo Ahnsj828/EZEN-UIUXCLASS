@@ -16,7 +16,9 @@ body {
   padding: 4rem 2rem 2rem;
   min-height: 100vh;
   background: linear-gradient(to bottom right, #ad5389, #3c1053);
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+ background-blend-mode: screen;
   font-size: 1.2rem;
   font-family: "Patrick Hand";
   display: grid;
@@ -25,94 +27,11 @@ body {
   justify-content: center;
   width: 100%;
 }
-
-/* {
-  .tab-inner {
-    width: 1000px;
-    margin: 50px auto;
-  }
-  .tab-btn {
-    position: absolute;
-    z-index: 3;
-    width: 100%;
-    width: 1000px;
-  }
-  .tab-btn a {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    width: calc((100%-1px) / 7);
-    text-align: center;
-    padding: 10px;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-top: 3px solid transparent;
-    transition: all 0.3s;
-  }
-  .tab-btn a:hover {
-    color: #E17141;
-  }
-  .tab-btn a.active {
-    background: #fff;
-    color: #E17141;
-    border: 3px solid #E17141;
-    border-bottom: none;
-  }
-  img {
-    height: 20px;
-  }
-  
-  .tab-content {
-    position: relative;
-  }
-  .tab {
-    display: flex;
-    border: 3px solid #E17141;
-    width: 100%;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    background: #fff;
-    padding: 25px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-    z-index: 1;
-  }
-  .tab .content {
-    margin-right: 20px;
-  }
-  .content h2 {
-    text-transform: uppercase;
-  }
-  .tab img {
-    width: 100%; 
-    height: 400px;
-    object-fit: cover; 
-    object-position: center;
-  }
-  .tab:target {
-    opacity: 1;
-    visibility: visible;
-  }
-  .tab:nth-child(1) {
-    opacity: 1;
-    visibility: visible;
-  }
-} */
-
 .tab-inner {
   grid-column: 1/-1;
   margin: 1rem auto;
   max-width: 80rem;
   width: 100%;
-  scrollbar-height: none;
-  -ms-overflow-style: none;
-}
-.tab-inner::-webkit-scrollbar {
-  background: transparent;
-  /* Chrome/Safari/Webkit */
-  display: none;
 }
 .tab-btn {
   padding: 2rem 0 0 0;
@@ -155,7 +74,7 @@ a:first-of-type {
 }
 a div {
   /* background: var(--background); */
-  padding: 6px 0;
+  padding: 6px 5px;
   position: relative;
   z-index: 10;
 }
@@ -203,16 +122,14 @@ a.active span {
   border-radius: 5px;
   color: black;
   border: 2px solid;
+  /* padding: auto 0; */
 }
 a.active:focus span {
   outline: 1px solid rgba(255, 255, 255, 0.7);
 }
-a:not(.active) {
+/* a:not(.active) {
   border-bottom: 2px solid;
-}
-a:not(.active):before, a:not(.active):after {
-  box-shadow: 0 1.5px 0 black;
-}
+} */
 .tab-btn a:nth-of-type(1), .tab-content ul li:nth-of-type(1) {
   --background: #640D6B;
 }
@@ -239,54 +156,44 @@ a img {
 }
 
 .tab-content {
-  border-radius: 10px;
   position: relative;
   width: 100%;
-  top: -4px;
+  top: -2px;
   left: -2px;
   z-index: 1;
-}
-.tab-content ul {
-  box-shadow: 0 0 0 1.5px black;
+  border: 2px solid;
+  border-radius: 2px;
 }
 .tab-content ul .tab {
-  display: flex;
-  border: 2px solid;
+  
+  transition: all 0.3s;
+  z-index: 1;
 }
 
-/* .tab-content #tab1 {
-  display: block;
-}
-.tab-content:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  border-radius: inherit;
-} */
 .tab-content .tab {
   font-family: "Yomogi", sans-serif;
   display: none;
   background: var(--background);
-  border-radius: inherit;
   padding: 1rem;
   filter: drop-shadow(0px -2px 2px rgba(0, 0, 0, 0.1));
-  /* z-index: 5; */
+  border-radius: 2px;
 }
 .tab-content .tab .content {
+  display: flex;
   padding: 1.5rem;
-  border-radius: 2px;
   min-height: 20rem;
   line-height: 160%;
   background-color: #f9f9f9;
   filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
   background-image: linear-gradient(#e4e4e4 1px, transparent 1px);
   background-size: 8% 8%, 2px 2px;
+  border: 2px solid;
 }
-.tab-content .tab .content h2 {
+.content-inner {
+  padding: 20px;
+  padding-right: 40px;
+}
+.tab-content .tab .content .content-inner h2 {
   text-transform: uppercase;
   font-size: 40px;
   text-decoration: underline;
@@ -294,11 +201,19 @@ a img {
   padding-bottom: 25px;
 }
 .tab-content .tab img {
-  width: 35%; 
+  width: 25%; 
   height: 100%;
   object-fit: cover; 
   object-position: center;
 }
 p {
   margin-bottom: 1rem;
+}
+.tab:target {
+  opacity: 1;
+  visibility: visible;
+}
+.tab:nth-child(1) {
+  opacity: 1;
+  visibility: visible;
 }
