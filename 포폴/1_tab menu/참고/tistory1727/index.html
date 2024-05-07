@@ -5,6 +5,7 @@
   <title>CodePen - Folder Tabs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- 글자체 -->
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Yomogi&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="./style.css">
@@ -12,11 +13,13 @@
 <script defer src="./script.js"></script>
 </head>
 <body>
+
 <!-- partial:index.partial.html -->
 <input class="variation" id="solid" type="radio" value="1" name="border" checked="checked"/>
 <label for="solid"><span class="circle"></span><span>Flat UI</span></label>
 <input class="variation" id="shadow" type="radio" value="2" name="border"/>
 <label for="shadow"> <span class="circle"></span><span>Realistic</span></label>
+
 <div class="folder">
   <div class="tabs">
     <button class="tab active" onclick="openTab(event, 'tab-1')">
@@ -32,6 +35,7 @@
       <div><span>Cat</span></div>
     </button>
   </div>
+
   <div class="content">
     <div class="content__inner" id="tab-1">
       <div class="page">
