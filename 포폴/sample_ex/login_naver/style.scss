@@ -4,6 +4,7 @@
 
 :root {
   --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
   --fontcolor2: #222;
   --fontcolor3: #333;
   --fontcolor3: #777;
@@ -155,7 +156,7 @@ body {
           // < id 일회용 qr코드 inner >
           padding: 20px 24px;
           border: 1px solid #c6c6c6;
-          border: 1px solid var(--maincolor);
+          border: 2px solid var(--maincolor2);
           border-radius: 6px;
           background-color: #fff;
           box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);

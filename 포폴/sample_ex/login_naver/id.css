@@ -18,6 +18,14 @@ a {
   --maincolor2: #0aa95d;
   --fontcolor2: #222;
   --fontcolor3: #333;
+  --fontcolor3: #777;
+}
+
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
   --fontcolor7: #777;
 }
 
@@ -185,7 +193,7 @@ body form article .input_pw .xGray_button .xGray {
   margin: 8px 0 0 8px;
 }
 body form article .input_click {
-  border: 1px solid #03c75a;
+  border: 1px solid var(--fontcolor7);
 }
 body form .login_setting {
   display: flex;
