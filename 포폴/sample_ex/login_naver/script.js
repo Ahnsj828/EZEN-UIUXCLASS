@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   disposableLogin.classList.remove("click_nav");
   qrLogin.classList.remove("click_nav");
   // 초기 설정 : 추가 효과
-  idLogin.style = "border-radius: 6px 6px 0 0; border-right: none;";
+  idLogin.style = "border-radius: 6px 0 0 0; border-right: none;";
   disposableLogin.style = "border-radius: 0 0 0 6px;";
   qrLogin.style = "border-radius: 0;";
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     disposableLogin.classList.remove("click_nav");
     qrLogin.classList.remove("click_nav");
 
-    idLogin.style = "border-radius: 6px 6px 0 0; border-right: none;";
+    idLogin.style = "border-radius: 6px 0 0 0; border-right: none;";
     disposableLogin.style = "border-radius: 0 0 0 6px;";
     qrLogin.style = "border-radius: 0;";
   };
@@ -78,8 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     idLogin.style = "border-radius: 6px 0 6px 0;";
     disposableLogin.style =
-      "border-radius: 6px 6px 0 0; border-right: none; border-left: none;";
-    qrLogin.style = "border-radius: 0 0 0 6px;";
+      "border-radius: 0; border-right: none; border-left: none;";
+    qrLogin.style = "border-radius: 0 0 0 6px; " ;
   };
 
   // QR 로그인 - 클릭
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     idLogin.style = "border-radius: 0;";
     disposableLogin.style = "border-radius: 0 0 6px 0;";
     qrLogin.style =
-      "border-radius: 0 0 0 6px;  border-radius: 6px 6px 0 0; border-left: none;";
+      "border-radius: 0 0 0 6px;  border-radius: 0 6px 0 0; border-left: none;";
   };
 
   // 각 탭 클릭 이벤트 등록
