@@ -24,9 +24,12 @@ a {
 :root {
   --maincolor: #03c75a;
   --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
   --fontcolor2: #222;
   --fontcolor3: #333;
-  --fontcolor3: #777;
+  --fontcolor7: #777;
+  --errorcolor: #ff003e;
 }
 
 body {

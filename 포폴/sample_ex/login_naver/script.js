@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //
 //
 //
-// -------<< aside >> => 알림창 안보이게 -------
+// -------<< aside >> 알림창 안보이게 -------
 const aside = document.querySelector("#aside");
 const xIcon = document.querySelector("#xIcon");
 
@@ -133,3 +133,9 @@ asideDisplayNone = () => {
 };
 
 xIcon.addEventListener("click", asideDisplayNone);
+
+//
+//
+//
+//
+// -------<< banner >> 배너 랜덤으로 보이게 -------
