@@ -155,3 +155,33 @@ ipBtn.addEventListener("click", () => {
       "transform: translateX(15px); transition: all 0.2s ease;";
   }
 });
+
+//
+//
+//
+//
+// --------<< 알림메세지 >> 입력 않고 로그인시 알림메시지 --------
+const error = document.querySelector(".error-msg")
+// const numberInput = document.querySelector(".idInput")
+const noIDPW =document.querySelector(".noIDPW")
+const loginBtn = document.querySelector("button")
+
+loginBtn.addEventListener("click", function() {
+  if (idInput.value === "") {
+    error.style.opacity = "1";
+    noIDPW.innerHTML = "아이디"
+  } else if (pwInput.value === "") {
+    error.style.opacity = "1"
+    noIDPW.innerHTML = "비밀번호"
+  }
+});
+
+// --------<< 알림메세지 >> 서버로 데이터 전송 못하게 --------
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form");
+
+  loginBtn.addEventListener("click", function(event) {
+      event.preventDefault(); 
+  });
+});

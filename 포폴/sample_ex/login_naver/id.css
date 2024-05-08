@@ -16,9 +16,15 @@ a {
 :root {
   --maincolor: #03c75a;
   --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
   --fontcolor2: #222;
   --fontcolor3: #333;
-  --fontcolor3: #777;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
+  --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
+  --errorcolor: #ff003e;
 }
 
 :root {
@@ -28,7 +34,10 @@ a {
   --fontcolor1: #1e1e23;
   --fontcolor2: #222;
   --fontcolor3: #333;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
   --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
   --errorcolor: #ff003e;
 }
 
@@ -297,6 +306,19 @@ body form .login_setting .ip .ip_button_check {
   margin-left: 4px;
   transition: all 0.2s ease;
   background-color: var(--maincolor);
+}
+body form .error-msg {
+  width: 100%;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  color: var(--errorcolor);
+  margin: 24px 0 -22px;
+  opacity: 0;
+}
+body form .error-msg .noIDPW {
+  font-weight: bold;
 }
 body form button {
   position: absolute;
