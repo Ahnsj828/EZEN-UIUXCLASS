@@ -139,3 +139,13 @@ xIcon.addEventListener("click", asideDisplayNone);
 //
 //
 // -------<< banner >> 배너 랜덤으로 보이게 -------
+const banners = document.querySelectorAll(".banner a");
+document.addEventListener("DOMContentLoaded", function() {
+  const randomIndex = Math.floor(Math.random() * banners.length);
+  
+  banners.forEach((banner, index) => {
+      if (index !== randomIndex) {
+          banner.style.display = "none";
+      }
+  });
+});
