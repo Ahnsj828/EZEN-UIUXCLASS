@@ -48,12 +48,12 @@
   @include JccAic;
   flex-direction: row;
   text-align: center;
-  border: 1px solid #e3e3e3;
+  // border: 1px solid #e3e3e3;
   // border-top: none;
+  border: 1.5px solid var(--maincolor2);
+  border-top: 5px solid var(--maincolor2);
   border-bottom: none;
   // border-color: #c6c6c6;
-  border-top: 5px solid var(--maincolor2);
-  border-color: var(--maincolor2);
   background-color: #fff;
   height: 65px;
   font: 600 16px/20px;
