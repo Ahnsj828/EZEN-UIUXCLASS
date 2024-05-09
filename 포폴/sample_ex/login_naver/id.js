@@ -64,13 +64,6 @@ pwInput.addEventListener("blur", () => {
 
 // < ID 입력 요소 입력 이벤트 > ID 입력시 : x버튼 생성
 idInput.addEventListener("input", () => {
-  // if (idInput.value.trim() !== '') {
-  //   xGrayButtonId.style.display = 'inline-block';
-  //   // 입력된 내용이 있을 경우 xGray_button_id 버튼 보이기
-  // } else {
-  //   xGrayButtonId.style.display = 'none';
-  //   // 입력된 내용이 없을 경우 xGray_button_id 버튼 안 보이기
-  // }
   if (idInput.value.trim() == "") {
     xGrayButtonId.style.display = "none";
     // 입력된 내용이 없을 경우 xGray_button_id 버튼 안 보이기
@@ -89,13 +82,6 @@ xGrayButtonId.addEventListener("click", () => {
 
 // < PW 입력 요소 입력 이벤트 > PW 입력시 : x버튼 생성
 pwInput.addEventListener("input", () => {
-  // if (pwInput.value.trim() !== '') {
-  //   xGrayButtonPw.style.display = 'inline-block';
-  //   // 입력된 내용이 있을 경우 xGray_button_pw 버튼 보이기
-  // } else {
-  //   xGrayButtonPw.style.display = 'none';
-  //   // 입력된 내용이 없을 경우 xGray_button_pw 버튼 안 보이기
-  // }
   if (pwInput.value.trim() == "") {
     xGrayButtonPw.style.display = "none";
     // 입력된 내용이 없을 경우 xGray_button_pw 버튼 안 보이기
@@ -157,9 +143,6 @@ ipBtn.addEventListener("click", () => {
 });
 
 //
-//
-//
-//
 // --------<< 알림메세지 >> 입력 않고 로그인시 알림메시지 --------
 const error = document.querySelector(".error-msg")
 // const numberInput = document.querySelector(".idInput")
@@ -176,8 +159,8 @@ loginBtn.addEventListener("click", function() {
   }
 });
 
+// 
 // --------<< 알림메세지 >> 서버로 데이터 전송 못하게 --------
-
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
 
@@ -185,3 +168,22 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault(); 
   });
 });
+
+// --------<< id&pw 입력 후 로그인 >> 지정 서버로 이동 --------
+// document.addEventListener("DOMContentLoaded", function() {
+//   const form = document.querySelector("form");
+
+//   form.addEventListener("submit", function(event) {
+//       event.preventDefault(); // 기본 동작(페이지 이동)을 막습니다.
+
+//       // 입력된 아이디와 비밀번호 가져오기
+//       const idValue = idInput.value.trim();
+//       const pwValue = pwInput.value.trim();
+
+//       // 아이디와 비밀번호가 비어있지 않은지 확인
+//       if (idValue && pwValue) {
+//           // 입력된 아이디와 비밀번호가 있으면 페이지 이동
+//           window.location.href = "https://www.naver.com/"; // 지정한 페이지 URL로 이동
+//       } 
+//   });
+// });
