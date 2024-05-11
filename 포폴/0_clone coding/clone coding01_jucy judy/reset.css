@@ -10,3 +10,59 @@ a {
 li {
   list-style: none;
 }
+
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/montserrat-v25-latin-300.66b0cd06.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/montserrat-v25-latin-500.34ae71ed.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/montserrat-v25-latin-600.4ca8c23e.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/montserrat-v25-latin-700.dd574269.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v25-latin-regular.391ffddb.ttf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: Bold;
+  src: url("./fonts/Pretendard-Bold.otf");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: Regular;
+  src: url("./fonts/Pretendard-Regular.4e0fc985.otf");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: Light;
+  src: url("./fonts/Pretendard-Regular.otf");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: SemiBold;
+  src: url("./fonts/Pretendard-SemiBold.9b3b0548.otf");
+}
