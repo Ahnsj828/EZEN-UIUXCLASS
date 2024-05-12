@@ -275,6 +275,34 @@
     .TBH {
       padding-right: 20px;
       border-right: 1px solid #595959;
+      .tbh-app {
+        border: 1px solid #595959;
+        border-radius: 10px;
+        padding: 17px 5px;
+        margin-right: 10px;
+
+        font-weight: Regular;
+        font-size: 6px;
+        font-family: "Pretendard";
+        /* font: Regular 6px/1 "Pretendard", sans-serif; */
+        letter-spacing: 5%;
+        color: #000;
+        b {
+          font-weight: Extra-bold;
+        }
+      }
+      .tbh-text {
+        font-weight: Bold;
+        font-size: 8px;
+        font-family: "Pretendard";
+        /* font: Bold 8px/1 "Pretendard", sans-serif; */
+        letter-spacing: 5%;
+        color: #000;
+        em {
+          color: #2D367E;
+          font-style: normal;
+        }
+      }
     }
     .kakao {
       margin: 0 20px;
