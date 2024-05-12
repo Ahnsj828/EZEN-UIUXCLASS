@@ -35,10 +35,20 @@
   align-items: center;
   border: 1px solid #B2B2B2;
   button {
-    font-size: 20px;
-    margin-left: 50px;
     border: none;
     background: none;
+    margin-left: 50px;
+    h4 {    
+      font-weight: 600; 
+      font-size: 20px;
+      font-family: "montserrat";
+      /* font: 600 20px/1 "montserrat", sans-serif; */
+      letter-spacing: -0.5%;
+      color: #000;
+      }
+    img {
+      display: none;
+    }
   }
   a {
     position: absolute;

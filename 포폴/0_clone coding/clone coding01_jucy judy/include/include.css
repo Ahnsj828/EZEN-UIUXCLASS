@@ -1,5 +1,5 @@
 /* reset */
-@import url("../reset.css");
+@import url("./reset.css");
 
 /* ------------------<jj_header>----------------- */
 .header-notice {
@@ -44,11 +44,21 @@
   align-items: center;
   border: 1px solid #B2B2B2;
   button {
-    /* font-size: 20px => 17px; */
-    font-size: 17px;
-    margin-left: 50px;
     border: none;
     background: none;
+    margin-left: 50px;
+    h4 {    
+      font-weight: 600;
+      /* font-size: 20px => 18px; */
+      font-size: 18px;
+      font-family: "montserrat";
+      /* font: 600 18px/1 "montserrat", sans-serif; */
+      letter-spacing: -0.5%;
+      color: #000;
+      }
+    img {
+      display: none;
+    }
   }
   a {
     position: absolute;
@@ -89,10 +99,175 @@
 /* ------------------<jj_footer>----------------- */
 .footer {
   width: 100%;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  .customer {}
-  .company-info{}
+  .customer {
+    h4 {
+      width: 56px;
+      padding-bottom: 10px;
+      margin: 0 10px 20px;
+      border-bottom: 1px solid #000;
+
+      font-weight: SemiBold;
+      font-size: 16px;
+      font-family: "Pretendard";
+      /* font: SemiBold 16px/1 "Pretendard", sans-serif; */
+      color: #000;
+    }
+    .customer-text{
+      margin-bottom: 30px;
+
+      font-weight: SemiBold;
+      font-size: 12px;
+      line-height: 10px;
+      font-family: "Pretendard";
+      /* font: SemiBold 12px/10px "Pretendard", sans-serif; */
+      letter-spacing: -0.5%;
+      color: #595959;
+      .operating-time {
+        margin: 0 10px 10px;
+      }
+      .email {
+        margin: 0 10px 30px;
+      }
+      p:nth-child(3){
+        margin: 0 10px;
+        font-size: 10px;
+        font-weight: Medium;
+      }
+    }
+    .customer-contact{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 10px;
+      .contact-number{
+        font-weight: Medium;
+        font-size: 20px;
+        font-family: "Pretendard";
+        line-height: 10px;
+        /* font: Medium 20px/0.5 "Pretendard", sans-serif; */
+        letter-spacing: -0.5%;
+        color: #595959;
+      }
+      .inquiry{
+        display: flex;
+        gap: 10px;
+        .faq, .one2one {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 28px;
+          border: 1px solid #000;
+
+          font-size: 14px;
+          line-height: 10px;
+          letter-spacing: -0.5%;
+          color: #000;
+        }
+        .faq {
+          font-family: "montserrat";
+          font-weight: 500;
+          /* font: 500 14px/10px "montserrat", sans-serif; */
+        }
+        .one2one {
+          font-family: "Pretendard";
+          font-weight: Medium;
+          /* font: Medium 14px/10px "Pretendard", sans-serif; */
+        }
+      }
+    }
+  }
+  .company-info{
+    margin-left: 100px;
+    margin-right: 96px;
+    .company-title {
+      width: 134px;
+      padding-bottom: 10px;
+      margin: 0 10px 20px;
+      border-bottom: 1px solid #000;
+
+      font-weight: SemiBold;
+      font-size: 16px;
+      font-family: "montserrat";
+      /* font: SemiBold 16px/1 "montserrat", sans-serif; */
+      color: #000;
+    }
+    .company-text{
+      margin-bottom: 30px;
+      .company-sub1 {
+        display: flex;
+        margin-bottom: 10px;
+        h4 {
+          border-left: 1px solid #595959;
+          padding: 0 10px;
+
+          font-weight: Regular;
+          font-size: 14px;
+          line-height: 10px;
+          font-family: "Pretendard";
+          /* font: Regular 14px/10px "Pretendard", sans-serif; */
+          letter-spacing: -5%;
+          color: #595959;
+        }
+        h4:nth-child(1) {
+          font-size: 12px;
+          border: none;
+        }
+      }
+      .company-sub2 {
+        display: flex;
+        margin-bottom: 30px;
+        h4 {
+          border-left: 1px solid #595959;
+          padding: 0 10px;
+
+          font-weight: Regular;
+          font-size: 12px;
+          line-height: 10px;
+          font-family: "Pretendard";
+          /* font: Regular 12px/10px "Pretendard", sans-serif; */
+          letter-spacing: -5%;
+          color: #595959;
+        }
+        h4:nth-child(1) {
+          border: none;
+        }
+      }
+      .company-sub3 {
+        padding: 0 10px;
+
+        font-weight: Regular;
+        font-size: 12px;
+        line-height: 10px;
+        font-family: "Pretendard";
+        /* font: Regular 12px/10px "Pretendard", sans-serif; */
+        letter-spacing: -5%;
+        color: #595959;
+      }
+    }
+    #company-site-type {
+      border: 1px solid #000;
+      width: 130px;
+      height: 28px;
+      margin: 0 10px;
+      padding-right: 20px;
+      option {
+        font-weight: Regular;
+        font-size: 14px;
+        line-height: 10px;
+        font-family: "montserrat";
+        /* font: Regular 14px/10px "montserrat", sans-serif; */
+        letter-spacing: -5%;
+        color: #000;
+      }
+      &:focus {
+        border: 1px solid #00f;
+      }
+    }
+  }
   .app{}
 }
