@@ -341,5 +341,34 @@
       height: 42px;
       margin: 0 20px;
     }
+    .live-on {
+      position: relative;
+      .live-on-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 42px;
+        height: 42px;
+        background: #000;
+        h4 {
+          font-weight: SemiBold;
+          font-size: 12px;
+          font-family: "Pretendard";
+          /* font: SemiBold 12px/1 "Pretendard", sans-serif; */
+          letter-spacing: 5%;
+          color: #fff;
+        }
+      }
+      .red-circle {
+        position: absolute;
+        top: -4px;
+        left: 35px;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: #f00;
+      }
+    }
   }
 }
