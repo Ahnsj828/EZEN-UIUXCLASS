@@ -273,6 +273,9 @@
     display: flex;
     padding-bottom: 52px;
     .TBH {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       padding-right: 20px;
       border-right: 1px solid #595959;
       .tbh-app {
@@ -292,19 +295,50 @@
         }
       }
       .tbh-text {
-        font-weight: Bold;
-        font-size: 8px;
-        font-family: "Pretendard";
-        /* font: Bold 8px/1 "Pretendard", sans-serif; */
-        letter-spacing: 5%;
-        color: #000;
-        em {
-          color: #2D367E;
-          font-style: normal;
+        display: flex;
+        flex-direction: column;
+        b {
+          font-weight: Bold;
+          font-size: 8px;
+          font-family: "Pretendard";
+          /* font: Bold 8px/1 "Pretendard", sans-serif; */
+          letter-spacing: 5%;
+          color: #000;
+          em {
+            color: #2D367E;
+            font-style: normal;
+          }
+        }
+        .tbh-text-sub {
+          display: flex;
+          align-items: center;
+          i {
+            width: 15px;
+            height: 15px;
+            font-size: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          h4 {
+            font-weight: Medium;
+            font-size: 8px;
+            font-family: "Pretendard";
+            /* font: Medium 8px/1 "Pretendard", sans-serif; */
+            letter-spacing: 5%;
+            color: #000;
+          }
         }
       }
     }
     .kakao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #595959;
+      border-radius: 10px;
+      width: 42px;
+      height: 42px;
       margin: 0 20px;
     }
   }
