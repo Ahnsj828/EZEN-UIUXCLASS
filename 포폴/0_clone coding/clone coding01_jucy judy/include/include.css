@@ -269,5 +269,15 @@
       }
     }
   }
-  .app{}
+  .app{
+    display: flex;
+    padding-bottom: 52px;
+    .TBH {
+      padding-right: 20px;
+      border-right: 1px solid #595959;
+    }
+    .kakao {
+      margin: 0 20px;
+    }
+  }
 }
