@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Nexon";
+  src: url("./font/NEXON\ Lv1\ Gothic\ Low\ OTF.otf") format("truetype") lighter,
+    url("./font/NEXON\ Lv1\ Gothic\ OTF\ Bold.otf") format("truetype") bold;
+}
+
+.main {
+  color: #f00;
+  /* font-family: "Nexon";
+  font-weight: bold; */
+  font: lighter 1.5rem/1 Nexon, sans-serif;
+}
