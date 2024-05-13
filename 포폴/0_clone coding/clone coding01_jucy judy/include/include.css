@@ -99,22 +99,22 @@ body {
       padding-bottom: 10px;
       margin: 0 10px 20px;
       border-bottom: 1px solid #000;
-
       font-weight: SemiBold;
       font-size: 16px;
-      font-family: "Pretendard";
-      /* font: SemiBold 16px/1 "Pretendard", sans-serif; */
+      /* font-size: rem; */
+      font-family: "Pretendard", sans-serif;
+      /* font: SemiBold 16pxx/1 "Montserrat", sans-serif; */
       color: #000;
     }
     .customer-text {
       margin-bottom: 30px;
-
       font-weight: SemiBold;
       font-size: 12px;
+      /* font-size: rem; */
       line-height: 10px;
-      font-family: "Pretendard";
+      font-family: "Pretendard", sans-serif;
       /* font: SemiBold 12px/10px "Pretendard", sans-serif; */
-      letter-spacing: -0.5%;
+      letter-spacing: -5%;
       color: #595959;
       .operating-time {
         margin: 0 10px 10px;
@@ -136,10 +136,11 @@ body {
       .contact-number {
         font-weight: Medium;
         font-size: 20px;
-        font-family: "Pretendard";
+        /* font-size: rem; */
         line-height: 10px;
-        /* font: Medium 20px/0.5 "Pretendard", sans-serif; */
-        letter-spacing: -0.5%;
+        font-family: "Pretendard", sans-serif;
+        /* font: Medium 20px/10px "Pretendard", sans-serif; */
+        letter-spacing: -5%;
         color: #595959;
       }
       .inquiry {
@@ -153,16 +154,19 @@ body {
           width: 70px;
           height: 28px;
           border: 1px solid #000;
-
+          font-weight: Medium;
           font-size: 14px;
+          /* font-size: rem; */
           line-height: 10px;
-          letter-spacing: -0.5%;
+          font-family: "Pretendard", sans-serif;
+          /* font: Medium 14px/10px "Pretendard", sans-serif; */
+          letter-spacing: -5%;
           color: #000;
         }
         .faq {
-          font-family: "montserrat";
-          font-weight: 500;
-          /* font: 500 14px/10px "montserrat", sans-serif; */
+          font-family: "Montserrat";
+          font-weight: Medium;
+          /* font: Medium 14px/10px "Montserrat", sans-serif; */
         }
         .one2one {
           font-family: "Pretendard";
@@ -183,8 +187,9 @@ body {
 
       font-weight: SemiBold;
       font-size: 16px;
-      font-family: "montserrat";
-      /* font: SemiBold 16px/1 "montserrat", sans-serif; */
+      /* font-size: rem; */
+      font-family: "Montserrat", sans-serif;
+      /* font: SemiBold 16px/1 "Montserrat", sans-serif; */
       color: #000;
     }
     .company-text {
@@ -195,11 +200,11 @@ body {
         h4 {
           border-left: 1px solid #595959;
           padding: 0 10px;
-
           font-weight: Regular;
           font-size: 14px;
+          /* font-size: rem; */
           line-height: 10px;
-          font-family: "Pretendard";
+          font-family: "Pretendard", sans-serif;
           /* font: Regular 14px/10px "Pretendard", sans-serif; */
           letter-spacing: -5%;
           color: #595959;
@@ -215,11 +220,11 @@ body {
         h4 {
           border-left: 1px solid #595959;
           padding: 0 10px;
-
           font-weight: Regular;
           font-size: 12px;
+          /* font-size: rem; */
           line-height: 10px;
-          font-family: "Pretendard";
+          font-family: "Pretendard", sans-serif;
           /* font: Regular 12px/10px "Pretendard", sans-serif; */
           letter-spacing: -5%;
           color: #595959;
@@ -230,11 +235,11 @@ body {
       }
       .company-sub3 {
         padding: 0 10px;
-
         font-weight: Regular;
         font-size: 12px;
+        /* font-size: rem; */
         line-height: 10px;
-        font-family: "Pretendard";
+        font-family: "Pretendard", sans-serif;
         /* font: Regular 12px/10px "Pretendard", sans-serif; */
         letter-spacing: -5%;
         color: #595959;
@@ -249,9 +254,10 @@ body {
       option {
         font-weight: Regular;
         font-size: 14px;
+        /* font-size: rem; */
         line-height: 10px;
-        font-family: "montserrat";
-        /* font: Regular 14px/10px "montserrat", sans-serif; */
+        font-family: "Montserrat", sans-serif;
+        /* font: Regular 14px/10px "Montserrat", sans-serif; */
         letter-spacing: -5%;
         color: #000;
       }
@@ -274,10 +280,10 @@ body {
         border-radius: 10px;
         padding: 17px 5px;
         margin-right: 10px;
-
         font-weight: Regular;
         font-size: 6px;
-        font-family: "Pretendard";
+        /* font-size: rem; */
+        font-family: "Pretendard", sans-serif;
         /* font: Regular 6px/1 "Pretendard", sans-serif; */
         letter-spacing: 5%;
         color: #000;
@@ -291,7 +297,8 @@ body {
         b {
           font-weight: Bold;
           font-size: 8px;
-          font-family: "Pretendard";
+          /* font-size: rem; */
+          font-family: "Pretendard", sans-serif;
           /* font: Bold 8px/1 "Pretendard", sans-serif; */
           letter-spacing: 5%;
           color: #000;
@@ -314,7 +321,8 @@ body {
           h4 {
             font-weight: Medium;
             font-size: 8px;
-            font-family: "Pretendard";
+            /* font-size: rem; */
+            font-family: "Pretendard", sans-serif;
             /* font: Medium 8px/1 "Pretendard", sans-serif; */
             letter-spacing: 5%;
             color: #000;
@@ -345,8 +353,9 @@ body {
         h4 {
           font-weight: SemiBold;
           font-size: 12px;
-          font-family: "Pretendard";
-          /* font: SemiBold 12px/1 "Pretendard", sans-serif; */
+          /* font-size: rem; */
+          font-family: "Pretendard", sans-serif;
+          /* font: Medium 12px/1 "Pretendard", sans-serif; */
           letter-spacing: 5%;
           color: #fff;
         }
