@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    // 컴파일링 했을때 어떠한 모듈로 할거냐 / ESNext 가 가장 최신
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    // ts에서 js가져와서 쓸때
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    // 상호 호환하게
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    // ts파일은 모두 전역요소로 들어간거라서 변수명이 충돌나니까 독립적인 요소로
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitThis": false,
+    // this사용할때 에러안나게
+    "jsx": "react-jsx"
+  },
+  "ts-node": {
+    "esm": true
+    // 에크마스크립트 모듈
+  },
+  "include": ["src"]
+}

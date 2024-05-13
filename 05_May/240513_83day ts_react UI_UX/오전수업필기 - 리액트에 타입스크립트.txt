@@ -1,0 +1,82 @@
+1.styled-components : JS/React (스타일 컴포넌트를 쓰는 이유 / 스타일 컴포넌트 장점)
+  - 별도의 css를 사용하지 않고, 컴포넌트 내부에 스타일정의할 수 있는 장점
+  - 스타일 컴포넌트도 "컴포넌트" 
+      => props: 부모가 자식한테 객체 형태의 자료값을 전달
+  - 기존에 정의해높은 스타일 컴포넌트의 값을 가져다가 새로운 스타일 컴포넌트를 생성!
+  - 처음 정의한 스타일 컴포넌트의 태그 값을 원하는대로 수정할 수 있다
+  - nesting 기능  
+     => "&" 해당 요소를 의미
+  - 애니메이션 기능
+  - 스타일의 "템플릿화"가 가능하다
+  - 최고의 장점  =>  스타일 컴포넌트는 객체 자료형태의 
+                          theme(*다크모드 / 라이트모드)를 갖을수 있다
+                          > theme 정의하는 장소는 App 컴포넌트의 상위path(*경로)
+                          > useContext / Redux 사용할때 => Root 컴포넌트 위에다가 설정
+                             => Root 컴포넌트 하위 존재 컴포넌트들이 data값을 받을 수 있었다
+
+-------------------------------------------------------------------------------------------
+
+2. styled-components + Type script + React
+ - styled-components 설치
+ - react-router 설치
+ - @types : npm을 활용해서 설치하고자 하는 라이브러리의 타입을 정의 
+
+npm i styled-components
+npm i @types/styled-components
+
+npm i react-router-dom
+npm i @types/react-router-dom
+ > 각각의 라이브러리에 타입을 정의한 형태로 값을 가져올 수 있음
+
+원래는 js기반의 react => 확장자명이 .jsx였었다 => 그러다가 js로 바뀌었다
+타입스크립트 기반의 react => 확장자명은 .tsx
+
+TS를 init할때 => compiler option
+
+*props로 데이터를 받을때 객체 형태를 띄고 있어야한다
+
+state 변수값을 관리
+
+
+유니온타입
+union : 합집합  (피그마에서 유니온하면 도형이 합쳐지는거 생각해라)
+
+Ts기반의 react 사용할때 => input 타입을 정의할때
+ => 내장되어있는 문법을 가져다가 써야된다
+
+
+
+<input태그를 사용해서 사용자에게 어떤 값을 입력받을 때 타입의 정의>
+ 1) 내장되어있는 문법을 사용해서 타입을 정의
+   React.FormEvent<HTMLInputElement>   => 제네릭 형식으로
+ 
+ 2) JS에서 사용자가 입력한 값 => event.target.value
+   사용자가 입력한 값의 타입을 정의하기 위해서는 event.currentTarget에서 타입 정의해야된다
+
+ 3) input태그를 통해서 입력받은 값을 서버로 전달하고자 할 때, 사용되는 이벤트 핸들러 타입
+   React.FormEvent<HTMLFormElement>
+
+
+*스타일 컴포넌트를 활용해서 Theme 설정할 수 있다
+
+ThemeProvider를 활용해서 자식컴포넌트들에게 전달되어지는 theme이라는 객체의 타입은
+기존에 했던 타입 정의와 살짝 다르다
+
+처음에 스타일컴포넌트를 npm으로 설치할때, @types => 외부라이브러리를 통해서 가져오는 
+속성값들의 타입을 정의해서 가져올 수 있다!
+
+ThemeProvider : 내부적으로 타입정의가 안되어 있다!
+
+개발자가 theme으로 어떤 형태의 값을 정의할지 알 수 없기 때문에, 
+사전에 타입정의가 원천적으로 불가능하다!! 
+
+themeProvider를 활용해서 자식컴포넌트에 theme을 전달하고자 할 때,
+1) styled.d.ts : 타입 정의 (d => 디클레어)
+ - 공식홈페이지 문법 그대로 사용!
+2) 자식컴포넌트에 전달할 theme값을 정의 : theme.ts에서 정의 했따
+ - theme 값을 정의하고 => 그에 대한 타입(*styled.d.ts에서 했던 타입 그대로) 세팅
+
+3) index.tsx => <ThemeProvider theme = {darkTheme}>
+
+4) 자식 컴포넌트에서 값을 가져다가사용
+ background-color.${(props) = props.theme.bgColor}}
