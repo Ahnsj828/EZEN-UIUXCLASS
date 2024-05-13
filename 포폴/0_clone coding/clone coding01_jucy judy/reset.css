@@ -95,10 +95,10 @@ li {
     ExtraLightItalic,
     url("./fonts/Montserrat/Montserrat-300-Light.ttf") format("truetype") LightItalic,
     url("./fonts/Montserrat/Montserrat-400-Regular.ttf") format("truetype") RegularItalic,
-    url("./fonts/Montserrat/Montserrat-500-Medium.ttf") format("truetype") Medium,
+    url("./fonts/Montserrat/Montserrat-500-Medium.ttf") format("truetype") Mediumtalic,
     url("./fonts/Montserrat/Montserrat-600-SemiBold.ttf") format("truetype")
       SemiBoldItalic,
-    url("./fonts/Montserrat/Montserrat-700-Bold.ttf") format("truetype") Bold,
+    url("./fonts/Montserrat/Montserrat-700-Bold.ttf") format("truetype") Boldtalic,
     url("./fonts/Montserrat/Montserrat-800-ExtraBold.ttf") format("truetype")
       ExtraBoldItalic,
     url("./fonts/Montserrat/Montserrat-900-Black.ttf") format("truetype") BlackItalic;

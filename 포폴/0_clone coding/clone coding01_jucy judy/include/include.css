@@ -43,18 +43,12 @@ body {
     background: none;
     margin-left: 50px;
     h4 {
-      /* font-weight: 600; */
-      /* font-size: 20px => 18px; */
-      /* font-size: 18px; */
-      /* font-family: "montserrat"; */
-      /* font: 600 18px/1 "montserrat", sans-serif; */
-
       font-weight: SemiBold;
       font-style: normal;
       font-size: 20px;
-      /* font-size: 0.6875rem; */
+      /* font-size: rem; */
       font-family: "Montserrat", sans-serif;
-      /* font: Medium 0.6875rem/1 "Pretendard", sans-serif; */
+      /* font: SemiBold 0.20px/1 "Montserrat", sans-serif; */
       letter-spacing: -5%;
       color: #000;
       
@@ -69,22 +63,18 @@ body {
     top: 50%;
     transform: translate(-50%, -35%);
     img {
-      /* height: 35px => 40px; */
       height: 40px;
     }
   }
   .gnb {
     margin-right: 50px;
-    /* 추가 */
     display: flex;
     align-items: center;
-    /* 추가 */
+    justify-content: space-between;
     span {
       display: flex;
       align-items: center;
-
       margin-left: 20px;
-      /* 추가 */
       img {
         height: 17px;
       }
@@ -93,11 +83,6 @@ body {
       margin: 0;
     }
   }
-}
-.ex {
-  width: 100%;
-  height: 300px;
-  background: #b2c3ff;
 }
 
 /* ------------------<jj_footer>----------------- */
