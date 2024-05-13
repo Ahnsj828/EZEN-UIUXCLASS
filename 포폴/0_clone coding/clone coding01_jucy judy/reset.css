@@ -11,58 +11,188 @@ li {
   list-style: none;
 }
 
+/*======================== Montserrat font ========================*/
+/* Thin / ExtraLight / Light / Regular(default) / Medium / SemiBold / Bold / ExtraBold / Black*/
 @font-face {
   font-family: "montserrat";
   font-style: normal;
-  font-weight: 300;
-  src: url("./fonts/montserrat-v25-latin-300.66b0cd06.ttf");
+  src: url("./fonts/Montserrat/Montserrat-Thin.ttf") format("truetype") Thin,
+    url("./fonts/Montserrat/Montserrat-ExtraLight.ttf") format("truetype")
+      ExtraLight,
+    url("./fonts/Montserrat/Montserrat-Light.ttf") format("truetype") Light,
+    url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype") Regular,
+    url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype") Medium,
+    url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype")
+      SemiBold,
+    url("./fonts/Montserrat/Montserrat-Bold.ttf") format("truetype") Bold,
+    url("./fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype")
+      ExtraBold,
+    url("./fonts/Montserrat/Montserrat-Black.ttf") format("truetype") Black;
+}
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: Thin;
+  src: url("./fonts/Montserrat/Montserrat-Thin.ttf");
+} */
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: ExtraLight;
+  src: url("./fonts/Montserrat/Montserrat-ExtraLight.ttf");
+} */
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: Light;
+  src: url("./fonts/Montserrat/Montserrat-Light.ttf");
+} */
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: Regular;
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+} // default */
+
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: Medium;
+  src: url("./fonts/Montserrat/Montserrat-Medium.ttf");
+} */
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: SemiBold;
+  src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
+} */
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: Bold;
+  src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+} */
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: ExtraBold;
+  src: url("./fonts/Montserrat/Montserrat-ExtraBold.ttf");
+} */
+/* @font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: Black;
+  src: url("./fonts/Montserrat/Montserrat-Black.ttf");
+} */
+/* ------------------------------------------------ */
+@font-face {
+  font-family: "montserrat";
+  font-style: italic;
+  font-weight: Thin;
+  src: url("./fonts/Montserrat/Montserrat-ThinItalic.ttf");
 }
 @font-face {
   font-family: "montserrat";
-  font-style: normal;
-  font-weight: 500;
-  src: url("./fonts/montserrat-v25-latin-500.34ae71ed.ttf");
+  font-style: italic;
+  font-weight: ExtraLight;
+  src: url("./fonts/Montserrat/Montserrat-ExtraLightItalic.ttf");
 }
 @font-face {
   font-family: "montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: url("./fonts/montserrat-v25-latin-600.4ca8c23e.ttf");
-}
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./fonts/montserrat-v25-latin-700.dd574269.ttf");
-}
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/montserrat-v25-latin-regular.391ffddb.ttf");
+  font-style: italic;
+  font-weight: Light;
+  src: url("./fonts/Montserrat/Montserrat-LightItalic.ttf");
 }
 
 @font-face {
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: Bold;
-  src: url("./fonts/Pretendard-Bold.otf");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-style: normal;
+  /* default */
+  font-family: "montserrat";
+  font-style: italic;
   font-weight: Regular;
-  src: url("./fonts/Pretendard-Regular.4e0fc985.otf");
+  src: url("./fonts/Montserrat/Montserrat-Italic.ttf");
 }
 @font-face {
+  font-family: "montserrat";
+  font-style: italic;
+  font-weight: Medium;
+  src: url("./fonts/Montserrat/Montserrat-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: italic;
+  font-weight: SemiBold;
+  src: url("./fonts/Montserrat/Montserrat-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: italic;
+  font-weight: Bold;
+  src: url("./fonts/Montserrat/Montserrat-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: italic;
+  font-weight: ExtraBold;
+  src: url("./fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  font-style: italic;
+  font-weight: Black;
+  src: url("./fonts/Montserrat/Montserrat-BlackItalic.ttf");
+}
+
+/*-======================== Pretendard font ========================*/
+/* Light / Regular(default) / Medium / SemiBold / Bold */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  src: url("./fonts/Pretendard/Pretendard-Light.1978fa0a.ttf")
+      format("truetype") Light,
+    url("./fonts/Pretendard/Pretendard-Regular.4e0fc985.ttf") format("truetype")
+      Regular,
+    url("./fonts/Pretendard/Pretendard-Medium.36c0da1d.ttf") format("truetype")
+      Medium,
+    url("./fonts/Pretendard/Pretendard-SemiBold.9b3b0548.ttf")
+      format("truetype") SemiBold,
+    url("./fonts/Pretendard/Pretendard-Bold.caa27e3d.ttf") format("truetype")
+      Bold;
+}
+
+/* @font-face {
   font-family: "Pretendard";
   font-style: normal;
   font-weight: Light;
-  src: url("./fonts/Pretendard-Regular.otf");
-}
-@font-face {
+  src: url("./fonts/Pretendard/Pretendard-Light.1978fa0a.ttf");
+} */
+/* @font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: Regular;
+  src: url("./fonts/Pretendard/Pretendard-Regular.4e0fc985.ttf");
+} */
+/* @font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: Medium;
+  src: url("./fonts/Pretendard/Pretendard-Medium.36c0da1d.ttf");
+} */
+/* @font-face {
   font-family: "Pretendard";
   font-style: normal;
   font-weight: SemiBold;
-  src: url("./fonts/Pretendard-SemiBold.9b3b0548.otf");
+  src: url("./fonts/Pretendard/Pretendard-SemiBold.9b3b0548.ttf");
+} */
+/* @font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: Bold;
+  src: url("./fonts/Pretendard/Pretendard-Bold.caa27e3d.ttf");
+} */
+
+/*-======================== hiatus-khurasan font ========================*/
+@font-face {
+  font-family: "hiatus";
+  font-style: normal;
+  src: url("./fonts/hiatus-khurasan/Hiatus.ttf");
 }
