@@ -1,0 +1,83 @@
+*개발 영역에 정답은 없다
+ 
+1.styled-components : JS/React
+ (스타일 컴포넌트를 쓰는 이유 / 스타일 컴포넌트 장점)
+   => Theme Provider
+2. styled-components + Type script + React
+ 
+3. React Router + styled-components + Type script + React
+    => React Router 사용할 때 추가적으로 사용하는것도..
+
+ > 실전프로젝트 : 가상화폐 API 데이터 호출 => UI 출력
+
+
+<<*Browser Router 최신문법>>
+RouterProvider
+createBrowserRouter
+<Outlet>
+
+
+*존재하지 않는 컴포넌트 페이지를 클라이언트가 요청했을 때, 
+메세지 및 문구를 출력하는 기능 추가
+
+
+*기존 서비스를 제공하고 있는 페이지 => 만약, 해당 페이지에 문제가 발생했을 때, 
+해당 페이지에 아무런 메세지 없이 마냥 기다리게 하지 않고, 문제 발생!!!
+메세지를 출력하는 기능 추가!!
+
+
+<Liknk /> VS useNavigate( ) 언제 어떤거를 써야하는지?
+  <Liknk /> : 사용자가 직접 어떤 행위를 해서 특정 페이지로 이동시켜 주고자 할 때
+                 => to 속성을 활용해서 이동시키고자 하는 경로를 설정
+                 => 컴포넌트
+  useNavigate( ) : 사용자의 의도와 관계없이 개발자 혹은 마케터 혹은 기획자가
+                       사용자를 어떤 페이지로 이끌고자 할 때
+                          => ID PW 입력하고 다른 페이지로 넘어가게 / 계속 로그인페이지 안 가게
+                          => 버튼 클릭 후 이벤트 결과값으로 자동 이동!! => 리액트 훅 : 함수
+
+
+outlet : 특정 컴포넌트 페이지에 도착을 했을 때, 
+이에 맞는 자식 컴포넌트 페이지가 존재하면, 
+해당 컴포넌트를 페이제를 보여주게 하는 역할
+
+outlet : 페이지 라우팅 기능만 하는 것이 아니라, 데이터를 전달해주는 역할도 한다!
+
+==> 리액트의 iframe 개념이라고 생각하면된다
+기존의 브라우저 router에서는 못쓴다
+
+
+
+< API >
+ > CORS : 통신프로토콜 규정 위반!!
+ > 데이터를 전송하는 Server쪽에서 : https 
+ > 데이터를 수신하는 Client쪽에서 : http
+     => 그래서 오류가 난다
+
+*해별방법
+  1) 프록시 서버 : fake 형식으로 서버를 만들어준것처럼
+      => 이게 통하는 서버가 있고 안되는 서버도 있다 (50:50) 
+        => 괜찮은 곳은 돈받는다
+  2) Node.js 를 활용해서 서버를 구축하는 방법 (*가장확실한 방법!!)
+       ex) 터미널에 node server.js 입력
+
+< React Query의 장점>
+https://www.nextree.io/react-query/
+
+
+4. react-query : 데이터 송수신에 대한 라이브러리
+https://tanstack.com/query/latest/docs/framework/react/installation
+npm i @tanstack/react-query
+npm i @types/react-query
+
+
+*스타일 컴포넌트 할때 => reset css는 어떻게 적용할까?
+App.tsx에
+ import { createGlobalStyle } from "styled-components"; 
+     => 스타일컴포넌트를 쓸때 reset css를 쓸 수 있다
+const GlobalStyle = createGlobalStyle`
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+`;
