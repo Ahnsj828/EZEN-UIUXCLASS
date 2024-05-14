@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-siziing: border-box;
+}
+
+body {
+  background: url("./background.jpg");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.6);
+  gap: 10px;
+}
+.age-btns {
+  margin: 0;
+  display: flex;
+  width: 90%;
+  height: 10%;
+}
+.btn20,
+.btn30,
+.btn40 {
+  flex-grow: 1;
+  height: 100%;
+  background: none;
+  color: #fff;
+  box-shadow: -3 -3 3px 3px rgba(255, 255, 255, 0.7);
+}
+.result {
+  width: 90%;
+  height: 70%;
+}
