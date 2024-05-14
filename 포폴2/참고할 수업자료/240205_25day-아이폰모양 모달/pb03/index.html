@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading"><span>성인인증</span> 로그인 페이지</h1>
+      <div class="login">
+        <h2>성인인증 체크</h2>
+        <form action="http://localhost/login" method="post">
+          <input
+            id="userAge"
+            type="text"
+            placeholder="나이를 숫자로 입력해주세요."
+          />
+          <input id="button" type="submit" value="성인인증" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 숫자를 입력했을때 성인이냐 아니냐를 만들거다
+네이버 로그인페이지랑 비슷한 방식이다 -->

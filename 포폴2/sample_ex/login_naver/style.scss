@@ -1,0 +1,268 @@
+@import "reset";
+@import "mixin";
+// font-family -apple-system, "system-ui", helvetica, "Apple SD Gothic Neo", sans-serif
+
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
+  --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
+  --errorcolor: #ff003e;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  color: var(--fontcolor2);
+  .wrapper {
+    @include JccAic;
+    header {
+      position: relative;
+      padding-bottom: 48px;
+      padding-bottom: 3rem;
+      width: 743px;
+      width: 46.4375rem;
+      margin: 0 auto;
+      text-align: center;
+      a {
+        display: inline-block;
+        margin-top: 108px;
+        width: 155px;
+        height: 30px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      select {
+        border: 1px solid #ccc;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        min-width: 95px;
+        height: 30px;
+        padding: 4px 10px 6px 8px;
+        font: 400 12px/18px "";
+        color: var(--fontcolor3);
+        cursor: pointer;
+        z-index: 1;
+        outline: none;
+        appearance: none;
+        background-image: url("./imgs/select_icon.png");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 13%;
+        option {
+          min-height: 1.2em;
+          padding: 0px 2px 1px;
+        }
+      }
+    }
+    .container {
+      @include JccAic;
+      position: relative;
+      width: 100%;
+      width: 460px;
+      aside {
+        position: absolute;
+        top: -17px;
+        right: -35px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        // padding: 4px 20px 3px 9px;
+        padding: 3px 0 4px 9px;
+        // padding: 4px;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px #03c75a;
+        background-color: #fff;
+        box-sizing: border-box;
+        z-index: 10;
+        span {
+          display: inline-block;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 14px;
+          letter-spacing: -0.56px;
+          white-space: nowrap;
+          color: #03c75a;
+          vertical-align: top;
+          color: var(--maincolor);
+          font-family: -apple-system, "system-ui", helvetica,
+            "Apple SD Gothic Neo", sans-serif;
+        }
+        img {
+          // position: absolute;
+          width: 3%;
+          margin-left: 5px;
+          cursor: pointer;
+        }
+      }
+      .kind_of_login {
+        // < id 일회용 qr코드 tab & inner >
+        width: 100%;
+        margin-bottom: -15px;
+        .navigation {
+          // < id 일회용 qr코드 tab 모아둔>
+          @include JccAic;
+          align-items: flex-start;
+          flex-direction: row;
+          border-top: 1px solid #e3e3e3;
+          border-radius: 6px 6px 0 0;
+          background-color: #f8f9fa;
+          // align-items: top;
+          .navigation_item {
+            // < id 일회용 qr코드 tab >
+            @include navigation_item;
+            // z-index: 1;
+            span {
+              margin-left: 10px;
+            }
+          }
+          #idLogin {
+            border-radius: 6px 0 0 0;
+            // flex: 1;
+            width: calc(100% / 3);
+            .idLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          #disposableLogin {
+            border-radius: 0;
+            // flex: 1;
+            width: calc(100% / 3);
+            .disLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          #qrLogin {
+            border-radius: 0 6px 0 0;
+            // flex: 1;
+            width: calc(100% / 3);
+            .qrLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          .click_nav {
+            @include click_nav;
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+        .wrapper_inner {
+          // < id 일회용 qr코드 inner >
+          padding: 20px 24px;
+          border: 1px solid #c6c6c6;
+          border: 1.5px solid var(--maincolor2);
+          border-radius: 6px;
+          background-color: #fff;
+          box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
+          position: relative;
+          top: -10px;
+          width: 100%;
+          height: 295px;
+          z-index: 3;
+          // height: 255px;
+          #contentFrame {
+            width: 100%;
+            height: 100%;
+            display: flex;
+          }
+        }
+      }
+      .another {
+        padding: 20px 0 35px;
+        text-align: center;
+        a {
+          font-size: 14px;
+          line-height: 17px;
+          color: #888;
+        }
+        & a:nth-child(2),
+        & a:nth-child(3) {
+          position: relative;
+          padding-left: 28px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 12px;
+            width: 1px;
+            height: 12px;
+            border-radius: 0.5px;
+            background-color: #dadada;
+          }
+        }
+      }
+      .banner {
+        @include JccAic;
+        width: 460px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    footer {
+      padding: 63px 0 32px;
+      letter-spacing: -0.5px;
+      color: var(--fontcolor2);
+      section {
+        position: relative;
+        text-align: center;
+        .info {
+          @include f-info;
+          li {
+            @include f-info-li;
+          }
+          li:nth-child(2),
+          li:nth-child(3),
+          li:nth-child(4) {
+            @include f-info-li234;
+            a {
+              @include info-li-a;
+            }
+            &::before {
+              @include info-li-before;
+            }
+          }
+        }
+        .company_info {
+          @include f-info;
+          margin-top: 9px;
+          li:nth-child(1) {
+            img {
+              width: 70px;
+            }
+            padding-right: 3px;
+          }
+          li:nth-child(2) {
+            @include f-info-c-li;
+          }
+          li:nth-child(3) {
+            @include f-info-c-li;
+            padding: 0 2px;
+            font-weight: 500;
+            color: #000;
+          }
+          li:nth-child(4) {
+            @include f-info-c-li;
+          }
+        }
+      }
+    }
+  }
+}
+// @media (max-width: 632px)

@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
+  --fontcolor7: #777;
+  --errorcolor: #ff003e;
+}
+
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
+  --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
+  --errorcolor: #ff003e;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  color: var(--fontcolor2);
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper header {
+  position: relative;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+  width: 743px;
+  width: 46.4375rem;
+  margin: 0 auto;
+  text-align: center;
+}
+body .wrapper header a {
+  display: inline-block;
+  margin-top: 108px;
+  width: 155px;
+  height: 30px;
+}
+body .wrapper header a img {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper header select {
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  min-width: 95px;
+  height: 30px;
+  padding: 4px 10px 6px 8px;
+  font: 400 12px/18px "";
+  color: var(--fontcolor3);
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("./imgs/select_icon.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 13%;
+}
+body .wrapper header select option {
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+body .wrapper .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  width: 460px;
+}
+body .wrapper .container aside {
+  position: absolute;
+  top: -17px;
+  right: -35px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  padding: 3px 0 4px 9px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #03c75a;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 10;
+}
+body .wrapper .container aside span {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.56px;
+  white-space: nowrap;
+  color: #03c75a;
+  vertical-align: top;
+  color: var(--maincolor);
+  font-family: -apple-system, "system-ui", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+body .wrapper .container aside img {
+  width: 3%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+body .wrapper .container .kind_of_login {
+  width: 100%;
+  margin-bottom: -15px;
+}
+body .wrapper .container .kind_of_login .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
+  border-top: 1px solid #e3e3e3;
+  border-radius: 6px 6px 0 0;
+  background-color: #f8f9fa;
+}
+body .wrapper .container .kind_of_login .navigation .navigation_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  border: 1px solid #e3e3e3;
+  border-top: none;
+  background-color: #f8f9fa;
+  height: 55px;
+  font: 500 16px/20px;
+  letter-spacing: -0.5px;
+  color: #777;
+  z-index: 2;
+  height: 65px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 0px;
+  cursor: pointer;
+}
+body .wrapper .container .kind_of_login .navigation .navigation_item span {
+  margin-left: 10px;
+}
+body .wrapper .container .kind_of_login .navigation #idLogin {
+  border-radius: 6px 0 0 0;
+  width: 33.3333333333%;
+}
+body .wrapper .container .kind_of_login .navigation #idLogin .idLogin_icon {
+  width: 16px;
+  height: 16px;
+}
+body .wrapper .container .kind_of_login .navigation #disposableLogin {
+  border-radius: 0;
+  width: 33.3333333333%;
+}
+body .wrapper .container .kind_of_login .navigation #disposableLogin .disLogin_icon {
+  width: 16px;
+  height: 16px;
+}
+body .wrapper .container .kind_of_login .navigation #qrLogin {
+  border-radius: 0 6px 0 0;
+  width: 33.3333333333%;
+}
+body .wrapper .container .kind_of_login .navigation #qrLogin .qrLogin_icon {
+  width: 16px;
+  height: 16px;
+}
+body .wrapper .container .kind_of_login .navigation .click_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  border: 1.5px solid var(--maincolor2);
+  border-top: 5px solid var(--maincolor2);
+  border-bottom: none;
+  background-color: #fff;
+  height: 65px;
+  font: 600 16px/20px;
+  letter-spacing: -0.5px;
+  border-radius: 6px 6px 0 0;
+  color: #333;
+  z-index: 4;
+}
+body .wrapper .container .kind_of_login .navigation .click_nav span {
+  font-weight: 600;
+}
+body .wrapper .container .kind_of_login .wrapper_inner {
+  padding: 20px 24px;
+  border: 1px solid #c6c6c6;
+  border: 1.5px solid var(--maincolor2);
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
+  position: relative;
+  top: -10px;
+  width: 100%;
+  height: 295px;
+  z-index: 3;
+}
+body .wrapper .container .kind_of_login .wrapper_inner #contentFrame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+body .wrapper .container .another {
+  padding: 20px 0 35px;
+  text-align: center;
+}
+body .wrapper .container .another a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #888;
+}
+body .wrapper .container .another a:nth-child(2), body .wrapper .container .another a:nth-child(3) {
+  position: relative;
+  padding-left: 28px;
+}
+body .wrapper .container .another a:nth-child(2)::before, body .wrapper .container .another a:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 1px;
+  height: 12px;
+  border-radius: 0.5px;
+  background-color: #dadada;
+}
+body .wrapper .container .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 460px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+body .wrapper .container .banner img {
+  width: 100%;
+  height: auto;
+}
+body .wrapper footer {
+  padding: 63px 0 32px;
+  letter-spacing: -0.5px;
+  color: var(--fontcolor2);
+}
+body .wrapper footer section {
+  position: relative;
+  text-align: center;
+}
+body .wrapper footer section .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #222;
+}
+body .wrapper footer section .info li {
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+}
+body .wrapper footer section .info li:nth-child(2),
+body .wrapper footer section .info li:nth-child(3),
+body .wrapper footer section .info li:nth-child(4) {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+  padding-left: 13px;
+}
+body .wrapper footer section .info li:nth-child(2) a,
+body .wrapper footer section .info li:nth-child(3) a,
+body .wrapper footer section .info li:nth-child(4) a {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+}
+body .wrapper footer section .info li:nth-child(2)::before,
+body .wrapper footer section .info li:nth-child(3)::before,
+body .wrapper footer section .info li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 0.5px;
+  height: 11px;
+  background-color: #dadada;
+}
+body .wrapper footer section .company_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #222;
+  margin-top: 9px;
+}
+body .wrapper footer section .company_info li:nth-child(1) {
+  padding-right: 3px;
+}
+body .wrapper footer section .company_info li:nth-child(1) img {
+  width: 70px;
+}
+body .wrapper footer section .company_info li:nth-child(2) {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #888;
+}
+body .wrapper footer section .company_info li:nth-child(3) {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #888;
+  padding: 0 2px;
+  font-weight: 500;
+  color: #000;
+}
+body .wrapper footer section .company_info li:nth-child(4) {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #888;
+}/*# sourceMappingURL=style.css.map */

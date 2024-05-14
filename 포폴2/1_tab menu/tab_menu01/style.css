@@ -1,0 +1,219 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  padding: 4rem 2rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ad5389, #3c1053);
+  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+ background-blend-mode: screen;
+  font-size: 1.2rem;
+  font-family: "Patrick Hand";
+  display: grid;
+  grid: 2rem auto/repeat(2, 50%);
+  grid-column-gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+.tab-inner {
+  grid-column: 1/-1;
+  margin: 1rem auto;
+  max-width: 80rem;
+  width: 100%;
+}
+.tab-btn {
+  padding: 2rem 0 0 0;
+  width: 100%;
+  margin: 0 0.5rem;
+  overflow-x: auto;
+  width: calc(100% - 1rem);
+  white-space: nowrap;
+}
+@media (min-width: 50rem) {
+  .tabs {
+    margin: 0 2rem;
+    width: calc(100% - 4rem);
+  }
+}
+a {
+  font-family: "Patrick Hand";
+  text-transform: uppercase;
+  line-height: 0.8;
+  display: inline-block;
+  margin-left: -35px;
+  filter: drop-shadow(0px -3px 2px rgba(0, 0, 0, 0.05));
+  border: none;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  margin-right: 4rem;
+  background: var(--background);
+  white-space: nowrap;
+  cursor: pointer;
+  background: var(--background);
+  border: 2px solid;
+  border-width: 2px 0 0;
+}
+a:focus span{
+  border-bottom: 2px solid;
+  border-radius: 0;
+}
+a:first-of-type {
+  margin-left: 30px;
+}
+a div {
+  /* background: var(--background); */
+  padding: 6px 5px;
+  position: relative;
+  z-index: 10;
+}
+a span {
+  display: inline-block;
+  border: 2px solid transparent;
+  padding: 6px 15px 6px;
+  border-radius: 5px;
+  z-index: 5;
+  position: relative;
+  font-size: 140%;
+  color: #fff;
+  min-width: 6rem;
+}
+a:before, a:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: var(--background);
+  border-radius: 8px 8px 0 0;
+  width: 30px;
+  top: 0;
+  top: -2px;
+  border-top: 2px solid;
+}
+a:before {
+  right: -16px;
+  transform: skew(25deg);
+  border-radius: 0 8px 0 0;
+  border-right: 2px solid;
+}
+a:after {
+  transform: skew(-25deg);
+  left: -16px;
+  border-radius: 8px 0 0 0;
+  border-left: 2px solid;
+}
+a.active {
+  z-index: 50;
+  position: relative;
+}
+a.active span {
+  background: white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: black;
+  border: 2px solid;
+  /* padding: auto 0; */
+}
+a.active:focus span {
+  outline: 1px solid rgba(255, 255, 255, 0.7);
+}
+/* a:not(.active) {
+  border-bottom: 2px solid;
+} */
+.tab-btn a:nth-of-type(1), .tab-content ul li:nth-of-type(1) {
+  --background: #640D6B;
+}
+.tab-btn a:nth-of-type(2), .tab-content ul li:nth-of-type(2) {
+  --background: #B51B75;
+}
+.tab-btn a:nth-of-type(3), .tab-content ul li:nth-of-type(3) {
+  --background: #AF4D98;
+}
+.tab-btn a:nth-of-type(4), .tab-content ul li:nth-of-type(4) {
+  --background: #D66BA0;
+}
+.tab-btn a:nth-of-type(5), .tab-content ul li:nth-of-type(5) {
+  --background: #E5A9A9;
+}
+.tab-btn a:nth-of-type(6), .tab-content ul li:nth-of-type(6) {
+  --background: #6CB6BB;
+}
+.tab-btn a:nth-of-type(7), .tab-content ul li:nth-of-type(7) {
+  --background: #4D5DAF;
+}
+a img {
+  height: 18px;
+}
+
+.tab-content {
+  position: relative;
+  width: 100%;
+  top: -2px;
+  left: -2px;
+  z-index: 1;
+  border: 2px solid;
+  border-radius: 2px;
+}
+.tab-content ul .tab {
+  
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.tab-content .tab {
+  font-family: "Yomogi", sans-serif;
+  display: none;
+  background: var(--background);
+  padding: 1rem;
+  filter: drop-shadow(0px -2px 2px rgba(0, 0, 0, 0.1));
+  border-radius: 2px;
+}
+.tab-content .tab .content {
+  display: flex;
+  padding: 1.5rem;
+  min-height: 20rem;
+  line-height: 160%;
+  background-color: #f9f9f9;
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(#e4e4e4 1px, transparent 1px);
+  background-size: 8% 8%, 2px 2px;
+  border: 2px solid;
+}
+.content-inner {
+  padding: 20px;
+  padding-right: 40px;
+}
+.tab-content .tab .content .content-inner h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-decoration: underline;
+  padding: 5px;
+  padding-bottom: 25px;
+}
+.tab-content .tab img {
+  width: 25%; 
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+}
+p {
+  margin-bottom: 1rem;
+}
+.tab:target {
+  opacity: 1;
+  visibility: visible;
+}
+.tab:nth-child(1) {
+  opacity: 1;
+  visibility: visible;
+}

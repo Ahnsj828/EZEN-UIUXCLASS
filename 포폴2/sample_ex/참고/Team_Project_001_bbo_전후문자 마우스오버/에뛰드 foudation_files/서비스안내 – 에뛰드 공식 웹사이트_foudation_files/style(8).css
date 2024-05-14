@@ -1,0 +1,336 @@
+@charset "utf-8";
+/**
+ * @author https://www.cosmosfarm.com
+ */
+
+a.kboard-faq-button-small,
+input.kboard-faq-button-small,
+button.kboard-faq-button-small { position: relative; display: inline-block; *display: inline; zoom: 1; margin: 0; padding: 8px 20px; width: auto; font-size: 13px; font-weight: normal; letter-spacing: normal; color: #333 !important; background: #eaeaea !important; border: none; border-radius: 0; text-decoration: none !important; cursor: pointer; vertical-align: middle; text-shadow: none; box-shadow: none; transition-duration: 0.3s; box-sizing: content-box; border-radius:3px; }
+a.kboard-faq-button-small:hover,
+a.kboard-faq-button-small:focus,
+a.kboard-faq-button-small:active,
+input.kboard-faq-button-small:hover,
+input.kboard-faq-button-small:focus,
+input.kboard-faq-button-small:active,
+button.kboard-faq-button-small:hover,
+button.kboard-faq-button-small:focus,
+button.kboard-faq-button-small:active { opacity: 0.7; }
+
+.kboard-faq-poweredby { float: left; padding-bottom: 15px; width: 100%; font-size: 14px; }
+.kboard-faq-new-notify { display: inline-block; *display: inline; zoom: 1; padding: 2px 2px; line-height: 10px; font-size: 10px; color: white; background-color: #f61b5d; font-weight: normal; }
+.kboard-faq-cut-strings { width: auto; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-wrap: normal; }
+
+#kboard-faq-list { display: inline-block; *display: inline; zoom: 1; margin: 0; width: 100%; }
+#kboard-faq-list form { margin: 0; padding: 0; }
+#kboard-faq-list .kboard-list-header { float: left; display: table; padding-bottom: 12px; width: 100%; }
+#kboard-faq-list .kboard-list-header .kboard-total-count { display: table-cell; padding-left:5px; font-size: 14px; color: #111; vertical-align:bottom; }
+#kboard-faq-list .kboard-list-header .kboard-sort { display: table-cell; text-align: right; }
+#kboard-faq-list .kboard-list-header .kboard-sort select { display: inline; margin: 0; padding: 0; width: auto; min-width: 0; max-width: none; height: 26px; min-height: 0; line-height: 26px; font-size: 13px; color: #666666; border-radius: 0; border: 1px solid #f1f1f1; background: white; vertical-align: middle; box-shadow: none; box-sizing: content-box; text-indent: 0; -webkit-appearance: menulist; -moz-appearance: menulist; appearance: menulist; }
+#kboard-faq-list .kboard-category { float: left; margin-bottom:33px; width: 100%; }
+#kboard-faq-list .kboard-category.category-mobile { display: none; }
+#kboard-faq-list .kboard-category.category-pc { display: block; }
+#kboard-faq-list .kboard-category select { display: inline; margin: 0 0 5px 0; padding: 0; width: 100%; min-width: 100%; height: 28px; min-height: 0; line-height: 28px; font-size: 13px; color: #666666; border-radius: 0; border: 1px solid #f1f1f1; background: white; vertical-align: middle; box-shadow: none; box-sizing: border-box; text-indent: 0; -webkit-appearance: menulist; -moz-appearance: menulist; appearance: menulist; }
+#kboard-faq-list .kboard-category .kboard-category-list { width:100%; margin: 0 0 5px 0; padding: 0; list-style: none; border: 0; overflow: hidden; }
+#kboard-faq-list .kboard-category .kboard-category-list li { position:relative; display: block; float:left; width:calc((100% - 35px) / 8); margin: 0 5px 0 0; padding: 0; border: 0; list-style: none; background:#F7F7F7; box-sizing:border-box;}
+#kboard-faq-list .kboard-category .kboard-category-list::after { content:''; display:block; clear:both;}
+#kboard-faq-list .kboard-category .kboard-category-list li:last-of-type { margin-right:0;}
+#kboard-faq-list .kboard-category .kboard-category-list li::before,
+#kboard-faq-list .kboard-category .kboard-category-list li::after { display: none; }
+#kboard-faq-list .kboard-category .kboard-category-list li a { display: flex; justify-content:center; align-items:center; width:100%; height:130px; font-size: 16px; font-weight:400; color:#333; text-align:center; border: 0; border-bottom: 2px solid transparent; text-decoration: none; text-shadow: none; box-shadow: none;}
+#kboard-faq-list .kboard-category .kboard-category-list li a .category-wrap .category-icon { min-width:61px; height:47px; margin-bottom:10px; background-repeat:no-repeat; background-position:center;}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(1) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='44' height='29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 28 7.81 1l6.347 27M3.492 19.476h8.662M18.52 1v27h10.05m3.88-27v27H42.5' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(1).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='44' height='29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 28 7.81 1l6.347 27M3.492 19.476h8.662M18.52 1v27h10.05m3.88-27v27H42.5' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(2) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.287 17.685v-3.458c0-2.314.964-4.534 2.678-6.17C26.678 6.42 29.003 5.5 31.427 5.5c2.424 0 4.748.92 6.462 2.556 1.714 1.637 2.677 3.857 2.677 6.171v3.458m-9.14 10.483v8.803m6.742-8.803v8.803m-13.482-8.803v8.803M44.612 41.5H18.24a3.274 3.274 0 0 1-2.22-.992 2.985 2.985 0 0 1-.84-2.2v-14.67h32.496v14.67a2.989 2.989 0 0 1-.842 2.2 3.28 3.28 0 0 1-2.22.992Zm4.913-25.444H13.328a.46.46 0 0 0-.3.162.421.421 0 0 0-.096.317v6.631a.421.421 0 0 0 .095.317c.074.09.182.148.3.162h36.199a.461.461 0 0 0 .304-.16.42.42 0 0 0 .097-.319v-6.631a.42.42 0 0 0-.097-.319.46.46 0 0 0-.304-.16Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(2).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.287 17.685v-3.458c0-2.314.964-4.534 2.678-6.17C26.678 6.42 29.003 5.5 31.427 5.5c2.424 0 4.748.92 6.462 2.556 1.714 1.637 2.677 3.857 2.677 6.171v3.458m-9.14 10.483v8.803m6.742-8.803v8.803m-13.482-8.803v8.803M44.612 41.5H18.24a3.274 3.274 0 0 1-2.22-.992 2.985 2.985 0 0 1-.84-2.2v-14.67h32.496v14.67a2.989 2.989 0 0 1-.842 2.2 3.28 3.28 0 0 1-2.22.992Zm4.913-25.444H13.328a.46.46 0 0 0-.3.162.421.421 0 0 0-.096.317v6.631a.421.421 0 0 0 .095.317c.074.09.182.148.3.162h36.199a.461.461 0 0 0 .304-.16.42.42 0 0 0 .097-.319v-6.631a.42.42 0 0 0-.097-.319.46.46 0 0 0-.304-.16Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(3) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.778 8.121H8.214a.669.669 0 0 0-.464.167.6.6 0 0 0-.203.428v22.05a.601.601 0 0 0 .203.43.67.67 0 0 0 .464.167h3.256a5.868 5.868 0 0 1 .8-1.805l.055-.085.01-.015c.047-.067.097-.134.145-.2l.008-.01.011-.015.145-.183.032-.039c.049-.058.097-.114.147-.17l.04-.043c.05-.054.096-.108.152-.16l.044-.043.157-.15.049-.044c.053-.049.108-.098.164-.145l.046-.038c.057-.047.115-.091.175-.141l.028-.021c.2-.153.41-.294.628-.424v0l.05-.03c.039-.023.08-.045.12-.066l.033-.018.048-.027.056-.03c.035-.02.071-.037.108-.054l.035-.017.036-.018.089-.043c.038-.018.077-.036.117-.052l.02-.01.135-.058.135-.053.143-.054c.046-.017.091-.032.138-.047l.15-.048.133-.04.16-.042.133-.033.17-.037h.014l.114-.023.177-.03.046-.008.081-.012.194-.023.055-.007.06-.006a4.49 4.49 0 0 1 .221-.016l.097-.007c.218-.01.421-.01.64 0l.096.006c.075 0 .15.01.223.017l.06.006.056.007.194.023.084.013.042.007.178.03.104.021.025.006.17.036.132.033.16.043.134.04c.052.016.097.032.152.05.045.014.09.03.135.046l.146.054.135.053.136.059.027.012c.037.017.074.032.111.05l.09.043.035.017.037.018c.035.018.07.034.105.053l.058.03.048.027.04.021.114.064h.005l.047.028c.217.129.425.27.625.422v0l.027.02c.059.047.117.092.175.142l.045.037c.057.047.111.096.165.145l.047.043c.053.05.105.1.157.152l.044.043c.052.053.103.107.154.162l.038.042c.05.056.097.113.15.17l.031.04c.05.06.097.121.146.183l.02.025c.05.066.097.131.144.2l.008.01c.02.028.036.057.054.085.37.556.64 1.166.801 1.805h12.483V8.718a.6.6 0 0 0-.19-.417.666.666 0 0 0-.44-.18v0Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24.09 32.032a5.875 5.875 0 0 0-.93-2.473c-.019-.027-.035-.057-.055-.084l-.008-.011c-.046-.068-.096-.134-.144-.2l-.02-.025a5.641 5.641 0 0 0-.145-.183l-.032-.039c-.05-.058-.097-.114-.15-.17l-.038-.043a6.041 6.041 0 0 0-.154-.162l-.043-.043a11.916 11.916 0 0 0-.158-.152l-.046-.042a4.963 4.963 0 0 0-.166-.146l-.044-.037c-.058-.047-.116-.091-.175-.142l-.028-.02a6.469 6.469 0 0 0-.625-.422l-.047-.028h-.005l-.114-.063-.04-.021-.047-.027-.058-.031-.106-.052-.037-.019-.034-.017-.09-.043c-.037-.018-.075-.033-.112-.05l-.027-.012-.135-.058-.136-.053-.146-.055a3.763 3.763 0 0 0-.134-.046 3.588 3.588 0 0 0-.152-.05l-.134-.04-.16-.042-.133-.033-.17-.037-.024-.006-.105-.02c-.059-.012-.118-.02-.178-.03l-.041-.007-.085-.014-.193-.023-.056-.006-.06-.007a5.614 5.614 0 0 0-.223-.016l-.097-.007a6.822 6.822 0 0 0-.64 0l-.096.008c-.075 0-.148.008-.222.015l-.06.007-.055.006-.193.023-.082.013-.045.007-.177.03-.114.023h-.015l-.17.037-.132.033-.16.043-.134.04-.15.047c-.046.015-.092.03-.137.047l-.144.054-.134.053-.135.059-.02.009a2.67 2.67 0 0 0-.118.052l-.089.043-.036.018-.034.017a1.923 1.923 0 0 0-.108.054l-.056.03-.048.027-.034.018-.12.067-.05.03c-.218.13-.427.27-.628.423v0l-.028.021c-.06.046-.118.092-.175.142l-.045.037a6.18 6.18 0 0 0-.165.145l-.048.044-.157.15-.044.043c-.053.053-.103.107-.153.16l-.04.043-.146.17-.032.039c-.05.06-.097.121-.145.183l-.012.016-.008.01c-.049.065-.096.132-.144.199l-.01.016c-.02.028-.037.056-.056.085a5.865 5.865 0 0 0-.928 2.47 5.78 5.78 0 0 0 .206 2.462c.245.798.66 1.54 1.22 2.181a6.375 6.375 0 0 0 2.036 1.543 6.754 6.754 0 0 0 5.094.3 6.496 6.496 0 0 0 2.22-1.29 6.098 6.098 0 0 0 1.498-2.022 5.814 5.814 0 0 0 .526-2.418 5.875 5.875 0 0 0-.089-.755v0ZM44.358 13.422h-7.913v17.94h2.631c.17-.671.459-1.31.857-1.889l.01-.014c.047-.068.095-.135.146-.201l.02-.029c.048-.062.097-.123.146-.183l.03-.038a4.98 4.98 0 0 1 .148-.17l.034-.036v-.005c.05-.054.097-.107.152-.159l.044-.044c.053-.052.105-.103.158-.152l.05-.043c.052-.05.107-.098.163-.145l.045-.038c.057-.048.115-.091.175-.14l.029-.023c.054-.042.112-.082.169-.122.057-.04.088-.065.133-.091.104-.071.21-.138.319-.203l.055-.033c.037-.022.075-.043.114-.063l.037-.02.048-.027.057-.031.103-.052.038-.018.032-.015.096-.046.116-.052.02-.008.011-.005.127-.055.135-.053.146-.054a3.49 3.49 0 0 1 .135-.047c.05-.017.097-.033.152-.048l.134-.04.161-.043.132-.033.17-.036.023-.006.106-.02c.059-.012.118-.021.178-.031l.042-.007.084-.013c.062-.009.125-.016.188-.022h.004l.055-.007.061-.006c.074-.008.148-.012.223-.017l.097-.006c.218-.01.422-.01.64 0l.096.006c.075 0 .148.01.223.017l.06.006.056.007h.005c.062.006.125.013.187.022l.085.013.041.007.18.03.105.021.024.006.17.036.13.033.162.043.134.04.153.05c.044.014.09.03.134.046l.145.054.135.053.136.059.027.012c.038.017.075.032.112.05l.09.044.035.017.035.016c.036.018.072.035.107.054l.057.032.048.026.036.02c.039.02.077.042.115.064l.054.033c.217.129.425.27.624.42v0l.028.02c.06.047.118.092.176.144l.044.036c.056.048.11.096.165.146l.047.043c.054.05.107.1.158.152l.045.045c.053.052.103.107.153.16l.037.041c.05.056.097.113.147.17l.033.039c.05.061.097.123.147.183l.022.03c.05.066.097.133.145.2l.01.013c.389.58.67 1.22.831 1.89h2.028a.648.648 0 0 0 .444-.174.581.581 0 0 0 .184-.421v-8.018c0-2.47-1.032-4.838-2.87-6.588-1.84-1.75-4.335-2.738-6.941-2.75v0Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M51.697 32.032a5.726 5.726 0 0 0-.055-.342c-.023-.113-.07-.217-.097-.327a5.841 5.841 0 0 0-.832-1.89v0l-.009-.014c-.047-.067-.097-.134-.145-.2l-.023-.029a4.226 4.226 0 0 0-.147-.183l-.032-.039a5.017 5.017 0 0 0-.148-.17l-.036-.04c-.05-.055-.097-.109-.153-.161l-.046-.045a4.053 4.053 0 0 0-.157-.152l-.048-.043a6.182 6.182 0 0 0-.164-.146l-.045-.037c-.058-.048-.116-.091-.176-.143l-.027-.02a6.744 6.744 0 0 0-.624-.42v0l-.054-.034a2.864 2.864 0 0 0-.116-.063l-.035-.02-.049-.027-.057-.032a3.516 3.516 0 0 0-.106-.053l-.035-.016-.035-.018-.09-.044-.112-.05-.027-.011-.137-.059a4.18 4.18 0 0 0-.134-.053l-.145-.054a3.765 3.765 0 0 0-.135-.047l-.153-.05-.133-.039-.162-.043-.13-.033-.17-.037-.025-.005-.105-.021-.18-.03-.041-.007-.084-.014a5.936 5.936 0 0 0-.188-.022h-.005l-.055-.006-.06-.006a6.163 6.163 0 0 0-.223-.017l-.097-.006c-.218-.01-.421-.01-.64 0l-.096.006c-.075 0-.15.01-.223.017l-.061.006-.055.006h-.005a5.942 5.942 0 0 0-.188.022l-.084.014-.042.006-.178.03-.105.022-.024.005-.17.037-.131.033-.162.043-.133.04c-.052.015-.097.03-.152.048a3.43 3.43 0 0 0-.136.047l-.146.054-.134.053-.127.054-.01.006-.021.008-.116.051-.097.046-.032.016-.038.018-.102.051-.057.032-.049.026-.036.02c-.04.02-.078.042-.115.064l-.055.033a6.58 6.58 0 0 0-.318.202c-.046.03-.09.064-.134.092a2.31 2.31 0 0 0-.17.122l-.028.022a4.198 4.198 0 0 0-.174.141l-.046.038c-.056.046-.11.091-.163.144l-.05.044c-.053.049-.105.1-.157.152l-.045.044c-.051.052-.096.105-.152.16v.004l-.034.037c-.05.055-.096.111-.147.17l-.03.037c-.05.06-.097.12-.146.183l-.021.028c-.05.066-.099.133-.145.201l-.01.015a5.828 5.828 0 0 0-.984 2.558v0c-.034.25-.05.501-.051.753 0 1.615.677 3.163 1.882 4.305 1.205 1.142 2.84 1.783 4.544 1.783 1.704 0 3.339-.641 4.544-1.783 1.205-1.142 1.882-2.69 1.882-4.305a5.902 5.902 0 0 0-.085-.743v0Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(3).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.778 8.121H8.214a.669.669 0 0 0-.464.167.6.6 0 0 0-.203.428v22.05a.601.601 0 0 0 .203.43.67.67 0 0 0 .464.167h3.256a5.868 5.868 0 0 1 .8-1.805l.055-.085.01-.015c.047-.067.097-.134.145-.2l.008-.01.011-.015.145-.183.032-.039c.049-.058.097-.114.147-.17l.04-.043c.05-.054.096-.108.152-.16l.044-.043.157-.15.049-.044c.053-.049.108-.098.164-.145l.046-.038c.057-.047.115-.091.175-.141l.028-.021c.2-.153.41-.294.628-.424v0l.05-.03c.039-.023.08-.045.12-.066l.033-.018.048-.027.056-.03c.035-.02.071-.037.108-.054l.035-.017.036-.018.089-.043c.038-.018.077-.036.117-.052l.02-.01.135-.058.135-.053.143-.054c.046-.017.091-.032.138-.047l.15-.048.133-.04.16-.042.133-.033.17-.037h.014l.114-.023.177-.03.046-.008.081-.012.194-.023.055-.007.06-.006a4.49 4.49 0 0 1 .221-.016l.097-.007c.218-.01.421-.01.64 0l.096.006c.075 0 .15.01.223.017l.06.006.056.007.194.023.084.013.042.007.178.03.104.021.025.006.17.036.132.033.16.043.134.04c.052.016.097.032.152.05.045.014.09.03.135.046l.146.054.135.053.136.059.027.012c.037.017.074.032.111.05l.09.043.035.017.037.018c.035.018.07.034.105.053l.058.03.048.027.04.021.114.064h.005l.047.028c.217.129.425.27.625.422v0l.027.02c.059.047.117.092.175.142l.045.037c.057.047.111.096.165.145l.047.043c.053.05.105.1.157.152l.044.043c.052.053.103.107.154.162l.038.042c.05.056.097.113.15.17l.031.04c.05.06.097.121.146.183l.02.025c.05.066.097.131.144.2l.008.01c.02.028.036.057.054.085.37.556.64 1.166.801 1.805h12.483V8.718a.6.6 0 0 0-.19-.417.666.666 0 0 0-.44-.18v0Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24.09 32.032a5.875 5.875 0 0 0-.93-2.473c-.019-.027-.035-.057-.055-.084l-.008-.011c-.046-.068-.096-.134-.144-.2l-.02-.025a5.641 5.641 0 0 0-.145-.183l-.032-.039c-.05-.058-.097-.114-.15-.17l-.038-.043a6.041 6.041 0 0 0-.154-.162l-.043-.043a11.916 11.916 0 0 0-.158-.152l-.046-.042a4.963 4.963 0 0 0-.166-.146l-.044-.037c-.058-.047-.116-.091-.175-.142l-.028-.02a6.469 6.469 0 0 0-.625-.422l-.047-.028h-.005l-.114-.063-.04-.021-.047-.027-.058-.031-.106-.052-.037-.019-.034-.017-.09-.043c-.037-.018-.075-.033-.112-.05l-.027-.012-.135-.058-.136-.053-.146-.055a3.763 3.763 0 0 0-.134-.046 3.588 3.588 0 0 0-.152-.05l-.134-.04-.16-.042-.133-.033-.17-.037-.024-.006-.105-.02c-.059-.012-.118-.02-.178-.03l-.041-.007-.085-.014-.193-.023-.056-.006-.06-.007a5.614 5.614 0 0 0-.223-.016l-.097-.007a6.822 6.822 0 0 0-.64 0l-.096.008c-.075 0-.148.008-.222.015l-.06.007-.055.006-.193.023-.082.013-.045.007-.177.03-.114.023h-.015l-.17.037-.132.033-.16.043-.134.04-.15.047c-.046.015-.092.03-.137.047l-.144.054-.134.053-.135.059-.02.009a2.67 2.67 0 0 0-.118.052l-.089.043-.036.018-.034.017a1.923 1.923 0 0 0-.108.054l-.056.03-.048.027-.034.018-.12.067-.05.03c-.218.13-.427.27-.628.423v0l-.028.021c-.06.046-.118.092-.175.142l-.045.037a6.18 6.18 0 0 0-.165.145l-.048.044-.157.15-.044.043c-.053.053-.103.107-.153.16l-.04.043-.146.17-.032.039c-.05.06-.097.121-.145.183l-.012.016-.008.01c-.049.065-.096.132-.144.199l-.01.016c-.02.028-.037.056-.056.085a5.865 5.865 0 0 0-.928 2.47 5.78 5.78 0 0 0 .206 2.462c.245.798.66 1.54 1.22 2.181a6.375 6.375 0 0 0 2.036 1.543 6.754 6.754 0 0 0 5.094.3 6.496 6.496 0 0 0 2.22-1.29 6.098 6.098 0 0 0 1.498-2.022 5.814 5.814 0 0 0 .526-2.418 5.875 5.875 0 0 0-.089-.755v0ZM44.358 13.422h-7.913v17.94h2.631c.17-.671.459-1.31.857-1.889l.01-.014c.047-.068.095-.135.146-.201l.02-.029c.048-.062.097-.123.146-.183l.03-.038a4.98 4.98 0 0 1 .148-.17l.034-.036v-.005c.05-.054.097-.107.152-.159l.044-.044c.053-.052.105-.103.158-.152l.05-.043c.052-.05.107-.098.163-.145l.045-.038c.057-.048.115-.091.175-.14l.029-.023c.054-.042.112-.082.169-.122.057-.04.088-.065.133-.091.104-.071.21-.138.319-.203l.055-.033c.037-.022.075-.043.114-.063l.037-.02.048-.027.057-.031.103-.052.038-.018.032-.015.096-.046.116-.052.02-.008.011-.005.127-.055.135-.053.146-.054a3.49 3.49 0 0 1 .135-.047c.05-.017.097-.033.152-.048l.134-.04.161-.043.132-.033.17-.036.023-.006.106-.02c.059-.012.118-.021.178-.031l.042-.007.084-.013c.062-.009.125-.016.188-.022h.004l.055-.007.061-.006c.074-.008.148-.012.223-.017l.097-.006c.218-.01.422-.01.64 0l.096.006c.075 0 .148.01.223.017l.06.006.056.007h.005c.062.006.125.013.187.022l.085.013.041.007.18.03.105.021.024.006.17.036.13.033.162.043.134.04.153.05c.044.014.09.03.134.046l.145.054.135.053.136.059.027.012c.038.017.075.032.112.05l.09.044.035.017.035.016c.036.018.072.035.107.054l.057.032.048.026.036.02c.039.02.077.042.115.064l.054.033c.217.129.425.27.624.42v0l.028.02c.06.047.118.092.176.144l.044.036c.056.048.11.096.165.146l.047.043c.054.05.107.1.158.152l.045.045c.053.052.103.107.153.16l.037.041c.05.056.097.113.147.17l.033.039c.05.061.097.123.147.183l.022.03c.05.066.097.133.145.2l.01.013c.389.58.67 1.22.831 1.89h2.028a.648.648 0 0 0 .444-.174.581.581 0 0 0 .184-.421v-8.018c0-2.47-1.032-4.838-2.87-6.588-1.84-1.75-4.335-2.738-6.941-2.75v0Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M51.697 32.032a5.726 5.726 0 0 0-.055-.342c-.023-.113-.07-.217-.097-.327a5.841 5.841 0 0 0-.832-1.89v0l-.009-.014c-.047-.067-.097-.134-.145-.2l-.023-.029a4.226 4.226 0 0 0-.147-.183l-.032-.039a5.017 5.017 0 0 0-.148-.17l-.036-.04c-.05-.055-.097-.109-.153-.161l-.046-.045a4.053 4.053 0 0 0-.157-.152l-.048-.043a6.182 6.182 0 0 0-.164-.146l-.045-.037c-.058-.048-.116-.091-.176-.143l-.027-.02a6.744 6.744 0 0 0-.624-.42v0l-.054-.034a2.864 2.864 0 0 0-.116-.063l-.035-.02-.049-.027-.057-.032a3.516 3.516 0 0 0-.106-.053l-.035-.016-.035-.018-.09-.044-.112-.05-.027-.011-.137-.059a4.18 4.18 0 0 0-.134-.053l-.145-.054a3.765 3.765 0 0 0-.135-.047l-.153-.05-.133-.039-.162-.043-.13-.033-.17-.037-.025-.005-.105-.021-.18-.03-.041-.007-.084-.014a5.936 5.936 0 0 0-.188-.022h-.005l-.055-.006-.06-.006a6.163 6.163 0 0 0-.223-.017l-.097-.006c-.218-.01-.421-.01-.64 0l-.096.006c-.075 0-.15.01-.223.017l-.061.006-.055.006h-.005a5.942 5.942 0 0 0-.188.022l-.084.014-.042.006-.178.03-.105.022-.024.005-.17.037-.131.033-.162.043-.133.04c-.052.015-.097.03-.152.048a3.43 3.43 0 0 0-.136.047l-.146.054-.134.053-.127.054-.01.006-.021.008-.116.051-.097.046-.032.016-.038.018-.102.051-.057.032-.049.026-.036.02c-.04.02-.078.042-.115.064l-.055.033a6.58 6.58 0 0 0-.318.202c-.046.03-.09.064-.134.092a2.31 2.31 0 0 0-.17.122l-.028.022a4.198 4.198 0 0 0-.174.141l-.046.038c-.056.046-.11.091-.163.144l-.05.044c-.053.049-.105.1-.157.152l-.045.044c-.051.052-.096.105-.152.16v.004l-.034.037c-.05.055-.096.111-.147.17l-.03.037c-.05.06-.097.12-.146.183l-.021.028c-.05.066-.099.133-.145.201l-.01.015a5.828 5.828 0 0 0-.984 2.558v0c-.034.25-.05.501-.051.753 0 1.615.677 3.163 1.882 4.305 1.205 1.142 2.84 1.783 4.544 1.783 1.704 0 3.339-.641 4.544-1.783 1.205-1.142 1.882-2.69 1.882-4.305a5.902 5.902 0 0 0-.085-.743v0Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(4) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.322 37.99c-3.564.002-7.016-1.176-9.761-3.329-2.745-2.153-4.61-5.146-5.274-8.463-.664-3.317-.084-6.75 1.64-9.705 1.723-2.955 4.48-5.247 7.798-6.481a16.093 16.093 0 0 1 10.37-.276c3.385 1.055 6.274 3.197 8.17 6.056s2.678 6.255 2.212 9.602c-.466 3.347-2.15 6.435-4.764 8.73' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='m36.96 26.367 1.795 9.01 9.79-1.755' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(4).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.322 37.99c-3.564.002-7.016-1.176-9.761-3.329-2.745-2.153-4.61-5.146-5.274-8.463-.664-3.317-.084-6.75 1.64-9.705 1.723-2.955 4.48-5.247 7.798-6.481a16.093 16.093 0 0 1 10.37-.276c3.385 1.055 6.274 3.197 8.17 6.056s2.678 6.255 2.212 9.602c-.466 3.347-2.15 6.435-4.764 8.73' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='m36.96 26.367 1.795 9.01 9.79-1.755' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(5) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.714 41c10.201 0 18.471-7.835 18.471-17.5S40.915 6 30.714 6c-10.202 0-18.472 7.835-18.472 17.5S20.512 41 30.714 41Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='m21.672 18.195 4.15 12.61L30.6 18.968l4.976 11.835 4.18-12.609M21.098 24.5h19.236' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(5).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.714 41c10.201 0 18.471-7.835 18.471-17.5S40.915 6 30.714 6c-10.202 0-18.472 7.835-18.472 17.5S20.512 41 30.714 41Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='m21.672 18.195 4.15 12.61L30.6 18.968l4.976 11.835 4.18-12.609M21.098 24.5h19.236' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(6) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.068 41.504a3.312 3.312 0 0 1-.051-.581v-6.2h4.666v-6H10.664v14.23c0 .505.211.988.588 1.344.376.357.886.557 1.418.557h10.013c.262 0 .522-.05.764-.144a4.417 4.417 0 0 1-2.198-1.122 4.05 4.05 0 0 1-1.181-2.084v0Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.678 18.276v-7.59a8.964 8.964 0 0 0-1.373-4.998 9.662 9.662 0 0 0-3.967-3.542c-1.372 1.346-2.67 4.388-2.67 7.59v8.54h8.01Z' fill='%23333'/%3E%3Cpath d='M12.672 28.711V18.275h10.014v10.436' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.622 33.794c.739-1.68 3.214-2.681 6.631-2.681 2.936 0 5.19-.625 6.698-1.858a5.603 5.603 0 0 0 1.956-3.2c4.896 1.274 12.265 4.293 13.342 7.724.134.41.154.844.06 1.264h-28.87c-.05-.423.013-.851.183-1.245v-.004Z' fill='%23333'/%3E%3Cpath d='M46.992 44.839H24.66c-.212 0-.423-.012-.634-.036a4.551 4.551 0 0 1-2.557-1.032 4.15 4.15 0 0 1-1.403-2.274 3.282 3.282 0 0 1-.05-.58v-6.2H51.63v6.2c0 .177-.014.354-.042.529a4.119 4.119 0 0 1-1.343 2.269 4.516 4.516 0 0 1-2.501 1.073c-.249.034-.5.051-.752.05v0Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(6).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='44' height='44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.06 39.504a3.303 3.303 0 0 1-.05-.581v-6.2h4.666v-6H1.656v14.23c0 .505.212.988.588 1.344.376.357.886.557 1.418.557h10.013c.263 0 .522-.05.764-.144a4.417 4.417 0 0 1-2.198-1.122 4.049 4.049 0 0 1-1.181-2.084v0Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.667 16.276v-7.59a8.964 8.964 0 0 0-1.374-4.998A9.662 9.662 0 0 0 7.327.146c-1.372 1.346-2.67 4.388-2.67 7.59v8.54h8.01Z' fill='%23fff'/%3E%3Cpath d='M3.664 26.711V16.275h10.014v10.436' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.614 31.794c.739-1.68 3.214-2.681 6.632-2.681 2.935 0 5.189-.625 6.697-1.858a5.603 5.603 0 0 0 1.956-3.2c4.896 1.274 12.265 4.293 13.343 7.724.133.41.153.845.059 1.264H12.43c-.05-.423.013-.851.183-1.245v-.004Z' fill='%23fff'/%3E%3Cpath d='M37.985 42.84H15.652c-.212 0-.423-.012-.633-.037a4.552 4.552 0 0 1-2.558-1.032 4.15 4.15 0 0 1-1.402-2.274 3.282 3.282 0 0 1-.051-.58v-6.2h31.615v6.2c0 .177-.015.354-.043.53a4.12 4.12 0 0 1-1.343 2.268 4.517 4.517 0 0 1-2.5 1.073c-.25.034-.5.051-.752.051v0Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(7) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.567 26.784c6.626 0 11.997-5.089 11.997-11.366 0-6.278-5.371-11.366-11.997-11.366-6.625 0-11.997 5.088-11.997 11.366 0 6.277 5.372 11.366 11.997 11.366Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40.209 22.947c2.522 1.53 4.598 3.638 6.035 6.128a16.21 16.21 0 0 1 2.187 8.121v5.752H12.707v-5.752a16.218 16.218 0 0 1 2.245-8.218c1.473-2.515 3.6-4.631 6.177-6.15' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(7).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.567 26.784c6.626 0 11.997-5.089 11.997-11.366 0-6.278-5.371-11.366-11.997-11.366-6.625 0-11.997 5.088-11.997 11.366 0 6.277 5.372 11.366 11.997 11.366Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40.209 22.947c2.522 1.53 4.598 3.638 6.035 6.128a16.21 16.21 0 0 1 2.187 8.121v5.752H12.707v-5.752a16.218 16.218 0 0 1 2.245-8.218c1.473-2.515 3.6-4.631 6.177-6.15' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(8) a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.082 19.544v-6.5c0-5.087 5.346-9.226 11.918-9.226 6.572 0 11.918 4.14 11.918 9.226v6.5M48.936 20.189H13.068a.447.447 0 0 0-.459.433V42.75c0 .24.206.433.459.433h35.868a.447.447 0 0 0 .458-.434V20.623a.447.447 0 0 0-.458-.434Z' stroke='%23333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li:nth-of-type(8).kboard-category-selected a .category-wrap .category-icon { background-image:url("data:image/svg+xml,%3Csvg width='62' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.082 19.544v-6.5c0-5.087 5.346-9.226 11.918-9.226 6.572 0 11.918 4.14 11.918 9.226v6.5M48.936 20.189H13.068a.447.447 0 0 0-.459.433V42.75c0 .24.206.433.459.433h35.868a.447.447 0 0 0 .458-.434V20.623a.447.447 0 0 0-.458-.434Z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+#kboard-faq-list .kboard-category .kboard-category-list li.kboard-category-selected { background:#F2ACB9;}
+#kboard-faq-list .kboard-category .kboard-category-list li.kboard-category-selected a .category-wrap { color:#fff;}
+
+#kboard-faq-list .kboard-tree-category-wrap { float: left; padding-bottom: 15px; width: 100%; }
+#kboard-faq-list .kboard-tree-category-wrap select { display: inline; margin: 0 0 5px 0; padding: 0; width: 100%; height: 28px; line-height: 28px; font-size: 13px; color: #666666; border-radius: 0; border: 1px solid #f1f1f1; background: white; vertical-align: middle; box-shadow: none; box-sizing: border-box; text-indent: 0; -webkit-appearance: menulist; -moz-appearance: menulist; appearance: menulist; }
+#kboard-faq-list .kboard-tree-category-search .kboard-search-option-wrap.type-select { width: auto; }
+#kboard-faq-list .kboard-tree-category-search .kboard-search-option-wrap.type-tab { width: 100%; }
+#kboard-faq-list .kboard-tree-category { float: left; margin: 0 0 5px 0; padding: 0; width: 100%; list-style: none; border: 0; background-color: #f9f9f9; overflow: hidden; }
+#kboard-faq-list .kboard-tree-category li { display: inline-block; *display: inline; zoom: 1; margin: 0; padding: 0 5px; border: 0; list-style: none; }
+#kboard-faq-list .kboard-tree-category li::before,
+#kboard-faq-list .kboard-tree-category li::after { display: none; }
+#kboard-faq-list .kboard-tree-category li a { display: block; padding: 10px 10px 8px 10px; font-size: 14px; border: 0; border-bottom: 2px solid transparent; text-decoration: none; text-shadow: none; box-shadow: none; color: #515151; }
+#kboard-faq-list .kboard-tree-category li.kboard-category-selected a { font-weight: 500; border-bottom: 2px solid #545861; }
+#kboard-faq-list .kboard-tree-category-search { float: left; width: 100%; }
+#kboard-faq-list .kboard-tree-category-search .kboard-search-option-wrap { margin-right: 5px; float: left; }
+#kboard-faq-list .kboard-list { /* float: left; */ width: 100%; padding-left:20px; padding-right:20px; background-color: white; }
+#kboard-faq-list .kboard-list table { display: table; table-layout: fixed; margin: 0; padding: 0; width: 100%; border: 0; font-size: 14px; border-collapse: collapse; }
+#kboard-faq-list .kboard-list table a { text-decoration: none; border: 0; box-shadow: none; }
+#kboard-faq-list .kboard-list table tr { border: 0; background-color: transparent; transition-duration: 0.3s; }
+#kboard-faq-list .kboard-list table td { height: auto; padding: 20px 0; text-align: center; vertical-align: middle; font-size: 16px; color: #111; font-weight: 400; word-break: break-all; border: 0; border-bottom: 1px solid #d9d9d9; }
+#kboard-faq-list .kboard-list table tr:first-of-type td { border-top: 1px solid #A6A6A6;}
+#kboard-faq-list .kboard-list table td.kboard-list-uid { width: 65px; }
+#kboard-faq-list .kboard-list table td.kboard-list-title { width: auto; font-size:17px; }
+#kboard-faq-list .kboard-list table td.kboard-list-user { width: 100px; }
+#kboard-faq-list .kboard-list table td.kboard-list-category1 { width: 270px; font-size:15px; color:#171C8F;}
+#kboard-faq-list .kboard-list table td.kboard-list-toggle { width: 10%; padding-right: 60px;}
+#kboard-faq-list .kboard-list tbody tr {cursor:pointer;}
+#kboard-faq-list .kboard-list tbody tr td.kboard-list-toggle .btn-arrow { position:relative; display:inline-block; width:12px; height:9px;}
+#kboard-faq-list .kboard-list tbody tr td.kboard-list-toggle .btn-arrow::before { content:''; position:absolute; left:50%; bottom:0; display:block; width:1px; height:100%; background:#333; transform-origin:bottom; transform:rotate(-45deg);}
+#kboard-faq-list .kboard-list tbody tr td.kboard-list-toggle .btn-arrow::after { content:''; position:absolute; left:50%; bottom:0; display:block; width:1px; height:100%; background:#333; transform-origin:bottom; transform:rotate(45deg);}
+#kboard-faq-list .kboard-list tbody tr td.kboard-list-toggle .btn-arrow.slide { transform:rotate(180deg);}
+#kboard-faq-list .kboard-list tbody tr:hover { opacity: 0.7; }
+
+#kboard-faq-list .kboard-list tbody tr.toggle-content {cursor:auto; }
+#kboard-faq-list .kboard-list tbody tr.toggle-content:hover {opacity:1;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td { position:relative; padding:0; background-color:#fafafa; border:none;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .con { padding:24px 24px 24px 270px; display:none; border-bottom:1px solid #D9D9D9; }
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .con-txt { font-weight:300; text-align:left;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .con-txt p { margin:0; padding:0;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .con-modify { float:right; position:absolute; bottom:20px; right:20px; margin:0; padding:0;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .con-modify > a {padding:0px 10px; font-size:12px; }
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .kboard-attach .kboard-attach-list { position:relative; width:600px; margin-bottom:10px; padding-top:18px; padding-bottom:18px; border:1px solid #d9d9d9; border-radius: 8px; cursor:pointer;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .kboard-attach .kboard-attach-list:first-of-type { margin-top:20px;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .kboard-attach .kboard-attach-list:last-of-type { margin-bottom:0;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .kboard-attach .kboard-attach-list .kboard-attach-list-fileicon { position:absolute; top:50%; left:12px; transform:translateY(-50%); display:block; width:45px; height:45px;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .kboard-attach .kboard-attach-list .kboard-attach-list-txt { margin-bottom:0; padding-left:65px; padding-right:60px; font-size:15px; font-weight:400; text-align:left; transition-duration: 0.3s;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .kboard-attach .kboard-attach-list .kboard-attach-list-downicon { position:absolute; top:50%; right:12px; transform:translateY(-50%); display:block; width:40px; height:41px; background:url('/wp-content/plugins/kboard/skin/avatar/images/icon-down.png') no-repeat center/cover;}
+#kboard-faq-list .kboard-list tbody tr.toggle-content td .kboard-attach .kboard-attach-list:hover .kboard-attach-list-txt { opacity: 0.7;}
+
+#kboard-faq-list .kboard-list tbody tr.kboard-list-notice { background-color: #f4f4f4; }
+#kboard-faq-list .kboard-list tbody tr.kboard-list-selected .kboard-faq-cut-strings { font-weight: 500; }
+#kboard-faq-list .kboard-list tbody td.kboard-list-title { text-align: left; width: 80%; }
+#kboard-faq-list .kboard-list tbody td.kboard-list-title img { display: inline; margin: 0; width: auto; height: auto; vertical-align: middle; max-width: 100%; }
+#kboard-faq-list .kboard-list tbody td.kboard-list-title .kboard-comments-count { color: #00a8e7; }
+#kboard-faq-list .kboard-list tbody td.kboard-list-user img.avatar { display: inline; margin: 0; width: 24px; max-width: none; height: 24px; vertical-align: middle; border-radius: 50%; }
+#kboard-faq-list .kboard-list .kboard-mobile-contents { display: none; font-size: 13px; color: #999999; }
+#kboard-faq-list .kboard-list .kboard-mobile-contents .contents-item { display: inline; margin: 0; padding: 0; }
+#kboard-faq-list .kboard-list .kboard-mobile-contents .contents-item img.avatar { display: inline; margin: 0; width: 24px; max-width: none; height: 24px; vertical-align: middle; border-radius: 50%; }
+#kboard-faq-list .kboard-list .kboard-mobile-contents .contents-separator { display: inline; margin: 0; padding: 0 2px; color: #bebebe; }
+#kboard-faq-list .kboard-pagination { /* float: left; */ padding: 15px 0; width: 100%; margin-top:40px; }
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages { float: left; margin: 0; padding: 0; width: 100%; list-style: none; text-align: center; border: 0; }
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li { display: inline-block; *display: inline; zoom: 1; margin: 0; padding: 0 1px; background: none; border: 0; list-style: none; vertical-align:middle; }
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li a { position:relative; display: block; margin: 0; padding: 0 10px; width:40px; height: 40px; line-height: 36px; font-size: 19px; color: #A6A6A6; text-decoration: none; border: 0; box-shadow: none; transition-duration: 0.3s; }
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li:hover a,
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li.active a { border: 0; color: #111111;}
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li:before { display: none; }
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li:after { display: none; }
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li.first-page a { background:url('/wp-content/plugins/kboard/helper/icon-firstpage.png') no-repeat center;}
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li.prev-page a { background:url('/wp-content/plugins/kboard/helper/icon-prevpage.png') no-repeat center;}
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li.last-page a { background:url('/wp-content/plugins/kboard/helper/icon-lastpage.png') no-repeat center;}
+#kboard-faq-list .kboard-pagination .kboard-pagination-pages li.next-page a { background:url('/wp-content/plugins/kboard/helper/icon-nextpage.png') no-repeat center;}
+#kboard-faq-list .kboard-search { position: relative; width:100%;}
+#kboard-faq-list .kboard-search .kboard-search-section { position: relative; display: flex; justify-content:center; align-items:center; width:100%; height:100px; margin-bottom:5px; background:#f7f7f7; }
+#kboard-faq-list .kboard-search h3 { display:inline-block; margin:0; font-size:21px; font-weight:500; color:#111; margin-right:20px; margin-bottom:-5px; vertical-align:middle;}
+#kboard-faq-list .kboard-search .faq-search-bar { position:relative; display:inline-block;}
+#kboard-faq-list .kboard-search input { display: inline; margin: 0; padding: 0 16px; width: 434px; min-width: 0; height: 40px; min-height: 0; font-size: 15px; color: #111; border-radius: 0; border: 1px solid #c1c1c1;
+    background: none; background-color: white; line-height: 26px; vertical-align: middle; box-shadow: none; box-sizing: content-box; border-radius: 50px; }
+#kboard-faq-list .kboard-search input::placeholder { color: #A6A6A6; font-size:15px; line-height: 21px; font-weight:300; }
+#kboard-faq-list .kboard-search button.kboard-faq-button-search { position: absolute; right: 8px; width: 40px; height: 40px; font-size: 0; line-height: 0; background: url('/wp-content/uploads/2022/05/ico-search.svg') no-repeat center center;  }
+#kboard-faq-list .kboard-search button.kboard-faq-button-search:hover { background-color: none; box-shadow: none; }
+#kboard-faq-list .kboard-control { float: right; padding-bottom: 15px; text-align: right; }
+
+#kboard-faq-editor { overflow: hidden; }
+#kboard-faq-editor form { margin: 0; padding: 0; }
+#kboard-faq-editor select { display: inline; margin: 0; padding: 0 5px; font-size: 14px; width: 30%; height: 28px; line-height: 28px; color: #666666; border-radius: 0; border: 0; border-bottom: 1px solid #dcdcdc; box-shadow: none; background: none; background-color: transparent; box-sizing: content-box; vertical-align: middle; text-indent: 0; -webkit-appearance: menulist; -moz-appearance: menulist; appearance: menulist; }
+#kboard-faq-editor input[type=text],
+#kboard-faq-editor input[type=email],
+#kboard-faq-editor input[type=number],
+#kboard-faq-editor input[type=date],
+#kboard-faq-editor input[type=password] { display: inline; margin: 0; padding: 0 5px; width: 70%; height: 28px; line-height: 28px; font-size: 14px; color: #666666; border-radius: 0; border: 0; border-bottom: 1px solid #dcdcdc; box-shadow: none; background: none; background-color: transparent; box-sizing: content-box; vertical-align: middle; }
+#kboard-faq-editor input[type=checkbox] { width: auto; -webkit-appearance: checkbox; -moz-appearance: checkbox; appearance: checkbox; }
+#kboard-faq-editor input[type=radio] { width: auto; -webkit-appearance: radio; -moz-appearance: radio; appearance: radio; }
+#kboard-faq-editor select:hover,
+#kboard-faq-editor input[type=text]:hover,
+#kboard-faq-editor input[type=email]:hover,
+#kboard-faq-editor input[type=number]:hover,
+#kboard-faq-editor input[type=date]:hover,
+#kboard-faq-editor input[type=password]:hover { border-bottom: 1px solid #9e9e9e; }
+#kboard-faq-editor select:focus,
+#kboard-faq-editor input[type=text]:focus,
+#kboard-faq-editor input[type=email]:focus,
+#kboard-faq-editor input[type=number]:focus,
+#kboard-faq-editor input[type=date]:focus,
+#kboard-faq-editor input[type=password]:focus { border-bottom: 2px solid #9e9e9e; }
+#kboard-faq-editor input[type=file] { display: inline; margin: 0; padding: 0; width: 70%; font-size: 13px; color: #666666; border-radius: 0; border: 0; box-shadow: none; background-color: transparent; }
+#kboard-faq-editor .kboard-attr-title input { width: 70%; }
+#kboard-faq-editor .kboard-attr-row { float: left; padding: 0 0 30px 0; width: 100%; background-color: white; }
+#kboard-faq-editor .kboard-attr-row .attr-name { display: inline; float: left; margin: 0; padding: 0 10px 0 10px; width: 120px; line-height: 30px; color: #545861; font-size: 14px; font-weight: bold; }
+#kboard-faq-editor .kboard-attr-row .attr-name img { display: inline; margin: 0; padding: 0; width: auto; max-width: 100%; vertical-align: middle; }
+#kboard-faq-editor .kboard-attr-row .attr-name .attr-required-text { color: red; font-weight: normal; font-size: 13px; }
+#kboard-faq-editor .kboard-attr-row.kboard-attr-content .attr-name { display: none; }
+#kboard-faq-editor .kboard-attr-row .attr-value { margin: 0 0 0 140px; padding: 0; line-height: 30px; font-size: 14px; }
+#kboard-faq-editor .kboard-attr-row .attr-value .attr-value-option { display: inline; padding-right: 20px; width: auto; font-size: 14px; cursor: pointer; }
+#kboard-faq-editor .kboard-attr-row .attr-value .attr-value-option input { cursor: pointer; }
+#kboard-faq-editor .kboard-attr-row .attr-value .attr-value-label { display: inline; padding-right: 5px; width: auto; cursor: pointer; }
+#kboard-faq-editor .kboard-attr-row .attr-value .attr-value-label input { cursor: pointer; }
+#kboard-faq-editor .kboard-attr-row .attr-value .description { margin: 0; color: #666666; }
+#kboard-faq-editor .kboard-attr-row .attr-value .kboard-tree-category-wrap { overflow: hidden; }
+#kboard-faq-editor .kboard-attr-row .attr-value .kboard-tree-category-wrap select { clear: both; float: left; margin-bottom: 5px; width: 30%; }
+#kboard-faq-editor .kboard-content { float: left; margin: 0; padding: 9px 0; width: 100%; background-color: white; }
+#kboard-faq-editor .kboard-content .editor-textarea { display: inline; margin: 0; padding: 5px; width: 100%; min-width: 100%; max-width: 100%; height: 250px; min-height: 0; font-size: 14px; border: 1px solid #dcdcdc; box-shadow: none; background: none; background-color: transparent; box-sizing: border-box; text-indent: 0; }
+#kboard-faq-editor .kboard-control { float: left; padding: 15px 0; width: 100%; }
+#kboard-faq-editor .kboard-control .left { position: static; float: left; }
+#kboard-faq-editor .kboard-control .right { position: static; float: right; width: 50%; text-align: right; }
+#kboard-faq-editor.confirm { margin: 100px auto; max-width: 590px; }
+#kboard-faq-editor.confirm input[type=password] { width: 100%; box-sizing: border-box; }
+
+#kboard-faq-document { display: inline-block; *display: inline; zoom: 1; margin: 0; width: 100%; }
+#kboard-faq-document .kboard-document-wrap { float: left; width: 100%; background-color: white; }
+#kboard-faq-document .kboard-title { float: left; width: 100%; }
+#kboard-faq-document .kboard-title h1 { margin: 0; padding: 12px 22px; color: #545861; font-weight: bold; font-size: 22px; line-height: 30px; text-align: left; }
+#kboard-faq-document .kboard-detail { clear: both; float: left; width: 100%; border-top: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; background-color: #f9f9f9; font-size: 14px; }
+#kboard-faq-document .kboard-detail .detail-attr { *display: inline; zoom: 1; float: left; margin: 0; padding: 12px 35px 12px 22px; line-height: 24px; }
+#kboard-faq-document .kboard-detail .detail-attr .detail-name { float: left; font-weight: bold; color: #545861; text-align: right; }
+#kboard-faq-document .kboard-detail .detail-attr .detail-value { float: left; padding-left: 20px; color: #545861; }
+#kboard-faq-document .kboard-detail .detail-attr .detail-value a { color: #545861; text-decoration: none; border: 0; box-shadow: none; }
+#kboard-faq-document .kboard-detail .detail-attr .detail-value img.avatar { display: inline; margin: 0; width: 24px; max-width: none; height: 24px; vertical-align: middle; border-radius: 50%; }
+#kboard-faq-document .kboard-content { clear: both; float: left; width: 100%; min-height: 200px; }
+#kboard-faq-document .kboard-content .content-view { margin: 0; padding: 22px; word-break: break-all; }
+#kboard-faq-document .kboard-content .content-view iframe { max-width: 100%; }
+#kboard-faq-document .kboard-content .content-view img { display: inline; margin: 0; vertical-align: middle; max-width: 100%; }
+#kboard-faq-document .kboard-content .content-view hr { margin: 10px 0; padding: 0; height: 1px; border: 0; background-color: #f1f1f1; }
+#kboard-faq-document .kboard-content .content-view ul { margin: 0.75em 0; }
+#kboard-faq-document .kboard-content .content-view ol { margin: 0.75em 0; }
+#kboard-faq-document .kboard-content .content-view p { margin: 0 0 0.75em; }
+#kboard-faq-document .kboard-content .content-view p:last-child { margin: 0; }
+#kboard-faq-document .kboard-content .content-view .thumbnail-area { text-align: center; }
+#kboard-faq-document .kboard-content .content-view .aligncenter { display: block; margin-right: auto; margin-left: auto; }
+#kboard-faq-document .kboard-content .content-view .alignright { float:right; }
+#kboard-faq-document .kboard-content .content-view .alignleft { float: left; }
+#kboard-faq-document .kboard-document-action { padding: 0 22px 5px 22px; overflow: hidden; line-height: 1; }
+#kboard-faq-document .kboard-document-action .left { position: static; float: left; }
+#kboard-faq-document .kboard-document-action .right { position: static; float: right; text-align: right; }
+#kboard-faq-document .kboard-attach { clear: both; margin: 0 22px; padding: 10px 0 5px 0; font-size: 13px; overflow: hidden; line-height: 1; border-top: 1px dashed #ededed; }
+#kboard-faq-document .kboard-button-action { margin: 0 0 5px 0; padding: 4px 5px; font-size: 13px; font-weight: normal; line-height: 12px; text-align: left; border: 1px solid #ededed; background: none; background-color: white; border-radius: 2px; letter-spacing: normal; cursor: pointer; vertical-align: middle; text-shadow: none; box-shadow: none; }
+#kboard-faq-document .kboard-button-action span { position: static; display: inline; margin: 0; padding: 0; font-size: 13px; line-height: 12px; }
+#kboard-faq-document .kboard-button-like { color: #ff5959; }
+#kboard-faq-document .kboard-button-unlike { color: #3d62aa; }
+#kboard-faq-document .kboard-button-print { color: gray; }
+#kboard-faq-document .kboard-button-download { color: gray; }
+#kboard-faq-document .kboard-comments-area { float: left; width: 100%; }
+#kboard-faq-document .kboard-document-navi { float: left; padding-top: 15px; width: 100%; }
+#kboard-faq-document .kboard-document-navi a { display: block; text-decoration: none; border: 0; font-size: 14px; line-height: 20px; box-shadow: none; color: #545861; transition-duration: .3s; }
+#kboard-faq-document .kboard-document-navi .navi-document-title { display: block; }
+#kboard-faq-document .kboard-document-navi .navi-arrow { position: absolute; display: block; }
+#kboard-faq-document .kboard-document-navi .kboard-prev-document { position: relative; float: left; width: 45%; }
+#kboard-faq-document .kboard-document-navi .kboard-prev-document .navi-document-title { padding-left: 15px; }
+#kboard-faq-document .kboard-document-navi .kboard-prev-document .navi-arrow { left: 0; top: 0; }
+#kboard-faq-document .kboard-document-navi .kboard-prev-document:hover a { color: black; }
+#kboard-faq-document .kboard-document-navi .kboard-next-document { position: relative; float: right; width: 45%; text-align: right; }
+#kboard-faq-document .kboard-document-navi .kboard-next-document .navi-document-title { padding-right: 15px; }
+#kboard-faq-document .kboard-document-navi .kboard-next-document .navi-arrow { right: 0; top: 0; }
+#kboard-faq-document .kboard-document-navi .kboard-next-document:hover a { color: black; }
+#kboard-faq-document .kboard-control { float: left; padding: 15px 0;  width: 100%; }
+#kboard-faq-document .kboard-control .left { position: static; float: left; }
+#kboard-faq-document .kboard-control .right { position: static; float: right; text-align: right; }
+
+#kboard-faq-latest table { display: table; table-layout: fixed; width: 100%; border: 0; border-bottom: 1px solid #f1f1f1; }
+#kboard-faq-latest table tr { padding: 0; border: 0; }
+#kboard-faq-latest table th { padding: 5px 0; height: auto; border: 0; text-align: center; }
+#kboard-faq-latest table td { padding: 5px 0; height: auto; border: 0; border-top: 1px solid #f1f1f1; vertical-align: middle; }
+#kboard-faq-latest table td.kboard-latest-title { text-align: left; }
+#kboard-faq-latest table .kboard-latest-title { padding-left: 5px; font-size: 14px; }
+#kboard-faq-latest table .kboard-latest-title a { text-decoration: none; box-shadow: none; }
+#kboard-faq-latest table .kboard-latest-title img { display: inline; margin: 0; width: auto; height: auto; vertical-align: middle; max-width: 100%; }
+#kboard-faq-latest table .kboard-latest-date { width: 80px; text-align: center; font-size: 14px; }
+
+#kboard-list-no-result .list-btn.list-btn-faq{margin: 32px auto 64px;}
+
+@media screen and (max-width: 1024px) {
+    #kboard-faq-list .kboard-category.category-mobile { display: block; }
+    #kboard-faq-list .kboard-category.category-pc { display: none; }
+    #kboard-faq-list .kboard-tree-category-search .kboard-search-option-wrap.select { width: 100%; }
+    #kboard-faq-list .kboard-list table { border-top: 1px solid #f1f1f1; }
+    #kboard-faq-list .kboard-list table thead { display: none; }
+    #kboard-faq-list .kboard-list table td.kboard-list-title { padding: 10px 5px; }
+    #kboard-faq-list .kboard-list table td.kboard-list-title .kboard-faq-cut-strings { margin-bottom: 10px; white-space: normal; font-size: 15px; line-height: 23px; }
+    #kboard-faq-list .kboard-list table td.kboard-list-uid,
+    #kboard-faq-list .kboard-list table td.kboard-list-user,
+    #kboard-faq-list .kboard-list table td.kboard-list-date,
+    #kboard-faq-list .kboard-list table td.kboard-list-vote,
+    #kboard-faq-list .kboard-list table td.kboard-list-view { display: none; }
+    #kboard-faq-list .kboard-list .kboard-mobile-contents { display: block; }
+    
+    #kboard-faq-list .kboard-search input { float: left; margin-right: 1%; width: 49%; min-width: 49%; height: 28px; line-height: 28px; box-sizing: border-box; }
+    #kboard-faq-list .kboard-search input::placeholder { color: #a6a6a6 !important; }
+    #kboard-faq-list .kboard-search button { float: left; width: 20%; min-width: 20%; box-sizing: border-box; }
+
+	/*모바일 공지사항 직접수정진행부분*/
+	#kboard-faq-list .kboard-list-header { display:none;}
+	#kboard-faq-list .kboard-search-section { display:block !important; height:auto !important; margin:0 !important; padding-left:104px;}
+	#kboard-faq-list .kboard-search { position:relative; padding:16px 32px 16px 36px; background:#f7f7f7;}
+	#kboard-faq-list .kboard-search h3 { display:none;}
+	#kboard-faq-list .kboard-search .faq-search-bar { width:100%; margin-top:5px;}
+	#kboard-faq-list .kboard-search .faq-search-bar input { display:block; width:100%; height:40px; margin-right:0; line-height:40px; font-size:14px; border-radius: 10px; border: 1px solid #a6a6a6; }
+	#kboard-faq-list .kboard-search .faq-search-bar input::placeholder { color: #777; line-height: 40px; }
+	#kboard-faq-list .kboard-search .faq-search-bar button.kboard-faq-button-search { right: 8px; width: 40px; min-width:0; height: 40px; padding:0; font-size: 0; line-height: 0; background: url('/wp-content/uploads/2022/05/ico-search-mo.svg') no-repeat center/contain;  }
+	#kboard-faq-list .kboard-search .faq-list-head { position:absolute; top:22px;}
+	#kboard-faq-list .kboard-search .faq-list-head .kboard-category.category-mobile { width:100px; margin-bottom:0;}
+	#kboard-faq-list .kboard-search .faq-list-head .kboard-category.category-mobile select { width:100%; height: 40px; margin-bottom:0; padding-left:14px; padding-right:26px; line-height: 40px; border: 1px solid #A6A6A6; border-radius: 10px; font-weight: 400; font-size: 14px; color:#111; appearance:none; background: url('/wp-content/uploads/2022/06/select-mo-label-bg.png') center no-repeat; background-size: contain; cursor: pointer;}
+	#kboard-faq-list .kboard-list table td.kboard-list-category1 { display:none; width:0;}
+	#kboard-faq-list .kboard-list tbody td.kboard-list-title { width: 90%; padding:16px 0 16px 18px;}
+	#kboard-faq-list .kboard-list tbody td.kboard-list-title .kboard-faq-cut-strings { margin-bottom:0; font-size:14px; font-weight:400; color:#111;    overflow:visible;}
+	#kboard-faq-list .kboard-list tbody td.kboard-list-toggle { padding-right:0;}
+	#kboard-faq-list .kboard-list tbody td.kboard-list-title .kboard-category { margin-bottom:5px; font-weight:400; font-size:11px; color:#777;}
+    #kboard-faq-list .kboard-list table td.kboard-list-toggle .btn-arrow { width:8px !important; height:6px !important;}
+	#kboard-faq-list .kboard-list table td.kboard-list-toggle .btn-arrow::before,
+	#kboard-faq-list .kboard-list table td.kboard-list-toggle .btn-arrow::after { width:2px !important;}
+	#kboard-faq-list .kboard-list table .toggle-content .con { padding:24px !important; font-size:13px; font-weight:400;}
+	#kboard-faq-list .kboard-list table .toggle-content .con .kboard-attach-list { padding-top:14px !important; padding-bottom:14px !important;}
+	#kboard-faq-list .kboard-list table .toggle-content .con .kboard-attach-list .kboard-attach-list-txt { padding-left:12px !important;  font-size:12px !important;}
+	#kboard-faq-list .kboard-list tbody tr.toggle-content td .con-modify { bottom:5px; right:5px;}
+	#kboard-faq-list .kboard-pagination { margin-top:16px;}
+	/*모바일 select 카테고리 버튼*/
+	#kboard-faq-list .faq-mobile-category1-btns * { box-sizing: border-box; }
+	#kboard-faq-list .faq-mobile-category1-btns { position: absolute; display:block; top:0px; left:0px; width: 100px; height: 40px; border-radius: 10px; border: 1px solid #A6A6A6; background: url('/wp-content/uploads/2022/06/select-mo-label-bg.png') center no-repeat; background-size: contain; cursor: pointer;}
+	#kboard-faq-list .faq-mobile-category1-btns .label { display: flex; justify-content: flex-start; align-items: center; width: inherit; height: inherit; padding: 10px 14px; background:transparent; border: 0 none; outline: 0 none; font-weight: 400; font-size: 14px; cursor: pointer; box-shadow: inset 0 0 0 rgb(0 0 0 / 0%); }
+	#kboard-faq-list .faq-mobile-category1-btns .optionList { position: absolute; top: 39px; left: 0; width: 170px; color: #111; list-style-type: none; margin:0; padding: 0; padding-bottom:10px; border: 1px solid #A6A6A6; border-radius: 10px; overflow: hidden; max-height: 0; transition: .3s ease-in; z-index:5; opacity:0;}
+	#kboard-faq-list .faq-mobile-category1-btns.active .optionList { max-height: 330px; opacity:1; }
+	#kboard-faq-list .faq-mobile-category1-btns .optionList li { display: flex; justify-content: center; align-items: center; height:40px; margin:0; padding: 5px; transition: .1s; background: rgba(255, 255, 255, 0.95); font-weight: 400; font-size: 16px;}
+	
+
+	#kboard-faq-editor select,
+    #kboard-faq-editor input[type=text],
+    #kboard-faq-editor input[type=email],
+    #kboard-faq-editor input[type=number],
+    #kboard-faq-editor input[type=date],
+    #kboard-faq-editor input[type=password],
+    #kboard-faq-editor input[type=file] { width: 100% !important; box-sizing: border-box; }
+    #kboard-faq-editor .kboard-attr-row { padding: 10px 0; }
+    #kboard-faq-editor .kboard-attr-row .attr-name { padding: 0; width: 100%; font-size: 14px; }
+    #kboard-faq-editor .kboard-attr-row .attr-value { margin: 0; }
+    #kboard-faq-editor .kboard-attr-row .attr-value .kboard-tree-category-wrap select { margin-bottom: 10px; width: 100%; }
+    #kboard-faq-editor.confirm { max-width: none; }
+
+    #kboard-faq-document .kboard-title h1 { padding: 10px 5px; font-size: 18px; }
+    #kboard-faq-document .kboard-content .content-view { padding: 10px 5px; }
+    #kboard-faq-document .kboard-detail .detail-attr { clear: both; padding: 10px 5px; line-height: normal; }
+    #kboard-faq-document .kboard-detail .detail-attr.detail-writer { line-height: 24px; }
+    #kboard-faq-document .kboard-document-action { padding: 10px 5px 5px 5px; }
+    #kboard-faq-document .kboard-attach { margin: 0 5px; padding: 10px 0 5px 0; }
+    #kboard-faq-document .kboard-document-navi .kboard-prev-document { width: 100%; }
+    #kboard-faq-document .kboard-document-navi .kboard-next-document { margin-top: 10px; float: left; width: 100%; text-align: left; }
+    #kboard-faq-list .kboard-control {padding-right: 16px;}
+}
+
+@media screen and (max-width: 768px) {
+	#kboard-faq-list .kboard-list { padding:0;}
+	#kboard-faq-list .kboard-search { padding:16px 12px 16px 16px;}
+
+	/*
+    #kboard-faq-list .kboard-pagination .kboard-pagination-pages li a{width: 30px; height: 30px; line-height: 28px; font-size: 18px;}
+	#kboard-faq-list .kboard-pagination .kboard-pagination-pages li { display: none; } 
+	#kboard-faq-list .kboard-pagination .kboard-pagination-pages li.first-page,
+    #kboard-faq-list .kboard-pagination .kboard-pagination-pages li.last-page,
+    #kboard-faq-list .kboard-pagination .kboard-pagination-pages li.prev-page,
+    #kboard-faq-list .kboard-pagination .kboard-pagination-pages li.next-page,
+    #kboard-faq-list .kboard-pagination .kboard-pagination-pages li.active { display: inline-block; }
+	*/
+}	
