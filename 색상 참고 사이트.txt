@@ -14,3 +14,6 @@
 
 쌤 - 그라디언트 페이지 - https://webgradients.com/
 
+쌤 - 국가별 자주 사용하는 컬러 (flatuicolor) - https://flatuicolors.com/
+ 가장 많이 사용 하는 컬러 - https://flatuicolors.com/palette/defo
+
