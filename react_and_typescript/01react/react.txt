@@ -1,14 +1,34 @@
 [React] React 시작하기
 https://velog.io/@yeonjin1357/React-React-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
 
+
+React란, 프론트엔드 대표 개발 도구 리액트의 특징과 이점
+https://www.elancer.co.kr/blog/view?seq=167
+
+
+React란? 프론트엔드 개발에서 React가 대세인 이유
+https://nbcamp.spartacodingclub.kr/blog/react%EB%9E%80-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%97%90%EC%84%9C-react%EA%B0%80-%EB%8C%80%EC%84%B8%EC%9D%B8-%EC%9D%B4%EC%9C%A0-2294
+
+
+라이브러리와 프레임워크의 차이?
+https://velog.io/@smin_0820/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%99%80-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%98-%EC%B0%A8%EC%9D%B4
+
+---------------------------------------------------------------
+
+
 [mac] React 설치 및 실행법 상세설명
 https://velog.io/@yoonezi/mac-React-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%8B%A4%ED%96%89%EB%B2%95-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85
+
 
 [Node.js] Mac 맥(m1) - homebrew, node, npm, nvm 설치 관련
 https://renee.tistory.com/46
 
+
 nvm 과 npm 구별하기
 https://lynmp.com/ko/article/tb585d114096490055
+
+
+
 
 
 
