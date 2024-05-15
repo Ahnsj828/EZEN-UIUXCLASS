@@ -1,0 +1,29 @@
+[React] React 시작하기
+https://velog.io/@yeonjin1357/React-React-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
+
+[mac] React 설치 및 실행법 상세설명
+https://velog.io/@yoonezi/mac-React-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%8B%A4%ED%96%89%EB%B2%95-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85
+
+[Node.js] Mac 맥(m1) - homebrew, node, npm, nvm 설치 관련
+https://renee.tistory.com/46
+
+nvm 과 npm 구별하기
+https://lynmp.com/ko/article/tb585d114096490055
+
+
+
+1. React란? 
+
+2. 프레임워크와 라이브러리의 차이 + Vue와 Angular 
+
+3. React사용하는 이유 + React 장점 
+
+4. 리액트의 특성 
+    - 가상 DOM(Virtual DOM)
+    - 컴포넌트 기반 아키텍처:
+    - JSX 문법:
+
+5. 리액트를 활용하여 얻을 수 있는 이점
+    - 크로스 플랫폼 개발:
+    - 사용자 경험 개선:
+    - 대규모 프로젝트 개발 지원:

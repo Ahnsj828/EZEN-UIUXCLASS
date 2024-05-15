@@ -99,7 +99,6 @@ node.js 는 js가 사라지지 않는 이상 사라지지 않는다
 제이쿼리랑 노드랑은 차원이 틀리다
 롱텀서비스 = 
 
-
 * npm : node package manager
  노드틀 사용하는 개발자들은 npm 
 * npm i 설치하고자 하는 앱 이름

@@ -1,0 +1,197 @@
+타입스크립트 기반하에 리액트를 
+
+1) 타입스크립트 설치할때
+  - npm i @types/node     노드의 타입정리
+      
+  - npm i typescript     타입스크립트 설치
+        
+  - npm i ts-node
+  - npm i tsx
+
+2) 리액트 설치할때
+  - npx create-react-app .     /    npx create-react-app 01react
+     => 이건 js 기반의 리액트
+ 
+3) 타입스크립트 기반 리액트 한번에 설치하는 방법
+  - npx create-react-app .    /   npx create-react-app 01sreact --template typescript
+     타입스크립트 기반에 리액트를 설치하겠다 / 세팅하겠다  
+     리액트 설치하는 문법과 똑같이간다  
+     react만 쓰면 안된다
+     npx create-react-app 01sreact -template typescript 
+        => 이렇게 설치하면 안된다 / 자바스크립트 기반 리액트가 설치된다
+
+터미널에
+cd 01react
+해서 새로만든 폴더로 가는 방법 
+
+or
+
+닫고 그 폴더에서
+
+setupTests.ts
+reportWebVitals.ts
+logo.svg
+App.test.tsx
+
+------------------------------------
+
+npm i styled-components
+npm i @types/styled-components
+
+리액트라우터
+npm i react-router-dom
+npm i @types/react-router-dom
+
+-----------------App.tsx--------------------------------- 
+import React from "react";
+import "./App.css";
+
+function App() {
+  return <div className="App"></div>;
+}
+-----------------index.tsx------------------------------ 
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(<App />);
+------------------------------------------------------------
+
+-------------<tsconfig.json>에서----------------------------
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitThis": false,
+    "jsx": "react-jsx"
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
+--------------------------------------------------------------
+
+-------------<package.json>에서----------------------------
+{
+  "name": "coinpage01",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.97",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.34",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.11",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+--------------------------------------------------------------
+export default App;
+
+* js / jsx
+
+ 확장자가 tsx
+ts xhtml
+ts문법하에서 사용하게 하겠다
+
+
+*객체지향 언어
+
+*React 시즌1 관통하는 인사이드
+  > props : 객체
+
+*단방향으로 움직인다 / 컴포넌트간 데이터 전송이 되지않으면 페이지 라우터가 안된다
+
+*state에 대한 관리가 나오고 => redux까지 가서 redux thunk까지 가고 => axios까지 갔다
+
+  ===> props때매 이 사단이 났다
+
+그래서 객체가 중요한 개념이다!!!
+
+
+npm i styled-components   설치
+npm i @types/styled-components   설치
+  @ => 외부환경이나 실행소스는 타입정의가 안 되어있다 / js 기반으로 되어있다
+
+
+버튼을 누르면 숫자 증가
+
+버튼 이사한다 =>  리팩토링한다
+
+
+부모컴포넌트는 2가지를 자식컴포넌트에게 전달할거다
+1. 증가인지 감소인지 : 버튼안에 들어가는 텍스트  => 문자열 전달
+2. 플러스냐 마이너스냐에 따른 기능  => 함수 전달
+ => 부모요소가 자식요소인 button한테 전달할거다 => props
+
+
+----------------------------------------------------------------------
+
+*ToDoList : TS & React
+타입스크립트 기반 리액트 todolist
+-------------------------------------------------------------------
+
+1. TS & React 같이 사용해서 작업할 수 있는 프로젝트
+2. interface와 매개변수 타입이 매우중요
+3. React 작업하는 프로세스 과정
+ > App => Component 과정
+
+
+다다음주 월요일에 타입스크립트 문법 일단락날거다
+다다음주 : TS & React 예제
+ > Netflix , 가상화폐 , canvanboard 등등
