@@ -1,0 +1,22 @@
+배포 전 점검 필수
+title 수정 과 파비콘 삽입 필수 link:favicon
+
+오픈그래프 : 다른 누군가에게 URL 공유!!! => 대표이미지 / 설명
+==> meta:desc
+
+1. 컴퓨터 => node 설치
+구글에 들어가서 node.js > LTS 버전 설치
+
+2.구글 > firebase - 시작하기(구글 로그인하기) - 프로젝트 추가-프로젝트명 입력
+-구글 애널리틱스 해제 - 프로젝트 만들기 - 서브메뉴 - 빌드 - hosting - 시작하기 -
+CLI 설치 복사 - 명령 프롬포트를 관리자권한으로 실행-붙여넣기-엔터-명령프롬포트 닫아도 됨
+
+3.프로젝트 초기화 - 호스팅 하고자 하는 루트폴더 열기!!(중요) - command prompt열고 구글에 로그인 붙여넣기(아이디 확인)-파이어 이닛 복붙 - y - 호스팅 configure fire 선택후 스페이스바 누르고 엔터 - use an existing 선택후 엔터-프로젝트명 선택 후 엔터-public 엔터-single-page app ===>n - set up automatic git hub ===>n
+
+4. public 폴더 안에 두개 파일 삭제 - 그 후 모든 소스 다 때려넣음 (ctrl+c => ctrl+v)
+
+5. index 파일 최종 확인
+
+6. deploy 복붙 입력 후 엔터
+
+7. ctrl 누른 후 클릭 하면 볼 수 있음
