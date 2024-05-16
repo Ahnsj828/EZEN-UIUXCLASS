@@ -1,0 +1,90 @@
+Styled-component : theme 생성(*types)
+Component Page: Coins / Coin
+Router : Page Routing Setting
+
+Coins : 다수의 코인 목록을 출력해주는 리스트 역할
+Coin : Coins를 통해서 특정 Coin을 클릭했을 때, 보여주는 상세페이지
+
+
+*API를 활용해서 외부에서 Data를 수신!!!
+ => 수신한 Data를 어딘가에는 담아놔야하지 않을까?
+       => coins라는 변수에 담아 놓는 것이 보다 효율적이다!
+ => 수신한 Data안에 세부적인 코인 종류가 존재한다면, 
+      이것을 컨트롤 할 수 있어야 하지 않을까?
+     (상황에 맞춰서 변경해야한다면 어딘가에 담아놔야한다)
+      => coins안에 담길 API 수신 Data는 Coins라는 컴포넌트가 Mount가 될 때
+           자동으로 생성되어야 한다
+   ( 스스로 뭐를 해야 하는지 / 그래서 뭐가 필요한지 생각해야한다!! )
+   => 그러면 useState, useEffect 가 필요하다는거를 알게된다
+
+
+my json server 
+  => 쇼핑몰(무신사) 작업할때 데이터를 json으로 만고 my json server에 올렸었다
+   => 여기도 데이터 제한이 있다
+
+그래서 쌤이 만듦 
+ => https://my-json-server.typicode.com/Divjason/coinlist/coins
+  => 실시간 데이터 업데이트 안된다 
+   => 실시간 데이터 업데이트하고싶으면 유료결제하면된다
+
+방법
+1. 코인파프리카
+2. my json server 활용해서 직접 만들기
+3. 쌤이 만든 주소
+
+
+TS : 고차함수형식으로 만들었었다
+함수안에 콜백함수를 사용하는 방법 : 타입정의
+ =>  add(1)(2)
+
+
+항상 로딩스피너를 사용해서 => 데이터가 들어왔는지 안왔는지를 알려주기
+가상돔을 쓰고 있다는걸 인지하기!
+mount가 될때
+
+
+coin img 쌤 주소
+ => https://cryptoicon-api.pages.dev/api/icon/btc
+  => <Img src={`https://cryptoicon-api.pages.dev/api/icon/${coin.symbol.toLowerCase()}`} />
+coin img 재준님 주소
+`https://static.coinpaprika.com/coin/${coin.id}/logo.png`
+
+
+*건강한 문제제기 할 수 있다
+  이미 Coins에서 코인에 대한 이름 및 기타 정보를 다 가져왔는데, Link라는
+  컴포넌트를 활용하고 있기 때문에, 별도의 동적경로를 불필요하게 
+  추가로 생성해주고 있는 상황이다 
+    => 그래서 페이지 넘어갈때마다 안떠도 되는 "Loading..." 가 뜬다
+
+
+*그동안 특정 페이지 안에 정보를 출력하기 위한 방법, 천편일률적으로 동일한
+1가지의 방법만 소개했었다!!
+ -> 특정 요소를 클릭, 이동하는 경로에 동적 파라미터를 생성한 이후에
+   도착 페이지에서 useParams()를 활용해서 데이터를 가져오는 방법
+
+TS & React : 함수가 반환하는 값에 대한 타입을 정의
+ > 값의 타입이 다양할 경우!!
+ > 단순한 제네릭 타입안에 특정 1개의 타입만 정의 x
+1) 객체 혹은 배열안에 담길 값을 일일히 타입정의
+2) as(*타입단언 혹은 추론)
+
+상품 혹은 서비스를 제공하는 기업, 브랜드
+ > 메인페이지 > 사용자가 원하는 특정페이지
+ > 웹 트래픽 분석에도 좋지 않다 / 분석이 불가해진다
+    => 즐겨찾기로 들어오면 원하는 페이지 바로 못가게 / 앞에 광고 보고 가게끔..
+   ex) 정상적 접근이 아닙니다 라는 문구가 뜨는게 그런방법이다
+
+
+코인에 대한 기본 정보
+   `https://my-json-server.typicode.com/Divjason/coinlist/coins/${coinId}`
+
+코인 가격 정보
+   `https://my-json-server.typicode.com/Divjason/coinprice/coinprice/${coinId}`
+
+
+Browser-Router 를 활용해서 => Outlet 기능 가능하다
+
+
+useMatch : boolean값(*True냐 False냐)으로 어떤 페이지에 현재 도착했는가를 할려주는 
+
+
