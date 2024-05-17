@@ -1,0 +1,111 @@
+FTP란?
+ file transfer protocol 파일 전송 규약
+파일 전송하는데 장비라고 생각하면된다
+ > 알 FTP : (알집) 
+ > 파일질라 FTP : 파일
+ > server : 닷홈
+   3년전에는 닷홈이라는거를 많이썼었다 / 호스팅을 무료로해준다(500mb까지, 한달)
+ => FTP로하면 옛날에 쓰던방식이다 / 수작업 많이한다
+
+--------------------------------------------------------------------------------------
+
+react.js 관통하는 핵심적인 주제 => props 데이터를 얼마나 어떻게 효율적으로 관리할것이냐!
+리덕스 => 쉬운개념아니다! 
+리액트가 초심자에게 쉽진않다
+보다 쉽게 데이터 찾아와서 관리할수 있게할수있는거 없을까? => react-query
+인강이나 작은 프로젝트에서는 react-query 많이쓴다 
+but, 다 써봐야  react-query가 효율적이라는걸 안다 => 다 써봐라
+
+react query를 검색하면 최근 글들이 많을거다 => 요즘 붐업이라
+'React Query는 API 상태와 관련된 다양한 데이터를 제공하여 복잡한 구현과 설계 없이도 개발자가 효율적으로 화면을 구성할 수 있게끔 도와줍니다.'
+
+https://tanstack.com/query/latest/docs/framework/react/overview에 보면
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Example />
+    </QueryClientProvider>
+  )
+}
+QueryClientProvider가 가장 상위에서 하위를 감싸안고 있어야한다
+
+
+react-query를 사용하는 여러가지 이유!!!
+1) 기존 data관리 라이브러리 중에 가장 간단하다
+ > 간단한 것 치고 기능이 풍부하다
+
+2) cache값을 기억할 수 있다!!
+    > 임시기억 조각 (*어떤 특정 웹 페이지를 방문하게되면, 해당 페이지를 
+                           방문했던 기억 => 데이터를 컴퓨터에서 일정기간 보관한다)
+    > cache값을 확인 할 수 있도록 도와주는 Tool => 데브툴 / 개발자 툴 이라고 부른다
+
+
+
+APEXCHARTS (js라이브러리) => https://apexcharts.com/docs/installation/#
+npm i apexcharts 
+npm i react-apexcharts 
+
+mbti 할때 문제점 => state 값이 비동기 방식으로 업데이트...
+
+
+문제점 가설
+1. package.json 문제점? : 설치가 된 npm 버전인가? 구버전인가?  => X
+2. type 에 대한 정의가 자꾸 뜨니까 api.ts 랑 Coin.tsx를 Chart.tsx 한테 주니까 문제가 있나?
+   api.ts 에 문제가 없다 / Coin.tsx에도 문제 가 없다
+   Chart.tsx 에서 ApexCharts에 options={{ theme: { mode: "dark", }, }} 주니까 해결됐다
+    
+  *ApexCharts에 반드시 세개값이 있어야된다 type, series, options가 있어야된다
+
+
+
+리액트 처음 활용해서 일기장 만들었을 때 
+ => 상단 title명을 반복문 형식으로 바꿨었다
+but, 라이브러리로도 바꿀수있다
+
+react helmet (title명을 바꿀 수 있다) => https://www.npmjs.com/package/react-helmet
+npm install react-helmet
+npm install @types/react-helmet
+
+--------------------------------------------------------------------------------------
+
+<< 가상화폐 프로젝트 핵심요소!!  => 타입스크립트와 리액트 활용 >>
+1. theme provider :
+   - 타입정의 / theme 정의
+   - theme 데이터를 활용해서 컨텐츠에 색상 적용
+
+2. Browser Router : 
+    - Nested Router 기능 사용 방법  - 하위 요소 
+    - useMatch( ) : Nested Route 사용 시, 어떤 페이지에 도착했는가 여부 Boolean
+
+3. React-Query :
+    - 외부 API Data를 찾아와서 state로 값을 관리 + 외부 API Data를 정상적으로 찾아왔는지
+       여부를 Boolean 값으로 확인 할 수 있도록 해주는 라이브러리
+    - api.ts 파일 생성 해서 이걸로 data 찾아오고 / useQuery( ) 사용
+
+4. ApexChart 라이브러리 :
+    - 차트 데이터를 시각화
+    - type과 series와 options 가 필수 값이다!!
+    - type : 차트 형태 결정
+    - series : 차트 데이터 결정
+    - options : 차트의 x,y축 혹은 그리드, 툴바 등 여부 결정
+
+5. Helmet 라이브러리 : 
+    - 각 컴포넌트 페이지마다 title을 보다 쉽게 적용할 수 있도록 해주는 기능
+
+--------------------------------------------------------------------------------------
+
+TS + React 활용한 칸반보드 할거다!!
+ => Form 요소를 많이 사용할거다
+ => Recoil(리코일)이 나올거다
+
+--------------------------------------------------------------------------------------
+
+TS + React 활용한 애니메이션
+ => 모달창 & 슬라이드 등
+ => 라이브러리
+
+--------------------------------------------------------------------------------------
+
+TS + React 활용한 넷플릭스 사이트
+ => 앞에서 배웠던 모든 것들이 총 동원될거다
+
