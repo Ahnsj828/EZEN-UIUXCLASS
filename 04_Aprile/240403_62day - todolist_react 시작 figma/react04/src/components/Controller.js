@@ -28,6 +28,8 @@ const Controller = ({ handleSetCount }) => {
     </div>
   );
 };
+
 export default Controller;
+
 /* <button onClick={handleSetCount(-1)}>-1</button> */
 // onClick={() => handleSetCount(-1)}에서 () => 처음에 연산 못하게 하려고 / 랜더링 못하게

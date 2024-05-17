@@ -1,9 +1,9 @@
 import "./App.css";
-import { useState } from "react";
 import Viewer from "./components/Viewer";
+import { useState } from "react";
 
 function App() {
-  const { number, setNumber } = useState(0);
+  const [number, setNumber] = useState(0);
   const onDecrease = () => {
     setNumber(number - 1);
   };
@@ -21,4 +21,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

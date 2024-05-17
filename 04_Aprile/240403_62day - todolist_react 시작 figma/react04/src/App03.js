@@ -10,8 +10,8 @@ function App() {
   const [text, setText] = useState("");
   const didMountRef = useRef(false);
   //   console.log(didMountRef);
-  const handleSetCount = (num) => {
-    setCount(count + num);
+  const handleSetCount = (value) => {
+    setCount(count + value);
   };
   //   useEffect(() => {
   //     console.log("count 업데이트: ", count);
@@ -34,7 +34,7 @@ function App() {
       didMountRef.current = true;
       return;
     } else {
-      console.log("컴포넌트 업데이트 ");
+      console.log("컴포넌트 업데이트");
     }
   });
 
@@ -61,4 +61,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

@@ -1,7 +1,6 @@
-// import React from "react";
+import React from "react";
 
 const Body = () => {
-
   // const number = 1;
   // 변수는 return위에 써야한다
 
@@ -23,10 +22,10 @@ const Body = () => {
   // };
 
   const num = 19;
-  if(num % 2 === 0) {
-    retrun <div> {num}은(는) 짝수입니다.</div>
+  if (num % 2 === 0) {
+    return <div>{num}은(는) 짝수입니다.</div>;
   } else {
-    retrun <div> {num}은(는) 홀수입니다.</div>
+    return <div>{num}은(는) 홀수입니다.</div>;
   }
   // return (
   //   <>

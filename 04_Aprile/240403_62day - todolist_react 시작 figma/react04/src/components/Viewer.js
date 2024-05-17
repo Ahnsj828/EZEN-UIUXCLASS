@@ -9,4 +9,5 @@ const Viewer = ({ number }) => {
     <div>Viewer</div>
   );
 };
+
 export default Viewer;

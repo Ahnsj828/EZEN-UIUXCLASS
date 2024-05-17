@@ -5,8 +5,8 @@ import Controller from "./components/Controller";
 
 function App() {
   const [count, setCount] = useState(0);
-  const handleSetCount = (num) => {
-    setCount(count + num);
+  const handleSetCount = (value) => {
+    setCount(count + value);
   };
   return (
     <div className="App">
@@ -20,4 +20,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
