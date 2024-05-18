@@ -84,7 +84,9 @@ body {
     }
   }
 }
-
+#header-menu {
+  display: none;
+}
 /* ------------------<jj_footer>----------------- */
 .footer {
   width: 100%;
