@@ -157,3 +157,8 @@ let iframe = document.getElementById("contentFrame")
 iframe.onload = function () {
   iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px"
 }
+
+let iframeInner = document.getElementsByClassName("wrapper_inner")
+iframeInner.onload = function () {
+  iframeInner.style.height = iframe.contentWindow.document.body.scrollHeight + "px"
+}
