@@ -1,0 +1,55 @@
+*React가 다루고 있는 가장 큰 핵심 문제 & 과제
+  => state를 어떻게 관리하고 전파할 것이냐
+
+*Redux : UI > action > reducer
+
+*Recoil - 둥둥 떠다닌다라는 뜻으로 생각하면 된다 (state 관리를 위한거다)
+   컴포넌트 안에 atome(원자)을 하나 생성해놓고, atome 내부에 관리되고 있는 
+state값을 하위 컴포넌트 페이지 가져다 사용할 수 있는 구조
+
+*Recoil을 사용하지 않은 상태에서 state 관리
+ > ex. dark & light
+ > 기본값 => light 시작
+ > chart컴포넌트에게 dark & light
+ > state 전달 => props drilling
+
+https://recoiljs.org/ko/docs/introduction/getting-started에서 리코일 설치
+ npm install recoil
+
+*Recoil 라이브러리 안에 있는 atom의 default값을 가져와서 사용하려면 
+리액트 훅을 사용해야한다 / 리덕스에서 리듀서를 가져왔듯이
+  => useRecoilValue
+
+*Recoil 라이브러리 안에 있는 atom의 default값을 가져와서 편집 및 가공을 해서 사용하려면
+리액트 훅을 사용해야한다!! 
+  => useSetRecoilState
+
+*useRecoilValue 와 useSetRecoilState 기능을 한번에 쓸 수 있는 훅 => useRecoilState
+(가져와서 편집까지 한번에 쓰는 훅)
+
+> Recoil 라이브러리를 사용해서 state 값을 관리할 때 
+    VS Props Drilling을 통해서 state값을 전달 할 때 비교!!
+
+state관리에 가장 최신 라이브러리는 recoil이지만 무게감은 리덕스다 => 둘다 알아둬라
+
+---------------------------------------------------------------------------------------------
+
+< 새로운 프로젝트 >
+Recoil & React Hook Form 을 활용해서 => TodoList를 만들거다
+드래그 & 드랍 기능이 가능한 => Canvan Board 형태의 TodoList
+(조별 프로젝트할때 깃허브에서 사용했었다)
+
+Form 요소!!
+
+React-hook-form 사용하지 않았을때 VS 사용했을때 - 비교
+에러가 발생했
+
+유효성 검사!! 
+  > 아이디 몇 자 이상
+  > 패스워드 대문자 + 소문자 조합 + 몇자 이상
+
+JS알고리즘
+Form 요소
+ > 정규표현식!!  =>  연습해보는 사이트  https://regex101.com/
+
+
