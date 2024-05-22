@@ -20,6 +20,18 @@
      npx create-react-app 01sreact -template typescript 
         => 이렇게 설치하면 안된다 / 자바스크립트 기반 리액트가 설치된다
 
+----------------------------------------------
+** 추가 설치
+npm i styled-components
+npm i @types/styled-components
+ => 스타일 컴포넌츠 / 스타일주는거
+npm i react-router-dom
+npm i react-query 
+npm i recoil 
+npm i react-hook-form
+----------------------------------------------
+
+
 터미널에
 cd 01react
 해서 새로만든 폴더로 가는 방법 
