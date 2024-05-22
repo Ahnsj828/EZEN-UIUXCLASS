@@ -1,0 +1,8 @@
+[React] 리액트 .js vs .jsx 차이점
+https://velog.io/@minkuk90/React-%EB%A6%AC%EC%95%A1%ED%8A%B8-.js-vs-.jsx-%EC%B0%A8%EC%9D%B4%EC%A0%90
+
+.js와 .jsx 차이 (cf. ts/tsx)
+https://velog.io/@realzu/.js%EC%99%80-.jsx-%EC%B0%A8%EC%9D%B4
+
+JSX 소개
+https://ko.legacy.reactjs.org/docs/introducing-jsx.html

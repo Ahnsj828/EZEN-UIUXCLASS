@@ -1,0 +1,21 @@
+240404 todolist 하다가
+TodoEditor.js에서 import React from ‘react’를 안써서 찾아봤다
+
+import React from ‘react’는 왜 쓰는 걸까?
+https://velog.io/@chumil7432/import-React-from-react%EB%8A%94-%EC%99%9C-%EC%93%B0%EB%8A%94-%EA%B1%B8%EA%B9%8C
+
+그 많던 import React from ‘react’는 어디로 갔을까
+https://so-so.dev/react/import-react-from-react/
+
+import react from react 없애기 설정 방법
+https://velog.io/@rawoon/import-react-from-react
+
+importing React 와 JSX 사용의 상관관계
+https://hwani.dev/import-react/
+
+[React] import React from 'react'는 어디에 쓰일까?
+https://bum-developer.tistory.com/entry/React-import-React-from-react%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90-%EC%93%B0%EC%9D%BC%EA%B9%8C
+
+수현님 피셜
+ => import { useState } from "react"; 이런거 안 쓰니까 
+      import React from "react"; 이걸 뺀게 아닐까?
