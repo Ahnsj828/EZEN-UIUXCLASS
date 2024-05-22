@@ -1,5 +1,5 @@
 // 값을 출력하는 곳
-import { Node, LinkedList } from "./likedList.mjs"; // 모듈
+import { Node, LinkedList } from "./LinkedList.mjs"; // 모듈
 
 const node1 = new Node(1);
 const node2 = new Node(2);
