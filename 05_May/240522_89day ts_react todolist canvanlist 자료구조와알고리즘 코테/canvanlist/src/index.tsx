@@ -1,0 +1,35 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { RecoilRoot } from "recoil";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+// createGlobalStyle reset.css를 만들어주는요소
+import { darkTheme } from "./theme";
+
+const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+	* {
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	ul, li {
+	list-style: none;
+	}
+	a {
+		color: inherit;
+		list-style: none;
+	}
+`;
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(
+  <RecoilRoot>
+    <ThemeProvider theme={darkTheme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </RecoilRoot>
+);
