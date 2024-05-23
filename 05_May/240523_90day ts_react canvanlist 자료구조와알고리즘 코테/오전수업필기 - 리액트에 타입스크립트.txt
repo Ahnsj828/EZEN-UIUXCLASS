@@ -1,0 +1,61 @@
+tsexam.ts 에 개념 설명들..
+< 함수의 타입정리 & 제네릭 타입 >
+< 제네릭 타입 개념 복습 >
+< 제네릭 타입 응용 >
+
+
+
+npm i @types/react-beautiful-dnd
+
+
+
+drag & drop  드래그& 드롭 기능
+npm beautiful dnd => dnd : drag & drop
+https://www.npmjs.com/package/react-beautiful-dnd
+https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/about/installation.md
+=> npm install react-beautiful-dnd
+
+
+가장 바깥영역은 반드시 <DragDropContext />가 있어야한다
+   > DragDrop을 할 수 있는Context
+실제 드래그가 가능하게 할 수 있도록 해주는 영역에 대한 설정 => <Droppable /> 이 한다
+상기 <Droppable />이 있어야지만, <Draggable /> 이 가능하다
+
+ 1) <Droppable /> & <Draggable />
+      : 반드시 본인들만의 고유한 ID값을 가지고 있어야한다
+
+ 2) <Droppable /> & <Draggable />
+      : 자식요소 태그들은 함수의 반환값 형태가 되어야한다
+
+ 3) <Draggable />
+      : id값 + index값도 필요하다!!
+
+ 4) <Draggable />이 드래그 종료가 되는 시점에 함수가 도출된다
+      : 그 함수는 => onDragEnd라는 함수다
+       => onDragEnd 함수 (*이동한 지점의 정보값을 알려주는 역할을 한다)
+
+
+
+
+1. 사용자가 input태그를 활용해서 text를 입력한다
+
+2. 입력한 text와 함께 + 해당 text가 작성한 날짜 + text만의 고유 id가 하나의 세트화 된
+데이터가 필요하다
+
+3. 세트화된 데이터를 담을 수 있는 자료형태가 필요하다
+
+4. 이 데이터는 어디서든(*어떤 컴포넌트든지 간에) 받아올 수 있도록 처리해야 한다
+    => recoil을 쓰겠다!!! => atom이 필요하다
+
+
+
+
+*MockUp Data
+ => ["a", "b", "c", "d", "e"]
+
+ => ["b", "a", "c", "d", "e"]
+
+* 배열안에서 특정 요소를 찾아서 인덱스 위치값을 바꿔주는 역할을
+ 담당할 수 있는 메서드 함수!!
+
+*전개 연산자 구문 활용 : 기존 배열에서 새로운 값을 추가하고, 기존 값을 제거하는 역할
