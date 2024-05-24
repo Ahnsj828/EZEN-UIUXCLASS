@@ -54,7 +54,7 @@
 // ========================================================
 
 import React from "react";
-import styled, { Styled } from "styled-components";
+import styled from "styled-components";
 import {
   DragDropContext,
   Droppable,
@@ -68,7 +68,7 @@ import { toDoState } from "./atoms";
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   max-width: 480px;
