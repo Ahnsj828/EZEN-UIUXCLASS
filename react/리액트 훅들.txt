@@ -1,0 +1,9 @@
+useState( ) : Component의 State 변수값을 컨트롤 해주는 훅 함수
+useRef( ) : 특정 요소의 DOM을 컨트롤 해주는 훅 함수
+useEffect( ) : 컴포넌트의 "생애주기(= life cycle)" 를 컨트롤 해주는 훅 함수
+   => 중요하다!!
+
+* 리액트 훅 : useRef( ) : 특정 돔으로 활용할때 사용
+ - Ref = reference 약어 => 참조 라는 뜻
+ - 기존 JS, DOM을 활용해서 html 문서를 컨트롤했던 그 기능!
+ - JS에서 DOM을 활용해서 input.valuse = ""
