@@ -1,0 +1,1641 @@
+@import url(./reset.css);
+@import url(./font.css);
+@import url(./header_style.css);
+
+/* common */
+/* #brandPage {
+  position: relative;
+} */
+
+/* section 01 */
+.section01 {
+  width: 100%;
+  height: 1080px;
+  /* background: rgb(245, 226, 226); */
+  background: linear-gradient(#f5e2e2, #f2c6cf);
+  display: flex;
+}
+.section01 .section01-img {
+  width: 70%;
+  height: 100%;
+  background: url(./img/about_etude3_img1.jpg) center/cover no-repeat;
+}
+.section01 .section01-img .section01-title {
+  display: none;
+}
+.section01 .section01-sub {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.section01 .section01-sub .seiction01-subimg {
+  width: 90%;
+  height: 90%;
+  /* width: 100vh;
+  height: 100%; */
+  background: url(./img/about_etude_title2023.png) center/contain no-repeat;
+  /* background-size: contain; */
+  position: absolute;
+  /* right: -30%; */
+  right: -100%;
+  transition: all 1s;
+}
+
+.section01-logo-img {
+  width: 100%;
+  left: 0;
+}
+
+/* section02 */
+
+.section02 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.section02 .section02-img {
+  width: 100%;
+  height: 100%;
+  background: url(./img/Section02_img_Desktop.png) center no-repeat;
+  position: relative;
+  transition: all 1.5s ease-in;
+}
+
+.section02 .section02-txt {
+  text-align: center;
+  position: absolute;
+  color: #000;
+  top: -140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section02 .section02-txt .section02-txt-block {
+  margin-top: 95px;
+}
+.section02 .section02-txt .section02-txt-block p:first-child {
+  color: #f5426c;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: inter;
+  font-weight: 200;
+}
+
+.section02 .section02-txt .section02-txt-block p:nth-child(2) {
+  font-size: 18px;
+  font-family: Noto Sans KR;
+  font-weight: 500;
+}
+
+.section02 .section02-txt .section02-txt-block .section02-txt-img01 {
+  height: 50px;
+  text-align: end;
+}
+
+.section02 .section02-txt .section02-txt-block .section02-txt-img01 img {
+  height: 50px;
+}
+/* section03 */
+
+.section03 {
+  width: 100%;
+  height: 84.5rem; /*1350px*/
+  background: linear-gradient(#f5e2e2 60%, #f2c6cf);
+  overflow: hidden;
+}
+.section03 .section03-box {
+  display: flex;
+  width: 73.95%; /* 1420px  */
+  height: 100%;
+  margin: 0 auto;
+}
+.section03-box .section03-box-left,
+.section03-box-right {
+  width: 50%; /* 710px */
+  height: 100%;
+  box-sizing: content-box;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: relative;
+}
+
+.section03-box .section03-left-img {
+  width: 100%; /*578px*/
+  /*max-width*/
+  height: 48%; /*651px*/
+  background: url(./img/about_etude2023_img3.jpg) center/contain no-repeat;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  background-position: right;
+}
+
+.section03-box-right .section03-imgpackage {
+  width: 100%;
+  height: 50%;
+  margin-top: 8rem;
+  position: relative;
+  margin-bottom: 5.75rem;
+}
+.section03-box-right .section03-imgpackage .section03-right-img {
+  background: url(./img/about_etude2023_img2.jpg) center/contain no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: left;
+}
+.section03-text01 {
+  font-size: 2.813rem;
+  font-family: Inter;
+  font-weight: 600;
+}
+.section03-text02 {
+  font-family: Noto Sans KR;
+  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.section03-text02 p {
+  padding-bottom: 1.25rem;
+}
+.section03-box-right .section03-gif img {
+  width: 118px;
+  height: 59px;
+}
+
+/* section04 */
+
+.section04 {
+  width: 100%;
+  height: 790px;
+  background: linear-gradient(#f2c6cf, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section04-img {
+  width: 88.75rem;
+  height: 31.25rem;
+  background: url(./img/about_etude_logo2023.jpg) center/cover no-repeat;
+  margin-bottom: 8.125rem;
+}
+
+/* section05 */
+.section05 {
+  width: 100%;
+  height: 790px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.section05-bgbox {
+  width: 80%; /* 1536px */
+  height: 720px;
+  background: url(./img/Section05.png) center/cover no-repeat;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.seciont05-bgbox-active {
+  width: inherit;
+  height: inherit;
+}
+
+.section05-text {
+  position: absolute;
+  top: 12%;
+  left: 16%;
+}
+.section05-text01 {
+  font-size: 45px;
+  font-family: Inter;
+  font-weight: 800;
+}
+.section05-text02 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Noto Sans KR;
+}
+
+/* section06 */
+
+.section06 {
+  width: 100%;
+  height: 4435px;
+  background: linear-gradient(#f2c6cf, #ecf3e1);
+  position: relative;
+  padding-top: 404px;
+}
+.img-wrap {
+  width: 100%;
+  height: 675px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.section06 .section06-text {
+  position: absolute;
+  top: 3.9%;
+  left: 19%;
+  /* left: 250px; */
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section06 .section06-text p:first-child {
+  font-size: 31px;
+  font-family: Inter;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+/* card img */
+
+.img_card {
+  width: 375px;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: rgb(251, 240, 242);
+  border: none;
+}
+
+.img_card img {
+  width: 23.438rem;
+  height: 30rem;
+}
+
+.goods-imformation {
+  margin-top: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 70%;
+}
+
+.goods-information-subject {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  gap: 10px;
+  width: 335px;
+  border-bottom: 1px solid #000;
+  font-weight: Noto Sans KR;
+}
+
+.goods-information-subject p:last-child {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 40px;
+  font-family: Noto Sans KR;
+  font-weight: 500;
+}
+
+.goods-information-detail {
+  display: flex;
+  margin-top: 18px;
+  gap: 6px;
+}
+
+.goods-information-detail img {
+  width: 18px;
+  height: 25px;
+  font-family: Noto Sans KR;
+  font-weight: 300;
+}
+
+.goods-information-detail .goods-information-date {
+  font-size: 9px;
+  font-weight: lighter;
+}
+
+.goods-information-date2 {
+  font-size: 5px;
+}
+
+.goods-information-detail P:first-child {
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  font-weight: Noto Sans KR;
+}
+
+.card01 {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: all 2s;
+}
+.card02 {
+  transform: translateY(40%);
+  opacity: 0;
+  transition: all 2s;
+}
+.card03 {
+  opacity: 0;
+  transform: translateY(25%);
+  transition: all 2s;
+}
+.card04 {
+  opacity: 0;
+  transform: translateY(40%);
+  transition: all 2s;
+}
+.card05 {
+  opacity: 0;
+  transform: translateY(60%);
+  transition: all 2s;
+}
+.card06 {
+  opacity: 0;
+  transform: translateY(45%);
+  transition: all 2s;
+}
+
+.img-wrap02 {
+  margin-top: 500px;
+  width: 70%;
+  display: flex;
+  margin: 100px auto;
+  margin-top: 500px;
+  min-width: 1340px;
+}
+
+.section06Simg01 {
+  width: 50%;
+  transition: all 2s;
+  opacity: 1;
+  transform: scale(0.1);
+  opacity: 0;
+}
+
+.section06Simg02 {
+  width: 50%;
+  transition: all 1s;
+  opacity: 1;
+  transform: scale(0.1);
+  opacity: 0;
+}
+
+.imgWrap02Event {
+  opacity: 1;
+  transition: all 1s;
+  transform: scale(1);
+}
+
+/* .imgWrap02Event {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+} */
+
+.img-wrap03 {
+  display: flex;
+  justify-content: center;
+}
+
+/* section07 */
+
+.section07 {
+  width: 100%;
+  height: 1371px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#f6e5e5, #f2c6cf);
+}
+
+.section07-top {
+  display: flex;
+  width: 100%;
+  height: 710px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.section07-top-right {
+  background: url(./img/Section07.png) center/cover no-repeat;
+}
+
+.section07-top-left,
+.section07-top-right {
+  height: 710px;
+  width: 710px;
+}
+
+.section07-top-left {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.section07-tl-text {
+  margin: 0 auto;
+  font-size: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  color: #fff;
+}
+
+.section07-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 135px;
+}
+
+@media (max-width: 1380px) {
+  .section03-box-right .section03-imgpackage {
+    width: 100%;
+    height: 50%;
+    margin-top: 8rem;
+    position: relative;
+    margin-bottom: 0rem;
+  }
+  .section04-img {
+    width: 74%;
+    height: 63%;
+    background: url(./img/about_etude_logo2023.jpg) center/contain no-repeat;
+    margin-bottom: 8.125rem;
+  }
+  .section05-bgbox {
+    width: 80%;
+    height: 720px;
+    background: url(./img/Section05.png) center no-repeat;
+    position: relative;
+    transition: all 0.5s;
+  }
+  .section06 .section06-text {
+    position: absolute;
+    top: 2.9%;
+    left: 2%;
+    /* left: 250px; */
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .section07-top {
+    display: flex;
+    width: 100%;
+    height: 51.7%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .section07-top-left,
+  .section07-top-right {
+    height: 100%;
+    width: 50%;
+  }
+  .img-wrap02 {
+    margin-top: 500px;
+    width: 90%;
+    display: flex;
+    margin: 100px auto;
+    margin-top: 500px;
+    min-width: 1260px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .section03-box-right .section03-imgpackage {
+    width: 100%;
+    height: 50%;
+    margin-top: 8rem;
+    position: relative;
+    margin-bottom: 0rem;
+  }
+  .section03-box-right .section03-imgpackage .section03-right-img {
+    background: url(./img/about_etude2023_img2.jpg) center/contain no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: left;
+  }
+  .section03-text01 {
+    font-size: 2.1rem;
+    padding-bottom: 1.25rem;
+    font-weight: bold;
+  }
+  .section03-text02 {
+    font-size: 0.875rem;
+    font-weight: lighter;
+  }
+  .section03-text02 p {
+    padding-bottom: 1.25rem;
+  }
+  .section06 {
+    overflow: hidden;
+  }
+  .img-wrap02 {
+    margin-top: 500px;
+    width: 90%;
+    display: flex;
+    margin: 100px auto;
+    margin-top: 500px;
+    min-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* body {
+    display: none;
+  } */
+
+  #brandPage {
+    position: static;
+  }
+
+  .section01 {
+    width: 1024px;
+    height: 1080px;
+  }
+  .section01 .section01-img {
+    width: 665px;
+    height: 100vh;
+    background: url(./img/about_etude3_img1.jpg) center/cover no-repeat;
+  }
+  .section01 .section01-sub img {
+    width: 350px;
+  }
+
+  .section02 {
+    width: 1024px;
+    height: 1080px;
+  }
+  .section02 .section02-img {
+    width: 100%;
+    height: 100%;
+    background: url(./img/Section02_img_Desktop.png) center/cover no-repeat;
+  }
+  .section03 {
+    width: 1024px;
+    height: 1192px;
+  }
+  .section03 .section03-box {
+    display: flex;
+    width: 984px;
+    height: 1042px;
+    justify-content: center;
+    padding-top: 150px;
+  }
+  .section03-box .section03-box-left,
+  .section03-box-right {
+    width: 492px;
+    height: 1042px;
+    box-sizing: content-box;
+    padding-left: 3px;
+    padding-right: 0px;
+  }
+  .section03-box-left {
+    display: flex;
+    width: 492px;
+    height: 1042px;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03-box .section03-box-left > img {
+    width: 489px;
+    height: 550px;
+    margin: 0;
+  }
+  .section03-box-right .section03-imgpackage {
+    width: 489px;
+    height: 550px;
+    margin-top: 20px;
+  }
+  .section03-box-right .section03-imgpackage img {
+    width: 489px;
+    height: 550px;
+    position: static;
+    margin-bottom: 60px;
+  }
+  .section03-text01 {
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 40px;
+  }
+  .section03-text02 {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .section03-text02 p {
+    padding-bottom: 20px;
+  }
+  .section03-box-right .section03-gif img {
+    width: 118px;
+    height: 59px;
+  }
+  .section04 {
+    width: 1024px;
+    height: 436px;
+    position: relative;
+    border: none;
+  }
+  .section04-img {
+    width: 956px;
+    height: 336px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background: url(./img/about_etude_logo2023.jpg) center/cover no-repeat;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section05 {
+    width: 1024px;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+  }
+
+  .section05-bgbox {
+    width: 1024px;
+    height: 720px;
+    background: url("./img/EM-02_001_about_ETUDE_history_mo_v2_txt.jpg") center/cover no-repeat;
+    position: relative;
+  }
+  .section05-text {
+    position: absolute;
+    top: 40px;
+    left: 24px;
+  }
+  .section05-text01 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  .section05-text02 {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  /* secition06 */
+
+  .section06 {
+    width: 1024px;
+    height: 2862.13px;
+    background: linear-gradient(#f2c6cf, #f3e1e1);
+    position: static;
+    overflow: hidden;
+    padding-top: 0;
+  }
+
+  .section06 .section06-text {
+    font-size: 18px;
+    position: static;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-bottom: 70px;
+  }
+
+  .section06 .section06-text p:first-child {
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  /* card img */
+
+  .img-wraps {
+    display: flex;
+    gap: 12px;
+    overflow-x: scroll;
+  }
+
+  .img-wraps::-webkit-scrollbar {
+    display: none;
+  }
+
+  .img-wrap {
+    /* width: 1000px; */
+    /* height: 675px; */
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  .img_card {
+    width: 326px;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background: #fff;
+    transform: translate(0);
+  }
+
+  .img_card img {
+    width: 326px;
+    height: 415px;
+  }
+
+  .goods-imformation {
+    margin-top: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 100%;
+  }
+
+  .goods-information-subject {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 10px;
+    width: 280px;
+    border-bottom: 1px solid #000;
+  }
+
+  .goods-information-subject p:last-child {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+
+  .goods-information-detail {
+    display: flex;
+    margin-top: 18px;
+    gap: 6px;
+  }
+
+  .goods-information-detail img {
+    width: 18px;
+    height: 25px;
+  }
+
+  .goods-information-detail .goods-information-date {
+    font-size: 9px;
+    font-weight: lighter;
+  }
+
+  .goods-information-date2 {
+    font-size: 5px;
+  }
+
+  .goods-information-detail P:first-child {
+    font-size: 13px;
+    font-weight: lighter;
+    position: relative;
+  }
+
+  .img_card:nth-child(1) {
+    position: static;
+    opacity: 1;
+  }
+  .img_card:nth-child(2) {
+    position: static;
+    opacity: 1;
+  }
+  .img_card:nth-child(3) {
+    position: static;
+    opacity: 1;
+  }
+  .img_card:nth-child(4) {
+    position: static;
+    opacity: 1;
+  }
+  .img_card:nth-child(5) {
+    position: static;
+    opacity: 1;
+  }
+  .img_card:nth-child(6) {
+    position: static;
+    opacity: 1;
+  }
+
+  .img-wrap02 {
+    position: static;
+    width: 984px;
+    height: 492px;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+  .section06Simg01 {
+    width: 492px;
+    height: 492px;
+    transition: all 2s;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .section06Simg02 {
+    width: 492px;
+    height: 492px;
+    transition: all 1s;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .imgWrap02Event {
+    opacity: 1;
+    transition: all 1s;
+    transform: scale(1);
+  }
+
+  .img-wrap03 {
+    position: static;
+    width: 889px;
+    height: 1257px;
+    margin: 0 auto;
+  }
+
+  /* section07 */
+
+  .section07 {
+    background: linear-gradient(#f2c6cf 33%, #f3e1e1);
+    width: 1024px;
+    height: 913px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section07-top {
+    display: flex;
+    width: 1024px;
+    height: 512px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .section07-top-left {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 512px;
+    width: 512px;
+  }
+  .section07-top-right {
+    /* display: flex; */
+    overflow: hidden;
+    width: 512px;
+    height: 512px;
+  }
+
+  .section07-top-right img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section07-tl-text {
+    margin: 0 auto;
+    font-size: 54px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .section07-bottom {
+    display: flex;
+    height: 401px;
+    width: 1020px;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .section07-bottom img {
+    width: 380px;
+    height: 161px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* body {
+    display: none;
+  } */
+
+  .section01 {
+    width: 768px;
+    height: 1365px;
+  }
+  .section01 .section01-img {
+    width: 100%;
+    height: 100%;
+    background: url(./img/about_etude3_img1.jpg) center/cover no-repeat;
+    position: relative;
+  }
+  .section01 .section01-img .section01-title {
+    font-family: "subway";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+  }
+  .section01 .section01-img .section01-title p:first-child {
+    color: #fff;
+    font-size: 34px;
+  }
+  .section01 .section01-img .section01-title p:nth-child(2) {
+    color: #ef426f;
+    font-size: 34px;
+  }
+  .section01 .section01-img .section01-title p:nth-child(3) {
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .section01 .section01-sub {
+    display: none;
+  }
+  .section02 {
+    width: 768px;
+    height: 1365px;
+  }
+  .section02 .section02-img {
+    width: 100%;
+    height: 100%;
+    background: url(./img/Section02_img_Desktop.png) center/cover no-repeat;
+  }
+  .section03 {
+    width: 768px;
+    height: 1130px;
+  }
+  .section03 .section03-box {
+    display: flex;
+    width: 768px;
+    height: 1130px;
+    padding-top: 90px;
+    overflow: hidden;
+    justify-content: start;
+  }
+  .section03-box-left {
+    display: none;
+  }
+  .section03-box-right {
+    width: 768px;
+    position: relative;
+  }
+  .section03-box-right .section03-imgpackage {
+    width: 578px;
+    height: 651px;
+    float: right;
+  }
+
+  .section03-box-right .section03-imgpackage img {
+    display: block;
+  }
+  .section03-box-right .section03-imgpackage .section03-right-img {
+    background: url(/img/about_etude2023_img3.jpg) center/contain no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: left;
+  }
+  .section03-text01 {
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 40px;
+    float: left;
+    margin-left: 24px;
+  }
+  .section03-text02 {
+    font-size: 14px;
+    font-weight: lighter;
+    float: left;
+    margin-left: 24px;
+  }
+  .section03-text02 p {
+    padding-bottom: 20px;
+  }
+  .section03-box-right .section03-gif img {
+    width: 118px;
+    height: 59px;
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+  }
+  .section04 {
+    width: 768px;
+    height: 420px;
+    background: url(./img/about_etude_logo2023.jpg) center/cover no-repeat;
+    position: static;
+    border: none;
+  }
+  .section04-img {
+    display: none;
+  }
+  .section05 {
+    width: 768px;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section05-bgbox {
+    width: 100%;
+    height: 100%;
+    background: url(./img/Section05.png) center/cover no-repeat;
+    position: relative;
+  }
+  .section05-text {
+    position: absolute;
+    top: 34px;
+    left: 24px;
+  }
+  .section05-text01 {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .section05-text02 {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .section06 {
+    width: 768px;
+    height: 2300px;
+    position: static;
+    overflow: hidden;
+  }
+
+  .section06 .section06-text {
+    font-size: 14px;
+    position: static;
+    padding-top: 32px;
+    padding-left: 18px;
+    padding-bottom: 56px;
+  }
+
+  .section06 .section06-text p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  /* card img */
+
+  .img-wraps {
+    overflow-x: auto;
+    display: flex;
+    gap: 115px;
+  }
+
+  .img-wrap {
+    /* overflow: hidden;
+    margin-left: 18 px;
+    display: flex;
+    gap: 8px; */
+    margin-left: 18px;
+    display: flex;
+  }
+  .img_card {
+    width: 280px;
+    height: 573px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background: #fff;
+  }
+
+  .img_card img {
+    width: 280px;
+    height: 356px;
+  }
+
+  .goods-imformation {
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-right: 20px;
+    opacity: 100%;
+  }
+
+  .goods-information-subject {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 10px;
+    width: 245px;
+    border-bottom: 1px solid #000;
+  }
+
+  .goods-information-subject p:last-child {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 25px;
+  }
+
+  .goods-information-detail {
+    display: flex;
+    margin-top: 18px;
+    gap: 6px;
+  }
+
+  .goods-information-detail img {
+    width: 18px;
+    height: 25px;
+  }
+
+  .goods-information-detail .goods-information-date {
+    font-size: 8px;
+    font-weight: lighter;
+  }
+
+  .goods-information-date2 {
+    font-size: 5px;
+  }
+
+  .goods-information-detail P:first-child {
+    font-size: 12px;
+    font-weight: lighter;
+    position: relative;
+  }
+
+  .img_card:nth-child(1) {
+    position: static;
+  }
+  .img_card:nth-child(2) {
+    position: static;
+  }
+  .img_card:nth-child(3) {
+    position: static;
+  }
+  .img_card:nth-child(4) {
+    position: static;
+  }
+  .img_card:nth-child(5) {
+    position: static;
+  }
+  .img_card:nth-child(6) {
+    position: static;
+  }
+
+  .img-wrap02 {
+    position: static;
+    width: 768px;
+    height: 384px;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .section06Simg01 {
+    width: 384px;
+    height: 384px;
+    transition: all 1s;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .section06Simg02 {
+    width: 384px;
+    height: 384px;
+    transition: all 1s;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .imgWrap02Event {
+    opacity: 1;
+    transition: all 1s;
+    transform: scale(1);
+  }
+
+  .img-wrap02 img {
+    width: 384px;
+  }
+
+  .img-wrap03 {
+    position: static;
+    width: 768px;
+    height: 1086px;
+    margin: 0;
+  }
+
+  /* section07 */
+
+  .section07 {
+    width: 768px;
+    height: 702px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section07-top {
+    display: flex;
+    width: 768px;
+    height: 384px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .section07-top-left {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 384px;
+    width: 384px;
+  }
+  .section07-top-right {
+    /* display: flex; */
+    overflow: hidden;
+    width: 384px;
+    height: 384px;
+  }
+
+  .section07-top-right img {
+    width: 384px;
+    height: 384px;
+  }
+
+  .section07-tl-text {
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    gap: 20px;
+  }
+  .section07-tl-text p {
+    margin-bottom: 20px;
+  }
+  .section07-bottom {
+    display: flex;
+    height: 320px;
+    width: 768px;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .section07-bottom img {
+    width: 380px;
+    height: 161px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /* body {
+    display: none;
+  } */
+  .section01 {
+    width: 390px;
+    height: 693px;
+  }
+  .section01 .section01-img {
+    width: 100%;
+    height: 100%;
+    background: url(./img/about_etude3_img1.jpg) center/cover no-repeat;
+  }
+  .section01 .section01-sub {
+    display: none;
+  }
+  .section01 .section01-img .section01-title {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+  }
+  .section02 {
+    width: 390px;
+    height: 793px;
+  }
+  .section02 .section02-img {
+    width: 100%;
+    height: 100%;
+    background: url(./img/Section02_img_Desktop.png) center/cover no-repeat;
+  }
+  .section03 {
+    width: 390px;
+    height: 938px;
+  }
+  .section03 .section03-box {
+    display: flex;
+    width: 390px;
+    height: 1130px;
+    padding-top: 90px;
+    overflow: hidden;
+    justify-content: start;
+  }
+  .section03-box-left {
+    display: none;
+  }
+  .section03-box-right {
+    width: 390px;
+    position: relative;
+  }
+  .section03-box-right .section03-imgpackage {
+    background: url(./img/about_etude2023_img3.jpg) center/cover no-repeat;
+    width: 390px;
+    height: 440px;
+  }
+  .section03-box-right .section03-imgpackage img {
+    display: none;
+  }
+  .section03-text01 {
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 40px;
+    float: left;
+    margin-left: 18px;
+  }
+  .section03-text02 {
+    font-size: 14px;
+    font-weight: lighter;
+    float: left;
+    margin-left: 18px;
+  }
+  .section03-text02 p {
+    padding-bottom: 20px;
+  }
+  .section03-box-right .section03-gif img {
+    width: 118px;
+    height: 59px;
+    position: absolute;
+    bottom: 210px;
+    left: 24px;
+  }
+  .section04 {
+    width: 390px;
+    height: 213px;
+    background: url(./img/about_etude_logo2023.jpg) center/cover no-repeat;
+    position: static;
+    border: none;
+  }
+  .section04-img {
+    display: none;
+  }
+  .section05 {
+    width: 390px;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section05-bgbox {
+    width: 390px;
+    height: 1100px;
+    background: url(./img/EM-02_001_about_ETUDE_history_mo_v2_txt.jpg)
+      center/cover no-repeat;
+    position: relative;
+  }
+  .section05-text {
+    position: absolute;
+    top: 34px;
+    left: 14px;
+  }
+  .section05-text01 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .section05-text02 {
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  .section06 {
+    width: 390px;
+    height: 1578px;
+    position: static;
+    overflow: hidden;
+  }
+
+  .section06 .section06-text {
+    font-size: 14px;
+    position: static;
+    padding-top: 32px;
+    padding-left: 18px;
+    padding-bottom: 56px;
+  }
+
+  .section06 .section06-text p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  /* card img */
+
+  .img-wraps {
+    overflow-x: auto;
+    display: flex;
+    gap: 230px;
+  }
+
+  .img-wrap {
+    margin-left: 218px;
+    display: flex;
+    gap: 0px;
+  }
+  .img_card {
+    width: 280px;
+    height: 573px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background: #fff;
+  }
+
+  .img_card img {
+    width: 280px;
+    height: 356px;
+  }
+
+  .goods-imformation {
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-right: 20px;
+    opacity: 100%;
+  }
+
+  .goods-information-subject {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 10px;
+    width: 245px;
+    border-bottom: 1px solid #000;
+  }
+
+  .goods-information-subject p:last-child {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 25px;
+  }
+
+  .goods-information-detail {
+    display: flex;
+    margin-top: 18px;
+    gap: 6px;
+  }
+
+  .goods-information-detail img {
+    width: 18px;
+    height: 25px;
+  }
+
+  .goods-information-detail .goods-information-date {
+    font-size: 8px;
+    font-weight: lighter;
+  }
+
+  .goods-information-date2 {
+    font-size: 5px;
+  }
+
+  .goods-information-detail P:first-child {
+    font-size: 12px;
+    font-weight: lighter;
+    position: relative;
+  }
+
+  .img_card:nth-child(1) {
+    position: static;
+  }
+  .img_card:nth-child(2) {
+    position: static;
+  }
+  .img_card:nth-child(3) {
+    position: static;
+  }
+  .img_card:nth-child(4) {
+    position: static;
+  }
+  .img_card:nth-child(5) {
+    position: static;
+  }
+  .img_card:nth-child(6) {
+    position: static;
+  }
+  /* 
+  .img-wrap02 {
+    position: static;
+    width: 100px;
+    height: 195px;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    opacity: 1;
+  }
+  
+  .section06Simg01 {
+    width: 100px;
+    opacity: 1;
+  }
+
+  .section06img02 {
+    width: 100px;
+    opacity: 1;
+  } */
+
+  .img-wrap02 {
+    position: static;
+    margin-top: -200px;
+    width: 100%;
+    height: 195px;
+    display: flex;
+    min-width: 0px;
+  }
+
+  .section06Simg01 {
+    width: 195px;
+    transition: all 2s;
+    opacity: 1;
+    transform: scale(0.5);
+    margin-left: -95px;
+  }
+
+  .section06Simg02 {
+    width: 195px;
+    transition: all 1s;
+    opacity: 1;
+    transform: scale(0.5);
+    margin-left: -192px;
+  }
+
+  .img-wrap03 {
+    position: static;
+    width: 390px;
+    height: 550px;
+    margin: 0;
+  }
+
+  .img-wrap03 img {
+    position: static;
+    width: 390px;
+    height: 550px;
+    margin: 0;
+  }
+
+  /* section07 */
+
+  .section07 {
+    width: 390px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section07-top {
+    display: flex;
+    width: 390px;
+    height: 195px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .section07-top-left {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 195px;
+    width: 195px;
+  }
+  .section07-top-right {
+    /* display: flex; */
+    overflow: hidden;
+    width: 195px;
+    height: 195px;
+  }
+
+  .section07-top-right img {
+    width: 195px;
+    height: 195px;
+  }
+
+  .section07-tl-text {
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    gap: 20px;
+  }
+  .section07-tl-text p {
+    margin-bottom: 20px;
+  }
+  .section07-bottom {
+    display: flex;
+    height: 235px;
+    width: 390px;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .section07-bottom img {
+    width: 202px;
+    height: 85px;
+  }
+}

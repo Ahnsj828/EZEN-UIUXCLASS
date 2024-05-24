@@ -1,0 +1,29 @@
+/* ================= FONT FAMILY ================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  font-family: "Sofia";
+  src: url("./font/Sofia/Sofia\ Pro\ Regular.ttf") format("truetype");
+}
+/* font-family: "Noto Sans KR", sans-serif; */
+/* font-family: "Inter", sans-serif;  */
+
+/* ================= RESET COMMON ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}

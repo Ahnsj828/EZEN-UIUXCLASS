@@ -1,0 +1,705 @@
+@import url(./Reset.css);
+@import url(./Header.css);
+
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+/* ================= STORE PAGE ================= */
+
+.store-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 3%;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.store-inner {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* position: relative; */
+}
+
+/* LEFT */
+
+#store-left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+}
+#store-left > div > h1 {
+  font-family: "Noto Sans KR";
+  font-size: 30px;
+  font-weight: bold;
+  margin: 80px 10px 20px;
+}
+#store-menu {
+  /* border: 1px solid aqua; */
+  width: 202px;
+  height: 110px;
+  margin: 10px;
+}
+.online {
+  border: 1px solid #d9d9d9;
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background: #f7f7f7;
+}
+.online p {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: bold;
+}
+.offline {
+  border: 1px solid #d9d9d9;
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.offline p {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* RIGHT - BRAND */
+
+#store-right {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.brand-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.online-title {
+  display: flex;
+  align-items: center;
+}
+.online-title > h1 {
+  font-family: "Noto Sans KR";
+  font-size: 24px;
+  font-weight: 400;
+}
+.online-title > p {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+#brand {
+  margin-top: 20px;
+  width: 45%;
+  height: 605px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.brand {
+  width: 100%;
+
+  /* border: 1px solid orange; */
+}
+.logo-img {
+  margin-bottom: 10px;
+}
+.logo-name {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-name span:first-child {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: bold;
+}
+.logo-name span:last-child {
+  font-family: "Noto Sans KR";
+  font-size: 13px;
+  font-weight: 200;
+}
+
+/* RIGHT - GLOBAL */
+
+#global {
+  /* border: 1px solid green; */
+  width: 663px;
+  height: 600px;
+  position: relative;
+  margin-top: 55px;
+  margin-left: 10px;
+}
+#global > img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gb-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gb-name2:hover {
+  opacity: 0.6;
+}
+#korea {
+  position: absolute;
+  top: 168px;
+  left: 412px;
+}
+#india {
+  position: absolute;
+  top: 210px;
+  left: 180px;
+}
+#indonesia {
+  position: absolute;
+  top: 438px;
+  left: 260px;
+}
+#japan {
+  position: absolute;
+  top: 320px;
+  left: 490px;
+}
+#malaysia {
+  position: absolute;
+  top: 336px;
+  left: 205px;
+}
+#singapore {
+  position: absolute;
+  top: 378px;
+  left: 397px;
+}
+#thailand {
+  position: absolute;
+  top: 260px;
+  left: 270px;
+}
+#uae {
+  position: absolute;
+  top: 240px;
+  left: 50px;
+}
+
+/* ========== Laptop ========== */
+/* ========== Laptop ========== */
+/* ========== Laptop ========== */
+/* ========== Laptop ========== */
+/* ========== Laptop ========== */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .store-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* LEFT */
+
+  #store-left {
+    display: none;
+  }
+
+  /* RIGHT - BRAND */
+
+  #store-right {
+    /* border: 1px solid #00f; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .online-title {
+    display: none;
+  }
+
+  #brand {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+
+  .logo-img a img {
+    width: 100%;
+  }
+
+  .logo-name {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+  }
+
+  .logo-name span:first-child {
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .logo-name span:last-child {
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  /* RIGHT - GLOBAL */
+
+  #global {
+    /* border: 1px solid green; */
+    width: 480px;
+    height: 540px;
+    position: relative;
+    top: 0;
+    right: 20px;
+    display: none;
+  }
+  #global > img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .gb-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .gb-name2:hover {
+    opacity: 0.6;
+  }
+  #korea img {
+    width: 75px;
+    height: 30px;
+  }
+  #korea {
+    position: absolute;
+    top: 155px;
+    left: 306px;
+  }
+  #india img {
+    width: 62px;
+    height: 30px;
+  }
+  #india {
+    position: absolute;
+    top: 193px;
+    left: 135px;
+  }
+  #indonesia img {
+    width: 100px;
+    height: 30px;
+  }
+  #indonesia {
+    position: absolute;
+    top: 395px;
+    left: 195px;
+  }
+  #japan img {
+    width: 68px;
+    height: 30px;
+  }
+  #japan {
+    position: absolute;
+    top: 270px;
+    left: 360px;
+  }
+  #malaysia img {
+    width: 90px;
+    height: 30px;
+  }
+  #malaysia {
+    position: absolute;
+    top: 310px;
+    left: 160px;
+  }
+  #singapore img {
+    width: 92px;
+    height: 30px;
+  }
+  #singapore {
+    position: absolute;
+    top: 343px;
+    left: 285px;
+  }
+  #thailand img {
+    width: 90px;
+    height: 30px;
+  }
+  #thailand {
+    position: absolute;
+    top: 240px;
+    left: 205px;
+  }
+  #uae img {
+    width: 55px;
+    height: 30px;
+  }
+  #uae {
+    position: absolute;
+    top: 225px;
+    left: 45px;
+  }
+}
+/* ========== Tablet =========== */
+/* ========== Tablet =========== */
+/* ========== Tablet =========== */
+/* ========== Tablet =========== */
+/* ========== Tablet =========== */
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .store-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* LEFT */
+
+  #store-left {
+    display: none;
+  }
+
+  /* RIGHT - BRAND */
+
+  #store-right {
+    /* border: 1px solid #00f; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .online-title {
+    display: none;
+  }
+
+  #brand {
+    /* border: 1px solid pink; */
+    width: 100%;
+    height: 100%;
+  }
+  .brand {
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .logo-img a img {
+    width: 100%;
+    height: 100%;
+  }
+  .logo-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .logo-name span:first-child {
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .logo-name span:last-child {
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  /* RIGHT - GLOBAL */
+
+  #global {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #global > img {
+    width: 100%;
+    height: 100%;
+  }
+  .gb-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .gb-name2:hover {
+    opacity: 0.6;
+  }
+  #korea img {
+    width: 90px;
+    height: 50px;
+  }
+  #korea {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+  }
+  #india img {
+    width: 73px;
+    height: 50px;
+  }
+  #india {
+    position: absolute;
+    top: 312px;
+    left: 222px;
+  }
+  #indonesia img {
+    width: 115px;
+    height: 50px;
+  }
+  #indonesia {
+    position: absolute;
+    top: 618px;
+    left: 350px;
+  }
+  #japan img {
+    width: 80px;
+    height: 50px;
+  }
+  #japan {
+    position: absolute;
+    top: 430px;
+    left: 585px;
+  }
+  #malaysia img {
+    width: 100px;
+    height: 50px;
+  }
+  #malaysia {
+    position: absolute;
+    top: 480px;
+    left: 285px;
+  }
+  #singapore img {
+    width: 103px;
+    height: 50px;
+  }
+  #singapore {
+    position: absolute;
+    top: 537px;
+    left: 450px;
+  }
+  #thailand img {
+    width: 105px;
+    height: 50px;
+  }
+  #thailand {
+    position: absolute;
+    top: 370px;
+    left: 340px;
+  }
+  #uae img {
+    width: 65px;
+    height: 50px;
+  }
+  #uae {
+    position: absolute;
+    top: 360px;
+    left: 80px;
+  }
+}
+
+/* ========== Mobile =========== */
+/* ========== Mobile =========== */
+/* ========== Mobile =========== */
+/* ========== Mobile =========== */
+/* ========== Mobile =========== */
+
+@media screen and (max-width: 390px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .store-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* LEFT */
+
+  #store-left {
+    display: none;
+  }
+
+  /* RIGHT - BRAND */
+
+  #store-right {
+    /* border: 1px solid #00f; */
+    width: 100%;
+    height: 100%;
+  }
+  .online-title {
+    display: none;
+  }
+
+  #brand {
+    /* border: 1px solid pink; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+  .brand {
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo-img a img {
+    width: 100%;
+  }
+  .logo-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .logo-name span:first-child {
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .logo-name span:last-child {
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  /* RIGHT - GLOBAL */
+
+  #global {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+  }
+  #global > img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .gb-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .gb-name2:hover {
+    opacity: 0.6;
+  }
+  #korea img {
+    width: 75px;
+    height: 25px;
+  }
+  #korea {
+    position: absolute;
+    top: 120px;
+    left: 245px;
+  }
+  #india img {
+    width: 75px;
+    height: 25px;
+  }
+  #india {
+    position: absolute;
+    top: 160px;
+    left: 95px;
+  }
+  #indonesia img {
+    width: 100px;
+    height: 25px;
+  }
+  #indonesia {
+    position: absolute;
+    top: 320px;
+    left: 150px;
+  }
+  #japan img {
+    width: 60px;
+    height: 25px;
+  }
+  #japan {
+    position: absolute;
+    top: 230px;
+    left: 290px;
+  }
+  #malaysia img {
+    width: 80px;
+    height: 25px;
+  }
+  #malaysia {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+  }
+  #singapore img {
+    width: 80px;
+    height: 25px;
+  }
+  #singapore {
+    position: absolute;
+    top: 280px;
+    left: 235px;
+  }
+  #thailand img {
+    width: 85px;
+    height: 25px;
+  }
+  #thailand {
+    position: absolute;
+    top: 190px;
+    left: 160px;
+  }
+  #uae img {
+    width: 55px;
+    height: 25px;
+  }
+  #uae {
+    position: absolute;
+    top: 180px;
+    left: 30px;
+  }
+}
