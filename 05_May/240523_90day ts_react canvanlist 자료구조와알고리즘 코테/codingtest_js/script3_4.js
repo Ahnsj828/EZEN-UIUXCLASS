@@ -60,9 +60,12 @@ const solution = (userWord, searchWord) => {
       answer.push(p);
     }
   }
-  // 왼쪽부터 검사
-  // 오른쪽부터 검사
+  // 👆🏻왼쪽부터 검사
+
+  // 👇🏻오른쪽부터 검사
+
   p = Number.MAX_SAFE_INTEGER;
+
   for (let i = userWord.length - 1; i >= 0; i--) {
     // 오른쪽부터 시작하는데 , i가 0보다 크거나 같을때까지(0이 될때까지)
     if (userWord[i] === searchWord) {
