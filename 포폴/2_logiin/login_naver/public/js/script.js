@@ -120,10 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
   qrLogin.addEventListener("click", qrChange);
 });
 
-//
-//
-//
-//
 // -------<< aside >> 알림창 안보이게 -------
 const aside = document.querySelector("#aside");
 const xIcon = document.querySelector("#xIcon");
@@ -134,10 +130,6 @@ asideDisplayNone = () => {
 
 xIcon.addEventListener("click", asideDisplayNone);
 
-//
-//
-//
-//
 // -------<< banner >> 배너 랜덤으로 보이게 -------
 const banners = document.querySelectorAll(".banner a");
 document.addEventListener("DOMContentLoaded", function() {

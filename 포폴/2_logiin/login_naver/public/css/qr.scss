@@ -30,26 +30,26 @@ body {
       .qrWrap {
         width: 100%;
         @include JccAic_row;
-        padding: 5px 0 10px;
-        text-align: center;
         position: relative; 
+        text-align: center;
+        padding: 5px 0 10px;
         img {
           vertical-align: top;
           width: 130px;
         }
         .timeWrap {
           position: absolute;
+          text-align: left;
           left: 257px;
           bottom: 0;
           min-width: 85px;
-          text-align: left;
           padding: 13px 0 27px;
           .timeText {
+            padding-bottom: 1px;
             font-weight: 600;
             font-size: 13px;
             line-height: 20px;
             color: var(--fontcolor5);
-            padding-bottom: 1px;
           }
           .titleNum {
             font-size: 16px;
@@ -60,22 +60,22 @@ body {
         }
       }
       .qr_mainT {
+        text-align: center;
         padding: 6px 0 4px;
         font-size: 14px;
         font-weight: 500;
         line-height: 18px;
         letter-spacing: -0.35px;
         color: var(--fontcolor1);
-        text-align: center;
       }
       .qr_subT {
-        padding-bottom: 15px;
         text-align: center;
+        padding-bottom: 15px;
         .qr_subText {
+          text-align: center;
           font-size: 12px;
           line-height: 0px;
           color: var(--fontcolor6);
-          text-align: center;
           .app_icon {
             width: 11px;
             height: 11px;
@@ -88,18 +88,18 @@ body {
           }
           .randomNum {
             display: inline-block;
-            font-style: inherit;
+            text-align: center;
             width: 27px;
             height: 16px;
-            margin: 0 1px;
-            line-height: 15px;
-            padding: 2px 6px ;
-            border-radius: 10px;
             background: #000;
-            color: #fff;
+            border-radius: 10px;
+            padding: 2px 6px ;
+            margin: 0 1px;
+            font-style: inherit;
             font-weight: bold;
             font-size: 12px;
-            text-align: center;
+            line-height: 15px;
+            color: #fff;
           }
         }
         a {
@@ -116,13 +116,13 @@ body {
       @include JccAic;
       display: none;
       .exclamation {
-        margin: 0 auto;
         width: 50px;
         height: 50px;
+        margin: 0 auto;
       }
       p {
-        width: 100%;
         text-align: center;
+        width: 100%;
         padding: 13px 0 12px;
         font-size: 14px;
         line-height: 19px;
@@ -132,16 +132,16 @@ body {
         position: relative;
         padding-left: 26px;
         font-size: 15px;
-        line-height: 19px;
         font-weight: 600;
+        line-height: 19px;
         color: var(--maincolor3);
         img {
           position: absolute;
           top: 50%;
           left: 0;
-          margin-top: -10px;
           width: 21px;
           height: 20px;
+          margin-top: -10px;
         }
       }
     }

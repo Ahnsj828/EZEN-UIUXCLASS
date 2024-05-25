@@ -31,21 +31,20 @@
 
 @mixin navigation_item {
   @include JccAic;
+  position: relative;
   flex-direction: row;
   text-align: center;
+  top: 0px;
+  // height: 55px;
+  height: 65px;
+  background-color: #f8f9fa;
   border: 1px solid #e3e3e3;
   border-top: none;
-  background-color: #f8f9fa;
-  height: 55px;
+  padding-bottom: 10px;
   font: 500 16px/20px;
   letter-spacing: -0.5px;
   color: #777;
   z-index: 2;
-  height: 65px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 0px;
-
   cursor: pointer;
 }
 
@@ -54,17 +53,14 @@
   @include JccAic;
   flex-direction: row;
   text-align: center;
-  // border: 1px solid #e3e3e3;
-  // border-top: none;
+  height: 65px;
+  background-color: #fff;
   border: 1.5px solid var(--maincolor2);
   border-top: 5px solid var(--maincolor2);
   border-bottom: none;
-  // border-color: #c6c6c6;
-  background-color: #fff;
-  height: 65px;
+  border-radius: 6px 6px 0 0;
   font: 600 16px/20px;
   letter-spacing: -0.5px;
-  border-radius: 6px 6px 0 0;
   color: #333;
   z-index: 4;
 }
@@ -84,14 +80,14 @@
   color: #888;
 }
 @mixin f-info-li234 {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   text-align: center;
+  padding-left: 13px;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.5px;
   color: #888;
-  padding-left: 13px;
 }
 @mixin info-li-a {
   font-size: 12px;
@@ -124,41 +120,41 @@
   table-layout: fixed;
   width: 100%;
   height: 100%;
-  box-shadow: none;
-  padding: 14px 17px 13px;
   border: 1px solid #dadada;
   border-radius: 6px 6px 0 0;
+  box-shadow: none;
+  padding: 14px 17px 13px;
 }
 @mixin icon_idpw {
   position: absolute;
   top: 50%;
   left: 17px;
-  margin-top: -8px;
-  background-position: -174px -255px;
-  background-repeat: no-repeat;
   width: 16px;
   height: 16px;
+  background-position: -174px -255px;
+  background-repeat: no-repeat;
+  margin-top: -8px;
 }
 @mixin icons {
   display: table-cell;
+  text-align: left;
   vertical-align: middle;
   width: 24px;
-  text-align: left;
 }
 @mixin input_idpw {
   display: table-cell;
-  padding-right: 30px;
+  box-sizing: border-box;
   width: 100%;
+  background: 0 0;
+  border: none;
+  border-radius: 0;
+  padding-right: 30px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: -0.5px;
   color: #222;
-  box-sizing: border-box;
   z-index: 4;
-  border-radius: 0;
-  border: none;
-  background: 0 0;
   cursor: pointer;
 }
 
@@ -185,23 +181,23 @@
   top: -1px;
   width: 33px;
   height: 18px;
-  border-radius: 12px;
   background-color: #c3c8c9;
+  border-radius: 12px;
   margin-left: 4px;
   transition: all 0.2s ease;
 }
 
 @mixin ip_button_circle {
-  display: block;
   position: absolute;
+  display: block;
   top: 50%;
   left: 2px;
   width: 14px;
   height: 14px;
-  margin-top: -7px;
-  border-radius: 50%;
   background-color: #fff;
+  border-radius: 50%;
+  margin-top: -7px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  transition: all 0.1s ease;
   box-sizing: border-box;
+  transition: all 0.1s ease;
 }

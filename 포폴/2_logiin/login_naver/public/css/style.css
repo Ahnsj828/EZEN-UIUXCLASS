@@ -54,36 +54,29 @@ body .wrapper {
 }
 body .wrapper header {
   position: relative;
-  padding-bottom: 48px;
-  padding-bottom: 3rem;
+  text-align: center;
   width: 743px;
   width: 46.4375rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
   margin: 0 auto;
-  text-align: center;
 }
 body .wrapper header a {
   display: inline-block;
-  margin-top: 108px;
   width: 155px;
   height: 30px;
+  margin-top: 108px;
 }
 body .wrapper header a img {
   width: 100%;
   height: 100%;
 }
 body .wrapper header select {
-  border: 1px solid #ccc;
   position: absolute;
   top: 20px;
   right: 0;
   min-width: 95px;
   height: 30px;
-  padding: 4px 10px 6px 8px;
-  font: 400 12px/18px "";
-  color: var(--fontcolor3);
-  cursor: pointer;
-  z-index: 1;
-  outline: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -91,6 +84,13 @@ body .wrapper header select {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 13%;
+  border: 1px solid #ccc;
+  padding: 4px 10px 6px 8px;
+  outline: none;
+  font: 400 12px/18px "";
+  color: var(--fontcolor3);
+  cursor: pointer;
+  z-index: 1;
 }
 body .wrapper header select option {
   min-height: 1.2em;
@@ -107,30 +107,30 @@ body .wrapper .container {
 }
 body .wrapper .container aside {
   position: absolute;
+  display: flex;
+  align-items: center;
   top: -17px;
   right: -35px;
   height: 25px;
-  display: flex;
-  align-items: center;
-  padding: 3px 0 4px 9px;
+  background-color: #fff;
+  border: solid 1px #03c75a;
   border-radius: 12px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px #03c75a;
-  background-color: #fff;
+  padding: 3px 0 4px 9px;
   box-sizing: border-box;
   z-index: 10;
 }
 body .wrapper .container aside span {
   display: inline-block;
-  font-size: 10px;
+  vertical-align: top;
+  white-space: nowrap;
+  font-family: -apple-system, "system-ui", helvetica, "Apple SD Gothic Neo", sans-serif;
   font-weight: 500;
+  font-size: 10px;
   line-height: 14px;
   letter-spacing: -0.56px;
-  white-space: nowrap;
   color: #03c75a;
-  vertical-align: top;
   color: var(--maincolor);
-  font-family: -apple-system, "system-ui", helvetica, "Apple SD Gothic Neo", sans-serif;
 }
 body .wrapper .container aside img {
   width: 3%;
@@ -146,55 +146,54 @@ body .wrapper .container .kind_of_login .navigation {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
   flex-direction: row;
+  align-items: flex-start;
+  background-color: #f8f9fa;
   border-top: 1px solid #e3e3e3;
   border-radius: 6px 6px 0 0;
-  background-color: #f8f9fa;
 }
 body .wrapper .container .kind_of_login .navigation .navigation_item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   flex-direction: row;
   text-align: center;
+  top: 0px;
+  height: 65px;
+  background-color: #f8f9fa;
   border: 1px solid #e3e3e3;
   border-top: none;
-  background-color: #f8f9fa;
-  height: 55px;
+  padding-bottom: 10px;
   font: 500 16px/20px;
   letter-spacing: -0.5px;
   color: #777;
   z-index: 2;
-  height: 65px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 0px;
   cursor: pointer;
 }
 body .wrapper .container .kind_of_login .navigation .navigation_item span {
   margin-left: 10px;
 }
 body .wrapper .container .kind_of_login .navigation #idLogin {
-  border-radius: 6px 0 0 0;
   width: 33.3333333333%;
+  border-radius: 6px 0 0 0;
 }
 body .wrapper .container .kind_of_login .navigation #idLogin .idLogin_icon {
   width: 16px;
   height: 16px;
 }
 body .wrapper .container .kind_of_login .navigation #disposableLogin {
-  border-radius: 0;
   width: 33.3333333333%;
+  border-radius: 0;
 }
 body .wrapper .container .kind_of_login .navigation #disposableLogin .disLogin_icon {
   width: 16px;
   height: 16px;
 }
 body .wrapper .container .kind_of_login .navigation #qrLogin {
-  border-radius: 0 6px 0 0;
   width: 33.3333333333%;
+  border-radius: 0 6px 0 0;
 }
 body .wrapper .container .kind_of_login .navigation #qrLogin .qrLogin_icon {
   width: 16px;
@@ -207,14 +206,14 @@ body .wrapper .container .kind_of_login .navigation .click_nav {
   align-items: center;
   flex-direction: row;
   text-align: center;
+  height: 65px;
+  background-color: #fff;
   border: 1.5px solid var(--maincolor2);
   border-top: 5px solid var(--maincolor2);
   border-bottom: none;
-  background-color: #fff;
-  height: 65px;
+  border-radius: 6px 6px 0 0;
   font: 600 16px/20px;
   letter-spacing: -0.5px;
-  border-radius: 6px 6px 0 0;
   color: #333;
   z-index: 4;
 }
@@ -222,26 +221,25 @@ body .wrapper .container .kind_of_login .navigation .click_nav span {
   font-weight: 600;
 }
 body .wrapper .container .kind_of_login .wrapper_inner {
-  padding: 20px 24px;
-  border: 1px solid #c6c6c6;
-  border: 1.5px solid var(--maincolor2);
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
   position: relative;
   top: -10px;
   width: 100%;
   height: 295px;
+  background-color: #fff;
+  border: 1.5px solid var(--maincolor2);
+  border-radius: 6px;
+  box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
+  padding: 20px 24px;
   z-index: 3;
 }
 body .wrapper .container .kind_of_login .wrapper_inner #contentFrame {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
 }
 body .wrapper .container .another {
-  padding: 20px 0 35px;
   text-align: center;
+  padding: 20px 0 35px;
 }
 body .wrapper .container .another a {
   font-size: 14px;
@@ -253,24 +251,24 @@ body .wrapper .container .another a:nth-child(2), body .wrapper .container .anot
   padding-left: 28px;
 }
 body .wrapper .container .another a:nth-child(2)::before, body .wrapper .container .another a:nth-child(3)::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 3px;
   left: 12px;
   width: 1px;
   height: 12px;
-  border-radius: 0.5px;
   background-color: #dadada;
+  border-radius: 0.5px;
 }
 body .wrapper .container .banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 460px;
   height: auto;
   margin: 0 auto;
-  text-align: center;
 }
 body .wrapper .container .banner img {
   width: 100%;
@@ -305,14 +303,14 @@ body .wrapper footer section .info li {
 body .wrapper footer section .info li:nth-child(2),
 body .wrapper footer section .info li:nth-child(3),
 body .wrapper footer section .info li:nth-child(4) {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   text-align: center;
+  padding-left: 13px;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.5px;
   color: #888;
-  padding-left: 13px;
 }
 body .wrapper footer section .info li:nth-child(2) a,
 body .wrapper footer section .info li:nth-child(3) a,

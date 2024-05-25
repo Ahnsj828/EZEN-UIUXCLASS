@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
   randomNumElement.textContent = randomNum; // 랜덤 숫자를 요소에 넣음
 });
 
-// 
-// 
-// 
 // ---------<< 카운트 다운 >> 화면 변경 & 카운트다운 재시작 ------
 document.addEventListener("DOMContentLoaded", function() {
   const titleNumElement = document.querySelector(".titleNum");
