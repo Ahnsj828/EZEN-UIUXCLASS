@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custome css -->
+    <!-- custome css & js -->
+    <link rel="stylesheet" href="../css/qr.css" />
+    <script defer src="../js/qr.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost/3000/login" method="post">
+      <section class="qrLogin">
+        <div class="qrWrap">
+          <img src="../imgs/153qr.png" alt="github_qr">
+          <span class="timeWrap">
+            <h4 class="timeText">남은시간</h4>
+            <h4 class="titleNum"></h4>
+          </span>
+        </div>
+        <div class="qr_mainT">
+          공용 네트워크, 공용 PC라면 안전을 위해
+          <br />
+          QR코드로 로그인해주세요.
+        </div>
+        <div class="qr_subT">
+          <span class="qr_subText">
+            네이버 앱
+            <img class="app_icon" src="../imgs/app_icon.png" alt="app_icon">
+            > 렌즈
+            <img class="camera_icon" src="../imgs/camera_icon.png" alt="camera_icon">
+            를 눌러 QR코드를 스캔하여
+            <br />
+            보이는 숫자 중
+            <em class="randomNum"></em>
+            를 선택하여 로그인 됩니다.
+          </span>
+            <a href="https://blog.naver.com/nv_account/223016451462" target="_blank">
+              <img src="../imgs/question_icon.png" alt="question_icon" />
+            </a>
+        </div>
+      </section>
+      <section class="qrError">
+        <img class="exclamation" src="../imgs/exclamation_icon.png" alt="exclamation_icon">
+        <p>
+          해당 QR코드의 유효시간이 자났습니다.
+          <br />
+          다시 로그인을 시도하겠습니까?
+        </p>
+          <a href="#">
+            <img src="../imgs/retry_icon.png" alt="retry_icon">
+            재시도
+          </a>
+      </section>
+    </form>
+  </body>
+</html>

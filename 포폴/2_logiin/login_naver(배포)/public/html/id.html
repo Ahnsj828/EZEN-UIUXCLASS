@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custome css & js -->
+    <link rel="stylesheet" href="../css/id.css" />
+    <script defer src="../js/id.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost/3000/login" method="post">
+      <!-- id & pw 입력란 -->
+      <article>
+        <div class="input_id input_click">
+          <span class="idIcons">
+            <img
+              class="idIcon idIcon_noClick"
+              src="../imgs/id_icon.png"
+              alt="id_icon"
+            />
+            <img
+              class="idIcon idIcon_click"
+              src="../imgs/id_icon_click.png"
+              alt="id_icon_click"
+            />
+          </span>
+          <input type="text" placeholder="아이디" />
+          <span class="xGray_button xGray_button_id">
+            <img
+              class="xGray xGray_id"
+              src="../imgs/xGray_icon.png"
+              alt="xGray_icon"
+            />
+          </span>
+        </div>
+        <div class="input_pw input_click">
+          <span class="pwIcons">
+            <img
+              class="pwIcon pwIcon_noClick"
+              src="../imgs/pw_icon.png"
+              alt="pw_icon"
+            />
+            <img
+              class="pwIcon pwIcon_click"
+              src="../imgs/pw_icon_click.png"
+              alt="pw_icon_click"
+            />
+          </span>
+          <input type="password" placeholder="비밀번호" />
+          <span class="xGray_button xGray_button_pw">
+            <img
+              class="xGray xGray_pw"
+              src="../imgs/xGray_icon.png"
+              alt="xGray_icon"
+            />
+          </span>
+        </div>
+      </article>
+
+      <!-- 로그인 setting  -->
+      <ul class="login_setting">
+        <li class="state">
+          <input id="state_icon" type="checkbox" />
+          <span class="state_button state_button_click"></span>
+          <label class="state_check" for="state_icon">로그인 상태유지</label>
+        </li>
+        <li class="ip">
+          <a
+            href="https://nid.naver.com/login/ext/help_ip3.html"
+            target="_blank"
+          >
+            IP보안
+          </a>
+          <input id="ip_icon" type="checkbox" />
+          <label class="ip_button ip_button_check" for="ip_icon">
+            <span class="ip_button_circle"></span>
+          </label>
+        </li>
+      </ul>
+      
+      <!-- 알림 -->
+      <div class="error-msg">
+        <span class="noIDPW"></span>
+        를 입력해주세요.
+      </div>
+      
+      <!-- 로그인 버튼 -->
+      <button>로그인</button>
+    </form>
+  </body>
+</html>

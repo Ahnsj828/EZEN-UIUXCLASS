@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="네이버">
+    <meta property="og:description" content="네이버 로그인 페이지입니다."/>
+    <meta property="og:image" content="https://ssl.pstatic.net/static/nid/account/naver_og_image.png">
+    <!-- favicon -->
+    <link rel="icon" href="./imgs/naver_favicon.png" />
+    <!-- custome css & js -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./script.js"></script>
+    <title>로그인</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <a href="http://www.naver.com" class="logo">
+          <img src="./imgs/naver_logo.png" alt="naver_logo" />
+        </a>
+        <select name="language" id="">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+          <option value="ch">中文(简体)</option>
+          <option value="ch2">中文(台灣)</option>
+        </select>
+      </header>
+
+      <!-- content -->
+      <section class="container">
+        <aside id="aside">
+          <span> PC방 등 공유PC라면 QR코드 로그인이 더 안전해요. </span>
+          <img id="xIcon" src="./imgs/x_icon.png" alt="x_icon" />
+        </aside>
+        <article class="kind_of_login">
+          <ul class="navigation">
+            <li id="idLogin" class="navigation_item click_nav">
+              <img
+                class="idLogin_icon login_click"
+                src="./imgs/id_login_icon_click.png"
+                alt="ID 로그인 click"
+              />
+              <img
+                class="idLogin_icon login_noClick"
+                src="./imgs/id_login_icon.png"
+                alt="ID 로그인"
+              />
+              <span>ID 로그인</span>
+            </li>
+            <li id="disposableLogin" class="navigation_item click_nav">
+              <img
+                class="disLogin_icon login_click"
+                src="./imgs/dis_login_icon_click.png"
+                alt="일회용 번호 click"
+              />
+              <img
+                class="disLogin_icon login_noClick"
+                src="./imgs/dis_login_icon.png"
+                alt="일회용 번호"
+              />
+              <span>일회용 번호</span>
+            </li>
+            <li id="qrLogin" class="navigation_item click_nav">
+              <img
+                class="qrLogin_icon login_click"
+                src="./imgs/qr_login_icon_click.png"
+                alt="QR코드 click"
+              />
+              <img
+                class="qrLogin_icon login_noClick"
+                src="./imgs/qr_login_icon.png"
+                alt="QR코드"
+              />
+              <span>QR코드</span>
+            </li>
+          </ul>
+          <article class="wrapper_inner">
+            <!-- ID 로그인 -->
+            <iframe id="contentFrame" src="./html/id.html" frameborder="0"></iframe>
+            <!-- 일회용 번호 -->
+            <!-- <iframe
+              id="contentFrame"
+              src="./html/disposable.html"
+              frameborder="0"
+            ></iframe> -->
+            <!-- QR코드 -->
+            <!-- <iframe id="contentFrame" src="./html/qr.html" frameborder="0"></iframe> -->
+          </article>
+        </article>
+        <article class="another">
+          <a
+            href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR"
+            target="_blank"
+            >비밀번호 찾기</a
+          >
+          <a
+            href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR"
+            target="_blank"
+            >아이디 찾기</a
+          >
+          <a
+            href="https://nid.naver.com/user2/join/agree?lang=ko_KR&domain=www.naver.com"
+            target="_blank"
+            >회원가입</a
+          >
+        </article>
+        <article class="banner">
+          <a
+            href="https://nid.naver.com/membership/join?dtm_source=naver_pclogin&dtm_medium=mktatrb_etc&dtm_campaign=2401-mem-001&pcode=naver_pclogin&campaign_id=2401-mem-001&channel_id=naver_pclogin"
+            target="_blank"
+          >
+            <img src="./imgs/naver_banner1.jpg" alt="banner1"/>
+          </a>
+          <a href="http://d2startup.com/story/310" target="_blank">
+            <img src="./imgs/naver_banner2.png" alt="banner2"/>
+          </a>
+          <a href="https://blog.naver.com/nv_account/223428077776" target="_blank">
+            <img src="./imgs/naver_banner3.png" alt="banner3"/>
+          </a>
+        </article>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <section>
+          <ul class="info">
+            <li>
+              <a
+                href="https://policy.naver.com/rules/service.html"
+                target="_blank"
+                ><span> 이용약관 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://policy.naver.com/rules/privacy.html"
+                target="_blank"
+              >
+                <strong> 개인정보처리방침 </strong>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://policy.naver.com/rules/disclaimer.html"
+                target="_blank"
+                >책임의 한계와 법적고지</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.naver.com/service/5640/category/bookmark?lang=ko"
+                target="_blank"
+                >회원정보 고객센터</a
+              >
+            </li>
+          </ul>
+          <ul class="company_info">
+            <li>
+              <a
+                href="https://www.navercorp.com/"
+                target="_blank"
+                class="logo_bottom"
+              >
+                <img src="./imgs/naver_logo.png" alt="naver_logo" />
+              </a>
+            </li>
+            <li>Copyright</li>
+            <li>&#169; NAVER Corp.</li>
+            <li>All Rights Reserved</li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

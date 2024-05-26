@@ -1,0 +1,203 @@
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
+  --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
+  --errorcolor: #ff003e;
+}
+
+@mixin JccAic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin JccAic_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin navigation_tab_icon {
+  width: 16px;
+  height: 16px;
+}
+
+@mixin navigation_item {
+  @include JccAic;
+  position: relative;
+  flex-direction: row;
+  text-align: center;
+  top: 0px;
+  // height: 55px;
+  height: 65px;
+  background-color: #f8f9fa;
+  border: 1px solid #e3e3e3;
+  border-top: none;
+  padding-bottom: 10px;
+  font: 500 16px/20px;
+  letter-spacing: -0.5px;
+  color: #777;
+  z-index: 2;
+  cursor: pointer;
+}
+
+@mixin click_nav {
+  // position: absolute;
+  @include JccAic;
+  flex-direction: row;
+  text-align: center;
+  height: 65px;
+  background-color: #fff;
+  border: 1.5px solid var(--maincolor2);
+  border-top: 5px solid var(--maincolor2);
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  font: 600 16px/20px;
+  letter-spacing: -0.5px;
+  color: #333;
+  z-index: 4;
+}
+
+@mixin f-info {
+  @include JccAic_row;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #222;
+}
+@mixin f-info-li {
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+}
+@mixin f-info-li234 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-left: 13px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+}
+@mixin info-li-a {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: #888;
+}
+@mixin info-li-before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 0.5px;
+  height: 11px;
+  background-color: #dadada;
+}
+@mixin f-info-c-li {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #888;
+}
+
+// -----< ID 로그인 >-----
+@mixin div_input {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dadada;
+  border-radius: 6px 6px 0 0;
+  box-shadow: none;
+  padding: 14px 17px 13px;
+}
+@mixin icon_idpw {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  width: 16px;
+  height: 16px;
+  background-position: -174px -255px;
+  background-repeat: no-repeat;
+  margin-top: -8px;
+}
+@mixin icons {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  width: 24px;
+}
+@mixin input_idpw {
+  display: table-cell;
+  box-sizing: border-box;
+  width: 100%;
+  background: 0 0;
+  border: none;
+  border-radius: 0;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+  color: #222;
+  z-index: 4;
+  cursor: pointer;
+}
+
+@mixin xGray_button {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 35px;
+  height: 35px;
+  z-index: 5;
+}
+@mixin xGray {
+  display: inline-block;
+  position: -179px -182px;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  margin: 8px 0 0 8px;
+}
+
+@mixin ip_button {
+  display: block;
+  position: relative;
+  top: -1px;
+  width: 33px;
+  height: 18px;
+  background-color: #c3c8c9;
+  border-radius: 12px;
+  margin-left: 4px;
+  transition: all 0.2s ease;
+}
+
+@mixin ip_button_circle {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: -7px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+}

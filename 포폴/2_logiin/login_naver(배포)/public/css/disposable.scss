@@ -1,0 +1,103 @@
+@import "reset";
+@import "mixin";
+
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
+  --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
+  --errorcolor: #ff003e;
+}
+
+body {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  @include JccAic;
+  form {
+    width: 100%;
+    height: 100%;
+    @include JccAic;
+  section {
+    padding: 23px 0 30px;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: -0.6px;
+    text-align: center;
+    vertical-align: top;
+    color: var(--fontcolor1);
+    em {
+      font-style: inherit;
+      font: 500 15px/21px;
+      letter-spacing: -0.6px;
+      color: var(--maincolor3);
+      text-align: center;
+      .setting-icon {
+        width: 15px;
+        margin-left: 3px;
+      }
+      .more-icon {
+        top: 100px;
+      }
+    }
+    }
+    a {
+      img {
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+  div {
+    width: 100%;
+    padding-left: 15px;
+    margin: 8px;
+    margin-top: 13px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -.5px;
+    color: var(--errorcolor);
+    opacity: 0;
+  }
+    input {
+      display: block;
+      width: 100%;
+      height: 51px;
+      border: 1px solid #dadada;
+      border-radius: 6px;
+      padding: 16px 18px 15px;
+      // box-sizing: border-box;
+      text-align: left;
+      box-shadow: 0 2px 6px 0 rgba(68,68,68,.08);
+      &::placeholder {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: -.5px;
+        color: var(--fontcolor7);
+        text-align: center;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid var(--fontcolor7);
+      }
+    }
+    button {
+      display: block;
+      width: 100%;
+      background-color: var(--maincolor3);
+      border: solid 1px rgba(0, 0, 0, .15);
+      border-radius: 6px;
+      padding: 13px 0 13px;
+      margin-top: 13px;
+      font: 700 20px/24px "sans-serif";
+      color: #fff;
+    }
+}
+  

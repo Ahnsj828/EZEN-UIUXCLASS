@@ -1,0 +1,195 @@
+@import "reset";
+@import "mixin";
+// font-family -apple-system, "system-ui", helvetica, "Apple SD Gothic Neo", sans-serif
+
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
+  --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
+  --errorcolor: #ff003e;
+}
+
+body {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  form {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    // < id & pw 입력란 >
+    article {
+      .input_id {
+        @include div_input;
+        display: flex;
+        flex-direction: row;
+        .idIcons {
+          @include icons;
+          .idIcon {
+            @include icon_idpw;
+          }
+          .idIcon_noClick {
+            display: inline;
+          }
+          .idIcon_click {
+            display: none;
+          }
+        }
+        input {
+          @include input_idpw;
+          &::placeholder {
+            color: #929294;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .xGray_button {
+          @include xGray_button;
+          display: none;
+          .xGray {
+            @include xGray;
+          }
+        }
+      }
+      .input_pw {
+        @include div_input;
+        border-radius: 0 0 6px 6px;
+        .pwIcons {
+          @include icons;
+          .pwIcon {
+            @include icon_idpw;
+          }
+          .pwIcon_noClick {
+            display: inline;
+          }
+          .pwIcon_click {
+            display: none;
+          }
+        }
+        input {
+          @include input_idpw;
+          &::placeholder {
+            color: #929294;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .xGray_button {
+          @include xGray_button;
+          display: none;
+          .xGray {
+            @include xGray;
+          }
+        }
+      }
+      .input_click {
+        border: 1px solid var(--fontcolor7);
+      }
+    }
+    // < 로그인 setting >
+    .login_setting {
+      @include JccAic_row;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 90px;
+      margin-top: 13px;
+      .state {
+        position: relative;
+        padding-left: 23px;
+        cursor: pointer;
+        #state_icon {
+          display: none;
+          cursor: pointer;
+        }
+        .state_button {
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          left: 0;
+          width: 18px;
+          height: 18px;
+          background: url("../imgs/state_icon.png") center / cover no-repeat;
+        }
+        .state_button_click {
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          left: 0;
+          width: 18px;
+          height: 18px;
+          background: url("../imgs/state_icon_click.png") center / cover
+            no-repeat;
+        }
+        .state_check {
+          display: inline-block;
+          font: 500 14px/17px "sans-serif";
+          color: var(--fontcolor7);
+          cursor: pointer;
+        }
+      }
+      .ip {
+        @include JccAic_row;
+        position: absolute;
+        width: auto;
+        right: 0;
+        a {
+          display: inline-block;
+          font: 500 14px/17px "sans-serif";
+          letter-spacing: -0.41px;
+          color: var(--fontcolor7);
+          cursor: pointer;
+        }
+        #ip_icon {
+          display: none;
+          cursor: pointer;
+        }
+        .ip_button {
+          @include ip_button;
+          .ip_button_circle {
+            @include ip_button_circle;
+          }
+        }
+        .ip_button_check {
+          @include ip_button;
+          background-color: var(--maincolor);
+        }
+      }
+    }
+    // 알림 메세지
+    .error-msg {
+      align-items: center;
+      width: 100%;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: var(--errorcolor);
+      margin: 24px 0 -22px;
+      opacity: 0;
+      .noIDPW{
+        font-weight: bold;
+      }
+    }
+    // 로그인 button
+    button {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      background: var(--maincolor2);
+      border: solid 1px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      padding: 13px 0 13px;
+      margin-top: 38px;
+      font: 700 20px/24px "sans-serif";
+      color: #fff;
+    }
+  }
+}

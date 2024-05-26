@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ID 로그인 - 클릭
   const idChange = () => {
-    contentFrame.setAttribute("src", "./id.html");
+    contentFrame.setAttribute("src", "./html/id.html");
 
     // ID 로그인 이미지 보이기, 나머지 이미지 숨기기
     document.querySelector(".idLogin_icon.login_click").style.display =
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 일회용번호 로그인 - 클릭
   const disposableChange = () => {
-    contentFrame.setAttribute("src", "./disposable.html");
+    contentFrame.setAttribute("src", "./html/disposable.html");
 
     // 일회용번호 이미지 보이기, 나머지 이미지 숨기기
     document.querySelector(".idLogin_icon.login_click").style.display = "none";
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // QR 로그인 - 클릭
   const qrChange = () => {
-    contentFrame.setAttribute("src", "./qr.html");
+    contentFrame.setAttribute("src", "./html/qr.html");
 
     // QR코드 이미지 보이기, 나머지 이미지 숨기기
     document.querySelector(".idLogin_icon.login_click").style.display = "none";

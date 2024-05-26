@@ -1,0 +1,256 @@
+@import "reset";
+@import "mixin";
+// font-family -apple-system, "system-ui", helvetica, "Apple SD Gothic Neo", sans-serif
+
+:root {
+  --maincolor: #03c75a;
+  --maincolor2: #0aa95d;
+  --maincolor3: #09aa5c;
+  --fontcolor1: #1e1e23;
+  --fontcolor2: #222;
+  --fontcolor3: #333;
+  --fontcolor5: #555;
+  --fontcolor6: #666;
+  --fontcolor7: #777;
+  --fontcolor8: #8e8e8e;
+  --errorcolor: #ff003e;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  color: var(--fontcolor2);
+  .wrapper {
+    @include JccAic;
+    header {
+      position: relative;
+      text-align: center;
+      width: 743px;
+      width: 46.4375rem;
+      padding-bottom: 48px;
+      padding-bottom: 3rem;
+      margin: 0 auto;
+      a {
+        display: inline-block;
+        width: 155px;
+        height: 30px;
+        margin-top: 108px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      select {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        min-width: 95px;
+        height: 30px;
+        appearance: none;
+        background-image: url("./imgs/select_icon.png");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 13%;
+        border: 1px solid #ccc;
+        padding: 4px 10px 6px 8px;
+        outline: none;
+        font: 400 12px/18px "";
+        color: var(--fontcolor3);
+        cursor: pointer;
+        z-index: 1;
+        option {
+          min-height: 1.2em;
+          padding: 0px 2px 1px;
+        }
+      }
+    }
+    .container {
+      @include JccAic;
+      position: relative;
+      width: 100%;
+      width: 460px;
+      aside {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: -17px;
+        right: -35px;
+        height: 25px;
+        background-color: #fff;
+        border: solid 1px #03c75a;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        padding: 3px 0 4px 9px;
+        box-sizing: border-box;
+        z-index: 10;
+        span {
+          display: inline-block;
+          vertical-align: top;
+          white-space: nowrap;
+          font-family: -apple-system, "system-ui", helvetica,"Apple SD Gothic Neo", sans-serif;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 14px;
+          letter-spacing: -0.56px;
+          color: #03c75a;
+          color: var(--maincolor);
+        }
+        img {
+          width: 3%;
+          margin-left: 5px;
+          cursor: pointer;
+        }
+      }
+      .kind_of_login {
+        // < id 일회용 qr코드 tab & inner >
+        width: 100%;
+        margin-bottom: -15px;
+        .navigation {
+          // < id 일회용 qr코드 tab 모아둔>
+          @include JccAic;
+          flex-direction: row;
+          align-items: flex-start;
+          background-color: #f8f9fa;
+          border-top: 1px solid #e3e3e3;
+          border-radius: 6px 6px 0 0;
+          .navigation_item {
+            // < id 일회용 qr코드 tab >
+            @include navigation_item;
+            span {
+              margin-left: 10px;
+            }
+          }
+          #idLogin {
+            width: calc(100% / 3);
+            border-radius: 6px 0 0 0;
+            .idLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          #disposableLogin {
+            width: calc(100% / 3);
+            border-radius: 0;
+            .disLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          #qrLogin {
+            width: calc(100% / 3);
+            border-radius: 0 6px 0 0;
+            .qrLogin_icon {
+              @include navigation_tab_icon;
+            }
+          }
+          .click_nav {
+            @include click_nav;
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+        .wrapper_inner {
+          // < id 일회용 qr코드 inner >
+          position: relative;
+          top: -10px;
+          width: 100%;
+          height: 295px;
+          background-color: #fff;
+          // border: 1px solid #c6c6c6;
+          border: 1.5px solid var(--maincolor2);
+          border-radius: 6px;
+          box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
+          padding: 20px 24px;
+          z-index: 3;
+          #contentFrame {
+            display: flex;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .another {
+        text-align: center;
+        padding: 20px 0 35px;
+        a {
+          font-size: 14px;
+          line-height: 17px;
+          color: #888;
+        }
+        & a:nth-child(2),
+        & a:nth-child(3) {
+          position: relative;
+          padding-left: 28px;
+          &::before {
+            position: absolute;
+            content: "";
+            top: 3px;
+            left: 12px;
+            width: 1px;
+            height: 12px;
+            background-color: #dadada;
+            border-radius: 0.5px;
+          }
+        }
+      }
+      .banner {
+        @include JccAic;
+        text-align: center;
+        width: 460px;
+        height: auto;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    footer {
+      padding: 63px 0 32px;
+      letter-spacing: -0.5px;
+      color: var(--fontcolor2);
+      section {
+        position: relative;
+        text-align: center;
+        .info {
+          @include f-info;
+          li {
+            @include f-info-li;
+          }
+          li:nth-child(2),
+          li:nth-child(3),
+          li:nth-child(4) {
+            @include f-info-li234;
+            a {
+              @include info-li-a;
+            }
+            &::before {
+              @include info-li-before;
+            }
+          }
+        }
+        .company_info {
+          @include f-info;
+          margin-top: 9px;
+          li:nth-child(1) {
+            img {
+              width: 70px;
+            }
+            padding-right: 3px;
+          }
+          li:nth-child(2) {
+            @include f-info-c-li;
+          }
+          li:nth-child(3) {
+            @include f-info-c-li;
+            padding: 0 2px;
+            font-weight: 500;
+            color: #000;
+          }
+          li:nth-child(4) {
+            @include f-info-c-li;
+          }
+        }
+      }
+    }
+  }
+}
