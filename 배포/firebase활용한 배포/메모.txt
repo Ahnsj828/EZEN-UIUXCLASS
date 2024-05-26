@@ -1,0 +1,129 @@
+배포 전 점검 필수
+title 수정 과 파비콘 삽입 필수 link:favicon
+
+오픈그래프 : 다른 누군가에게 URL 공유!!! => 대표이미지 / 설명
+==> meta:desc
+
+
+<예시>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="에뛰드 공식 웹사이트 - Etude" />
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbU8MG5fa1pqYDptz8AzcWRvT3Vjs2eRwE2A&usqp=CAU"
+    />
+    <meta
+      property="og:description"
+      content="예뻐지는 상상이 현실이 되길 꿈꾸는 에뛰드하우스입니다."
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b06e382e17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./etude2023-180x180-1.png"
+      type="image/ x-icon"
+    />
+    <title>에뛰드 공식 웹사이트 - Etude</title>
+  </head>
+
+------------------------------------------------------------------------------
+
+1. 컴퓨터에 node 설치하기
+ - 구글에 들어가서 node.js가서 > LTS 버전 설치
+    (LTS - long tum service 약자 - 신규)
+
+
+2. firebase
+ - 구글에 들어가서 > firebase 가기 
+ - 시작하기 누르기 (구글 로그인하기)
+ - 프로젝트 추가
+ - 프로젝트명 입력
+ - 구글 애널리틱스 해제
+ - 프로젝트 만들기
+ - 프로젝트명 확인하고 왼쪽메뉴 -> 빌드 -> hosting
+ - 시작하기 버튼 클릭
+ - Firebase CLI 설치 코드 복사(코드 오른쪽 버튼 클릭)
+    (npm = node package memory 의 약자)
+
+
+3-a. (window) 명령 프롬프트 
+ - 명령프롬프트 관리자 권한으로 실행
+ - 복사했던 Firebase CLI 설치 코드를 관리자에 붙여넣고 enter
+   => 안될결우 - node.js 신규 버전으로 다시 설치해주고 다시 해보기
+             - 관리자 권한으로 실행 했는지 확인하기
+ 
+
+3-b. (Mac) 명령 프롬프트 
+ - 명령프롬프트 관리자 권한으로 실행
+    npm install -g firebase-tools  => 복붙하고자 하는 코드에서
+    'sudo'를 사용해서 권한을 상승시켜야한다
+       -> sudo npm install -g firebase-tools
+   => 안될경우 - 방법 1: sudo를 사용하여 권한을 상승시키기
+             - 방법 2: npm 전역 설치 디렉토리 변경
+             - 방법 3: nvm (Node Version Manager) 사용
+
+ 
+
+3-c. 확인하기
+ - VS로 열고 다 확인해봐야한다
+ - 수정하는 방법이 까다로워서 수정을 못한다고 생각해야 한다
+   (반응형했으면 웹브라우저, 모바일버전, 테블릿버전 다 확인하기)
+
+
+4. firebase 다음단계
+ - firebase에가서 Firebase 호스팅 설정에 Firebase CLI 설치에 다음누르기
+ - 프로젝트 초기화에 Google에 로그인 밑에 코드를 복사하기
+ - 호스팅 하고자하는 파일의 루트폴더에서 VS코드 열기!!!(매우 중요!!)
+ - 터미널 열어서 command prompt열고 Google에 로그인 밑에 코드를 붙여넣기(id, pw확인하기!)
+    (Mac => vs코드에서 터미널 열고 zsh에 붙여넣고 enter)
+ - Allow Firebase to collect CLI and Emulator Suite usage and error reporting information? (Y/n) 뜨면 => y 입력 enter () => 이건 Firebase CLI에서 Firebase 사용 데이터를 수집해도 괜찮은지 묻는 것이다
+ - 계정 선택 하기
+ - firebase에 프로젝트 시작 하단에 코드 복사하기  =>  firebase init
+ - vs 코드 터미널에 붙여넣고 enter
+ - 키보드 방향키(위, 아래)로 움직여서 "Hosting: Configure ..." 선택 후 스페이스바 누르고 enter누르기
+    (Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys)
+ - 파일을 만들어 높은 거로 쓸건지 새로 만들지 정하는거 => 그냥 enter눌러라 ( Use an existing project )
+    (Please select an option이 뜨면 Use an existing project 하면된다)
+ - 내가 설정해둔 명의 프로젝트를 선택하고 enter
+ - 파일 담을 공간이 필요하다는 문구가 뜬다 => public 엔터
+     ? What do you want to use as your public directory? (public)  => enter 눌러라
+ - 정하는게 나온다 => n 엔터
+     ? Configure as a single-page app (rewrite all urls to /index.html)? (y/N) => n 누르고 엔터
+ - 깃허브 질문 나온다 => n 엔터
+     ? Set up automatic builds and deploys with GitHub? (y/N)  => n 누르고 엔터
+
+5. 파일정리
+  - public안에 두개 파일 삭제하기
+     (404.html 파일이랑 index.html 파일 삭제하기)
+  - 모든 소스(파일들) 다 public 폴더 안에 넣기.   (ctrl+c => ctrl+v)이건가?
+  - 파일 최종으로 확인하기
+     (경로들 잘 확인하기! 이미지가 안 뜰 수 있다.)
+
+
+6. 마지막 단계
+  - firebase에 Firebase 호스팅 설정에 Firebase 호스팅에 배포를 보면 코드가 하나 있다 => 복사해라
+     ( firebase deploy )
+  - vs코드에 터미널에 붙여넣고 enter 치기
+   
+
+7. 배포 확인하기
+  - ctrl 누른 후 클릭 하면 볼 수 있다
+
+
+====================================================================================
+
+< 주의사항 >
+파일은 무조건 index.html 이렇게만 되어있어야한다! 저기에 숫자나 영어 하나라도 추가하면안된다 
+    =>    index.html
+
+Public 폴더 안에 있는 파일을 올리는거다 => 다른 폴더 안에 있으면 안된다.
+즉, 내가 올릴 index.html파일, style.css파일, script.js파일, img, font등등 이 다른 폴더에 있으면 안된다.
+Index.html파일만 있으면 되는거긴 하지만, css나 js나 img나 font파일 경로가 틀어지게 되니까 다 넣는다
+
+
