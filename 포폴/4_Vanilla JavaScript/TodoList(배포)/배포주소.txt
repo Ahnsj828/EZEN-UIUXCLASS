@@ -1,0 +1,4 @@
+https://to-do-list-with-js.web.app/
+
+Project Console: https://console.firebase.google.com/project/to-do-list-with-js/overview
+Hosting URL: https://to-do-list-with-js.web.app

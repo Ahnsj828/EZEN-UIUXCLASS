@@ -1,0 +1,100 @@
+@import url("./reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
+/* font-family: "Patrick Hand"; */
+/* font-family: "Yomogi"; */
+/* font-family: "Sunflower", sans-serif; */
+
+body {
+  font-family: "Yomogi";
+  font-family: "Sunflower", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  background: url("./image/space.gif") top / cover no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  gap: 2rem;
+  padding: 3rem 4rem;
+}
+.container .title{
+  padding-top: 20px;
+  font: bold 30px/1 "Yomogi";
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.container form {
+  display: flex;
+  height: 50px;
+  gap: 2rem;
+  margin-bottom: 15px;
+}
+.container input[type="text"] {
+  width: 400px;
+  border-radius: 4px;
+  padding: 0 10px;
+  background: none;
+  color: #fff;
+  border: #03e9f4;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 10px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 500px #03e9f4;
+  -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.container input[type="text"]:focus {
+  outline: none;
+}
+.container input[type="submit"] {
+  display: inline-block;
+  width: 150px;
+  border: none;
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 10px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 500px #03e9f4;
+  -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  gap: 3rem;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-image: linear-gradient(#e4e4e4 1px, transparent 1px);
+  background-size: 8% 8%, 2px 2px;
+  background-color: rgba(249, 249, 249, 0.8);
+  /* border: 2px solid #5c5c5c; */
+  border-radius: 5px;
+  gap: 1.8rem;
+  padding: 2rem;
+  line-height: 160%;
+}
+.block {
+  border: 1px solid rgba(224, 176, 15, 0.8);
+  box-shadow: 0 0 1px #ffc916,
+              0 0 7px #ffc916,
+              0 0 10px #ffc916,
+              0 0 10px #ffc916;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+.notice {
+  margin-left:60px;
+  color: #fff;
+}
