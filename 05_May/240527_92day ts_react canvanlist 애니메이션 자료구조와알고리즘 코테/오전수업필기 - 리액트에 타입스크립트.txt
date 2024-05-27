@@ -1,0 +1,47 @@
+*이 프로젝트의 핵심
+Recol
+  - todo 값을 저장.보관.출력
+   (*초기 : 문자열 형식)
+   (*중기_1 : 문자열을 담고 있는 배열의 형식으로 )
+   (*중기_2 : 그 배열을 담고 있는 객체 형식 ) 
+     > 보드 3개 : ToDo / Doing / Done
+   (*말기 : 객체 > 배열 > 객체)
+     > 1개의 toDo : ID & Text
+
+ - 타입 오류 계속 발생
+ > 문자 | 배열 | 객체
+
+React-Hook-Form
+ > input 값을 전달
+ > input 값을 저장 / 이벤트 핸들러 / reset 내부 함수
+ > useSetRecoilState 훅 함수 / Recoil | atoms값을 변화!!
+
+beautiful DnD
+ > 라이브러리
+ > DragDropContext
+ > Droppable
+ > Draggable
+ > 직접적으로 자식 요소 컴포넌트 혹은 태그 쓸 수 없었다
+ > 함수의 반환값의 형태로 사용
+ > magin / snapshot 자식요소 전달!(*함수 매개변수)
+ > props
+
+==============================================
+
+* 애니메이션 효과
+ - framer-motion (유명한 라이브러리다) 
+      => 우리가 js하고 애니미를 했었다 / 그런 개념이라고 생각하면된다
+           (화려한 요소)
+      => 이걸로 모달창, 슬라이드 ... 등등을 만들 수 있다
+
+* 넷플릭스
+ - recoil
+ - react-hook-form
+ - styled-component
+ - type-script
+ - Browser-Router
+ - react-query
+
+
+npm 은 node의 생태계다 
+npm 가져다써라 (카카오를 가져다 써야지 왜 만들어서쓰냐)
