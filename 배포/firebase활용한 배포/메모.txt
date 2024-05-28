@@ -21,7 +21,7 @@ title 수정 과 파비콘 삽입 필수 link:favicon
       src="https://kit.fontawesome.com/b06e382e17.js"
       crossorigin="anonymous"
     ></script>
-    <!-- custom -->
+    <!-- custom css & js -->
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
     <link

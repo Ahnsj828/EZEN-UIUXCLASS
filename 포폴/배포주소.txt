@@ -1,3 +1,8 @@
+< 에뛰드 >
+https://etude-boo-0329.web.app/
+
+-----------------------------------------------------------------------------------
+
 < 텝 메뉴 >
 https://tabmenu-pet.web.app
 
@@ -19,6 +24,15 @@ https://to-do-list-with-js.web.app/
 
 Project Console: https://console.firebase.google.com/project/to-do-list-with-js/overview
 Hosting URL: https://to-do-list-with-js.web.app
+
+-----------------------------------------------------------------------------------
+
+< Navigation - responsive >
+https://navigation-responsive.web.app
+
+
+Project Console: https://console.firebase.google.com/project/navigation-responsive/overview
+Hosting URL: https://navigation-responsive.web.app
 
 -----------------------------------------------------------------------------------
 

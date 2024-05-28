@@ -1,0 +1,858 @@
+// fons-style
+@font-face {
+  font-family: "Kcc-Ganpan";
+  src: url("./font/KCC-Ganpan.otf") format("woff2");
+}
+@font-face {
+  font-family: "Nanum-S-N";
+  src: url("./font/NanumSquareNeoOTF-Rg.otf") format("woff2");
+}
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+// font-family: 'Kcc-Ganpan';
+// font-family: 'Nanum-S-N';
+// font-family: 'Road Rage', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+@import "reset";
+@import "mixin";
+
+//======= desktop1 =======//
+.home {
+  // border: 1px solid #f00;
+  background: #fff7e1;
+  .bg {
+    @include bg;
+    .bg-LT,
+    .bg-LB,
+    .bg-RT,
+    .bg-RM,
+    .bg-RB {
+      position: absolute;
+      display: flex;
+    }
+    .bg-LT {
+      top: 0;
+      left: 0;
+    }
+    .bg-LB {
+      bottom: -1%;
+      left: 0;
+      height: 35%;
+    }
+    .bg-RT {
+      top: 0;
+      right: 0;
+    }
+    .bg-RM {
+      top: 50%;
+      right: 0;
+      height: 30%;
+    }
+    .bg-RB {
+      bottom: -1%;
+      right: 0;
+    }
+  }
+
+  .wrap {
+    // ---이걸넣어서 올라왔다--
+    position: absolute;
+    display: flex;
+    // -----------------
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
+    // === header ===
+    header {
+      // ---이걸넣어서 올라왔다--
+      position: fixed;
+      left: 0%;
+        top: 10%;
+      // -----------------
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        @include logo;
+      }
+      .menu {
+        @include menu;
+        .menu-on {
+          @include menu-on;
+        }
+        .menu-off {
+          @include menu-off;
+        }
+      }
+      .trigger {
+        display: none;
+      }
+    }
+
+    // === section ===
+    section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-43%, -45%);
+      display: flex;
+      width: 86%;
+      height: 50%;
+      justify-content: center;
+      padding: 0;
+      .img {
+        display: flex;
+        height: 100%;
+        z-index: 2;
+        #section-bg {
+          animation: section-bg 0.8s 0.1s linear;
+          animation-fill-mode: both;
+          @keyframes section-bg {
+            0%{
+              opacity: 0;
+              margin-left: -8%;
+            }
+            100%{
+              opacity: 1;
+              margin-left: 1;
+            }
+          }
+        }
+        #section-bg-t {
+          display: none;
+        }
+        #section-bg-m {
+          display: none;
+        }
+        #section-W2 {
+          position: absolute;
+          bottom: 0;
+          left:38%;
+          // left: 90%;
+          height: 20%;
+          margin: 0;
+          animation: W2 linear 20s infinite;
+          @keyframes W2 {
+            0% {
+              left: 87%;
+              opacity: 0;
+            }
+            7%{
+              left: 84%;
+              opacity: 1;
+            }
+            80% {
+              left: 43%;
+              opacity: 1;
+            }
+            100%{
+              left: 36%;
+              opacity: 0;
+            }
+          }
+        }
+      }
+      .text{
+        justify-content: start;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        top: 27%;
+        padding: 0.3rem;
+        width: 25%;
+        z-index: 1;
+        // animation: img 1s 0.5s linear;
+        // animation-fill-mode: both;
+        #sub1 {
+          font: normal 1rem/1 "Roboto";
+          letter-spacing: 0.3rem;
+          margin-left: 0.3rem;
+          margin-bottom: 0.1rem;
+          animation: right1 0.6s 0.3s linear;
+          animation-fill-mode: both;
+        }
+        #home-title1{
+          font: normal 6rem/0.7 "Road Rage";
+          letter-spacing: 0.05rem;
+          margin-bottom: 0.7rem;
+          animation: right1 0.4s 0.5s linear;
+          animation-fill-mode: both;
+        }
+        #home-title2{
+          font: normal 6rem/0.7 "Road Rage";
+          letter-spacing: 0.05rem;
+          margin-bottom: 0.7rem;
+          animation: right1 0.4s 0.6s linear;
+          animation-fill-mode: both;
+        }
+        #home-title3{
+          font: normal 6rem/0.7 "Road Rage";
+          letter-spacing: 0.05rem;
+          animation: right2 0.4s 0.9s linear;
+          animation-fill-mode: both;
+        }
+        @keyframes right1 {
+          0%{
+            opacity: 0;
+            margin-left: 10%;
+          }
+          100%{
+            opacity: 1;
+            margin-left: 1;
+          }
+        }
+        @keyframes right2 {
+          0%{
+            opacity: 0;
+            margin-left: 3%;
+          }
+          100%{
+            opacity: 1;
+            margin-left: 1;
+          }
+        }
+      }
+    }
+    
+    // === footer ===
+    .sns {
+      @include sns;
+      .social {
+        @include social
+      }
+      @include sns-icons
+    }
+  }
+}
+
+//======= desktop2 =======//
+@media screen and (max-width: 1397px) {
+  .home {
+    .wrap {
+      // === section ===
+      section {
+        .img {
+          width: 40%;
+          height: 100%;
+          z-index: 2;
+          #section-bg-t {
+            display: none;
+          }
+          #section-bg-m {
+            display: none;
+          }
+        }
+        .text{
+          top: 33%;
+          left: 5%;
+          height: 60%;
+          z-index: 1;
+          #sub1 {
+            font: normal 1rem/1 "Roboto";
+            letter-spacing: 0.1rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.1rem;
+            animation: right1 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 4.5rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 4.5rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            font: normal 4.5em/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+//======= desktop3 =======//
+@media screen and (max-width: 1270px) {
+  .home {
+    .bg {
+      .bg-LT {
+        height: 30%;
+      }
+      .bg-LB {
+        height: 33%;
+      }
+      .bg-RT {
+        height: 21%;
+      }
+      .bg-RM {
+        height: 25%;
+      }
+      .bg-RB {
+        height: 23%;
+      }
+    }
+    .wrap {
+      // === section ===
+      section {
+        .img {
+          height: 100%;
+          z-index: 2;
+          #section-bg {
+            display: none;
+          }
+          #section-bg-t {
+            display: flex;
+            animation: section-bg-t 0.8s 0.1s linear;
+            animation-fill-mode: both;
+            @keyframes section-bg-t {
+              0%{
+                opacity: 0;
+                margin-left: -8%;
+              }
+              100%{
+                opacity: 1;
+                margin-left: 1;
+              }
+            }
+          }
+          #section-bg-m {
+            display: none;
+          }
+        }
+        .text{
+          top: 33%;
+          left: -1%;
+          height: 60%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+//======= desktop4 =======//
+@media screen and (max-width: 1100px) {
+  .home {
+    .bg {
+      .bg-LT {
+        height: 28%;
+      }
+      .bg-LB {
+        height: 30%;
+      }
+      .bg-RT {
+        height: 21%;
+      }
+      .bg-RM {
+        height: 24%;
+      }
+      .bg-RB {
+        height: 22%;
+      }
+    }
+    .wrap {
+      // === section ===
+      section {
+        .img {
+          #section-bg {
+            display: none;
+          }
+          #section-bg-t {
+            display: flex;
+          }
+          #section-bg-m {
+            display: none;
+          }
+        }
+        .text{
+          top: 40%;
+          left: 2%;
+          height: 60%;
+          z-index: 1;
+          #sub1 {
+            font: normal 0.9rem/1 "Roboto";
+            letter-spacing: 0.1rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.1rem;
+            animation: right1 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 4rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 4rem/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            font: normal 4em/0.8 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+//======= tablet1 =======//
+@media screen and (max-width: 1024px) {
+  .home {
+    // border: 1px solid #f00;
+    .bg {
+      .bg-LT {
+        height: 25%;
+      }
+      .bg-LB {
+        height: 28%;
+      }
+      .bg-RT {
+        height: 20%;
+      }
+      .bg-RM {
+        height: 23%;
+      }
+      .bg-RB {
+        height: 20%;
+      }
+    }
+  
+    .wrap {
+      // === header ===
+      header {
+        h1 {
+          @include logo-t;
+        }
+        .menu {
+          @include menu;
+          .menu-on {
+            @include menu-on-t;
+          }
+          .menu-off {
+            @include menu-off-t;
+          }
+        }
+      }
+  
+      // === section ===
+      section {
+        .img {
+          width: 40%;
+          height: 100%;
+          z-index: 2;
+          #section-bg {
+            display: none;
+          }
+          #section-bg-t {
+            display: flex;
+          }
+          #section-bg-m {
+            display: none;
+          }
+          #section-W2 {
+            position: absolute;
+            bottom: 0;
+            left:38%;
+            // left: 90%;
+            height: 20%;
+            margin: 0;
+            animation: W2 linear 20s infinite;
+          }
+        }
+        .text{
+          top: 50%;
+          left: 4%;
+          padding: 0.3rem;
+          width: 25%;
+          height: 50%;
+          z-index: 1;
+          #sub1 {
+            font: normal 0.9rem/1 "Roboto";
+            letter-spacing: 0.1rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.1rem;
+            animation: right1 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 3.5rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 3.5rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            font: normal 3.5em/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
+      
+      // === footer ===
+      .sns {
+        @include sns;
+        .social {
+          @include social-t
+        }
+        @include sns-icons-t
+      }
+    }
+  }
+}
+//======= tablet2 =======//
+@media screen and (max-width: 910px) {
+  .home {
+    .wrap {
+      // === header ===
+      // === section ===
+      section {
+        .text{
+          top: 57%;
+          left: 10%;
+          padding: 0.3rem;
+          width: 25%;
+          height: 50%;
+          z-index: 1;
+          #sub1 {
+            font: normal 0.7rem/1 "Roboto";
+            letter-spacing: 0.1rem;
+            margin-left: 0.3rem;
+            margin-bottom: 0.1rem;
+            animation: right1 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 3rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 3rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            font: normal 3em/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
+      
+      // === footer ===
+      .sns {
+        @include sns;
+        .social {
+          @include social-t
+        }
+        @include sns-icons-t
+      }
+    }
+  }
+}
+
+//======= mobile =======//
+@media screen and (max-width: 768px){
+  .home {
+    // border: 1px solid #f00;
+    .bg {
+      .bg-LT {
+        height: 20%;
+      }
+      .bg-LB {
+        height: 25%;
+      }
+      .bg-RT {
+        height: 18%;
+      }
+      .bg-RM {
+        height: 20%;
+      }
+      .bg-RB {
+        height: 18%;
+      }
+    }
+  
+    .wrap {
+      // === header ===
+      header {
+        z-index: 2;
+        top: 6%;
+        h1 {
+          @include logo-m;
+        }
+        .menu {
+          display: block;
+          position: fixed;
+          top: 0;
+          right: -90%;
+          background: #fff;
+          width: 60%;
+          height: 100vh;
+          text-align: center;
+          padding: 80px 20px 0 0;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          z-index: 2;
+          transition: 0.3s;
+          &.active {
+            right: 0;
+          }
+          a {
+            color: #000;
+            display: block;
+            padding: 16px;
+            font-size: 18px;
+          }
+        }
+        .trigger {
+          // border: 1px solid #f00;
+          display: flex;
+          position: absolute;
+          top: -0.5rem;
+          right: 10%;
+          width: 7%;
+          height: 1.2rem;
+          z-index: 3;
+          span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 0.36rem;
+            border-radius: 0.18rem;
+            background: #201C14;
+            transition: 0.3s;
+            &:nth-child(1) {
+              top: 0;
+            }
+            &:nth-child(2) {
+              top: 50%;
+            }
+            &:nth-child(3) {
+              top: 100%;
+            }
+          }
+          &.active span:nth-child(1) {
+            top: 50%;
+            transform: rotate(45deg);
+          }
+          &.active span:nth-child(2) {
+            opacity: 0;
+          }
+          &.active span:nth-child(3) {
+            top: 50%;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+  
+      // === section ===
+      section {
+        position: absolute;
+        width: 90%;
+        height: 80vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+        .img {
+          width: 60%;
+          height: 60%;
+          position: absolute;
+          top: 15%;
+          justify-content: center;
+          z-index: 2;
+          #section-bg {
+            display: none;
+          }
+          #section-bg-t {
+            display: none;
+          }
+          #section-bg-m {
+            display: flex;
+            animation: selection-bg-m 0.8s 0.1s linear;
+            animation-fill-mode: both;
+            @keyframes selection-bg-m {
+              0%{
+                opacity: 0;
+                margin-top: -8%;
+              }
+              100%{
+                opacity: 1;
+                margin-top: 1;
+              }
+            }
+          }
+          #section-W2 {
+            position: absolute;
+            bottom: 0;
+            // left: 90%;
+            height: 20%;
+            margin: 0;
+            animation: W2-m linear 10s infinite;
+            @keyframes W2-m {
+              0% {
+                left: 100%;
+                opacity: 0;
+              }
+              7%{
+                left: 93%;
+                opacity: 1;
+              }
+              80% {
+                left: 48%;
+                opacity: 1;
+              }
+              100%{
+                left: 45%;
+                opacity: 0;
+              }
+            }
+          }
+        }
+        .text{
+          text-align: center;
+          justify-content: center;
+          position: absolute;
+          top: 85%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 0;
+          display: flex;
+          width: 60%;
+          height: 20%;
+          
+          #sub1 {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            width: 55%;
+            position: absolute;
+            bottom: 15%;
+            font: normal 0.8rem/1 "Roboto";
+            letter-spacing: 0.3rem;
+            margin-left: 0;
+            margin-bottom: 0;
+            // margin-top: 10%;
+            animation: bottom 0.6s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title1{
+            font: normal 2.5rem/0.7 "Road Rage";
+            letter-spacing: 0.1rem;
+            margin-top: 1rem;
+            margin-right: 0.4rem;
+            padding: 0;
+            animation: left1 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2{
+            font: normal 2.5rem/0.7 "Road Rage";
+            letter-spacing: 0.1rem;
+            margin-top: 1rem;
+            margin-left: 0.4rem;
+            padding: 0;
+            // width: 40%;
+            animation: left2 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3{
+            display: block;
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            top: 30%;
+            margin: 0.8rem 0.3rem;
+            font: normal 2.5em/0.7 "Road Rage";
+            letter-spacing: 0.1rem;
+            animation: right 0.4s 0.5s linear;
+            animation-fill-mode: both;
+          }
+          @keyframes left1 {
+            0%{
+              opacity: 0;
+              margin-right: 2.5%;
+            }
+            100%{
+              opacity: 1;
+              margin-right: 1;
+            }
+          }
+          @keyframes left2 {
+            0%{
+              opacity: 0;
+              margin-right: 15%;
+            }
+            100%{
+              opacity: 1;
+              margin-right: 1;
+            }
+          }
+          @keyframes right {
+            0%{
+              opacity: 0;
+              margin-left: 8%;
+            }
+            100%{
+              opacity: 1;
+              margin-left: 1;
+            }
+          }
+          @keyframes bottom {
+            0%{
+              opacity: 0;
+              margin-bottom: 3%;
+            }
+            100%{
+              opacity: 1;
+              margin-bottom: 1;
+            }
+          }
+        }
+      }
+      
+      // === footer ===
+      .sns {
+        display: none;
+      }
+    }
+  }
+}
