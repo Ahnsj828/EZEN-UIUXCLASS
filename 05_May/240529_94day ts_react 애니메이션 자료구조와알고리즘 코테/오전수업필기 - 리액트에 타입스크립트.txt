@@ -1,0 +1,36 @@
+npx create-react-app 명령어 사용해서 => node monules  / public / src 등드의 폴더 및 파일들이 알아서 자동으로 생성된다
+> 수정을 원하는 영역 하고 코드 편집한다
+ => Boiler Plate 코드라고 부른다 
+    Boiler 그 보일러 맞다
+.
+
+npm i styled-components
+ => 스타일 컴포넌츠 / 스타일주는거
+npm i @types/styled-components
+ => 스타일 타입
+
+내부적으로 atom을 만들어서 state값을 사용?
+npm i recoil
+
+페이지 나누는거
+npm i react router-dom
+
+npm i react-query
+
+모션기능
+npm i framer-motion
+
+검색바 - input => form 태그
+npm i react-hook-form
+
+==>  한번에 설치 하는 방법 
+npm i styled-components @types/styled-components recoil react router-dom react-query framer-motion react-hook-form
+
+
+
+1. neflix - styled-components_recoil_router-dom_query_framer-motion_hook-form_TSReact - 1
+
+
+사용자가 어떤 이벤트 진행할 때! => 동시에 발생해야하는 애니메이션이 복수!! 다양한 애니메이션 20개가 동시에 일어난다면
+
+=>useAnimation 활용하면된다
