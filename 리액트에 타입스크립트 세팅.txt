@@ -23,8 +23,9 @@
 ----------------------------------------------
 ** 추가 설치
 npm i styled-components
-npm i @types/styled-components
  => 스타일 컴포넌츠 / 스타일주는거
+npm i @types/styled-components
+ => 스타일 타입
 npm i react-router-dom
 npm i react-query 
 npm i recoil 
@@ -102,7 +103,15 @@ root.render(<App />);
   "include": ["src"]
 }
 --------------------------------------------------------------
+"moduleDetection": "force",
+"downlevelIteration": true,
+"noImplicitAny": true, 
+"noImplicitThis": false,
 
+  "ts-node": {
+    "esm": true
+  },
+--------------------------------------------------------------
 -------------<package.json>에서----------------------------
 {
   "name": "coinpage01",
