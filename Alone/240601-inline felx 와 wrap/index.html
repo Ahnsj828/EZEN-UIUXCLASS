@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./script.css">
+</head>
+<body>
+    <section class="ex1"> flex와 inline-flex의 차이
+        <div class="a"><b>a</b> <em> display: flex; width: 50px; height: 50px; </em>
+            <div class="a-1">a-1</div>
+            <div class="a-2">a-2</div>
+            <div class="a-3">a-3</div>
+        </div>
+        <div class="b"><b>b</b> display: flex;
+            <div class="b-1">b-1</div>
+            <div class="b-2">b-2</div>
+            <div class="b-3">b-3</div>
+        </div>
+        b 밖에 다음으로 적은 문장
+        <br>
+        <div class="c"><b>c</b>  display: inline-flex;
+            <div class="c-1">b-1</div>
+            <div class="c-2">b-2</div>
+            <div class="c-3">b-3</div>
+        </div>
+        c 밖에 다음으로 적은 문장
+        <div class="d">
+            <b>d</b>
+            <div>display: flex; 는 block과 같다 / 다음줄로 넘어간다<b>=> b가 그 예시다</b></div>
+            <div>display: inline-flex; 는 inline과 같다 / 옆에 붙는다<b>=> c가 그 예시다</b></div>
+        </div>
+    </section>
+    <div class="devide">devide</div>
+    <section class="ex2">
+        <div class="flex-container-a"> <b>a</b>  flex-wrap: nowrap;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+        <div class="flex-container-b"><b>b</b> flex-wrap: wrap;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+        <div class="flex-container-c"><b>c</b> flex-wrap: wrap-reverse;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+    </section>
+    <div class="devide">devide</div>
+    <section class="ex3">
+        <div class="flex-container-a"> <b>a</b>  flex-flow: row nowrap;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+        <div class="flex-container-b"> <b>b</b>   flex-flow: row wrap;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+        <div class="flex-container-c"> <b>c</b>   flex-flow: row wrap-reverse;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+        <div class="flex-container-d"> <b>d</b>   flex-flow: column nowrap;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+        <div class="flex-container-e"> <b>e</b>   flex-flow: column wrap;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+        <div class="flex-container-f"> <b>f</b>   flex-flow: column wrap-reverse;
+            <div class="flex-itme-1">itme-1</div>
+            <div class="flex-itme-2">itme-2</div>
+            <div class="flex-itme-3">itme-3</div>
+            <div class="flex-itme-4">itme-4</div>
+            <div class="flex-itme-5">itme-5</div>
+            <div class="flex-itme-6">itme-6</div>
+            <div class="flex-itme-7">itme-7</div>
+            <div class="flex-itme-8">itme-8</div>
+            <div class="flex-itme-9">itme-9</div>
+            <div class="flex-itme-10">itme-10</div>
+        </div>
+    </section>
+</body>
+</html>

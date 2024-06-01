@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    /* width: 30px;
+    height: 50px; */
+}
+
+body {
+    .ex1 {
+        border: 3px solid black;
+        .a{
+            display: flex;
+            background-color: brown;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 100px;
+            .a-1 {
+                background-color: indianred;
+            }
+            .a-2 {
+                background-color: lightcoral;
+            }
+            .a-3 {
+                background-color: darkorange;
+            }
+        }
+        .b{
+            display: flex;
+            background-color: brown;
+            .b-1 {
+                background-color: indianred;
+            }
+            .b-2 {
+                background-color: lightcoral;
+            }
+            .b-3 {
+                background-color: darkorange;
+            }
+        }
+        .c{
+            display: inline-flex;
+            background-color: darkmagenta;
+            .c-1 {
+                background-color: lightseagreen;
+            }
+            .c-2 {
+                background-color: mediumaquamarine;
+            }
+            .c-3 {
+                background-color: cornflowerblue;
+            }
+        }
+    }
+    .devide {
+        font-size: 10px;
+        background: #000;
+        color: #fff;
+    }
+    .ex2 {
+        border: 3px solid black;
+        .flex-container-a{
+            border: 1px solid #000;
+            display: flex;
+            flex-wrap: nowrap;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+        .flex-container-b{
+            border: 1px solid #000;
+            display: flex;
+            flex-wrap: wrap;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+        .flex-container-c{
+            border: 1px solid #000;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+    }
+    .ex3 {
+        border: 3px solid black;
+        .flex-container-a{
+            border: 1px solid #000;
+            display: flex;
+            flex-flow: row nowrap;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+        .flex-container-b{
+            border: 1px solid #000;
+            display: flex;
+            flex-flow: row wrap;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+        .flex-container-c{
+            border: 1px solid #000;
+            display: flex;
+            flex-flow: row wrap-reverse;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+        .flex-container-d{
+            border: 1px solid #000;
+            display: flex;
+            flex-flow: column nowrap;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+        .flex-container-e{
+            border: 1px solid #000;
+            display: flex;
+            flex-flow: column wrap;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+        .flex-container-f{
+            border: 1px solid #000;
+            display: flex;
+            flex-flow: column wrap-reverse;
+            .flex-itme-1 {
+                background-color: red;
+            }
+            .flex-itme-2 {
+                background-color: orangered;
+            }
+            .flex-itme-3 {
+                background-color: orange;
+            }
+            .flex-itme-4 {
+                background-color: yellow;
+            }
+            .flex-itme-5 {
+                background-color: yellowgreen;
+            }
+            .flex-itme-6 {
+                background-color: seagreen;
+            }
+            .flex-itme-7 {
+                background-color: cadetblue;
+            }
+            .flex-itme-8 {
+                background-color: cornflowerblue;
+            }
+            .flex-itme-9 {
+                background-color: darkblue;
+            }
+            .flex-itme-10 {
+                background-color: darkmagenta;
+            }
+        }
+    }
+}
