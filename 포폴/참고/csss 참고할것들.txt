@@ -1,0 +1,7 @@
+헤더 css 참고
+https://www.daleseo.com/css-position-sticky-header/
+
+[CSS] position:fixed와 sticky 참고
+https://velog.io/@mooongs/CSS-positionfixed%EC%99%80-sticky
+
+

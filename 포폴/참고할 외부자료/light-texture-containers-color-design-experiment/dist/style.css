@@ -1,0 +1,418 @@
+/* Global Styles */
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(html) {
+  --step-0: clamp(1rem, 1rem + 0vw, 1rem);
+  --step-1: clamp(1.2rem, 1.19rem + 0.07vw, 1.25rem);
+  --step-2: clamp(1.44rem, 1.41rem + 0.18vw, 1.56rem);
+  --step-3: clamp(1.73rem, 1.66rem + 0.32vw, 1.95rem);
+  --step-4: clamp(2.07rem, 1.97rem + 0.53vw, 2.44rem);
+  --step-5: clamp(2.49rem, 2.33rem + 0.81vw, 3.05rem);
+  --step--2: clamp(0.69rem, 0.71rem + -0.08vw, 0.64rem);
+  --step--1: clamp(0.83rem, 0.84rem + -0.05vw, 0.8rem);
+  --space-3xs: clamp(0.25rem, 0.25rem + 0vw, 0.25rem);
+  --space-2xs: clamp(0.5rem, 0.5rem + 0vw, 0.5rem);
+  --space-xs: clamp(0.75rem, 0.75rem + 0vw, 0.75rem);
+  --space-s: clamp(1rem, 1rem + 0vw, 1rem);
+  --space-m: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+  --space-l: clamp(2rem, 2rem + 0vw, 2rem);
+  --space-xl: clamp(3rem, 3rem + 0vw, 3rem);
+  --space-2xl: clamp(4rem, 4rem + 0vw, 4rem);
+  --space-3xl: clamp(6rem, 6rem + 0vw, 6rem);
+  --space-4xl: clamp(8rem, 8rem + 0vw, 8rem);
+  --space-3xs-2xs: clamp(0.25rem, 0.18rem + 0.36vw, 0.5rem);
+  --space-2xs-xs: clamp(0.5rem, 0.43rem + 0.36vw, 0.75rem);
+  --space-xs-s: clamp(0.75rem, 0.68rem + 0.36vw, 1rem);
+  --space-s-m: clamp(1rem, 0.86rem + 0.71vw, 1.5rem);
+  --space-m-l: clamp(1.5rem, 1.36rem + 0.71vw, 2rem);
+  --space-l-xl: clamp(2rem, 1.71rem + 1.43vw, 3rem);
+  --space-xl-2xl: clamp(3rem, 2.71rem + 1.43vw, 4rem);
+  --space-2xl-3xl: clamp(4rem, 3.43rem + 2.86vw, 6rem);
+}
+
+html {
+  --font-mono: "DM Mono";
+  --font-sans: "DM Sans";
+  --font-display: "DM Serif Display";
+
+  --color-orange-light-hsl: 25 100% 96%;
+  --color-orange-medium-hsl: 25 98% 70%;
+
+  --color-orange-light: hsla(var(--color-orange-light-hsl) / 1);
+  --color-orange-medium: hsla(25, 98%, 70%, 1);
+  --color-orange-dark: hsla(25, 80%, 36%, 1);
+  --color-brown-light: hsla(25, 50%, 56%, 1);
+  --color-brown-medium: hsla(25, 50%, 42%, 1);
+  --color-brown-dark: hsla(25, 76%, 28%, 1);
+  --color-white: hsla(0, 100%, 100%, 1);
+
+  --leading-normal: 1.333;
+
+  --radius: 1.5rem;
+  --radius-pill: 999px;
+
+  --content-max-width: 72rem;
+
+  --gradient-bg: radial-gradient(
+    125% 125% at 100% 100%,
+    hsl(25 98% 70%),
+    hsl(25.0726 101.157% 75.9572%),
+    hsl(25.1131 104.095% 81.5192%),
+    hsl(25.1134 106.324% 86.4415%),
+    hsl(25.0846 107.15% 90.5002%),
+    hsl(25.045 105.768% 93.5182%),
+    hsl(25.0124 102.277% 95.3742%),
+    hsl(25 99.9999% 96%)
+  );
+  --card-bg-s: radial-gradient(
+    125% 125% at 100% 100%,
+    hsl(25 98% 68%),
+    hsl(24.6553 101.725% 73.0024% / 0.871429),
+    hsl(24.3417 105.785% 77.8433% / 0.742857),
+    hsl(24.0328 110.218% 82.5509% / 0.614286),
+    hsl(23.7159 115.08% 87.1306% / 0.485714),
+    hsl(23.3841 120.451% 91.5759% / 0.357143),
+    hsl(23.033 126.438% 95.8727% / 0.228571),
+    hsl(194.325 360.352% 100% / 0.1)
+  );
+  --card-bg-m: radial-gradient(
+    125% 125% at 100% 100%,
+    hsl(25 98% 68% / 0.4),
+    hsl(24.6553 101.725% 73.0024% / 0.357143),
+    hsl(24.3417 105.785% 77.8433% / 0.314286),
+    hsl(24.0328 110.218% 82.5509% / 0.271429),
+    hsl(23.7159 115.08% 87.1306% / 0.228571),
+    hsl(23.3841 120.451% 91.5759% / 0.185714),
+    hsl(23.033 126.438% 95.8727% / 0.142857),
+    hsl(194.325 360.352% 100% / 0.1)
+  );
+  --card-bg-l: radial-gradient(
+    125% 125% at 100% 100%,
+    hsl(25 98% 68% / 0.2),
+    hsl(24.6553 101.725% 73.0024% / 0.185714),
+    hsl(24.3417 105.785% 77.8433% / 0.171429),
+    hsl(24.0328 110.218% 82.5509% / 0.157143),
+    hsl(23.7159 115.08% 87.1306% / 0.142857),
+    hsl(23.3841 120.451% 91.5759% / 0.128571),
+    hsl(23.033 126.438% 95.8727% / 0.114286),
+    hsl(194.325 360.352% 100% / 0.1)
+  );
+  --card-bg-xl: radial-gradient(
+    125% 125% at 100% 100%,
+    hsl(25 98% 68% / 0.1),
+    hsl(24.6553 101.725% 73.0024% / 0.1),
+    hsl(24.3417 105.785% 77.8433% / 0.1),
+    hsl(24.0328 110.218% 82.5509% / 0.1),
+    hsl(23.7159 115.08% 87.1306% / 0.1),
+    hsl(23.3841 120.451% 91.5759% / 0.1),
+    hsl(23.033 126.438% 95.8727% / 0.1),
+    hsl(194.325 360.352% 100% / 0.1)
+  );
+  --btn-bg: linear-gradient(
+    135deg,
+    hsl(25 98% 70%),
+    hsl(23.9645 96.8689% 69.7096%),
+    hsl(21.0027 93.4957% 68.9107%),
+    hsl(16.5084 88.0997% 67.7756%),
+    hsl(11.099 81.428% 66.5035%),
+    hsl(5.69633 74.8663% 65.3092%),
+    hsl(1.56759 70.0643% 64.439%),
+    hsl(0.00000265346 68.306% 64.1176%)
+  );
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: var(--leading-normal);
+  color: var(--color-brown-medium);
+  font-weight: 500;
+  padding-bottom: var(--space-xl);
+
+  min-height: 100vh;
+}
+
+body::before {
+  position: fixed;
+  content: "";
+  inset: 0;
+  background: var(--gradient-bg), var(--grain-square-white-opacity-blend);
+  background-blend-mode: overlay;
+  z-index: -1;
+  pointer-events: none;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  font-family: var(--font-display);
+}
+
+/* Utilities */
+
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.center-xy {
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-m);
+}
+
+.blur-bg {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+/* Blocks */
+
+.nav {
+  position: sticky;
+  top: 0;
+  padding-block: var(--space-xs);
+  color: var(--color-brown-dark);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+  background: var(--grain-square-white-opacity-blend);
+  background-blend-mode: overlay;
+  z-index: 1;
+}
+
+.nav svg {
+  width: var(--space-l);
+  flex-shrink: 0;
+}
+
+.nav .menu-logo {
+  transform: scale(0.55);
+}
+
+.notification {
+  padding: var(--space-3xs) var(--space-m);
+  font-size: var(--step--1);
+  border: 1px solid var(--color-white);
+  border-radius: var(--radius-pill);
+  background: hsla(var(--color-orange-light-hsl) / 0.6);
+  text-align: center;
+  font-family: var(--font-mono);
+}
+
+.hero {
+  margin-top: var(--space-3xl);
+}
+
+.hero h1 {
+  position: relative;
+  max-width: 50ch;
+  margin-top: var(--space-m);
+  font-size: var(--step-3);
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    hsla(25, 76%, 28%, 1),
+    hsla(25, 76%, 28%, 0.675)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h1::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Exploring how popular design trends can help create a warm, organic aesthetic that feels clean & modern";
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    100% 33% at 50% 100%,
+    var(--color-orange-medium),
+    transparent
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.675;
+}
+
+.hero .btn {
+  margin-top: var(--space-l);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  background: var(--btn-bg);
+  background-blend-mode: multiply;
+  color: var(--color-orange-light);
+  border-radius: var(--radius-pill);
+  padding: var(--space-xs) var(--space-l);
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 48px rgba(253, 166, 104, 0.5);
+}
+
+.btn-icon {
+  width: 1em;
+  flex-shrink: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-gap: var(--space-m);
+  margin-block-start: var(--space-3xl);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--color-white);
+  min-height: 18rem;
+  border-radius: var(--radius);
+  padding: var(--space-xl);
+  text-align: center;
+  box-shadow: -4px -4px 32px 0px hsl(var(--color-orange-medium-hsl) / 12%),
+    4px 4px 16px 0px hsl(var(--color-orange-medium-hsl) / 8%);
+  background-blend-mode: overlay;
+  overflow: hidden;
+}
+
+.card h2 {
+  font-size: var(--step-2);
+}
+
+.card p {
+  margin-top: var(--space-m);
+  max-width: 40ch;
+}
+
+.card p,
+.card h2 {
+  mix-blend-mode: multiply;
+}
+
+.card[data-lightsource-distance="s"] {
+  background: var(--card-bg-s), var(--grain-square-white-opacity-blend);
+}
+
+.card[data-lightsource-distance="m"] {
+  background: var(--card-bg-m), var(--grain-square-white-opacity-blend);
+}
+
+.card[data-lightsource-distance="l"] {
+  background: var(--card-bg-l), var(--grain-square-white-opacity-blend);
+}
+
+.card[data-lightsource-distance="xl"] {
+  background: var(--card-bg-xl), var(--grain-square-white-opacity-blend);
+}
+
+.card:nth-of-type(1) {
+  grid-column: 1 / 5;
+}
+
+.card:nth-of-type(2) {
+  grid-column: 5 / 7;
+}
+
+.card:nth-of-type(3) {
+  grid-column: 1 / 3;
+}
+
+.card:nth-of-type(4) {
+  grid-column: 3 / 7;
+}
+
+.card:nth-of-type(4)::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.675;
+  background: var(--grain-square-white);
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black);
+}
+
+.light-illustration {
+  position: absolute;
+  height: 100%;
+  max-width: 100%;
+  top: 65%;
+  left: 80%;
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: -1;
+}
+
+.color-illustration {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.containers-illustration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-mask-image: radial-gradient(
+    50% 50% at 50% 50%,
+    transparent 40%,
+    black 60%,
+    transparent 120%
+  );
+}
+
+.bg-illustration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, black, transparent);
+  pointer-events: none;
+}
+
+@media (max-width: 40rem) {
+  .cards {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: var(--space-s);
+  }
+
+  .card {
+    min-width: calc(
+      calc(100vw - calc(var(--space-m) * 2)) - calc(var(--space-s) * 2)
+    );
+    scroll-snap-align: start;
+    height: auto;
+  }
+}

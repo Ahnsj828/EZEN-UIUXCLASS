@@ -1,0 +1,5503 @@
+/*
+=============================================
+
+---- created by Fkazemi5236@gmil.com
+---- date created 05 - 06 - 2018
+---- if you have any question about this item, sent email to this address :)
+
+
+==============================================
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+/*
+-----------------
+Normalizing
+-----------------
+*/
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+}
+
+/*----*/
+
+h3 {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 50px 0;
+  position: relative;
+  padding: 0 0 5px 0;
+}
+
+h3:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.1);
+  bottom: -4px;
+  width: 25%;
+  height: 1px;
+  left: 0;
+  position: absolute;
+}
+
+.back {
+  padding: 50px 0 150px 0;
+}
+
+.color-1 {
+  background: #353535;
+}
+
+.color-2 {
+  background: #353535;
+}
+
+.color-3 {
+  background: #353535;
+}
+
+.color-4 {
+  background: #353535;
+}
+
+.color-5 {
+  background: #353535;
+}
+
+.color-6 {
+  background: #353535;
+}
+
+.color-7 {
+  background: #353535;
+}
+
+.color-8 {
+  background: #353535;
+}
+
+.color-9 {
+  background: #353535;
+}
+
+.color-10 {
+  background: #353535;
+}
+
+body * {
+  font-family: Lato !important;
+}
+
+/*
+-----------------
+common style
+-----------------
+*/
+
+.menu a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Lato;
+  font-size: 17pt;
+  font-weight: 400;
+  padding: 15px 25px;
+  /**/
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*
+---------------------------------------
+hover effect 1
+---------------------------------------
+*/
+
+.SMN_effect-1 a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  content: "";
+  -webkit-transition: top 0.3s;
+  -moz-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.SMN_effect-1 a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  content: "";
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.SMN_effect-1 a:hover:before {
+  top: 100%;
+  opacity: 1;
+}
+
+.SMN_effect-1 a:hover:after {
+  height: 100%;
+}
+
+/*
+---------------------------------------
+hover effect 2
+---------------------------------------
+*/
+
+.SMN_effect-2 a:before,
+.SMN_effect-2 a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+.SMN_effect-2 a:after {
+  opacity: 0;
+  -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+.SMN_effect-2 a:hover:before,
+.SMN_effect-2 a:hover:after,
+.SMN_effect-2 a:focus:before,
+.SMN_effect-2 a:focus:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  background: #c8a755;
+}
+
+.SMN_effect-2 a:hover:after,
+.SMN_effect-2 a:focus:after {
+  top: 0%;
+  opacity: 1;
+}
+
+/*
+---------------------------------------
+hover effect 3
+---------------------------------------
+*/
+
+.SMN_effect-3 a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.SMN_effect-3 a:hover:after,
+.SMN_effect-3 a:focus:after {
+  height: 5px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/*
+---------------------------------------
+hover effect 4
+---------------------------------------
+*/
+
+.SMN_effect-4 a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.SMN_effect-4 a:hover:after,
+.SMN_effect-4 a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/*
+---------------------------------------
+hover effect 5
+---------------------------------------
+*/
+
+.SMN_effect-5 a {
+  margin: 0 30px;
+  padding: 18px 20px;
+}
+
+.SMN_effect-5 a:before,
+.SMN_effect-5 a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  content: "";
+  opacity: 0.2;
+  -webkit-transition: opacity 0.3s, height 0.3s;
+  -moz-transition: opacity 0.3s, height 0.3s;
+  transition: opacity 0.3s, height 0.3s;
+}
+
+.SMN_effect-5 a:after {
+  top: 100%;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.SMN_effect-5 a span:first-child {
+  z-index: 2;
+  display: block;
+  font-weight: 300;
+}
+
+.SMN_effect-5 a span:last-child {
+  z-index: 1;
+  display: block;
+  padding: 8px 0 0 0;
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: none;
+  text-transform: none;
+  font-style: italic;
+  font-size: 0.75em;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, serif;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.SMN_effect-5 a:hover:before,
+.SMN_effect-5 a:focus:before {
+  height: 6px;
+}
+
+.SMN_effect-5 a:hover:before,
+.SMN_effect-5 a:hover:after,
+.SMN_effect-5 a:focus:before,
+.SMN_effect-5 a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.SMN_effect-5 a:hover span:last-child,
+.SMN_effect-5 a:focus span:last-child {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+/*
+---------------------------------------
+hover effect 6
+---------------------------------------
+*/
+
+.SMN_effect-6 a {
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.SMN_effect-6 a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 10px 0;
+  max-width: 0;
+  border-bottom: 2px solid #c8a755;
+  color: #c8a755;
+  content: attr(data-hover);
+  -webkit-transition: max-width 0.5s;
+  -moz-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+
+.SMN_effect-6 a:hover:before,
+.SMN_effect-6 a:focus:before {
+  max-width: 100%;
+}
+
+/*
+---------------------------------------
+hover effect 7
+---------------------------------------
+*/
+
+.SMN_effect-7 a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-7 a:before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.SMN_effect-7 a:hover:before,
+.SMN_effect-7 a:focus:before {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+/*
+---------------------------------------
+hover effect 8
+---------------------------------------
+*/
+
+.SMN_effect-8 {
+  position: relative;
+  z-index: 1;
+}
+
+.SMN_effect-8 a {
+  overflow: hidden;
+  margin: 0 15px;
+  padding: 0;
+}
+
+.SMN_effect-8 a span {
+  display: block;
+  padding: 10px 20px;
+  background: #272727;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.SMN_effect-8 a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #0f7c67;
+  content: attr(data-hover);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translateX(-25%);
+}
+
+.SMN_effect-8 a:hover span,
+.SMN_effect-8 a:focus span {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.SMN_effect-8 a:hover:before,
+.SMN_effect-8 a:focus:before {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+/*
+---------------------------------------
+hover effect 9
+---------------------------------------
+*/
+
+.SMN_effect-9 a {
+  line-height: 2em;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+}
+
+.SMN_effect-9 a span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 15px 0;
+  background: #587285;
+  box-shadow: inset 0 3px #2f4351;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  transition: background 0.6s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.SMN_effect-9 a span:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #2f4351;
+  content: attr(data-hover);
+  -webkit-transform: rotateX(270deg);
+  -moz-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.SMN_effect-9 a:hover span,
+.SMN_effect-9 a:focus span {
+  background: #2f4351;
+}
+
+.SMN_effect-9 a:hover span:before,
+.SMN_effect-9 a:focus span:before {
+  -webkit-transform: rotateX(10deg);
+  -moz-transform: rotateX(10deg);
+  transform: rotateX(10deg);
+}
+
+/*
+---------------------------------------
+hover effect 10
+---------------------------------------
+*/
+
+.SMN_effect-10 a:before,
+.SMN_effect-10 a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  content: "";
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.SMN_effect-10 a:after {
+  border-color: #fff;
+  opacity: 0;
+  -webkit-transform: translateY(-7px) translateX(6px);
+  -moz-transform: translateY(-7px) translateX(6px);
+  transform: translateY(-7px) translateX(6px);
+}
+
+.SMN_effect-10 a:hover:before,
+.SMN_effect-10 a:focus:before {
+  opacity: 0;
+  -webkit-transform: translateY(5px) translateX(-5px);
+  -moz-transform: translateY(5px) translateX(-5px);
+  transform: translateY(5px) translateX(-5px);
+}
+
+.SMN_effect-10 a:hover:after,
+.SMN_effect-10 a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px) translateX(0px);
+  -moz-transform: translateY(0px) translateX(0px);
+  transform: translateY(0px) translateX(0px);
+}
+
+/*
+---------------------------------------
+hover effect 11
+---------------------------------------
+*/
+
+.SMN_effect-11 a:before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  opacity: 0;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.SMN_effect-11 a:hover:before,
+.SMN_effect-11 a:focus:before {
+  -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  opacity: 1;
+}
+
+/*
+---------------------------------------
+hover effect 12
+---------------------------------------
+*/
+
+.SMN_effect-12 a:before,
+.SMN_effect-12 a:after {
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 0.2;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.SMN_effect-12 a:before {
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.SMN_effect-12 a:after {
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+.SMN_effect-12 a:hover:before,
+.SMN_effect-12 a:hover:after,
+.SMN_effect-12 a:focus:before,
+.SMN_effect-12 a:focus:after {
+  opacity: 1;
+}
+
+.SMN_effect-12 a:hover:before,
+.SMN_effect-12 a:focus:before {
+  left: 50%;
+  -webkit-transform: rotate(0deg) translateX(-50%);
+  -moz-transform: rotate(0deg) translateX(-50%);
+  transform: rotate(0deg) translateX(-50%);
+}
+
+.SMN_effect-12 a:hover:after,
+.SMN_effect-12 a:focus:after {
+  right: 50%;
+  -webkit-transform: rotate(0deg) translateX(50%);
+  -moz-transform: rotate(0deg) translateX(50%);
+  transform: rotate(0deg) translateX(50%);
+}
+
+/*
+---------------------------------------
+hover effect 13
+---------------------------------------
+*/
+
+.SMN_effect-13 a {
+  color: #686de0;
+  text-shadow: none;
+  padding: 10px 0;
+}
+
+.SMN_effect-13 a:before {
+  color: #fff;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  content: attr(data-hover);
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.SMN_effect-13 a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  transform: translateY(5px);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.SMN_effect-13 a:hover:before,
+.SMN_effect-13 a:focus:before {
+  opacity: 0;
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.SMN_effect-13 a:hover:after,
+.SMN_effect-13 a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/*
+---------------------------------------
+hover effect 14
+---------------------------------------
+*/
+
+.SMN_effect-14 a {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.SMN_effect-14 a:before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: transparent;
+  content: "•";
+  text-shadow: 0 0 transparent;
+  font-size: 13pt;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.SMN_effect-14 a:hover:before,
+.SMN_effect-14 a:focus:before {
+  color: #fff;
+  text-shadow: 10px 0 #fff, -10px 0 #fff;
+}
+
+.SMN_effect-14 a:hover,
+.SMN_effect-14 a:focus {
+  color: #0abde3;
+}
+
+/*
+---------------------------------------
+hover effect 15
+---------------------------------------
+*/
+
+.SMN_effect-15 a:before,
+.SMN_effect-15 a:after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.SMN_effect-15 a:before {
+  margin-right: 10px;
+  content: "[";
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.SMN_effect-15 a:after {
+  margin-left: 10px;
+  content: "]";
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.SMN_effect-15 a:hover:before,
+.SMN_effect-15 a:hover:after,
+.SMN_effect-15 a:focus:before,
+.SMN_effect-15 a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/*
+---------------------------------------
+hover effect 16
+---------------------------------------
+*/
+
+.SMN_effect-16 a:before,
+.SMN_effect-16 a:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  content: "";
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+  transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.SMN_effect-16 a:after {
+  width: 90px;
+  height: 90px;
+  border-width: 6px;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.SMN_effect-16 a:hover:before,
+.SMN_effect-16 a:hover:after,
+.SMN_effect-16 a:focus:before,
+.SMN_effect-16 a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+/*
+---------------------------------------
+hover effect 17
+---------------------------------------
+*/
+
+.SMN_effect-17 a {
+  padding: 0 5px;
+  font-weight: 700;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.SMN_effect-17 a span {
+  z-index: 1;
+  position: relative;
+}
+
+.SMN_effect-17 a:before,
+.SMN_effect-17 a:after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  margin-top: -1px;
+  background: rgba(255, 255, 255, 0.2);
+  content: "";
+  z-index: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.SMN_effect-17 a:before {
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.SMN_effect-17 a:after {
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.SMN_effect-17 a:hover,
+.SMN_effect-17 a:focus {
+  color: #cd6133;
+}
+
+.SMN_effect-17 a:hover:before,
+.SMN_effect-17 a:hover:after,
+.SMN_effect-17 a:focus:before,
+.SMN_effect-17 a:focus:after {
+  opacity: 0.7;
+}
+
+.SMN_effect-17 a:hover:before,
+.SMN_effect-17 a:focus:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.SMN_effect-17 a:hover:after,
+.SMN_effect-17 a:focus:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*
+---------------------------------------
+hover effect 18
+---------------------------------------
+*/
+
+.SMN_effect-18 a {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.SMN_effect-18 a > span {
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.SMN_effect-18 a:before,
+.SMN_effect-18 a:after,
+.SMN_effect-18 a > span:before,
+.SMN_effect-18 a > span:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-18 a:before,
+.SMN_effect-18 a:after {
+  bottom: 0;
+  right: 0;
+}
+
+.SMN_effect-18 a:before {
+  width: 100%;
+  height: 1px;
+  transform: translateX(-100%);
+  transition-delay: 0.9s;
+}
+
+.SMN_effect-18 a:after {
+  width: 1px;
+  height: 100%;
+  transform: translateY(100%);
+  transition-delay: 0.6s;
+}
+
+.SMN_effect-18 a > span:before,
+.SMN_effect-18 a > span:after {
+  top: 0;
+  left: 0;
+}
+
+.SMN_effect-18 a > span:before {
+  width: 100%;
+  height: 1px;
+  transform: translateX(100%);
+  transition-delay: 0.3s;
+}
+
+.SMN_effect-18 a > span:after {
+  width: 1px;
+  height: 100%;
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.SMN_effect-18 a:hover:before,
+.SMN_effect-18 a:hover:after,
+.SMN_effect-18 a:hover > span:before,
+.SMN_effect-18 a:hover > span:after {
+  transform: translate(0, 0);
+}
+
+.SMN_effect-18 a:hover:before {
+  transition-delay: 0s;
+}
+
+.SMN_effect-18 a:hover:after {
+  transition-delay: 0.3s;
+}
+
+.SMN_effect-18 a:hover > span:before {
+  transition-delay: 0.6s;
+}
+
+.SMN_effect-18 a:hover > span:after {
+  transition-delay: 0.9s;
+}
+
+/*
+---------------------------------------
+hover effect 19
+---------------------------------------
+*/
+
+.SMN_effect-19 a {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+.SMN_effect-19 a:before,
+.SMN_effect-19 a:after {
+  content: "";
+  width: 100%;
+  height: 0;
+  background: #353535;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  right: -50%;
+  transform: rotate(45deg);
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-19 a:after {
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: -50%;
+}
+
+.SMN_effect-19 a:hover:before,
+.SMN_effect-19 a:hover:after {
+  height: 40%;
+}
+
+.SMN_effect-19 a > span {
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+/*
+---------------------------------------
+hover effect 20
+---------------------------------------
+*/
+
+.SMN_effect-20 a {
+  transition: 0.35s;
+}
+
+.SMN_effect-20 a:hover {
+  color: #fff;
+  transition: 0.35s;
+}
+
+.SMN_effect-20 a:before,
+.SMN_effect-20 a:after {
+  content: "";
+  width: 100%;
+  border-bottom: 4px solid #0d83cc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transform: scale(1, 1);
+  transform-origin: right center 0;
+}
+
+.SMN_effect-20 a:after {
+  opacity: 0;
+  transform: scale(0, 1);
+  transform-origin: left center 0;
+}
+
+.SMN_effect-20 a:hover:before {
+  opacity: 0;
+  transform: scale(0, 1);
+  transition: opacity 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out 0s;
+}
+
+.SMN_effect-20 a:hover:after {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: transform 0.2s ease-in-out 0.25s;
+}
+
+/*
+---------------------------------------
+hover effect 21
+---------------------------------------
+*/
+
+.SMN_effect-21 a:before,
+.SMN_effect-21 a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-21 a:after {
+  top: auto;
+  bottom: 0;
+}
+
+.SMN_effect-21 a:hover:before,
+.SMN_effect-21 a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/*
+---------------------------------------
+hover effect 22
+---------------------------------------
+*/
+
+.SMN_effect-22 a svg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.SMN_effect-22 a rect {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.4);
+  stroke-width: 4;
+  stroke-dasharray: 422, 0;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.SMN_effect-22 a:hover rect {
+  stroke-width: 5;
+  stroke: #fff;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+}
+
+/*
+---------------------------------------
+hover effect 23
+---------------------------------------
+*/
+
+.SMN_effect-23 a {
+  text-shadow: none;
+  position: relative;
+  padding: 0 25px;
+}
+
+.SMN_effect-23 a:before {
+  position: absolute;
+  padding: 0 25px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  max-height: 0;
+  color: #b33939;
+  content: attr(data-hover);
+  transition: 0.35s;
+}
+
+.SMN_effect-23 a:hover:before {
+  max-height: 100%;
+  transition: 0.35s;
+}
+
+/*
+---------------------------------------
+hover effect 24
+---------------------------------------
+*/
+
+.SMN_effect-24 a {
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.SMN_effect-24 a span:before {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 2px solid #218c74;
+  border-left: 2px solid #218c74;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a span:after {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #218c74;
+  border-bottom: 2px solid #218c74;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a:before {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 2px solid #218c74;
+  border-top: 2px solid #218c74;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a:after {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #218c74;
+  border-bottom: 2px solid #218c74;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a:hover {
+  color: #218c74;
+}
+
+.SMN_effect-24 a:hover:before {
+  opacity: 1;
+  right: 5px;
+  top: 5px;
+}
+
+.SMN_effect-24 a:hover:after {
+  opacity: 1;
+  left: 5px;
+  bottom: 5px;
+}
+
+.SMN_effect-24 a:hover span:before {
+  opacity: 1;
+  left: 5px;
+  top: 5px;
+}
+
+.SMN_effect-24 a:hover span:after {
+  opacity: 1;
+  right: 5px;
+  bottom: 5px;
+}
+
+/*
+---------------------------------------
+hover effect 25
+---------------------------------------
+*/
+
+.SMN_effect-25 a {
+  letter-spacing: 0;
+  transition: 0.35s;
+}
+
+.SMN_effect-25 a:hover,
+.SMN_effect-25 a:active {
+  letter-spacing: 5px;
+  transition: 0.35s;
+}
+
+.SMN_effect-25 a:after {
+  bottom: -10px;
+}
+
+.SMN_effect-25 a:before {
+  top: -10px;
+}
+
+.SMN_effect-25 a:after,
+.SMN_effect-25 a:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.SMN_effect-25 a:hover:after,
+.SMN_effect-25 a:hover:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.SMN_effect-25 a:hover:before {
+  width: 100%;
+}
+
+/*
+---------------------------------------
+hover effect 26
+---------------------------------------
+*/
+
+.SMN_effect-26 a {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.SMN_effect-26 a span {
+  z-index: 20;
+}
+
+.SMN_effect-26 a:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: 1;
+  transition-delay: 0.4s;
+}
+
+.SMN_effect-26 a:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*
+---------------------------------------
+hover effect 27
+---------------------------------------
+*/
+
+.SMN_effect-27 a {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.SMN_effect-27 a:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*
+---------------------------------------
+hover effect 28
+---------------------------------------
+*/
+
+.SMN_effect-28 a {
+  padding: 0;
+}
+
+.SMN_effect-28 #text {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.SMN_effect-28 #shape {
+  stroke-width: 3px;
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+
+.SMN_effect-28 li:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: rgba(255, 255, 255, 1);
+}
+
+/*
+---------------------------------------
+hover effect 29
+---------------------------------------
+*/
+
+.SMN_effect-29 a {
+  overflow: hidden;
+}
+
+.SMN_effect-29 a:after {
+  content: "";
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  right: -20%;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0),
+    #353535,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.SMN_effect-29 a:hover:after {
+  transition: all 0.4s ease-out;
+  right: 100%;
+}
+
+/*
+---------------------------------------
+hover effect 30
+---------------------------------------
+*/
+
+.SMN_effect-30 a:before,
+.SMN_effect-30 a:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-30 a:before {
+  right: 0;
+  top: 0;
+}
+
+.SMN_effect-30 a:after {
+  left: 0;
+  bottom: 0;
+}
+
+.SMN_effect-30 a:hover:before,
+.SMN_effect-30 a:hover:after {
+  width: 100%;
+  background: #fff;
+}
+
+/*
+---------------------------------------
+hover effect 31
+---------------------------------------
+*/
+
+.SMN_effect-31 a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  padding: 0;
+}
+
+.SMN_effect-31 a span {
+  display: block;
+  -webkit-transition: -webkit-transform 500ms
+    cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.SMN_effect-31 a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  content: attr(data-hover);
+  display: inline;
+  text-align: center;
+  -webkit-transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.SMN_effect-31 a:hover {
+  color: #cc8e35;
+}
+
+.SMN_effect-31 a:hover span {
+  color: #cc8e35;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.SMN_effect-31 a:hover:after {
+  top: 0;
+}
+
+.SMN_effect-31 a:active {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+/*
+---------------------------------------
+hover effect 32
+---------------------------------------
+*/
+
+.SMN_effect-32 a {
+  padding: 0;
+  z-index: 1;
+}
+
+.SMN_effect-32 a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  -ms-animation: circleOpacity forwards 1s;
+  -moz-animation: circleOpacity forwards 1s;
+  -webkit-animation: circleOpacity forwards 1s;
+  animation: circleOpacity forwards 1s;
+}
+
+@keyframes circleOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.SMN_effect-32 a:before,
+.SMN_effect-32 a:after {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  content: "◯";
+  display: block;
+  width: 100%;
+  font-size: 0px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  z-index: -1;
+}
+
+.SMN_effect-32 a:hover:before {
+  animation: circledrop 1s;
+  -ms-animation: circledrop 1s;
+  -moz-animation: circledrop 1s;
+  -webkit-animation: circledrop 1s;
+}
+
+.SMN_effect-32 a:hover:after {
+  animation: circledrop 1s 0.5s;
+  -ms-animation: circledrop 1s 0.5s;
+  -moz-animation: circledrop 1s 0.5s;
+  -webkit-animation: circledrop 1s 0.5s;
+}
+
+@keyframes circledrop {
+  0% {
+    opacity: 1;
+    font-size: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    font-size: 80px;
+    top: -50px;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 33
+---------------------------------------
+*/
+
+.SMN_effect-33 a {
+  overflow: visible;
+  padding: 0.25em 0.4em;
+}
+
+.SMN_effect-33 a:before,
+.SMN_effect-33 a:after {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  background: rgba(255, 255, 255, 0.4);
+  content: "";
+  position: absolute;
+}
+
+.SMN_effect-33 a:before {
+  top: -webkit-calc(110% - 0.25em);
+  top: calc(110% - 0.25em);
+  left: -webkit-calc(50% - 0.3em);
+  left: calc(50% - 0.3em);
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 1.2em;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.SMN_effect-33 a:after {
+  top: 110%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.SMN_effect-33 a:hover:before {
+  webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.SMN_effect-33 a:hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*
+---------------------------------------
+hover effect 34
+---------------------------------------
+*/
+
+.SMN_effect-34 a:before,
+.SMN_effect-34 a span:before,
+.SMN_effect-34 a:after,
+.SMN_effect-34 a span:after {
+  content: "";
+  position: absolute;
+}
+
+.SMN_effect-34 a:before,
+.SMN_effect-34 a span:before {
+  top: -webkit-calc(50% - 0.3em);
+  top: calc(50% - 0.3em);
+  left: -0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  opacity: 0;
+  -webkit-transform: translate3d(-0.6em, 0, 0) rotate(45deg);
+  transform: translate3d(-0.6em, 0, 0) rotate(45deg);
+}
+
+.SMN_effect-34 a:after,
+.SMN_effect-34 a span:after {
+  bottom: -webkit-calc(50% - 0.35em);
+  bottom: calc(50% - 0.35em);
+  right: -0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  opacity: 0;
+  -webkit-transform: translate3d(0.6em, 0, 0) rotate(45deg);
+  transform: translate3d(0.6em, 0, 0) rotate(45deg);
+}
+
+.SMN_effect-34 a:before,
+.SMN_effect-34 a:after {
+  -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+  transition: transform 0.3s ease-out, opacity 0.3s;
+}
+
+.SMN_effect-34 a span:before,
+.SMN_effect-34 a span:after {
+  -webkit-transition: -webkit-transform 0.3s ease-out 0.15s, opacity 0s 0.05s;
+  transition: transform 0.3s ease-out 0.15s, opacity 0s 0.05s;
+}
+
+.SMN_effect-34 a:hover {
+  overflow: visible;
+}
+
+.SMN_effect-34 a:hover:before,
+.SMN_effect-34 a:hover span:before {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+  transform: translate3d(0, 0, 0) rotate(45deg);
+  opacity: 1;
+}
+
+.SMN_effect-34 a:hover:after,
+.SMN_effect-34 a:hover span:after {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+  transform: translate3d(0, 0, 0) rotate(45deg);
+  opacity: 1;
+}
+
+.SMN_effect-34 a:before,
+.SMN_effect-34 a span:before {
+  border-right: 0.15em solid rgba(255, 255, 255, 0.4);
+  border-top: 0.15em solid rgba(255, 255, 255, 0.4);
+}
+
+.SMN_effect-34 a:after,
+.SMN_effect-34 a span:after {
+  border-left: 0.15em solid rgba(255, 255, 255, 0.4);
+  border-bottom: 0.15em solid rgba(255, 255, 255, 0.4);
+}
+
+/*
+---------------------------------------
+hover effect 35
+---------------------------------------
+*/
+
+.SMN_effect-35 a {
+  overflow: visible;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+@keyframes eff24-move {
+  30% {
+    -webkit-transform: translate3d(0, -5px, 0) rotate(5deg);
+    transform: translate3d(0, -5px, 0) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -3px, 0) rotate(-4deg);
+    transform: translate3d(0, -3px, 0) rotate(-4deg);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+    transform: translate3d(0, 0, 0) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.SMN_effect-35 a:hover {
+  -webkit-animation-name: eff24-move;
+  animation-name: eff24-move;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/*
+---------------------------------------
+hover effect 36
+---------------------------------------
+*/
+
+.SMN_effect-36 a:before,
+.SMN_effect-36 a:after {
+  content: "";
+  position: absolute;
+}
+
+.SMN_effect-36 a:before {
+  top: -0.1em;
+  bottom: -0.1em;
+  left: -0.4em;
+  right: -0.4em;
+  border-width: 0.1em;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  opacity: 0;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-out;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.SMN_effect-36 a:after {
+  top: -0.4em;
+  bottom: -0.4em;
+  left: -0.1em;
+  right: -0.1em;
+  border-width: 0.1em;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  opacity: 0;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-out;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.SMN_effect-36 a:hover {
+  overflow: visible;
+}
+
+.SMN_effect-36 a:hover:before,
+.SMN_effect-36 a:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.SMN_effect-36a a:before,
+.SMN_effect-36a a:after,
+.SMN_effect-36a a span:before,
+.SMN_effect-36a a span:after {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/*
+---------------------------------------
+hover effect 37
+---------------------------------------
+*/
+
+.SMN_effect-37 a {
+  background: none !important;
+  color: #fff;
+  font-family: iransans-light;
+  border-radius: 22px;
+  transition: 0.35s;
+  position: relative;
+  overflow: hidden;
+  margin: 0 5px;
+  border-radius: 30px;
+}
+
+.SMN_effect-37 a:before {
+  width: 0%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  top: 0px;
+  right: 0px;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.25s;
+  bottom: 0px;
+  content: "";
+  position: absolute;
+  z-index: 5;
+  border-radius: 30px;
+  transition: 0.35s;
+}
+
+.SMN_effect-37 a:hover:before,
+.SMN_effect-37 .active a:before {
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 1);
+  transition: 0.35s;
+}
+
+/*
+---------------------------------------
+hover effect 38
+---------------------------------------
+*/
+
+.SMN_effect-38 a {
+  position: relative;
+  z-index: 2;
+}
+
+.SMN_effect-38 a:before,
+.SMN_effect-38 a:after {
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background: rgba(225, 255, 255, 0.1);
+  content: "";
+  position: absolute;
+  transition: 0.35s;
+  z-index: -1;
+}
+
+.SMN_effect-38 a:before {
+  top: 0;
+}
+
+.SMN_effect-38 a:after {
+  bottom: 0;
+}
+
+.SMN_effect-38 a:hover:before,
+.SMN_effect-38 a:hover:after {
+  height: 100%;
+}
+
+.SMN_effect-38 a:hover {
+  color: #fff;
+}
+
+/*
+---------------------------------------
+hover effect 39
+---------------------------------------
+*/
+
+.SMN_effect-39 a:before,
+.SMN_effect-39 a:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  border-radius: 50%;
+  background: #706fd3;
+  top: 17px;
+  transition: height 0.3s 0.3s ease, border-radius 0.3s 0.3s ease,
+    top 0.3s 0.3s ease, width 0.3s ease;
+}
+
+.SMN_effect-39 a:before {
+  height: 5px;
+  left: 0;
+}
+
+.SMN_effect-39 a:after {
+  height: 0;
+  right: 0;
+}
+
+.SMN_effect-39 a:hover:before,
+.SMN_effect-39 a:hover:after {
+  top: 10%;
+  width: 55%;
+  height: 80%;
+  z-index: -1;
+  border-radius: 5px;
+  transition: height 0.3s ease, border-radius 0.3s ease, top 0.3s ease,
+    width 0.3s 0.3s ease;
+}
+
+.SMN_effect-39 a {
+  z-index: 1;
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.SMN_effect-39 a:hover {
+  transition: all 0.3s 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+/*
+---------------------------------------
+hover effect 40
+---------------------------------------
+*/
+
+/*this effect needs to adding fontawesome on page*/
+
+.SMN_effect-40 a:before {
+  content: "";
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  left: -10px;
+  line-height: 1;
+  opacity: 0;
+  position: absolute;
+  text-transform: none;
+  top: 32px;
+  transform: rotate(-45deg);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  visibility: hidden;
+}
+
+.SMN_effect-40 a:after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0px;
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  width: 0;
+}
+
+.SMN_effect-40 a:after {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-40 a:after {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-40 a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-40 a:hover:before {
+  left: -15px;
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+}
+
+.SMN_effect-40 a:hover:after {
+  width: 100%;
+}
+
+/*
+---------------------------------------
+hover effect 41
+---------------------------------------
+*/
+
+.SMN_effect-41 a {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: padding 0.3s, border-color 0.3s;
+}
+
+.SMN_effect-41 a:focus,
+.SMN_effect-41 a:hover {
+  border-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.SMN_effect-41 a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 0;
+  color: rgba(255, 255, 255, 0);
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  content: attr(data-hover);
+  transition: max-height 0.3s, border-color 0s;
+}
+
+.SMN_effect-41 a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 15px 25px;
+  max-height: 0;
+  color: rgba(255, 255, 255, 0);
+  border-right: 1px solid rgba(255, 255, 255, 0);
+  content: attr(data-hover);
+  transition: max-height 0.3s, border-color 0s;
+}
+
+.SMN_effect-41 a:focus:before,
+.SMN_effect-41 a:hover:before,
+.SMN_effect-41 a:focus:after,
+.SMN_effect-41 a:hover:after {
+  max-height: 100%;
+  transition-delay: 0.28s;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+/*
+---------------------------------------
+hover effect 42
+---------------------------------------
+*/
+
+.SMN_effect-42 a {
+  position: relative;
+}
+
+.SMN_effect-42 a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fcf7f9;
+  transform-origin: 100% 50%;
+  transform: scale(0, 1);
+  top: 0;
+  left: 0;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1);
+}
+
+.SMN_effect-42 a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 0;
+  bottom: 0;
+  transform-origin: 0% 50%;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+}
+
+.SMN_effect-42 a span {
+  position: relative;
+}
+
+.SMN_effect-42 a span:after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s cubic-bezier(0.33, 0.91, 0.42, 1) 0s;
+}
+
+.SMN_effect-42 a:hover:before {
+  transform: scale(1);
+  transform-origin: 0 50%;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+}
+
+.SMN_effect-42 a:hover:after {
+  transform: scale(0, 1);
+  transform-origin: 100% 50%;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0s;
+}
+
+.SMN_effect-42 a:hover span:after {
+  color: #444;
+  transition: color 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+}
+
+/*
+---------------------------------------
+hover effect 43
+---------------------------------------
+*/
+
+.SMN_effect-43 a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  bottom: -10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.SMN_effect-43 a:hover:after {
+  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.SMN_effect-43 a:hover:after {
+  width: 10px;
+  left: 50%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*
+---------------------------------------
+hover effect 44
+---------------------------------------
+*/
+
+.SMN_effect-44 a:after {
+  left: 50%;
+  background: rgba(0, 0, 0, 0);
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0,0,0,0)', endColorstr='rgba(255,255,255,0.2)', GradientType=1);
+}
+
+.SMN_effect-44 a:before {
+  right: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,255,255,0.2)', endColorstr='rgba(0,0,0,0)', GradientType=1);
+}
+
+.SMN_effect-44 a:after,
+.SMN_effect-44 a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  transition: all 0.4s ease-in 0s;
+}
+
+.SMN_effect-44 a:hover:after {
+  width: 50%;
+  left: 0;
+}
+
+.SMN_effect-44 a:hover:before {
+  right: 0;
+  width: 50%;
+}
+
+/*
+---------------------------------------
+hover effect 45
+---------------------------------------
+*/
+
+.SMN_effect-45 a {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.SMN_effect-45 a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.SMN_effect-45 a:hover,
+.SMN_effect-45 a:focus,
+.SMN_effect-45 a:active {
+  color: #27ae60;
+}
+
+.SMN_effect-45 a:hover:before,
+.SMN_effect-45 a:focus:before,
+.SMN_effect-45 a:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+/*
+---------------------------------------
+hover effect 46
+---------------------------------------
+*/
+
+.SMN_effect-46 a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.SMN_effect-46 a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.SMN_effect-46 a:hover:before,
+.SMN_effect-46 a:focus:before,
+.SMN_effect-46 a:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/*
+---------------------------------------
+hover effect 47
+---------------------------------------
+*/
+
+.SMN_effect-47 a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.SMN_effect-47 a:before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.SMN_effect-47 a:hover:before,
+.SMN_effect-47 a:focus:before,
+.SMN_effect-47 a:active:before {
+  -webkit-animation-name: ripple-out;
+  animation-name: ripple-out;
+}
+
+@-webkit-keyframes ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 48
+---------------------------------------
+*/
+
+.SMN_effect-48 a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.SMN_effect-48 a:hover,
+.SMN_effect-48 a:focus,
+.SMN_effect-48 a:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.SMN_effect-48 a:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.SMN_effect-48 a:hover:before,
+.SMN_effect-48 a:focus:before,
+.SMN_effect-48 a:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+/*
+---------------------------------------
+hover effect 49
+---------------------------------------
+*/
+
+.SMN_effect-49 a {
+  transition: 0.35s;
+}
+
+.SMN_effect-49 a:hover {
+  text-shadow: 0 0 15px #ffffff;
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*
+---------------------------------------
+hover effect 50
+---------------------------------------
+*/
+
+.SMN_effect-50 a {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-50 a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+/*
+---------------------------------------
+hover effect 51
+---------------------------------------
+*/
+
+.SMN_effect-51 a {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.SMN_effect-51 a:after {
+  content: attr(data-hover);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: translate(-30%, 0);
+  transform: translate(-30%, 0);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 15px 25px;
+}
+
+.SMN_effect-51 a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.SMN_effect-51 a:hover:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*
+---------------------------------------
+hover effect 52
+---------------------------------------
+*/
+
+.SMN_effect-52 a {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.SMN_effect-52 a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.SMN_effect-52 a:hover:before {
+  opacity: 1;
+  -webkit-transform: skewX(-180deg) scale(0.5, 1);
+  transform: skewX(-180deg) scale(0.5, 1);
+}
+
+/*
+---------------------------------------
+hover effect 53
+---------------------------------------
+*/
+
+.SMN_effect-53 a {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  /*custom*/
+  padding: 15px 55px;
+}
+
+.SMN_effect-53 a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.SMN_effect-53 a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.SMN_effect-53 a:hover:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.SMN_effect-53 a:hover:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/*
+---------------------------------------
+hover effect 54
+---------------------------------------
+*/
+
+.SMN_effect-54 a {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  /*custom*/
+  padding: 15px 60px;
+}
+
+.SMN_effect-54 a:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 190px solid rgba(255, 255, 255, 0.25);
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.SMN_effect-54 a:after {
+  -webkit-transition-delay: 0.2s !important;
+  transition-delay: 0.2s !important;
+}
+
+.SMN_effect-54 a:after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 190px solid rgba(255, 255, 255, 0.25);
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  transition-delay: 0s;
+}
+
+.SMN_effect-54 a:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0px, -190px);
+  transform: translate(0px, -190px);
+}
+
+.SMN_effect-54 a:hover:after {
+  opacity: 1;
+  -webkit-transform: translate(0px, -150px);
+  transform: translate(0px, -150px);
+}
+
+/*
+---------------------------------------
+hover effect 55
+---------------------------------------
+*/
+
+.SMN_effect-55 a {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.SMN_effect-55 a:before,
+.SMN_effect-55 a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  transition-timing-function: ease;
+  -webkit-transform: translate(-13%, -190%) rotate(-30deg);
+  transform: translate(-13%, -190%) rotate(-30deg);
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.SMN_effect-55 a:hover:before,
+.SMN_effect-55 a:hover:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.SMN_effect-55 a:after {
+  -webkit-transition-delay: 0.2s !important;
+  transition-delay: 0.2s !important;
+}
+
+/*
+---------------------------------------
+hover effect 56
+---------------------------------------
+*/
+
+.SMN_effect-56 a {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.SMN_effect-56 a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+  -webkit-transform: translate(-105%, 0);
+  transform: translate(-105%, 0);
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.SMN_effect-56 a:hover:before {
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*
+---------------------------------------
+hover effect 57
+---------------------------------------
+*/
+
+.SMN_effect-57 a {
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.SMN_effect-57 a:before,
+.SMN_effect-57 a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+  -webkit-transform: translate(-105%, 0);
+  transform: translate(-105%, 0);
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.SMN_effect-57 a:after {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.SMN_effect-57 a:hover:before,
+.SMN_effect-57 a:hover:after {
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*
+---------------------------------------
+hover effect 58
+---------------------------------------
+*/
+
+.SMN_effect-58 a {
+  z-index: 1;
+  position: relative;
+  padding: 0;
+}
+
+.SMN_effect-58 a:before,
+.SMN_effect-58 a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-58 a:after {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-58 a:hover:before {
+  top: -7px;
+  left: -7px;
+}
+
+.SMN_effect-58 a:hover:after {
+  top: 7px;
+  left: 7px;
+}
+
+.SMN_effect-58 a span {
+  display: block;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  color: #706fd3;
+  z-index: 2;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-58 a:hover span {
+  background: #fff;
+  color: #706fd3;
+}
+
+/*
+---------------------------------------
+hover effect 59
+---------------------------------------
+*/
+
+.SMN_effect-59 a {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-59 a:before,
+.SMN_effect-59 a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0.1);
+  transform-origin: left top 0;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-59 a:after {
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  transform-origin: right bottom 0;
+}
+
+.SMN_effect-59 a:hover:before,
+.SMN_effect-59 a:hover:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s linear 0s;
+}
+
+/*
+---------------------------------------
+hover effect 60
+---------------------------------------
+*/
+
+.SMN_effect-60 a {
+  overflow: hidden;
+  position: relative;
+}
+
+.SMN_effect-60 a:before {
+  content: attr(data-hover);
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  font-size: 20px;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  transition: height 0.2s ease 0s, top 0.1s ease 0.2s;
+}
+
+.SMN_effect-60 a:hover:before {
+  height: 100%;
+  top: 0;
+  padding: 15px 25px;
+  transition: top 0.2s ease 0s, height 0.5s ease 0.3s, padding 0.5s ease 0.3s;
+}
+
+.SMN_effect-60 a > span {
+  display: block;
+  padding: 0 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/*
+---------------------------------------
+hover effect 61
+---------------------------------------
+*/
+
+.SMN_effect-61 a {
+  letter-spacing: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.SMN_effect-61 a:before {
+  content: attr(data-hover);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.SMN_effect-61 a:after {
+  content: "";
+  padding: 15px 25px;
+  position: absolute;
+  width: 50px;
+  height: calc(100% + 0px);
+  top: 0;
+  left: 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.SMN_effect-61 a:hover:after {
+  -webkit-animation: mask-move 1s linear infinite alternate;
+  animation: mask-move 1s linear infinite alternate;
+}
+
+.SMN_effect-61 a span.inner {
+  overflow: hidden;
+  padding: 15px 25px;
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.SMN_effect-61 a:hover span.inner {
+  -webkit-animation: mask-move 1s linear infinite alternate;
+  animation: mask-move 1s linear infinite alternate;
+}
+
+.SMN_effect-61 a:hover span.inner span {
+  -webkit-animation: mask-inner-move 1s linear infinite alternate;
+  animation: mask-inner-move 1s linear infinite alternate;
+}
+
+.SMN_effect-61 span {
+  display: block;
+}
+
+@-webkit-keyframes mask-move {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(129px);
+    transform: translateX(129px);
+  }
+}
+
+@keyframes mask-move {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(129px);
+    transform: translateX(129px);
+  }
+}
+
+@-webkit-keyframes mask-inner-move {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-129px);
+    transform: translateX(-129px);
+  }
+}
+
+@keyframes mask-inner-move {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-129px);
+    transform: translateX(-129px);
+  }
+}
+
+/*
+---------------------------------------
+hover effect 62
+---------------------------------------
+*/
+
+.SMN_effect-62 a:hover {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.2) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.2) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+  transition: 0.35s;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 63
+---------------------------------------
+*/
+
+.SMN_effect-63 a:before,
+.SMN_effect-63 a:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  -webkit-transform: translate(0, 30px);
+  -moz-transform: translate(0, 30px);
+  -ms-transform: translate(0, 30px);
+  -o-transform: translate(0, 30px);
+  transform: translate(0, 30px);
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.SMN_effect-63 a:before {
+  bottom: -6px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAACCAYAAAA+VZWwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM3NUE3MDMwNjI0QTExRThBMkIxQzhBRjBBMUU5RDhBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM3NUE3MDMxNjI0QTExRThBMkIxQzhBRjBBMUU5RDhBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qzc1QTcwMkU2MjRBMTFFOEEyQjFDOEFGMEExRTlEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qzc1QTcwMkY2MjRBMTFFOEEyQjFDOEFGMEExRTlEOEEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5Qi5RGAAAAMUlEQVR42mL8////GYbBC9KB+CwF+kf9Nuq3Ub+N+o1ivzExjIJRMApGwSjACwACDABd8g8BErC8GwAAAABJRU5ErkJggg==);
+  -webkit-animation: road 0.9s infinite linear;
+  -moz-animation: road 0.9s infinite linear;
+  animation: road 0.9s infinite linear;
+}
+
+.SMN_effect-63 a:after {
+  bottom: 0;
+  background-color: #fff;
+}
+
+.SMN_effect-63 a:hover:before,
+.SMN_effect-63 a:hover:after {
+  -webkit-transform: translate(0, 0px);
+  -moz-transform: translate(0, 0px);
+  -ms-transform: translate(0, 0px);
+  -o-transform: translate(0, 0px);
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+
+@-webkit-keyframes road {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -330px;
+  }
+}
+
+@-moz-keyframes road {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -330px;
+  }
+}
+
+@keyframes road {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -330px;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 64
+---------------------------------------
+*/
+
+.SMN_effect-64 a {
+  position: relative;
+  z-index: 2;
+}
+
+.SMN_effect-64 a:before,
+.SMN_effect-64 a:after {
+  width: 80px;
+  height: 80px;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -10%;
+  -webkit-transition: all 1s cubic-bezier(0.45, 0.76, 0.58, 0.94);
+  -moz-transition: all 1s cubic-bezier(0.45, 0.76, 0.58, 0.94);
+  transition: all 1s cubic-bezier(0.45, 0.76, 0.58, 0.94);
+}
+
+.SMN_effect-64 a:before {
+  background-color: #353535;
+  z-index: -1;
+}
+
+.SMN_effect-64 a:after {
+  background-color: #fff;
+  z-index: -2;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.SMN_effect-64 a:hover:after {
+  -webkit-transform: scale(1) translate(6px);
+  -moz-transform: scale(1) translate(6px);
+  -ms-transform: scale(1) translate(6px);
+  -o-transform: scale(1) translate(6px);
+  transform: scale(1) translate(6px);
+}
+
+/*
+---------------------------------------
+hover effect 65
+---------------------------------------
+*/
+
+.SMN_effect-65 a:hover:before {
+  opacity: 0.7;
+}
+
+@-webkit-keyframes rodarodajequiti {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rodarodajequiti {
+  from {
+    -moz-transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes rodarodajequiti {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.SMN_effect-65 a:before {
+  content: "";
+  position: absolute !important;
+  width: 120px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  -webkit-animation: rodarodajequiti 50s infinite linear;
+  -moz-animation: rodarodajequiti 50s infinite linear;
+  animation: rodarodajequiti 50s infinite linear;
+  -webkit-transition: all 1s cubic-bezier(0.17, 0.67, 0.48, 1.32);
+  -moz-transition: all 1s cubic-bezier(0.17, 0.67, 0.48, 1.32);
+  transition: all 1s cubic-bezier(0.17, 0.67, 0.48, 1.32);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB1CAYAAACF+iUMAAAACXBIWXMAAAsTAAALEwEAmpwYAAA4JmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgICAgICAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgICAgICAgICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5BZG9iZSBQaG90b3Nob3AgQ0MgMjAxNyAoV2luZG93cyk8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHhtcDpDcmVhdGVEYXRlPjIwMTgtMDUtMjhUMTI6Mjg6MDcrMDQ6MzA8L3htcDpDcmVhdGVEYXRlPgogICAgICAgICA8eG1wOk1vZGlmeURhdGU+MjAxOC0wNS0yOFQxMjozMTozMSswNDozMDwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMTgtMDUtMjhUMTI6MzE6MzErMDQ6MzA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2UvcG5nPC9kYzpmb3JtYXQ+CiAgICAgICAgIDxwaG90b3Nob3A6Q29sb3JNb2RlPjM8L3Bob3Rvc2hvcDpDb2xvck1vZGU+CiAgICAgICAgIDx4bXBNTTpJbnN0YW5jZUlEPnhtcC5paWQ6YzJmZmU0NzAtYmZmNi03NzRlLWI0NmMtM2U4MWViZGFmODhlPC94bXBNTTpJbnN0YW5jZUlEPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD54bXAuZGlkOmMyZmZlNDcwLWJmZjYtNzc0ZS1iNDZjLTNlODFlYmRhZjg4ZTwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD54bXAuZGlkOmMyZmZlNDcwLWJmZjYtNzc0ZS1iNDZjLTNlODFlYmRhZjg4ZTwveG1wTU06T3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SGlzdG9yeT4KICAgICAgICAgICAgPHJkZjpTZXE+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6YWN0aW9uPmNyZWF0ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDpjMmZmZTQ3MC1iZmY2LTc3NGUtYjQ2Yy0zZTgxZWJkYWY4OGU8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDp3aGVuPjIwMTgtMDUtMjhUMTI6Mjg6MDcrMDQ6MzA8L3N0RXZ0OndoZW4+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE3IChXaW5kb3dzKTwvc3RFdnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgIDwvcmRmOlNlcT4KICAgICAgICAgPC94bXBNTTpIaXN0b3J5PgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICAgICA8dGlmZjpYUmVzb2x1dGlvbj43MjAwMDAvMTAwMDA8L3RpZmY6WFJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOllSZXNvbHV0aW9uPjcyMDAwMC8xMDAwMDwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MjwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPGV4aWY6Q29sb3JTcGFjZT42NTUzNTwvZXhpZjpDb2xvclNwYWNlPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+MTIwPC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjExNzwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg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");
+}
+
+/*
+---------------------------------------
+hover effect 66
+---------------------------------------
+*/
+
+.SMN_effect-66 a {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transform: rotate(-5deg);
+}
+
+.SMN_effect-66 a .top,
+.SMN_effect-66 a .bot {
+  text-align: center;
+  font: 15pt/100px arial;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.SMN_effect-66 a .top:before,
+.SMN_effect-66 a .bot:before {
+  content: attr(data-hover);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.SMN_effect-66 a .top {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  right: 0;
+  bottom: 50%;
+  transition: 0.35s;
+}
+
+.SMN_effect-66 a:hover .top {
+  left: 5px;
+  transition: 0.35s;
+}
+
+.SMN_effect-66 a .top:before {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+
+.SMN_effect-66 a .bot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 5px;
+  bottom: 0;
+}
+
+.SMN_effect-66 a .bot:before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+
+.SMN_effect-66 a:hover .bot:before {
+  transition: 0.3s;
+}
+
+/*
+---------------------------------------
+hover effect 67
+---------------------------------------
+*/
+
+.SMN_effect-67 a {
+  position: relative;
+}
+
+.SMN_effect-67 a:after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: #fff;
+  background: #353535;
+  overflow: hidden;
+  padding: 15px 25px;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.SMN_effect-67 a:before {
+  content: attr(data-hover);
+  padding: 15px 25px;
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: #fff;
+  background: #353535;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.SMN_effect-67 a:hover:before {
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.SMN_effect-67 a:hover:after {
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(12px, 9999px, 45px, 0);
+  }
+  5% {
+    clip: rect(83px, 9999px, 35px, 0);
+  }
+  10% {
+    clip: rect(32px, 9999px, 20px, 0);
+  }
+  15% {
+    clip: rect(38px, 9999px, 37px, 0);
+  }
+  20% {
+    clip: rect(2px, 9999px, 82px, 0);
+  }
+  25% {
+    clip: rect(72px, 9999px, 52px, 0);
+  }
+  30% {
+    clip: rect(42px, 9999px, 86px, 0);
+  }
+  35% {
+    clip: rect(78px, 9999px, 17px, 0);
+  }
+  40% {
+    clip: rect(75px, 9999px, 99px, 0);
+  }
+  45% {
+    clip: rect(91px, 9999px, 39px, 0);
+  }
+  50% {
+    clip: rect(83px, 9999px, 13px, 0);
+  }
+  55% {
+    clip: rect(36px, 9999px, 88px, 0);
+  }
+  60% {
+    clip: rect(38px, 9999px, 50px, 0);
+  }
+  65% {
+    clip: rect(39px, 9999px, 58px, 0);
+  }
+  70% {
+    clip: rect(15px, 9999px, 75px, 0);
+  }
+  75% {
+    clip: rect(69px, 9999px, 45px, 0);
+  }
+  80% {
+    clip: rect(10px, 9999px, 30px, 0);
+  }
+  85% {
+    clip: rect(99px, 9999px, 3px, 0);
+  }
+  90% {
+    clip: rect(3px, 9999px, 9px, 0);
+  }
+  95% {
+    clip: rect(42px, 9999px, 67px, 0);
+  }
+  100% {
+    clip: rect(28px, 9999px, 61px, 0);
+  }
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(55px, 9999px, 11px, 0);
+  }
+  5% {
+    clip: rect(53px, 9999px, 93px, 0);
+  }
+  10% {
+    clip: rect(22px, 9999px, 87px, 0);
+  }
+  15% {
+    clip: rect(16px, 9999px, 72px, 0);
+  }
+  20% {
+    clip: rect(16px, 9999px, 34px, 0);
+  }
+  25% {
+    clip: rect(24px, 9999px, 48px, 0);
+  }
+  30% {
+    clip: rect(16px, 9999px, 44px, 0);
+  }
+  35% {
+    clip: rect(24px, 9999px, 32px, 0);
+  }
+  40% {
+    clip: rect(54px, 9999px, 55px, 0);
+  }
+  45% {
+    clip: rect(61px, 9999px, 61px, 0);
+  }
+  50% {
+    clip: rect(38px, 9999px, 62px, 0);
+  }
+  55% {
+    clip: rect(16px, 9999px, 31px, 0);
+  }
+  60% {
+    clip: rect(63px, 9999px, 86px, 0);
+  }
+  65% {
+    clip: rect(91px, 9999px, 27px, 0);
+  }
+  70% {
+    clip: rect(6px, 9999px, 1px, 0);
+  }
+  75% {
+    clip: rect(13px, 9999px, 52px, 0);
+  }
+  80% {
+    clip: rect(3px, 9999px, 81px, 0);
+  }
+  85% {
+    clip: rect(62px, 9999px, 96px, 0);
+  }
+  90% {
+    clip: rect(1px, 9999px, 26px, 0);
+  }
+  95% {
+    clip: rect(41px, 9999px, 83px, 0);
+  }
+  100% {
+    clip: rect(6px, 9999px, 9px, 0);
+  }
+}
+
+/*
+---------------------------------------
+hover effect 68
+---------------------------------------
+*/
+
+.SMN_effect-68 a:hover {
+  animation: blur-a 3s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur-a {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 69
+---------------------------------------
+*/
+
+.SMN_effect-69 a {
+  color: #fff;
+  letter-spacing: 0.15em;
+  transition: 0.35s;
+}
+
+.SMN_effect-69 a:hover {
+  text-shadow: 1px -1px 0 #1d1d1d, -1px 2px 1px #1d1d1d, -2px 4px 1px #1d1d1d,
+    -3px 6px 1px #1d1d1d, -4px 8px 1px #1d1d1d, -5px 10px 1px #1d1d1d,
+    -6px 12px 1px #1d1d1d, -7px 14px 1px #1d1d1d, -8px 16px 1px #1d1d1d,
+    -9px 18px 1px #1d1d1d, -10px 20px 1px #1d1d1d, -11px 22px 1px #006266,
+    -12px 24px 1px #000000;
+}
+
+/*
+---------------------------------------
+hover effect 70
+---------------------------------------
+*/
+
+.SMN_effect-70 a {
+  transition: 0.35s;
+}
+
+.SMN_effect-70 a:hover {
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #888888, 0 2px 0 #888888, 0 3px 0 #888888,
+    0 4px 0 #888888, 0 5px 0 #888888;
+}
+
+/*
+---------------------------------------
+hover effect 71
+---------------------------------------
+*/
+
+.SMN_effect-71 a {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 500;
+  perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+.SMN_effect-71 a:before,
+.SMN_effect-71 a:after {
+  position: absolute;
+  content: attr(data-hover);
+  top: 0;
+  left: 0;
+  padding: 15px 25px;
+  -webkit-transform-origin: left top;
+  transition: all ease-out 0.3s;
+}
+
+.SMN_effect-71 a:before {
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.1, 1) skew(0deg, 20deg);
+  transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+
+.SMN_effect-71 a:after {
+  z-index: 2;
+  color: #ea2027;
+  text-shadow: -1px 0 1px #ea2027, 1px 0 1px rgba(0, 0, 0, 0.8);
+  -webkit-transform: rotateY(-40deg);
+  transform: rotateY(-40deg);
+}
+
+.SMN_effect-71 a:hover:before {
+  -webkit-transform: scale(1) skew(0deg, 0deg);
+  transform: scale(1) skew(0deg, 0deg);
+}
+
+.SMN_effect-71 a:hover:after {
+  -webkit-transform: rotateY(-10deg);
+  transform: rotateY(-10deg);
+}
+
+.SMN_effect-71 a + span {
+  margin-left: 0.3em;
+}
+
+/*
+---------------------------------------
+hover effect 72
+---------------------------------------
+*/
+
+.SMN_effect-72 a {
+  border: 2px solid #aea8d3;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.SMN_effect-72 a:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  border: 3px solid #aea8d3;
+  opacity: 0;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+.SMN_effect-72 a:hover:after {
+  height: 400% !important;
+  opacity: 1;
+  color: #fff;
+}
+
+/*
+---------------------------------------
+hover effect 73
+---------------------------------------
+*/
+
+.SMN_effect-73 a {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.SMN_effect-73 a:after {
+  background: #fff;
+  content: "";
+  height: 2px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translate3d(-100%, 0, 0);
+  width: 100%;
+}
+
+.SMN_effect-73 a:hover::after {
+  animation: link-hoverstate 0.5s linear forwards;
+  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes link-hoverstate {
+  0% {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  55% {
+    transform: translate3d(100%, 0, 0);
+  }
+  56% {
+    transform: translate3d(100%, calc(0.5rem + 4px), 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, calc(0.5rem + 4px), 0);
+  }
+}
+
+/*
+---------------------------------------
+hover effect 74
+---------------------------------------
+*/
+
+.SMN_effect-74 a {
+  transform: scale(1.2);
+  display: block;
+  transition: 0.6s;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.SMN_effect-74 a:hover {
+  transition: 0.1s;
+  transform: scale(1);
+  background-color: #1c445e;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+/*
+---------------------------------------
+hover effect 75
+---------------------------------------
+*/
+
+.SMN_effect-75 a {
+  background: #444;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.SMN_effect-75 a::before,
+.SMN_effect-75 a::after {
+  content: attr(data-hover);
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  background: #353535;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition-timing-function: ease;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.SMN_effect-75 a::before {
+  top: 0;
+  padding-top: 15px;
+}
+
+.SMN_effect-75 a::after {
+  bottom: 0;
+  line-height: 0;
+}
+
+.SMN_effect-75 a > span {
+  display: block;
+  -webkit-transform: scale3d(0.2, 0.2, 1);
+  transform: scale3d(0.2, 0.2, 1);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition-timing-function: ease, ease;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.SMN_effect-75 a:hover::before {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.SMN_effect-75 a:hover > span {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.SMN_effect-75 a:hover::after {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+/*
+---------------------------------------
+hover effect 76
+---------------------------------------
+*/
+
+.SMN_effect-76 a {
+  background: #555;
+  border-radius: 35px;
+}
+
+.SMN_effect-76 a:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  background: #555;
+  border-radius: 35px;
+  padding: 15px 25px;
+  z-index: -1;
+  opacity: 1;
+  -webkit-transform: scale3d(0.8, 0.5, 1);
+  transform: scale3d(0.8, 0.5, 1);
+}
+
+.SMN_effect-76 a:hover {
+  background-color: #12cbc4;
+}
+
+.SMN_effect-76 a:hover::before {
+  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+  animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+.SMN_effect-76 a:hover {
+  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  background-color: #12cbc4;
+  -webkit-animation: anim-moema-1 0.3s forwards;
+  animation: anim-moema-1 0.3s forwards;
+}
+
+@-webkit-keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*
+---------------------------------------
+hover effect 77
+---------------------------------------
+*/
+
+.SMN_effect-77 a {
+  background: #fff;
+  color: #37474f;
+  transition: 0.35s;
+  border-radius: 35px;
+}
+
+.SMN_effect-77 a:before {
+  border-color: #7986cb;
+}
+
+.SMN_effect-77 a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
+  border-radius: 35px;
+  opacity: 0;
+  -webkit-transform: scale3d(0.6, 0.6, 1);
+  transform: scale3d(0.6, 0.6, 1);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.SMN_effect-77 a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  transition: 0.35s;
+}
+
+.SMN_effect-77 a:hover:before {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+
+/*
+---------------------------------------
+hover effect 78
+---------------------------------------
+*/
+
+.SMN_effect-78 a {
+  z-index: 1;
+}
+
+.SMN_effect-78 a:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale3d(1.1, 1, 1);
+  transform: scale3d(1.1, 1, 1);
+  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+  transition-timing-function: ease, ease;
+}
+
+.SMN_effect-78 a:before {
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  opacity: 0.6;
+  -webkit-transform: scale3d(0.7, 1, 1);
+  transform: scale3d(0.7, 1, 1);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition-timing-function: ease, ease;
+}
+
+.SMN_effect-78 a:before,
+.SMN_effect-78 a:after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  background: #5454b1;
+  z-index: -1;
+}
+
+.SMN_effect-78 a:before,
+.SMN_effect-78 a:after {
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.SMN_effect-78 a {
+  margin: 1em 2em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  transition-timing-function: ease;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.SMN_effect-78 a:hover::after,
+.SMN_effect-78 a:hover::before {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.SMN_effect-78 a:hover::before {
+  opacity: 1;
+}
+
+.SMN_effect-78 a:hover::after {
+  background-color: #706fd3;
+}
+
+/*
+---------------------------------------
+hover effect 79
+---------------------------------------
+*/
+
+.SMN_effect-79 a {
+  border: 2px solid #aea8d3;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.SMN_effect-79 a:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  border: 3px solid #aea8d3;
+  opacity: 0;
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(25deg);
+  transform: translateY(-50%) translateX(-50%) rotate(25deg);
+}
+
+.SMN_effect-79 a:hover:after {
+  height: 400% !important;
+  opacity: 1;
+  color: #fff;
+}
+
+/*
+---------------------------------------
+hover effect 80
+---------------------------------------
+*/
+
+.SMN_effect-80 a {
+  border: 2px solid #65b37a;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.SMN_effect-80 a:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  opacity: 0;
+  background-image: -webkit-linear-gradient(
+    transparent 50%,
+    rgba(101, 179, 122, 0.2) 50%
+  );
+  background-image: -moz-linear-gradient(
+    transparent 50%,
+    rgba(101, 179, 122, 0.2) 50%
+  );
+  background-size: 10px 10px;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+.SMN_effect-80 a:hover:after {
+  height: 600% !important;
+  opacity: 1;
+  color: #fff;
+}
+
+/*
+---------------------------------------
+hover effect 81
+---------------------------------------
+*/
+
+.SMN_effect-81 a {
+  border: 2px solid #65b37a;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.SMN_effect-81 a:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  opacity: 0;
+  background-image: -webkit-linear-gradient(
+    transparent 50%,
+    rgba(101, 179, 122, 0.2) 50%
+  );
+  background-image: -moz-linear-gradient(
+    transparent 50%,
+    rgba(101, 179, 122, 0.2) 50%
+  );
+  background-size: 10px 10px;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+.SMN_effect-81 a:hover:after {
+  height: 600% !important;
+  opacity: 1;
+  color: #fff;
+}
+
+/*
+---------------------------------------
+hover effect 82
+---------------------------------------
+*/
+
+.SMN_effect-82 a {
+  border: 2px solid #65b37a;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.SMN_effect-82 a:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  opacity: 0;
+  background-image: -webkit-linear-gradient(
+    transparent 50%,
+    rgba(101, 179, 122, 0.2) 50%
+  );
+  background-image: -moz-linear-gradient(
+    transparent 50%,
+    rgba(101, 179, 122, 0.2) 50%
+  );
+  background-size: 10px 10px;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.SMN_effect-82 a:hover:after {
+  height: 600% !important;
+  opacity: 1;
+  color: #fff;
+}
+
+/*
+---------------------------------------
+hover effect 83
+---------------------------------------
+*/
+
+.SMN_effect-83 a {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.SMN_effect-83 a:after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  border-radius: 0 0 75% 75%/0 0 50% 50%;
+  background: #3498db;
+  width: 100%;
+  left: 0;
+  height: 0;
+  transition: 0.5s;
+  z-index: -1;
+  top: 0;
+}
+
+.SMN_effect-83 a:hover:after {
+  transition: height 0.5s ease-in-out;
+  height: 150%;
+}
+
+/*
+---------------------------------------
+hover effect 84
+---------------------------------------
+*/
+
+.SMN_effect-84 a {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.SMN_effect-84 a:before,
+.SMN_effect-84 a:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.SMN_effect-84 a:before {
+  left: -20px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.SMN_effect-84 a:after {
+  right: -20px;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+
+.SMN_effect-84 a:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+  animation: criss-cross-left 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.SMN_effect-84 a:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+  animation: criss-cross-right 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 85
+---------------------------------------
+*/
+
+.SMN_effect-85 a {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.SMN_effect-85 a:after {
+  content: "";
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(360deg);
+  border-style: solid;
+  border-width: 0 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.SMN_effect-85 a:before {
+  content: "";
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(360deg);
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: transparent transparent transparent #3498db;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.SMN_effect-85 a:before,
+.SMN_effect-85 a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0 solid;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.SMN_effect-85 a:before {
+  bottom: 0;
+  left: 0;
+  border-color: transparent transparent transparent #3498db;
+}
+
+.SMN_effect-85 a:after {
+  top: 0;
+  right: 0;
+  border-color: transparent #3498db transparent transparent;
+}
+
+.SMN_effect-85 a:hover:before,
+.SMN_effect-85 a:hover:after {
+  border-width: 80px 262.5px;
+}
+
+/*
+---------------------------------------
+hover effect 86
+---------------------------------------
+*/
+
+.SMN_effect-86 a {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.SMN_effect-86 a:before,
+.SMN_effect-86 a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-top: 27px solid #3498db;
+  border-bottom: 27px solid #3498db;
+  transition: 0.5s;
+}
+
+.SMN_effect-86 a:before {
+  border-right: 20px solid transparent;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.SMN_effect-86 a:after {
+  border-left: 20px solid transparent;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.SMN_effect-86 a:hover:before {
+  -webkit-transform: translateX(-30%);
+  transform: translateX(-30%);
+}
+
+.SMN_effect-86 a:hover:after {
+  -webkit-transform: translateX(30%);
+  transform: translateX(30%);
+}
+
+/*
+---------------------------------------
+hover effect 87
+---------------------------------------
+*/
+
+.SMN_effect-87 a {
+  overflow: hidden;
+  text-shadow: 0 0 0 #fff, 0 -45px 0 #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0);
+}
+
+@-webkit-keyframes drop {
+  0% {
+    text-shadow: 0 0 0 #fff, 0 -45px 0 #000;
+  }
+  20% {
+    text-shadow: 0 0 0 #fff, 0 -15px 0 #000;
+  }
+  30% {
+    text-shadow: 0 15px 0 #fff, 0 0px 0 #000;
+  }
+  40% {
+    text-shadow: 0 45px 0 #fff, 0 0px 0 #000;
+  }
+  41% {
+    text-shadow: 0 45px 0 #fff, 0 0px 0 #000, 0 -45px 0 #fff;
+  }
+  70% {
+    text-shadow: 0 45px 0 #fff, 0 15px 0 #000, 0 0px 0 #fff;
+  }
+  80% {
+    text-shadow: 0 45px 0 #fff, 0 45px 0 #000, 0 0px 0 #fff;
+  }
+  100% {
+    text-shadow: 0 45px 0 #fff, 0 45px 0 #000, 0 0px 0 #fff;
+  }
+}
+
+/*safari and chrome*/
+
+@keyframes drop {
+  0% {
+    text-shadow: 0 0 0 #fff, 0 -45px 0 #000;
+  }
+  20% {
+    text-shadow: 0 0 0 #fff, 0 -15px 0 #000;
+  }
+  30% {
+    text-shadow: 0 15px 0 #fff, 0 0px 0 #000;
+  }
+  40% {
+    text-shadow: 0 45px 0 #fff, 0 0px 0 #000;
+  }
+  41% {
+    text-shadow: 0 45px 0 #fff, 0 0px 0 #000, 0 -45px 0 #fff;
+  }
+  70% {
+    text-shadow: 0 45px 0 #fff, 0 15px 0 #000, 0 0px 0 #fff;
+  }
+  80% {
+    text-shadow: 0 45px 0 #fff, 0 45px 0 #000, 0 0px 0 #fff;
+  }
+  100% {
+    text-shadow: 0 45px 0 #fff, 0 45px 0 #000, 0 0px 0 #fff;
+  }
+}
+
+.SMN_effect-87 a:hover {
+  -webkit-animation: drop 0.6s 1 linear;
+  animation: drop 0.6s 1 linear;
+}
+
+/*
+---------------------------------------
+hover effect 88
+---------------------------------------
+*/
+
+.SMN_effect-88 a {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.SMN_effect-88 a:hover {
+  transition: 0.35s;
+  text-shadow: 0 0 0 #000, -200px 0 0 rgba(255, 255, 255, 0.3),
+    200px 0 0 rgba(255, 255, 255, 0.3), 0 45px 0 rgba(255, 255, 255, 0.3),
+    0 -45px 0 rgba(255, 255, 255, 0.3);
+}
+
+/*
+---------------------------------------
+hover effect 89
+---------------------------------------
+*/
+
+.SMN_effect-89 a {
+  -webkit-transition: background 0.3s ease-in 0.2s;
+}
+
+.SMN_effect-89 a:after,
+.SMN_effect-89 a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #c8a755;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.SMN_effect-89 a:before {
+  opacity: 0;
+  bottom: 50%;
+}
+
+.SMN_effect-89 a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: background 0.3s ease-in 0.2s;
+}
+
+.SMN_effect-89 a:hover:before {
+  bottom: 100%;
+  opacity: 1;
+}
+
+/*
+---------------------------------------
+hover effect 90
+---------------------------------------
+*/
+
+.SMN_effect-90 a {
+  overflow: hidden;
+  color: #00c7ec;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.SMN_effect-90 a:hover {
+  color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+  background-color: #00c7ec;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.SMN_effect-90 a:hover:before {
+  -webkit-animation: shine-90 0.5s 0s linear;
+  -moz-animation: shine-90 0.5s 0s linear;
+  animation: shine-90 0.5s 0s linear;
+}
+
+.SMN_effect-90 a:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.SMN_effect-90 a:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@-webkit-keyframes shine-90 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+@-moz-keyframes shine-90 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+@keyframes shine-90 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 91
+---------------------------------------
+*/
+
+.SMN_effect-91 a span {
+  display: block;
+  padding: 7px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+}
+
+.SMN_effect-91 a:hover span {
+  color: #ff5c19;
+}
+
+.SMN_effect-91 a:before,
+.SMN_effect-91 a:after,
+.SMN_effect-91 a span:before,
+.SMN_effect-91 a span:after {
+  content: "";
+  width: 25%;
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid #ff5c19;
+  border-left: none;
+  border-right: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-91 a:after {
+  left: 25%;
+}
+
+.SMN_effect-91 a span:before {
+  left: 50%;
+}
+
+.SMN_effect-91 a span:after {
+  left: 75%;
+}
+
+.SMN_effect-91 a:hover:before,
+.SMN_effect-91 a:hover:after,
+.SMN_effect-91 a:hover span:before,
+.SMN_effect-91 a:hover span:after {
+  border-radius: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.SMN_effect-91 a:hover:before {
+  border-left: 1px solid #ff5c19;
+}
+
+.SMN_effect-91 a:hover span:after {
+  border-right: 1px solid #ff5c19;
+}
+
+/*
+---------------------------------------
+hover effect 92
+---------------------------------------
+*/
+
+.SMN_effect-92 a {
+  overflow: hidden;
+}
+
+.SMN_effect-92 a span {
+  display: block;
+  padding: 7px 15px;
+  text-align: center;
+  transition: all 0.3s ease 0.4s;
+}
+
+.SMN_effect-92 a:hover span {
+  font-style: italic;
+  color: #c0392b;
+}
+
+.SMN_effect-92 a:before,
+.SMN_effect-92 a:after,
+.SMN_effect-92 a span:before,
+.SMN_effect-92 a span:after {
+  content: "";
+  width: 25%;
+  height: 100%;
+  border-top: 1px solid #c0392b;
+  border-bottom: 1px solid #c0392b;
+  position: absolute;
+  bottom: 0;
+  left: -25%;
+  opacity: 0;
+  transition: all 0.5s ease 0.6s;
+}
+
+.SMN_effect-92 a:after {
+  transition-delay: 0.4s;
+}
+
+.SMN_effect-92 a span:before {
+  transition-delay: 0.2s;
+}
+
+.SMN_effect-92 a span:after {
+  transition-delay: 0s;
+}
+
+.SMN_effect-92 a:hover:before {
+  left: 0;
+  opacity: 1;
+}
+
+.SMN_effect-92 a:hover:after {
+  left: 25%;
+  opacity: 1;
+}
+
+.SMN_effect-92 a:hover span:before {
+  left: 50%;
+  opacity: 1;
+}
+
+.SMN_effect-92 a:hover span:after {
+  left: 75%;
+  opacity: 1;
+}
+
+/*
+---------------------------------------
+hover effect 93
+---------------------------------------
+*/
+
+.SMN_effect-93 a:before,
+.SMN_effect-93 a:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #16a085;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-93 a:after {
+  left: auto;
+  right: -10px;
+}
+
+.SMN_effect-93 a:hover:before {
+  width: 50%;
+  left: 0;
+  opacity: 0;
+}
+
+.SMN_effect-93 a:hover:after {
+  width: 50%;
+  right: 0;
+  opacity: 0;
+}
+
+.SMN_effect-93 a span {
+  display: block;
+  padding: 8px 20px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-93 a:hover span {
+  color: #16a085;
+}
+
+.SMN_effect-93 a span:before,
+.SMN_effect-93 a span:after {
+  content: "";
+  width: 100%;
+  height: 0;
+  background: #16a085;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-93 a span:after {
+  top: auto;
+  bottom: 0;
+}
+
+.SMN_effect-93 a:hover span:before,
+.SMN_effect-93 a:hover span:after {
+  height: 2px;
+}
+
+/*
+---------------------------------------
+hover effect 94
+---------------------------------------
+*/
+
+.SMN_effect-94 a {
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-94 a:before,
+.SMN_effect-94 a:after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transform: rotate3d(-1, 1, 0, 100deg);
+  transform-origin: 0 0;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-94 a:after {
+  left: 50%;
+  transform-origin: 100% 100%;
+}
+
+.SMN_effect-94 a:hover:before,
+.SMN_effect-94 a:hover:after {
+  opacity: 1;
+  transform: rotate3d(0, 0, 0, 0);
+}
+
+/*
+---------------------------------------
+hover effect 95
+---------------------------------------
+*/
+
+.SMN_effect-95 a {
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-95 a:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-95 a:hover:before {
+  animation: animate 0.3s;
+}
+
+.SMN_effect-95 a span {
+  display: block;
+  padding: 5px 10px;
+}
+
+.SMN_effect-95 a span:before,
+.SMN_effect-95 a span:after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-95 a span:after {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: none;
+  left: auto;
+  right: 0;
+}
+
+.SMN_effect-95 a:hover span:before {
+  left: -30px;
+  opacity: 0;
+}
+
+.SMN_effect-95 a:hover span:after {
+  right: -30px;
+  opacity: 0;
+}
+
+@keyframes animate {
+  0% {
+    top: -50px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 96
+---------------------------------------
+*/
+
+.SMN_effect-96 a {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-96 a:before,
+.SMN_effect-96 a:after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-96 a:after {
+  top: auto;
+  bottom: -6px;
+  left: auto;
+  right: -6px;
+  border-width: 0 1px 1px 0;
+}
+
+.SMN_effect-96 a:hover:before,
+.SMN_effect-96 a:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  transform: rotateY(180deg);
+  border-color: #c8a755;
+}
+
+/*
+---------------------------------------
+hover effect 97
+---------------------------------------
+*/
+
+.SMN_effect-97 a {
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-97 a:hover {
+  animation: Rainbow 10s infinite;
+}
+
+@keyframes Rainbow {
+  0% {
+    color: #e74c3c;
+  }
+  20% {
+    color: #e67e22;
+  }
+  35% {
+    color: #f1c40f;
+  }
+  50% {
+    color: #27ae60;
+  }
+  65% {
+    color: #3498db;
+  }
+  85% {
+    color: #8e44ad;
+  }
+  100% {
+    color: #34495e;
+  }
+}
+
+/*
+---------------------------------------
+hover effect 98
+---------------------------------------
+*/
+
+.SMN_effect-98 a {
+  border-radius: 15px 0;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.SMN_effect-98 a:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #3a6e91;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.5s ease 0s;
+}
+
+.SMN_effect-98 a:hover:after {
+  transform: translate(-50%, -50%) scale(5);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*
+---------------------------------------
+hover effect 99
+---------------------------------------
+*/
+
+.SMN_effect-99 a {
+  color: #fe6d6d;
+}
+.SMN_effect-99 a:hover {
+  color: #fe6d6d;
+}
+.SMN_effect-99 a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fe6d6d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s ease 0s, height 0.2s ease 0.1s,
+    border-top-width 0.1s ease 0.2s, margin 0.2s ease 0s;
+}
+.SMN_effect-99 a:hover:after {
+  width: 60%;
+  height: 0;
+  border-width: 0 2px 2px;
+  margin: 0 20%;
+  transition: width 0.2s ease 0.2s, height 0.2s ease 0.1s,
+    border-top-width 0.1s ease 0s, margin 0.2s ease 0.2s;
+}
+
+/*
+---------------------------------------
+hover effect 100
+---------------------------------------
+*/
+
+.SMN_effect-100 a {
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0s;
+}
+.SMN_effect-100 a:after {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: all 0.3s ease-in-out 0s;
+}
+.SMN_effect-100 a:hover:after {
+  height: 170%;
+  background: #353535;
+  opacity: 1;
+}
+.SMN_effect-100 a {
+  border: 1px solid #3bb4e5;
+  background: #3bb4e5;
+}
+.SMN_effect-100 a:hover {
+  color: #3bb4e5;
+  border-color: #353535;
+}
+
+/*
+---------------------------------------
+hover effect 101
+---------------------------------------
+*/
+.SMN_effect-101 a {
+  border: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(1, 0.15, 0.34, 1.03);
+}
+.SMN_effect-101 a:before {
+  content: "";
+  background: #353535;
+  border-radius: 50%;
+  padding: 18%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate3d(-50%, -50%, 0) scale(0);
+  transition: transform 0.3s cubic-bezier(1, 0.15, 0.34, 1.03);
+}
+.SMN_effect-101 a:hover:before {
+  transform: translate3d(-50%, -50%, 0) scale(2.5);
+}
+.SMN_effect-101 a span {
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+.SMN_effect-101 a {
+  background: #fe6d6d;
+}
+.SMN_effect-101 a:hover {
+  color: #fe6d6d;
+}
+
+/*
+---------------------------------------
+hover effect 102
+---------------------------------------
+*/
+
+.SMN_effect-102 a {
+  padding: 0;
+  margin-left: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.SMN_effect-102 a:before,
+.SMN_effect-102 a:after {
+  width: 56px;
+  height: 57px;
+  content: "";
+  border-radius: 50%;
+  background: #353535;
+  border: 2px solid #ddd;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.SMN_effect-102 a:hover:before,
+.SMN_effect-102 a:hover:after {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.SMN_effect-102 a:before {
+  left: -28px;
+}
+.SMN_effect-102 a:after {
+  right: -28px;
+}
+.SMN_effect-102 a span {
+  display: inline-block;
+  border-radius: 0;
+  background: #353535;
+}
+.SMN_effect-102 a:before {
+  border-right-color: #ee955b;
+  border-top-color: #ee955b;
+}
+.SMN_effect-102 a:after {
+  border-left-color: #ee955b;
+  border-bottom-color: #ee955b;
+}
+.SMN_effect-102 a span {
+  border-bottom: 2px solid #ee955b;
+  border-top: 2px solid #ee955b;
+  display: block;
+  padding: 15px 10px;
+}
+
+/*
+---------------------------------------
+hover effect 103
+---------------------------------------
+*/
+.SMN_effect-103 a {
+  padding: 0;
+  margin-left: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.SMN_effect-103 a:before,
+.SMN_effect-103 a:after {
+  width: 56px;
+  height: 56px;
+  content: "";
+  border-radius: 50%;
+  background: #353535;
+  border: 2px solid #ddd;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.SMN_effect-103 a:hover:before,
+.SMN_effect-103 a:hover:after {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.SMN_effect-103 a:before {
+  left: -28px;
+}
+.SMN_effect-103 a:after {
+  right: -28px;
+}
+.SMN_effect-103 a span {
+  display: inline-block;
+  border-radius: 0;
+  background: #353535;
+}
+.SMN_effect-103 a:before {
+  border-right-color: #3bb4e5;
+  border-top-color: #3bb4e5;
+}
+.SMN_effect-103 a:after {
+  border-left-color: #3bb4e5;
+  border-bottom-color: #3bb4e5;
+}
+.SMN_effect-103 a span {
+  border-bottom: 2px solid #3bb4e5;
+  border-top: 2px solid #3bb4e5;
+  display: block;
+  padding: 15px 10px;
+}
+
+/*
+---------------------------------------
+hover effect 104
+---------------------------------------
+*/

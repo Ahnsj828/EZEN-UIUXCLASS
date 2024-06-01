@@ -1,0 +1,95 @@
+@import url("./reset.css");
+@import url("./mixin.css");
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+/* Custom Font Face Definitions */
+@font-face {
+  font-family: "Kcc-Ganpan";
+  src: url("../font/KCC-Ganpan.otf") format("woff2");
+}
+@font-face {
+  font-family: "Kcc-Dodamdodam";
+  src: url("../font/KCCDodamdodam_OTF.otf") format("woff2");
+}
+@font-face {
+  font-family: "Nanum-S-N";
+  src: url("../font/NanumSquareNeoOTF-Rg.otf") format("woff2");
+}
+@keyframes section-bg {
+  0% {
+    opacity: 0;
+    margin-left: -8%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 1;
+  }
+}
+@keyframes W2 {
+  0% {
+    left: 87%;
+    opacity: 0;
+  }
+  7% {
+    left: 84%;
+    opacity: 1;
+  }
+  80% {
+    left: 43%;
+    opacity: 1;
+  }
+  100% {
+    left: 36%;
+    opacity: 0;
+  }
+}
+@keyframes right1 {
+  0% {
+    opacity: 0;
+    margin-left: 10%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 1;
+  }
+}
+@keyframes right2 {
+  0% {
+    opacity: 0;
+    margin-left: 3%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 1;
+  }
+}
+@keyframes section-bg {
+  0% {
+    opacity: 0;
+    margin-left: -3rem;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes section-c {
+  0% {
+    opacity: 0;
+    right: 7rem;
+  }
+  5% {
+    opacity: 1;
+    right: 9.3rem;
+  }
+  95% {
+    opacity: 1;
+    right: 50.7rem;
+  }
+  100% {
+    opacity: 0;
+    right: 53rem;
+  }
+}/*# sourceMappingURL=mixin.css.map */

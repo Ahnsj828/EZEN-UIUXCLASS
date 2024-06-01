@@ -1,0 +1,36 @@
+파비콘 설명 사이트
+https://velog.io/@rimmz/HTML%EC%97%90%EC%84%9C-%ED%8C%8C%EB%B9%84%EC%BD%98-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0
+
+파비콘 아이콘 사용 하기 좋은 사이트
+https://icons8.kr/icons/set/nav
+
+------------------------------------------------------------------------------
+
+<예시>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="에뛰드 공식 웹사이트 - Etude" />
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbU8MG5fa1pqYDptz8AzcWRvT3Vjs2eRwE2A&usqp=CAU"
+    />
+    <meta
+      property="og:description"
+      content="예뻐지는 상상이 현실이 되길 꿈꾸는 에뛰드하우스입니다."
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b06e382e17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./etude2023-180x180-1.png"
+      type="image/ x-icon"
+    />
+    <title>에뛰드 공식 웹사이트 - Etude</title>
+  </head>
+
+------------------------------------------------------------------------------

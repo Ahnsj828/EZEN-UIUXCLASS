@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Light, Texture, Containers, Color — Design Experiment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;1,500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <svg class="[ bg-illustration ]" fill="none">
+    <circle cx="100%" cy="0" r="33%" stroke="var(--color-orange-medium)"></circle>
+    <circle cx="0%" cy="100%" r="33%" stroke="var(--color-orange-medium)"></circle>
+  </svg>
+  <nav class="[ nav ] [ blur-bg ]">
+    <div class="[ wrapper repel ]">
+      <svg viewBox="0 0 12 12" fill="none" class="[ menu-logo ]">
+        <circle cx="6" cy="6" r="4.833" stroke="#793F15" />
+        <circle cx="6" cy="6" r="2.667" fill="#793F15" />
+      </svg>
+      <svg viewBox="0 0 24 24" class="[ menu-icon ]">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15h18M3 9h18" />
+      </svg>
+    </div>
+  </nav>
+  <main>
+    <div class="[ wrapper ]">
+      <div class="[ hero ] [ center-xy ]">
+        <div class="[ notification ] [ blur-bg ]">
+          <span>New!</span>
+        </div>
+        <h1>Exploring how popular design trends can help create a warm, organic aesthetic that feels clean & modern</h1>
+        <a class="[ btn ]" href="#building-blocks">
+          Building blocks
+          <svg class="[ btn-icon ]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M19 12l-7 7-7-7" />
+          </svg>
+        </a>
+      </div>
+      <section class="[ cards ]" id="building-blocks">
+        <div class="[ card ] [ blur-bg ]" data-lightsource-distance="l">
+          <h2>Light</h2>
+          <p>Gradients and shadows simulate a single light source shining across the page — touching every element.</p>
+          <svg class="[ light-illustration ]" viewBox="0 0 256 256" fill="var(--color-orange-medium)">
+            <radialGradient id="radialGradient">
+              <stop offset="0%" stop-color="white" stop-opacity="1" />
+              <stop offset="100%" stop-color="black" stop-opacity="1" />
+            </radialGradient>
+            <g stroke="#fff" stroke-width="0.5">
+              <circle cx="128" cy="128" r="50%" opacity="0.025"></circle>
+              <circle cx="128" cy="128" r="40%" opacity="0.05"></circle>
+              <circle cx="128" cy="128" r="30%" opacity="0.075"></circle>
+              <circle cx="128" cy="128" r="20%" opacity="0.1"></circle>
+              <circle cx="128" cy="128" r="10%" opacity="0.125"></circle>
+            </g>
+          </svg>
+        </div>
+        <div class="[ card ] [ blur-bg ]" data-lightsource-distance="m">
+          <h2>Containers</h2>
+          <svg class="[ containers-illustration ]" stroke-width="2" stroke-dasharray="4" stroke="var(--color-orange-medium)">
+            <line x1="0" y1="0" x2="50%" y2="50%"></line>
+            <line x1="100%" y1="0" x2="50%" y2="50%"></line>
+            <line x1="0" y1="100%" x2="50%" y2="50%"></line>
+            <line x1="100%" y1="100%" x2="50%" y2="50%"></line>
+          </svg>
+        </div>
+        <div class="[ card ] [ blur-bg ]" data-lightsource-distance="xl">
+          <svg class="[ color-illustration ]" viewBox="0 0 256 256">
+            <linearGradient id="colorGradient" gradientTransform="rotate(-45)">
+              <stop offset="0%" stop-color="var(--color-orange-medium)" stop-opacity="1" />
+              <stop offset="100%" stop-color="var(--color-orange-medium)" stop-opacity="0" />
+            </linearGradient>
+            <circle cx="128" cy="128" r="128" fill="url(#colorGradient)"></circle>
+          </svg>
+          <h2>Color</h2>
+          <p>A base hue blends into everything — unifying text, shadows, and illustrations.</p>
+        </div>
+        <div class="[ card ] [ blur-bg ]" data-lightsource-distance="s">
+          <h2>Texture</h2>
+          <p>A subtle generative grain adds a touch of the physcial world and smoothes out gradients.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

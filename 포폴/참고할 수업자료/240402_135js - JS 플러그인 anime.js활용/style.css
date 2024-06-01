@@ -1,0 +1,331 @@
+@import url("./reset.css");
+
+/* common */
+.inner {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+/* .inner h1 img {
+  width: 800px;
+} */
+
+/* sec0 */
+#sec0 {
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+
+#sec0 .inner svg,
+#sec0 .inner img {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#sec0 .inner .svg1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  z-index: 2;
+  transform: translate(-49.5%, -49.5%);
+}
+#sec0 .inner .svg2 {
+  transform: translate(-49%, -49%);
+}
+
+/* nav */
+#nav_icon {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 25px;
+  z-index: 3;
+  cursor: pointer;
+}
+#nav_icon div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#nav_icon.active div span:nth-child(1) {
+  top: 10px;
+  transform: rotate(45deg);
+}
+#nav_icon.active div span:nth-child(2) {
+  opacity: 0;
+}
+#nav_icon.active div span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-45deg);
+}
+#nav_icon div span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#nav_icon div span:nth-child(1) {
+  top: 0;
+}
+#nav_icon div span:nth-child(2) {
+  top: 10px;
+}
+#nav_icon div span:nth-child(3) {
+  top: 20px;
+}
+.nav {
+  position: fixed;
+  top: 24px;
+  right: 60px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+.nav.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 3px 20px 0 0;
+}
+.nav ul li a {
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* sec1 */
+#sec1 {
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+}
+#sec1 .inner {
+  flex-direction: column;
+}
+#sec1 .inner img {
+  /* svg이미지 */
+  width: 800px;
+}
+.gage_wrap {
+  width: 500px;
+  margin-top: 50px;
+}
+.gage_wrap ul {
+  display: flex;
+}
+.gage_wrap ul li {
+  width: 25%;
+  text-align: center;
+}
+.gage_wrap ul li .gage {
+  /* 게이지바를 감싸고 있는 게이지 */
+  position: relative;
+  width: 15px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: auto;
+  padding: 5px;
+}
+.gage_wrap ul li .gage_in {
+  /* 게이지바 */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 5px;
+  /* height: 50%; */
+  /* 자바스크립트에서 컨트롤할거라서 */
+  height: 0;
+  background: #fff;
+}
+.gage_wrap ul li .gage_title {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* sec2 */
+#sec2 {
+  background: url("./portfolio/img/sec2_bg_0.png") center / cover no-repeat;
+  transition: all 0.2s;
+  /* 페이저를 누를때마다 배경이해당 슬라이드 이미지에 맞게 스무스하게 변경되게하려고 */
+}
+#sec2 h1 {
+  width: 800px;
+  /* opacity: 1; => opacity : 0 */
+  /* transform: translateY(0); => translateY(-50px) */
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.slider_wrap {
+  width: 50vw;
+  max-width: 700px;
+  /* 아무리 너비가 커져도 700px은 안넘게 */
+  height: 35vw;
+  max-height: 550px;
+  /* 아무리 높이가 커져도 550px은 안넘게 */
+  margin-left: 50px;
+  /* opacity: 1; => opacity : 0 */
+  /* transform: translateY(0); => translateY(-50px) */
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.sec2_slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.sec2_slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-indent: -9999px;
+  opacity: 0;
+}
+.sec2_slider li.on {
+  opacity: 1;
+}
+.sec2_slider li:nth-child(1) {
+  background-image: url("./portfolio/img/sec2_1.png");
+  /* background가 아니라 background-image로 하는 이유 => .sec2_slider li에서 한번에 줬던 background-repeat, background-position, background-size가 다 풀려버려서 */
+}
+.sec2_slider li:nth-child(2) {
+  background-image: url("./portfolio/img/sec2_2.png");
+}
+.sec2_slider li:nth-child(3) {
+  background-image: url("./portfolio/img/sec2_3.png");
+}
+.sec2_slider li:nth-child(4) {
+  background-image: url("./portfolio/img/sec2_4.png");
+}
+.button_wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.slide_btn {
+  display: block;
+  width: 10px;
+  height: 20px;
+  text-indent: -9999px;
+  background: url("./portfolio/img/arr_01.png") center / cover no-repeat;
+}
+.slide_btn.right {
+  background-image: url("./portfolio/img/arr_02.png");
+}
+.slide_icons {
+  display: flex;
+}
+.slide_icons li {
+  text-indent: -9999px;
+  width: 10px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+.slide_icons li.active {
+  width: 20px;
+  background: #fff;
+}
+
+/* sec3 */
+#sec3 {
+  background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+}
+#sec3 .inner {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+h1 {
+  font-family: "Back to Black Demo";
+  font-size: 100px;
+  display: flex;
+  letter-spacing: -3px;
+  color: #fff;
+}
+#sec3 h1 {
+  transform: translateX(-100px);
+}
+#sec3 h1 span {
+  opacity: 0;
+  /* 스크립트로 컨트롤하려고 */
+}
+#sec3 h1 span:nth-child(6) {
+  margin-right: 50px;
+}
+.sec3_svg {
+  fill: #667eea;
+  stroke: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* sec4 */
+#sec4 {
+  background-image: linear-gradient(to top, #fa709a 0%, #fee140 100%);
+  overflow: hidden;
+}
+#sec4 h1 img {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 1;
+}
+#sec4 .img_wrap {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tail {
+  /* 가상클래스 */
+  width: calc(100% / 20);
+  height: calc(100% / 20);
+  /* 20행 20열 */
+  background: #fa709a;
+}

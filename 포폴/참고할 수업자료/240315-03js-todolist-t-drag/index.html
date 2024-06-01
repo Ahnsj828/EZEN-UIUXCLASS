@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        name="canvanform"
+        action="https://localhost:3000/canvan.js"
+        method="post"
+      >
+        <input type="text" placeholder="할 일을 입력하세요" />
+        <input type="submit" value="할 일 추가" />
+      </form>
+      <div class="blocks">
+        <div class="block">
+          <h2>⭐ To Do</h2>
+          <div id="todo" class="list"></div>
+        </div>
+        <div class="block">
+          <h2>🤞 Doing</h2>
+          <div id="doing" class="list"></div>
+        </div>
+        <div class="block">
+          <h2>👌 Done</h2>
+          <div id="done" class="list"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
