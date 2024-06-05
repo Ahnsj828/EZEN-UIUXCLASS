@@ -1,0 +1,23 @@
+1. tmdb에 가서 > more> api > api reference > movies > Recommendations
+=> 추천
+
+백드랍패스 이미지?
+타이틀
+
+두가지 찾아와서
+
+related 버튼 누르면 map함수로 나오게
+
+
+- 영화 데이터를 찾아오는 것!!
+- 화면에 출력하는 것!!
+
+
+
+2. 가상 화폐 사이트 : Router Nesting 기능을 사용했었다
+ - nesting 기능을 사용해서
+review 누르면 리뷰내용 나오고
+related 누르면 추천 내용들 나오고
+
+
+3. 
