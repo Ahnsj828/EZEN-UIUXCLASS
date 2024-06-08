@@ -1,0 +1,17 @@
+1. 추천영화 데이터 찾아오기!!
+fetchRecommends( )함수
+
+2. useEffect( )
+컴포넌트 마운트 시점 혹은 찾고자 하는 영화 데이터가 변경 될 때마다 추천 영화를 새롭게 찾아오기 위한 목적 
+
+3. state 관리
+useState( ) =>타입 정의!!
+제네릭 형식으로 사용
+
+4. 사용자가 특정 탭을 클릭했는지 여부 => useMatch
+
+
+
+페이지네이션
+npm i react-js-pagination
+npm i @types/react-js-pagination

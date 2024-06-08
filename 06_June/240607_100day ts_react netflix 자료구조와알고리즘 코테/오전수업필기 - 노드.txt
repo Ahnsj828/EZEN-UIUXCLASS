@@ -1,0 +1,56 @@
+<pug의 기능>
+2. partial > 공통적으로 사용되는 요소를 정의 >
+(*한 번 정의한 템플릿 안에 값을 가변적으로 변경 x)
+
+3. block > 특정 pug에 삽입되어야 하는  내용
+
+4. variabls > 변수값을 정의하고 삽입
+
+5.conditional > boolean
+
+6. iterational 
+
+7.mixin - scss에서 사용했었다
+  : 하나의 템플릿을...
+
+
+
+*pug를 활용 > 조건에 따른 ui구현
+
+*pug를 활용 > 반복문 사용!
+
+--------------------------------------------------------------------
+
+Data VS DB
+데이터를 한 곳에 모아놓은(어떤 시스템을 갖고) 곳이 DB
+- 서버에 어떤 컨텐츠 내용 존재 해야
+- client 요청 (*줄 수 있는 내용)
+- 요청 후 수신한 데이터를 > 수정 & 가공 > 발신 > 요청
+
+
+a(href="edit") Edit Video &rarr;
+//- http://localhost:4000/videos/edit
+> 상대 경로!!
+
+a(href="/edit") Edit Video &rarr;
+//- http://localhost:4000/edit
+> 절대 경로!!
+
+- css공부와 연관있다
+
+form > action => url :
+사용자가 어떤 이벤트 및 액선을 실행했을 때, 해당 값을 전달 할 주소!!
+
+method : get / post
+get 혹은 post 등의 method를 지정하지 않고, action의 값만 넣는다면, 기본 default의 method는 get이 된다!
+
+get : 서버에 어떤 데이터를 요청
+post(등록하다) : 서버에 어떤 데이터를 전달 / db에 있는 값을 바꾸고자 할 때
+
+
+DB // MongoDB -> Mongoose
+Login 페이지 만들거다
+
+UI작업 / 영상 업로드 / 수정 / 편집 / 삭제 
+
+배포
