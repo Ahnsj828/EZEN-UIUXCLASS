@@ -1,47 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- custom css & js -->
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
-  </head>
-  <body>
-    <section id="style1" class="">
-      <div class="wrapper">
-        <label>
-          <input type="checkbox" checked />
-          <div class="inner">
-            <span class="on">On</span>
-            <span class="off">Off</span>
-          </div>
-          <i></i>
-        </label>
-      </div>
-    </section>
-    <!-- <section id="style2">
-      <div class="wrapper">
-        <input id="normal" type="checkbox" />
-        <label class="toggle-item" for="normal"></label>
-      </div>
-    </section> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section id="container1" class="toggle-wrapper">
+    <article class="toggle normal">
+      <input id="normal" type="checkbox">
+      <label class="toggle-item" for="normal"></label>
+    </article>
+    <article class="name">Normal</article>
+  </section>
 
-    <!-- <section class="toggle-wrapper">
-      <div class="toggle normal">
-        <input id="normal" type="checkbox" />
-        <label class="toggle-item" for="normal"></label>
-      </div>
-      <div class="name">Normal</div>
-    </section> -->
-
-    <section id="style0" class="style">
-      <form class="toggle" action="">
-        <input id="normal" type="checkbox" />
-        <label class="toggle-item" for="normal"></label>
-      </form>
-      <div class="name">Normal</div>
-    </section>
-  </body>
+  <section id="container2" class="toggle-wrapper">
+    <article class="toggle transparent">
+      <input id="transparent" type="checkbox">
+      <label class="toggle-item" for="transparent"></label>
+    </article>
+    <article class="name">Transparent</article>
+  </section>
+</body>
 </html>
