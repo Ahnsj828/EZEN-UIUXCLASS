@@ -163,7 +163,6 @@ label.toggle-item:before {
 #normal:checked + label:before {
   left: 67px;
 }
-/* ------------------------------------- */
 
 .transparent label {
   background: transparent;
@@ -183,6 +182,7 @@ label.toggle-item:before {
   transform: translateX(59px);
 }
 
+/* ------------------------------------- */
 .checkcross label:before {
   content: none;
 }
@@ -342,6 +342,7 @@ label.toggle-item:before {
     transform: translate(64px, 0px);
   }
 }
+/* ------------------------------------- */
 .dog-rollover label:before {
   content: none;
 }
@@ -431,7 +432,7 @@ label.toggle-item:before {
   transform: scaleX(-1) rotate(-35deg);
   transition-delay: .6s;
 }
-
+/* ------------------------------------- */
 .basketball-hoop label {
   background: #fdb827;
 }

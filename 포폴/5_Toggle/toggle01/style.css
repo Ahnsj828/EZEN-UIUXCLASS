@@ -56,14 +56,14 @@ body {
           content: '';
           position: absolute;
           display: block;
-          top: .25em;
-          left: .25em;
+          top: 0.25em;
+          left: 0.25em;
           width: 2.3em;
           height: 2.3em;
           border: 2px solid #88cf8f;
           border-radius: 2em;
-          transition: all .2s ease;
-          transition: .3s ease;
+          /* transition: all 0.2s ease; */
+          transition: all 0.3s ease;
         }
       }
     }
@@ -121,12 +121,12 @@ body {
     flex: 1 1 calc(100% / 3);
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .toggle-wrapper {
     flex: 1 1 calc(100% / 2);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 300px) {
   .toggle-wrapper {
     flex: 1 1 100%;
   }
@@ -139,7 +139,7 @@ body {
       background: #af4c4c;
       border: 0.5px solid rgba(117, 117, 117, 0.31);
       box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5), 0 -3px 4px rgba(0, 0, 0, 0.15);
-      &:before {
+      &::before {
         content: '';
         position: absolute;
         border: none;
@@ -149,7 +149,7 @@ body {
         background: #fff;
         transform: rotate(-90deg);
       }
-      &:after {
+      &::after {
         content: '';
         position: absolute;
         top: -5px;
@@ -173,6 +173,49 @@ body {
 
 #container2 {
   background: #EAA88B;
-  .transparent{}
-  .name{}
+  .transparent {
+    label {
+      background: transparent;
+      border: 3px solid #fff;
+      height: 3.35em;
+      &:before {
+        border: none;
+        background: #fff;
+        top: 0.35em;
+        left: 0.3em;
+      }
+    }
+    #transparent:checked + label::before {
+      left: 4.1em;
+    }
+  }
+}
+
+#container3 {
+  background: #EA8B8B;
+  .dog-rollover {
+    #bokku {}
+    label {
+      .dog {
+        display: inline-block;
+        position: absolute;
+        top: 0.25em;
+        left: 0.2em;
+        width: 2.5em;
+        height: 2.5em;
+        transition: 0.6s ease;
+        .ear {
+          position: absolute;
+          left: -4px;
+          width: 18px;
+          height: 20px;
+        }
+        .right {}
+        .face {
+          .eyes {}
+          .mouth {}
+        }
+      }
+    }
+  }
 }
