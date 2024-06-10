@@ -5,9 +5,10 @@
 @import url("./mixin.css");
 
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,700,900");
 
 /* Custom Font Face Definitions */
 @font-face {
@@ -22,7 +23,6 @@
   font-family: "Nanum-S-N";
   src: url("../font/NanumSquareNeoOTF-Rg.otf") format("woff2");
 }
-
 
 .home {
   background: #fff7e1;
@@ -40,6 +40,7 @@
       display: flex;
       justify-content: space-between;
       align-items: end;
+      align-items: center;
       top: 0;
       left: 0;
       width: 100%;
@@ -49,8 +50,7 @@
       z-index: 10;
       transition: background-color 0.5s ease;
       h1 {
-        position: absolute;
-        left: 10%;
+        margin-left: 10%;
         font-family: "Kcc-Ganpan";
         font-size: 3rem;
         font: normal 3rem/-0.3 "Kcc-Ganpan";
@@ -59,12 +59,11 @@
           color: #ff5d2c;
         }
       }
-      .menu {
-        position: absolute;
-        right: 10%;
+      /* .menu {
         display: flex;
-        .menu-on {
-          font: normal 1.4rem/1 "Roboto", sans-serif;
+        margin-right: 10%;
+         .menu-on {
+          font: normal 1.5rem/1 "Roboto", sans-serif;
           color: #ff5d2c;
           margin: 1rem;
         }
@@ -73,11 +72,107 @@
           margin: 10px;
         }
         .menu-off {
-          font: normal 1.1rem/1 "Roboto", sans-serif;
+          font: normal 1.2rem/1 "Roboto", sans-serif;
           margin: 1.2rem;
           color: #000;
         }
+      } */
+
+      .menu {
+        display: flex;
+        /* justify-content:center */
+        align-items: center;
+        margin-right: 10%;
+        gap: 10px;
+        a {
+          display: block;
+          position: relative;
+          font-family: Lato;
+          color: #000;
+          padding: 15px 25px;
+          text-decoration: none;
+          text-transform: uppercase;
+          /* background: #555; */
+          border-radius: 35px;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+            transition: transform 0.3s ease-out, opacity 0.3s;
+          }
+          span {
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              -webkit-transition: -webkit-transform 0.3s ease-out 0.15s,
+                opacity 0s 0.05s;
+              transition: transform 0.3s ease-out 0.15s, opacity 0s 0.05s;
+            }
+          }
+          &::before,
+          & span::before {
+            top: -webkit-calc(50% - 0.3em);
+            top: calc(50% - 0.3em);
+            left: -0.25em;
+            width: 0.5em;
+            height: 0.5em;
+            opacity: 0;
+            -webkit-transform: translate3d(-0.6em, 0, 0) rotate(45deg);
+            transform: translate3d(-0.6em, 0, 0) rotate(45deg);
+          }
+          &::after,
+          & span::after {
+            bottom: -webkit-calc(50% - 0.35em);
+            bottom: calc(50% - 0.35em);
+            right: -0.25em;
+            width: 0.5em;
+            height: 0.5em;
+            opacity: 0;
+            -webkit-transform: translate3d(0.6em, 0, 0) rotate(45deg);
+            transform: translate3d(0.6em, 0, 0) rotate(45deg);
+          }
+          &:hover {
+            overflow: visible;
+          }
+          &:hover::before,
+          &:hover span::before {
+            -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+            opacity: 1;
+          }
+          &:hover::after,
+          &:hover span::after {
+            -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+            opacity: 1;
+          }
+          &::before,
+          & span::before {
+            border-right: 0.15em solid #ff5d2c;
+            border-top: 0.15em solid #ff5d2c;
+          }
+
+          &::after,
+          & span::after {
+            border-left: 0.15em solid #ff5d2c;
+            border-bottom: 0.15em solid #ff5d2c;
+          }
+        }
+        /* .menu-on {
+          font: 400 1.5rem/1 "Lato", sans-serif;
+          color: #ff5d2c;
+        }
+        .menu-on-icon {
+          color: #ff8255;
+        }
+        .menu-off {
+          font: 400 1.2rem/1 "Lato", sans-serif;
+          color: #000;
+        } */
       }
+
       .trigger {
         display: none;
       }
@@ -104,70 +199,70 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        #home-wrapper{
-        position: absolute;
-        display: flex;
-        top: 50%;
-        left: 50%;
-        transform: translate(-43%, -45%);
-        width: 86%;
-        height: 50%;
-        justify-content: center;
-        padding: 0;
-        .home-img {
+        #home-wrapper {
+          position: absolute;
           display: flex;
-          height: 100%;
-          z-index: 2;
-          #section-bg {
-            animation: section-bg 0.8s 0.1s linear;
-            animation-fill-mode: both;
+          top: 50%;
+          left: 50%;
+          transform: translate(-43%, -45%);
+          width: 86%;
+          height: 50%;
+          justify-content: center;
+          padding: 0;
+          .home-img {
+            display: flex;
+            height: 100%;
+            z-index: 2;
+            #section-bg {
+              animation: section-bg 0.8s 0.1s linear;
+              animation-fill-mode: both;
+            }
+            #section-bg-t {
+              display: none;
+            }
+            #section-bg-m {
+              display: none;
+            }
+            #section-W2 {
+              position: absolute;
+              bottom: 0;
+              left: 38%;
+              height: 20%;
+              margin: 0;
+              animation: W2 linear 20s infinite;
+            }
           }
-          #section-bg-t {
-            display: none;
-          }
-          #section-bg-m {
-            display: none;
-          }
-          #section-W2 {
-            position: absolute;
-            bottom: 0;
-            left: 38%;
-            height: 20%;
-            margin: 0;
-            animation: W2 linear 20s infinite;
+          .text {
+            justify-content: start;
+            display: inline-block;
+            text-align: left;
+            position: relative;
+            top: 40%;
+            padding: 0.3rem;
+            width: 25%;
+            z-index: 1;
+            #home-title1 {
+              font: normal 6rem/0.7 "Road Rage";
+              letter-spacing: 0.05rem;
+              margin-bottom: 0.7rem;
+              animation: right1 0.4s 0.3s linear;
+              animation-fill-mode: both;
+            }
+            #home-title2 {
+              font: normal 6rem/0.7 "Road Rage";
+              letter-spacing: 0.05rem;
+              margin-bottom: 0.7rem;
+              animation: right1 0.4s 0.6s linear;
+              animation-fill-mode: both;
+            }
+            #home-title3 {
+              font: normal 6rem/0.7 "Road Rage";
+              letter-spacing: 0.05rem;
+              animation: right2 0.4s 0.9s linear;
+              animation-fill-mode: both;
+            }
           }
         }
-        .text {
-          justify-content: start;
-          display: inline-block;
-          text-align: left;
-          position: relative;
-          top: 40%;
-          padding: 0.3rem;
-          width: 25%;
-          z-index: 1;
-          #home-title1 {
-            font: normal 6rem/0.7 "Road Rage";
-            letter-spacing: 0.05rem;
-            margin-bottom: 0.7rem;
-            animation: right1 0.4s 0.3s linear;
-            animation-fill-mode: both;
-          }
-          #home-title2 {
-            font: normal 6rem/0.7 "Road Rage";
-            letter-spacing: 0.05rem;
-            margin-bottom: 0.7rem;
-            animation: right1 0.4s 0.6s linear;
-            animation-fill-mode: both;
-          }
-          #home-title3 {
-            font: normal 6rem/0.7 "Road Rage";
-            letter-spacing: 0.05rem;
-            animation: right2 0.4s 0.9s linear;
-            animation-fill-mode: both;
-          }
-        }
-      }
       }
       #introduce {
         font-family: "Nanum-S-N";
@@ -185,13 +280,13 @@
           overflow: hidden;
           border-radius: 20px;
           height: 90%;
-          margin: 70px 0 0 ;
+          margin: 70px 0 0;
           img {
             transition: all 0.3s;
             height: 100%;
             width: 100%;
             &:hover {
-              transform: scale(105%)
+              transform: scale(105%);
             }
           }
         }
@@ -204,9 +299,8 @@
             border-radius: 10px;
             background: rgba(255, 255, 255, 0.9);
             /* box-shadow: inset 0 0 10px rgba(161, 98, 54, 0.3); */
-            box-shadow: 
-            0 0.5rem 1rem rgba(0, 0, 0, 0.15), /* 외부 그림자 */
-            inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+              /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
             padding: 15px;
             margin: 15px 0;
             font: bold 20px/1 "NanumSquareRound-B";
@@ -222,9 +316,8 @@
             .skill {
               border-radius: 10px;
               /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
-              box-shadow: 
-              0 0.5rem 1rem rgba(0, 0, 0, 0.15), /* 외부 그림자 */
-              inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+                /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
               background: #fff;
               padding: 1rem;
               .skill-title {
@@ -274,7 +367,7 @@
                   transform: scale(130%) rotate(-10deg);
                 }
                 .skill-title .git-img {
-                  transform: scale(110%) rotate(-10deg) translateX(-10px)
+                  transform: scale(110%) rotate(-10deg) translateX(-10px);
                 }
                 .skill-title .git-hub-img {
                   transform: scale(130%) rotate(20deg) translate(1px, -2px);
@@ -337,9 +430,8 @@
                 /* background: rgba(255, 130, 85, 0.8); */
                 display: inline-block;
                 background: rgb(255, 190, 102);
-                box-shadow: 
-                0px 0px 7px rgba(0, 0, 0, 0.4),
-                inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4),
+                  inset 0px 0px 5px rgba(0, 0, 0, 0.4);
                 border-radius: 13px;
                 padding: 5px 10px;
                 margin-right: 10px;
@@ -421,9 +513,8 @@
                 /* background: rgba(255, 130, 85, 0.8); */
                 display: inline-block;
                 background: rgb(255, 190, 102);
-                box-shadow: 
-                0px 0px 7px rgba(0, 0, 0, 0.4),
-                inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4),
+                  inset 0px 0px 5px rgba(0, 0, 0, 0.4);
                 border-radius: 13px;
                 padding: 5px 10px;
                 margin-right: 10px;
@@ -547,10 +638,12 @@
           width: 48rem;
           height: 20rem;
           z-index: 3;
-          #github, #number {
+          #github,
+          #number {
             background: rgba(255, 242, 243, 0.7);
             color: rgba(32, 28, 20, 0.85);
-            box-shadow: 0 0 2rem rgba(32, 28, 20, 0.9),inset -0.1rem -0.1rem 0.5rem rgba(32, 28, 20, 0.7);
+            box-shadow: 0 0 2rem rgba(32, 28, 20, 0.9),
+              inset -0.1rem -0.1rem 0.5rem rgba(32, 28, 20, 0.7);
             border-radius: 1rem;
             padding: 1rem 1rem;
             font-size: 4rem;
@@ -559,7 +652,6 @@
             margin-top: 50px;
           }
         }
-
       }
     }
   }
@@ -607,8 +699,6 @@
     }
   }
 }
-
-
 
 /* @media screen and (max-width: 1397px) {
 }
