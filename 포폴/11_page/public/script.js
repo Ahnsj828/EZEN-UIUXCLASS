@@ -75,7 +75,7 @@ const sections = document.querySelectorAll(".section");
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.1, // 섹션의 60% 이상이 뷰포트에 들어오면 콜백 실행
+  threshold: 0.2, // 섹션의 60% 이상이 뷰포트에 들어오면 콜백 실행
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
