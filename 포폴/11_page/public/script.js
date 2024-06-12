@@ -36,7 +36,7 @@ trigger.addEventListener("click", () => {
 // ==============================================
 
 const menues = document.querySelectorAll(".menu a");
-    
+
 // 초기 상태 설정: 첫 번째 메뉴 항목에만 menu-on 클래스를 추가
 if (menues.length > 0) {
   menues.forEach((menu, index) => {
@@ -71,31 +71,31 @@ menues.forEach((menu) => {
 });
 
 // 섹션들을 감시하여 스크롤 위치에 따라 메뉴 항목 업데이트
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll(".section");
 const options = {
   root: null,
-  rootMargin: '0px',
-  threshold: 0.1 // 섹션의 60% 이상이 뷰포트에 들어오면 콜백 실행
+  rootMargin: "0px",
+  threshold: 0.1, // 섹션의 60% 이상이 뷰포트에 들어오면 콜백 실행
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const id = entry.target.id;
       menues.forEach((menu) => {
-        if (menu.getAttribute('href').substring(1) === id) {
-          menu.classList.add('menu-on');
-          menu.classList.remove('menu-off');
+        if (menu.getAttribute("href").substring(1) === id) {
+          menu.classList.add("menu-on");
+          menu.classList.remove("menu-off");
         } else {
-          menu.classList.remove('menu-on');
-          menu.classList.add('menu-off');
+          menu.classList.remove("menu-on");
+          menu.classList.add("menu-off");
         }
       });
     }
   });
 }, options);
 
-sections.forEach(section => {
+sections.forEach((section) => {
   observer.observe(section);
 });
 

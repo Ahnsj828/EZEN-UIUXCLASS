@@ -24,518 +24,516 @@
   src: url("../font/NanumSquareNeoOTF-Rg.otf") format("woff2");
 }
 
-.home {
+body {
   background: #fff7e1;
   width: 100%;
-  .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: column;
+  text-align: center;
+  header {
+    /* background: rgba(255, 247, 225, 0.5); */
+    position: fixed;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: column;
-    text-align: center;
+    justify-content: space-between;
+    align-items: end;
+    align-items: center;
+    top: 0;
+    left: 0;
     width: 100%;
-    header {
-      /* background: rgba(255, 247, 225, 0.5); */
-      position: fixed;
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      align-items: center;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding-top: 30px;
-      padding-bottom: 0;
-      height: 85px;
-      z-index: 10;
-      transition: background-color 0.5s ease;
-      h1 {
-        margin-left: 10%;
-        font-family: "Kcc-Ganpan";
-        font-size: 3rem;
-        font: normal 3rem/-0.3 "Kcc-Ganpan";
-        color: #201c14;
-        .logo-back {
-          color: #ff5d2c;
-        }
+    padding-top: 30px;
+    padding-bottom: 0;
+    height: 85px;
+    z-index: 10;
+    transition: background-color 0.5s ease;
+    h1 {
+      margin-left: 10%;
+      font-family: "Kcc-Ganpan";
+      font-size: 3rem;
+      font: normal 3rem/-0.3 "Kcc-Ganpan";
+      color: #201c14;
+      .logo-back {
+        color: #ff5d2c;
       }
-      .menu {
-        display: flex;
-        /* justify-content:center */
-        align-items: center;
-        margin-right: 10%;
-        gap: 10px;
-        a {
-          /* display: block; */
-          position: relative;
-          font: normal 1.2rem/1 Kcc-Ganpan;
-          color: #352e1f;
-          padding: 0 23px;
-          text-transform: uppercase;
+    }
+    .menu {
+      display: flex;
+      /* justify-content:center */
+      align-items: center;
+      margin-right: 10%;
+      gap: 10px;
+      a {
+        /* display: block; */
+        position: relative;
+        font: normal 1.2rem/1 Kcc-Ganpan;
+        color: #352e1f;
+        padding: 0 23px;
+        text-transform: uppercase;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
+          transition: transform 0.3s ease-out, opacity 0.3s;
+        }
+        span {
           &::before,
           &::after {
             content: "";
             position: absolute;
-            -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s;
-            transition: transform 0.3s ease-out, opacity 0.3s;
-          }
-          span {
-            &::before,
-            &::after {
-              content: "";
-              position: absolute;
-              -webkit-transition: -webkit-transform 0.3s ease-out 0.15s,
-                opacity 0s 0.05s;
-              transition: transform 0.3s ease-out 0.15s, opacity 0s 0.05s;
-            }
-          }
-          &::before,
-          & span::before {
-            top: -webkit-calc(50% - 0.3em);
-            top: calc(50% - 0.3em);
-            left: -0.1em;
-            width: 0.5em;
-            height: 0.5em;
-            opacity: 0;
-            -webkit-transform: translate3d(-0.6em, 0, 0) rotate(45deg);
-            transform: translate3d(-0.6em, 0, 0) rotate(45deg);
-          }
-          &::after,
-          & span::after {
-            bottom: -webkit-calc(50% - 0.35em);
-            bottom: calc(50% - 0.35em);
-            right: -0.1em;
-            width: 0.5em;
-            height: 0.5em;
-            opacity: 0;
-            -webkit-transform: translate3d(0.6em, 0, 0) rotate(45deg);
-            transform: translate3d(0.6em, 0, 0) rotate(45deg);
-          }
-          &:hover {
-            overflow: visible;
-          }
-          &:hover::before,
-          &:hover span::before {
-            -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
-            transform: translate3d(0, 0, 0) rotate(45deg);
-            opacity: 1;
-          }
-          &:hover::after,
-          &:hover span::after {
-            -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
-            transform: translate3d(0, 0, 0) rotate(45deg);
-            opacity: 1;
-          }
-          &::before,
-          & span::before {
-            border-right: 0.15em solid #ff5d2c;
-            border-top: 0.15em solid #ff5d2c;
-          }
-
-          &::after,
-          & span::after {
-            border-left: 0.15em solid #ff5d2c;
-            border-bottom: 0.15em solid #ff5d2c;
+            -webkit-transition: -webkit-transform 0.3s ease-out 0.15s,
+              opacity 0s 0.05s;
+            transition: transform 0.3s ease-out 0.15s, opacity 0s 0.05s;
           }
         }
-        .menu-on {
-          font: normal 1.3rem/1 Kcc-Ganpan;
-          color: #ff5d2c;
-          margin: 0 15px;
-          &::before,
-          & span::before {
-            opacity: 1;
-            left: 0.3em;
-          }
-          &::after,
-          & span::after {
-            opacity: 1;
-            right: 0.3em;
-          }
-        };
-        .menu-off {
-          font: normal 1.2rem/1 Kcc-Ganpan;
-          color: #352e1f;
+        &::before,
+        & span::before {
+          top: -webkit-calc(50% - 0.3em);
+          top: calc(50% - 0.3em);
+          left: -0.1em;
+          width: 0.5em;
+          height: 0.5em;
+          opacity: 0;
+          -webkit-transform: translate3d(-0.6em, 0, 0) rotate(45deg);
+          transform: translate3d(-0.6em, 0, 0) rotate(45deg);
+        }
+        &::after,
+        & span::after {
+          bottom: -webkit-calc(50% - 0.35em);
+          bottom: calc(50% - 0.35em);
+          right: -0.1em;
+          width: 0.5em;
+          height: 0.5em;
+          opacity: 0;
+          -webkit-transform: translate3d(0.6em, 0, 0) rotate(45deg);
+          transform: translate3d(0.6em, 0, 0) rotate(45deg);
+        }
+        &:hover {
+          overflow: visible;
+        }
+        &:hover::before,
+        &:hover span::before {
+          -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+          opacity: 1;
+        }
+        &:hover::after,
+        &:hover span::after {
+          -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+          opacity: 1;
+        }
+        &::before,
+        & span::before {
+          border-right: 0.15em solid #ff5d2c;
+          border-top: 0.15em solid #ff5d2c;
+        }
+
+        &::after,
+        & span::after {
+          border-left: 0.15em solid #ff5d2c;
+          border-bottom: 0.15em solid #ff5d2c;
         }
       }
-
-      .trigger {
-        display: none;
+      .menu-on {
+        font: normal 1.3rem/1 Kcc-Ganpan;
+        color: #ff5d2c;
+        margin: 0 15px;
+        &::before,
+        & span::before {
+          opacity: 1;
+          left: 0.3em;
+        }
+        &::after,
+        & span::after {
+          opacity: 1;
+          right: 0.3em;
+        }
+      }
+      .menu-off {
+        font: normal 1.2rem/1 Kcc-Ganpan;
+        color: #352e1f;
       }
     }
-    .contain {
+
+    .trigger {
+      display: none;
+    }
+  }
+  .contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    #home,
+    #introduce,
+    #projects,
+    #examples,
+    #contact {
+      display: block;
+      margin: 200px 0;
+      width: 80%;
+    }
+    #home {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      #home,
-      #introduce,
-      #projects,
-      #examples,
-      #contact {
-        display: inline-block;
-        padding: 140px 0 10px;
-        margin-top: 1000px;
-        width: 80%;
-        /* height: calc(100vh - 190px ); */
-      }
-      #home {
-        margin-top: 0;
+      height: 60vh;
+      #home-wrapper {
         display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-43%, -45%);
+        width: 86%;
+        height: 50%;
         justify-content: center;
-        align-items: center;
-        #home-wrapper {
-          position: absolute;
+        padding: 0;
+        .home-img {
           display: flex;
-          top: 50%;
-          left: 50%;
-          transform: translate(-43%, -45%);
-          width: 86%;
-          height: 50%;
-          justify-content: center;
-          padding: 0;
-          .home-img {
-            display: flex;
-            height: 100%;
-            z-index: 2;
-            #section-bg {
-              animation: section-bg 0.8s 0.1s linear;
-              animation-fill-mode: both;
-            }
-            #section-bg-t {
-              display: none;
-            }
-            #section-bg-m {
-              display: none;
-            }
-            #section-W2 {
-              position: absolute;
-              bottom: 0;
-              left: 38%;
-              height: 20%;
-              margin: 0;
-              animation: W2 linear 20s infinite;
-            }
+          height: 100%;
+          z-index: 2;
+          #section-bg {
+            animation: section-bg 0.8s 0.1s linear;
+            animation-fill-mode: both;
           }
-          .text {
-            justify-content: start;
-            display: inline-block;
-            text-align: left;
-            position: relative;
-            top: 40%;
-            padding: 0.3rem;
-            width: 25%;
-            z-index: 1;
-            #home-title1 {
-              font: normal 6rem/0.7 "Road Rage";
-              letter-spacing: 0.05rem;
-              margin-bottom: 0.7rem;
-              animation: right1 0.4s 0.3s linear;
-              animation-fill-mode: both;
+          #section-bg-t {
+            display: none;
+          }
+          #section-bg-m {
+            display: none;
+          }
+          #section-W2 {
+            position: absolute;
+            bottom: 0;
+            left: 38%;
+            height: 20%;
+            margin: 0;
+            animation: W2 linear 20s infinite;
+          }
+        }
+        .text {
+          justify-content: start;
+          display: inline-block;
+          text-align: left;
+          position: relative;
+          top: 40%;
+          padding: 0.3rem;
+          width: 25%;
+          z-index: 1;
+          #home-title1 {
+            font: normal 6rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.3s linear;
+            animation-fill-mode: both;
+          }
+          #home-title2 {
+            font: normal 6rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.7rem;
+            animation: right1 0.4s 0.6s linear;
+            animation-fill-mode: both;
+          }
+          #home-title3 {
+            font: normal 6rem/0.7 "Road Rage";
+            letter-spacing: 0.05rem;
+            animation: right2 0.4s 0.9s linear;
+            animation-fill-mode: both;
+          }
+        }
+      }
+    }
+    #introduce {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nanum-S-N";
+      font: 400 15px/1.5 "Nanum-S-N";
+      .mypic {
+        display: flex;
+        flex: 1;
+        /* background: royalblue;
+          border: 1px solid #000; */
+        align-items: end;
+        justify-content: end;
+        overflow: hidden;
+        border-radius: 20px;
+        height: 90%;
+        margin: 70px 0 0;
+        img {
+          transition: all 0.3s;
+          height: 100%;
+          width: 100%;
+          &:hover {
+            transform: scale(105%);
+          }
+        }
+      }
+      .aboutME {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        padding: 30px 0 0 30px;
+        .desc {
+          border-radius: 10px;
+          background: rgba(255, 255, 255, 0.9);
+          /* box-shadow: inset 0 0 10px rgba(161, 98, 54, 0.3); */
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+            /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
+          padding: 15px;
+          margin: 15px 0;
+          font: bold 20px/1 "NanumSquareRound-B";
+          color: rgb(161, 98, 54);
+          color: black;
+        }
+        .skills {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 10px;
+          transition: all 0.5s;
+          .skill {
+            border-radius: 10px;
+            /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+              /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
+            background: #fff;
+            padding: 1rem;
+            .skill-title {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 1rem;
+              gap: 10px;
+              img {
+                height: 40px;
+              }
+              .jq-img {
+                height: 25px;
+              }
+              .fb-img {
+                height: 50px;
+              }
+              h4 {
+                font: bold 17px/1 "NanumSquareRound-B";
+              }
             }
-            #home-title2 {
-              font: normal 6rem/0.7 "Road Rage";
-              letter-spacing: 0.05rem;
-              margin-bottom: 0.7rem;
-              animation: right1 0.4s 0.6s linear;
-              animation-fill-mode: both;
+            .git-title {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 4px;
+              span {
+                .git-img {
+                  height: 30px;
+                }
+                .git-hub-img {
+                  height: 33px;
+                  margin-left: 7px;
+                }
+              }
             }
-            #home-title3 {
-              font: normal 6rem/0.7 "Road Rage";
-              letter-spacing: 0.05rem;
-              animation: right2 0.4s 0.9s linear;
-              animation-fill-mode: both;
+            .skill-text {
+              font: 300 13px/2 "NanumBarunpenR";
+              letter-spacing: 1.2px;
+            }
+            &:hover {
+              transform: rotate(3deg);
+              .skill-title h4 {
+                font-size: 20px;
+              }
+              .skill-title img {
+                transform: scale(130%) rotate(-10deg);
+              }
+              .skill-title .git-img {
+                transform: scale(110%) rotate(-10deg) translateX(-10px);
+              }
+              .skill-title .git-hub-img {
+                transform: scale(130%) rotate(20deg) translate(1px, -2px);
+              }
+              .skill-title .ps-img {
+                transform: scale(110%) rotate(-20deg);
+              }
+              .skill-title .ill-img {
+                transform: scale(105%) rotate(15deg) translateY(-10%);
+              }
             }
           }
         }
       }
-      #introduce {
-        font-family: "Nanum-S-N";
-        font: 400 15px/1.5 "Nanum-S-N";
+    }
+    #projects {
+      .project {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        .mypic {
+        width: 100%;
+        height: 25rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: rgb(255, 255, 255);
+        margin: 0px 0px 150px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+        .project-img {
+          width: 50%;
+          height: inherit;
+          height: 100%;
           display: flex;
-          flex: 1;
-          /* background: royalblue;
-          border: 1px solid #000; */
-          align-items: end;
-          justify-content: end;
+          justify-content: center;
+          align-items: center;
           overflow: hidden;
-          border-radius: 20px;
-          height: 90%;
-          margin: 70px 0 0;
           img {
-            transition: all 0.3s;
             height: 100%;
-            width: 100%;
+            transition: all 0.5s;
             &:hover {
               transform: scale(105%);
             }
           }
         }
-        .aboutME {
+        .project-desc {
+          width: 60%;
           display: flex;
           flex-direction: column;
-          flex: 3;
-          padding: 30px 0 0 30px;
-          .desc {
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.9);
-            /* box-shadow: inset 0 0 10px rgba(161, 98, 54, 0.3); */
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
-              /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
-            padding: 15px;
-            margin: 15px 0;
-            font: bold 20px/1 "NanumSquareRound-B";
-            color: rgb(161, 98, 54);
-            color: black;
+          padding: 3.5rem 3rem;
+          position: relative;
+          h2 {
+            font: bold 30px/1.5 "NanumSquareRound-B";
+            letter-spacing: 1px;
+            margin-bottom: 40px;
           }
-          .skills {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 10px;
+          .project-tools {
+            padding: 0 20px;
+            margin-bottom: 60px;
+            font: normal 20px/1.5 "NanumSquareRound-R";
+            span {
+              /* background: rgba(255, 130, 85, 0.8); */
+              display: inline-block;
+              background: rgb(255, 190, 102);
+              box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4),
+                inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+              border-radius: 13px;
+              padding: 5px 10px;
+              margin-right: 10px;
+              margin-bottom: 10px;
+            }
+          }
+          .project-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .project-link {
+              display: inline-flex;
+              align-items: center;
+              font: normal 18px/1.5 "NanumSquareRound-R";
+              text-decoration: underline;
+              transition: all 0.3s;
+              &:hover {
+                color: #ff5d2c;
+                transform: scale(110%, 130%);
+                img {
+                  transform: scale(110%, 100%);
+                  background: url("../img/project_imgs/link-icon2.svg");
+                }
+              }
+              img {
+                width: 30px;
+                margin-right: 3px;
+                transition: all 0.3s;
+              }
+            }
+          }
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    #examples {
+      .example {
+        display: flex;
+        width: 100%;
+        height: 25rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: rgb(255, 255, 255);
+        margin: 0px 0px 150px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+        .example-img {
+          width: 50%;
+          height: inherit;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          img {
+            height: 100%;
             transition: all 0.5s;
-            .skill {
-              border-radius: 10px;
-              /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
-              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
-                /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
-              background: #fff;
-              padding: 1rem;
-              .skill-title {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 1rem;
-                gap: 10px;
-                img {
-                  height: 40px;
-                }
-                .jq-img {
-                  height: 25px;
-                }
-                .fb-img {
-                  height: 50px;
-                }
-                h4 {
-                  font: bold 17px/1 "NanumSquareRound-B";
-                }
-              }
-              .git-title {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 4px;
-                span {
-                  .git-img {
-                    height: 30px;
-                  }
-                  .git-hub-img {
-                    height: 33px;
-                    margin-left: 7px;
-                  }
-                }
-              }
-              .skill-text {
-                font: 300 13px/2 "NanumBarunpenR";
-                letter-spacing: 1.2px;
-              }
-              &:hover {
-                transform: rotate(3deg);
-                .skill-title h4 {
-                  font-size: 20px;
-                }
-                .skill-title img {
-                  transform: scale(130%) rotate(-10deg);
-                }
-                .skill-title .git-img {
-                  transform: scale(110%) rotate(-10deg) translateX(-10px);
-                }
-                .skill-title .git-hub-img {
-                  transform: scale(130%) rotate(20deg) translate(1px, -2px);
-                }
-                .skill-title .ps-img {
-                  transform: scale(110%) rotate(-20deg);
-                }
-                .skill-title .ill-img {
-                  transform: scale(105%) rotate(15deg) translateY(-10%);
-                }
-              }
+            &:hover {
+              transform: scale(105%);
             }
           }
         }
-      }
-      #projects {
-        margin-top: 500px;
-        /* background-color: lightseagreen; */
-        .project {
-          width: 100%;
-          height: 25rem;
-          border-radius: 1rem;
-          overflow: hidden;
-          background: rgb(255, 255, 255);
+        .example-desc {
+          width: 60%;
           display: flex;
-          margin: 0px 0px 100px;
-          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-          .project-img {
-            width: 50%;
-            height: inherit;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            img {
-              height: 100%;
-              transition: all 0.5s;
-              &:hover {
-                transform: scale(105%);
-              }
+          flex-direction: column;
+          padding: 3.5rem 3rem;
+          position: relative;
+          h2 {
+            font: bold 30px/1.5 "NanumSquareRound-B";
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+          }
+          .example-tools {
+            padding: 0 20px;
+            margin-bottom: 60px;
+            font: normal 20px/1.5 "NanumSquareRound-R";
+            span {
+              /* background: rgba(255, 130, 85, 0.8); */
+              display: inline-block;
+              background: rgb(255, 190, 102);
+              box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4),
+                inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+              border-radius: 13px;
+              padding: 5px 10px;
+              margin-right: 10px;
+              margin-bottom: 10px;
             }
           }
-          .project-desc {
-            width: 60%;
+          .example-links {
             display: flex;
             flex-direction: column;
-            padding: 3.5rem 3rem;
-            position: relative;
-            h2 {
-              font: bold 30px/1.5 "NanumSquareRound-B";
-              letter-spacing: 1px;
-              margin-bottom: 40px;
-            }
-            .project-tools {
-              padding: 0 20px;
-              margin-bottom: 60px;
-              font: normal 20px/1.5 "NanumSquareRound-R";
-              span {
-                /* background: rgba(255, 130, 85, 0.8); */
-                display: inline-block;
-                background: rgb(255, 190, 102);
-                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4),
-                  inset 0px 0px 5px rgba(0, 0, 0, 0.4);
-                border-radius: 13px;
-                padding: 5px 10px;
-                margin-right: 10px;
-                margin-bottom: 10px;
-              }
-            }
-            .project-links {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              .project-link {
-                display: inline-flex;
-                align-items: center;
-                font: normal 18px/1.5 "NanumSquareRound-R";
-                text-decoration: underline;
-                transition: all 0.3s;
-                &:hover {
-                  color: #ff5d2c;
-                  transform: scale(110%, 130%);
-                  img {
-                    transform: scale(110%, 100%);
-                    background: url("../img/project_imgs/link-icon2.svg");
-                  }
-                }
-                img {
-                  width: 30px;
-                  margin-right: 3px;
-                  transition: all 0.3s;
-                }
-              }
-            }
-          }
-        }
-      }
-      #examples {
-        margin-top: 400px;
-        /* background-color: lightseagreen; */
-        .example {
-          width: 100%;
-          height: 25rem;
-          border-radius: 1rem;
-          overflow: hidden;
-          background: rgb(255, 255, 255);
-          display: flex;
-          margin: 0px 0px 100px;
-          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-          .example-img {
-            width: 50%;
-            height: inherit;
-            height: 100%;
-            display: flex;
-            justify-content: center;
             align-items: center;
-            overflow: hidden;
-            img {
-              height: 100%;
-              transition: all 0.5s;
-              &:hover {
-                transform: scale(105%);
-              }
-            }
-          }
-          .example-desc {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            padding: 3.5rem 3rem;
-            position: relative;
-            h2 {
-              font: bold 30px/1.5 "NanumSquareRound-B";
-              letter-spacing: 1px;
-              margin-bottom: 40px;
-            }
-            .example-tools {
-              padding: 0 20px;
-              margin-bottom: 60px;
-              font: normal 20px/1.5 "NanumSquareRound-R";
-              span {
-                /* background: rgba(255, 130, 85, 0.8); */
-                display: inline-block;
-                background: rgb(255, 190, 102);
-                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4),
-                  inset 0px 0px 5px rgba(0, 0, 0, 0.4);
-                border-radius: 13px;
-                padding: 5px 10px;
-                margin-right: 10px;
-                margin-bottom: 10px;
-              }
-            }
-            .example-links {
-              display: flex;
-              flex-direction: column;
+            .example-link {
+              display: inline-flex;
               align-items: center;
-              .example-link {
-                display: inline-flex;
-                align-items: center;
-                font: normal 18px/1.5 "NanumSquareRound-R";
-                text-decoration: underline;
-                transition: all 0.3s;
-                &:hover {
-                  color: #ff5d2c;
-                  transform: scale(110%, 130%);
-                  img {
-                    transform: scale(110%, 100%);
-                    background: url("../img/project_imgs/link-icon2.svg");
-                  }
-                }
+              font: normal 18px/1.5 "NanumSquareRound-R";
+              text-decoration: underline;
+              transition: all 0.3s;
+              &:hover {
+                color: #ff5d2c;
+                transform: scale(110%, 130%);
                 img {
-                  width: 30px;
-                  margin-right: 3px;
-                  transition: all 0.3s;
+                  transform: scale(110%, 100%);
+                  background: url("../img/project_imgs/link-icon2.svg");
                 }
+              }
+              img {
+                width: 30px;
+                margin-right: 3px;
+                transition: all 0.3s;
               }
             }
           }
         }
+        &:last-child {
+          margin: 0;
+        }
       }
-      /* #contact {
+    }
+    /* #contact {
         margin-top: 7150px;
         margin-left: 150px;
         position: absolute;
@@ -608,35 +606,25 @@
           }
         }
       } */
-      #contact {
+    #contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f00;
+      .talk {
+      }
+      .sns {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 460px;
-        padding-top: 280px;
-        .sns {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          align-content: center;
-          position: absolute;
-          width: 48rem;
-          height: 20rem;
-          z-index: 3;
-          #github,
-          #number {
-            background: rgba(255, 242, 243, 0.7);
-            color: rgba(32, 28, 20, 0.85);
-            box-shadow: 0 0 2rem rgba(32, 28, 20, 0.9),
-              inset -0.1rem -0.1rem 0.5rem rgba(32, 28, 20, 0.7);
-            border-radius: 1rem;
-            padding: 1rem 1rem;
-            font-size: 4rem;
-            margin: 0 2rem;
-            cursor: pointer;
-            margin-top: 50px;
-          }
+        align-content: center;
+        /* position: absolute; */
+        width: 48rem;
+        height: 20rem;
+        z-index: 3;
+        #github,
+        #number {
         }
       }
     }
