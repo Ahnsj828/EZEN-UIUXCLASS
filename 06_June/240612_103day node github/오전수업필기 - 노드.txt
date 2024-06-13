@@ -1,0 +1,6 @@
+mongodb => ID / 
+24바이트의 16진수의 값으로 아이디를 생성한다 라고 되어 있다
+
+https://www.regexpal.com/
+정규표현식
+
