@@ -75,21 +75,21 @@
     margin-left: 0;
   }
 }
-@keyframes section-c {
+@keyframes contact-c {
   0% {
     opacity: 0;
-    right: 7rem;
+    right: -3rem;
   }
   5% {
     opacity: 1;
-    right: 9.3rem;
+    right: 0rem;
   }
   95% {
     opacity: 1;
-    right: 50.7rem;
+    right: 47rem;
   }
   100% {
     opacity: 0;
-    right: 53rem;
+    right: 50rem;
   }
 }/*# sourceMappingURL=mixin.css.map */

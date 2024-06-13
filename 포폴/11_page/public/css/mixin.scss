@@ -2,7 +2,7 @@
 @import url("./mixin.css");
 
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
@@ -201,21 +201,21 @@
   }
 }
 
-@keyframes section-c {
+@keyframes contact-c {
   0% {
     opacity: 0;
-    right: 7rem;
+    right: -3rem;
   }
   5% {
     opacity: 1;
-    right: 9.3rem;
+    right: 0rem;
   }
   95% {
     opacity: 1;
-    right: 50.7rem;
+    right: 47rem;
   }
   100% {
     opacity: 0;
-    right: 53rem;
+    right: 50rem;
   }
 }

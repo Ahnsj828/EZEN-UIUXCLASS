@@ -581,43 +581,124 @@ body {
         }
       }
     } */
-    #contact{
-      height: 60vh;
-      padding-top: 0;
-      margin-top: 140px;
-      .contact-wrapper{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .img {
-        /* position: absolute; */
-        top: 0;
+    #contact {
+      width: 50vw;
+      height: calc(100vh - 200px);
+      margin-bottom: 100px;
+      .contact-wrapper {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        #contact-bg {
-          position: absolute;
-          top: 0;
+        width: 100%;
+        height: 100%;
+        .container {
+          position: static;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          .img {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 450px;
+            height: 100%;
+            z-index: 1;
+            #contact-bg,
+            #contact-g {
+              bottom: 0;
+              animation: section-bg 0.8s 0.1s linear;
+              animation-fill-mode: both;
+            }
+            #contact-bg {
+              position: absolute;
+              top: 0;
+              width: 100%;
+              z-index: 1;
+            }
+            #contact-g {
+              position: absolute;
+              top: 0;
+              width: 80%;
+              width: 100%;
+              z-index: 3;
+            }
+            #contact-c {
+              position: absolute;
+              bottom: 30%;
+              width: 20%;
+              z-index: 2;
+              animation: contact-c linear 7s infinite;
+            }
+          }
+          .sns {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-30%);
+            z-index: 3;
+            gap: 3rem;
+            li {
+              .sns-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                i {
+                  font-size: 600%;
+                }
+                .hover {
+                  position: absolute;
+                  bottom: -4.5rem;
+                  width: 70%;
+                  font: normal 1.5rem/1 "Kcc-Ganpan";
+                  background: #fff7e1;
+                  background-image: linear-gradient(
+                    #e4e4e4 1px,
+                    transparent 1px
+                  );
+                  background-size: 30% 30%, 2px 2px;
+                  background-color: rgba(249, 249, 249, 0.8);
+                  border-radius: 10px;
+                  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+                  padding: 1rem;
+                  opacity: 0;
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 20px solid rgba(249, 249, 249, 0.8);
+                    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
+                  }
+                }
+              }
+              &:hover .hover {
+                opacity: 1;
+              }
+            }
+          }
         }
-        #contact-g {
-          position: absolute;
-          top: 0;
-          /* z-index: 5; */
-        }
-        #contact-c {
-          position: absolute;
-          top: 0;
+        .promise {
+          height: 20%;
+          position: static;
+          bottom: 0;
         }
       }
-      .sns {
-        position: absolute;
-        top: 0;
-      }
-      }
-    } 
+    }
   }
   .bg-bottom {
     position: fixed;
