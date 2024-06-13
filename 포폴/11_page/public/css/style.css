@@ -1,29 +1,6 @@
 @import url("./reset.css");
 @import url("./mixin.css");
 
-@import url("./reset.css");
-@import url("./mixin.css");
-
-/* Google Fonts Import */
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,300,700,900");
-
-/* Custom Font Face Definitions */
-@font-face {
-  font-family: "Kcc-Ganpan";
-  src: url("../font/KCC-Ganpan.otf") format("woff2");
-}
-@font-face {
-  font-family: "Kcc-Dodamdodam";
-  src: url("../font/KCCDodamdodam_OTF.otf") format("woff2");
-}
-@font-face {
-  font-family: "Nanum-S-N";
-  src: url("../font/NanumSquareNeoOTF-Rg.otf") format("woff2");
-}
-
 body {
   background: #fff7e1;
   width: 100%;
@@ -583,14 +560,14 @@ body {
     } */
     #contact {
       width: 50vw;
-      height: calc(100vh - 200px);
-      margin-bottom: 100px;
+      height: calc(100vh - 220px);
+      margin-bottom: 60px;
       .contact-wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: end;
         width: 100%;
         height: 100%;
         .container {
@@ -600,7 +577,7 @@ body {
           justify-content: center;
           align-items: center;
           width: 100%;
-          height: 100%;
+          height: 65%;
           .img {
             position: static;
             display: flex;
@@ -632,7 +609,7 @@ body {
             }
             #contact-c {
               position: absolute;
-              bottom: 30%;
+              bottom: 35%;
               width: 20%;
               z-index: 2;
               animation: contact-c linear 7s infinite;
@@ -643,21 +620,28 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: translateY(-30%);
+            transform: translateY(-50%);
             z-index: 3;
-            gap: 3rem;
+            gap: 4rem;
             li {
+              box-shadow: inset 0px 0px 10px rgba(39, 20, 2, 0.8);
+              border-radius: 10%;
+              padding: 6%;
+              background: #9dded2;
+              background: #de9db8;
               .sns-wrapper {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 i {
-                  font-size: 600%;
+                  font-size: 400%;
+                  color: #fff8e7;
+                  color: #1B201C;
                 }
                 .hover {
                   position: absolute;
-                  bottom: -4.5rem;
+                  bottom: -5rem;
                   width: 70%;
                   font: normal 1.5rem/1 "Kcc-Ganpan";
                   background: #fff7e1;
@@ -689,13 +673,30 @@ body {
               &:hover .hover {
                 opacity: 1;
               }
+              &:hover {
+                box-shadow: 0 0 5px #de9db8,
+                0 0 10px #de9db8,
+                0 0 50px #de9db8,
+                0 0 500px #de9db8;
+                i {
+                  color: #fff;
+                }
+              }
             }
           }
         }
         .promise {
-          height: 20%;
+          /* height: 20%; */
           position: static;
           bottom: 0;
+          text-align: end;
+          h1 {
+            font: normal 20px/1.7 "Nanum Gothic";
+            letter-spacing: 0.15rem;
+            &:nth-child(2) {
+              letter-spacing: 0rem;
+            }
+          }
         }
       }
     }
