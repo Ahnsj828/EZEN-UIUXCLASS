@@ -1,0 +1,50 @@
+middleware :
+중간에서 무언가를 하는 애
+redux / node.js
+ 
+1) Redux : 
+UI Event => 중간에 거치는 곳을 가서( 그게 reducer ) 작업을하고 => atom에 가야한다 
+
+JS > 객체 > class > 외부에서 해당 class property 혹은
+
+2) 업로드한 데이터를 검색 기능!!
+> 대.소문자 관계 없이
+> 특정단어
+
+3) 신규 영상 데이터 생성 >
+Newest one!
+
+미들웨어가 잘되어 있다
+data에 대한 검색쿼리 시스템이 좋다
+
+
+>유저인증 제도가 없다
+  - 컨텐츠를 업로드 한 사람 => 고유의 id가 있다
+    => 그 사람만이 수정 삭제 할 수 있다
+> UI 컨트롤 해줘야한다
+> 영상데이터가 없다
+   > 재생 & 퍼가기 & 일시정지
+> 배포 
+     > AWS에서
+
+더 나아가서
+*Next.js 활용해서 src 방식으로
+*TS활용해서
+
+
+---------------------------------------
+
+몽고 db에 접속 명령어 => mongosh
+
+show dbs
+
+use nodejstest
+
+show collections
+
+db.videos.find()
+디테일하게 보고싶을때
+
+db.videos.remove({})
+안에 들어가져있는 데이터를 삭제할때
+
