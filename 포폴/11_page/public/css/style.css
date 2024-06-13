@@ -176,8 +176,7 @@ body {
     #contact {
       display: block;
       padding-top: 140px;
-      /* margin: 200px 0; */
-      margin-bottom: 300px;
+      margin-bottom: 200px;
       width: 80%;
     }
     #home {
@@ -256,17 +255,14 @@ body {
       align-items: center;
       font-family: "Nanum-S-N";
       font: 400 15px/1.5 "Nanum-S-N";
+      height: 80vh;
       .mypic {
+        height: 80%;
         display: flex;
-        flex: 1;
-        /* background: royalblue;
-          border: 1px solid #000; */
         align-items: end;
         justify-content: end;
         overflow: hidden;
         border-radius: 20px;
-        height: 90%;
-        margin: 70px 0 0;
         img {
           transition: all 0.3s;
           height: 100%;
@@ -276,23 +272,11 @@ body {
           }
         }
       }
-      .aboutME {
+      /* .aboutME {
         display: flex;
         flex-direction: column;
         flex: 3;
         padding: 30px 0 0 30px;
-        .desc {
-          border-radius: 10px;
-          background: rgba(255, 255, 255, 0.9);
-          /* box-shadow: inset 0 0 10px rgba(161, 98, 54, 0.3); */
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
-            /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
-          padding: 15px;
-          margin: 15px 0;
-          font: bold 20px/1 "NanumSquareRound-B";
-          color: rgb(161, 98, 54);
-          color: black;
-        }
         .skills {
           display: grid;
           grid-template-columns: repeat(5, 1fr);
@@ -301,9 +285,7 @@ body {
           transition: all 0.5s;
           .skill {
             border-radius: 10px;
-            /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
-              /* 외부 그림자 */ inset 0 0 10px rgba(161, 98, 54, 0.3); /* 내부 그림자 */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 0 10px rgba(161, 98, 54, 0.3);
             background: #fff;
             padding: 1rem;
             .skill-title {
@@ -365,6 +347,123 @@ body {
                 transform: scale(105%) rotate(15deg) translateY(-10%);
               }
             }
+          }
+        }
+      } */
+
+      .aboutME {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        margin-left: 2rem;
+        width: calc(70% - 2rem);
+        height: 80%;
+        overflow: hidden;
+        /* border: 1px solid #000; */
+        /* gap: 30px; */
+        .skills {
+          height: 85%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s ease-out;
+          .slide-inner {
+            /* border: 1px solid #f00; */
+            display: grid;
+            /* grid-template-columns: repeat(5, 1fr); */
+            /* grid-template-rows: repeat(2, 1fr); */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            transition: all 0.5s;
+            height: 100%;
+            .skill {
+              border-radius: 10px;
+              border: 1px solid #000;
+              background: #fff;
+              padding: 1rem;
+              .skill-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1rem;
+                gap: 10px;
+                img {
+                  height: 40px;
+                }
+                .jq-img {
+                  height: 25px;
+                }
+                .fb-img {
+                  height: 50px;
+                }
+                h4 {
+                  font: bold 17px/1 "NanumSquareRound-B";
+                }
+              }
+              .git-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+                span {
+                  .git-img {
+                    height: 30px;
+                  }
+                  .git-hub-img {
+                    height: 33px;
+                    margin-left: 7px;
+                  }
+                }
+              }
+              .skill-text {
+                font: 300 13px/2 "NanumBarunpenR";
+                letter-spacing: 1.2px;
+              }
+              &:hover {
+                /* transform: rotate(3deg); */
+                .skill-title h4 {
+                  font-size: 20px;
+                }
+                .skill-title img {
+                  transform: scale(130%) rotate(-10deg);
+                }
+                .skill-title .git-img {
+                  transform: scale(110%) rotate(-10deg) translateX(-10px);
+                }
+                .skill-title .git-hub-img {
+                  transform: scale(130%) rotate(20deg) translate(1px, -2px);
+                }
+                .skill-title .ps-img {
+                  transform: scale(110%) rotate(-20deg);
+                }
+                .skill-title .ill-img {
+                  transform: scale(105%) rotate(15deg) translateY(-10%);
+                }
+              }
+            }
+          }
+        }
+        .btn-grp {
+          text-align: center;
+          height: 12%;
+          margin-top: 3%;
+          button {
+            border: none;
+            border-radius: 100%;
+            background-color: #10A6C4;
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+            color: #fff7e1;
+            margin: 0 1%;
+            height: 68px;
+            width: 68px;
+            font-size: 30px;
+          }
+          .button-left {
+            padding-right: 5px;
+          }
+          .button-right {
+            padding-left: 5px;
           }
         }
       }
@@ -537,27 +636,6 @@ body {
         }
       }
     }
-    /* #contact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid #f00;
-      .talk {
-      }
-      .sns {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 48rem;
-        height: 20rem;
-        z-index: 3;
-        #github,
-        #number {
-        }
-      }
-    } */
     #contact {
       width: 50vw;
       height: calc(100vh - 220px);
