@@ -20,8 +20,16 @@ document.write("<br/>")
 
 result = num2++ // result = 20
 document.write(result, "<br/>") // 20
-document.write("result = ", result, "<br/>") // num1 = 10
+document.write("result = ", result, "<br/>") //result = 20
+document.write("num2 = ", num2, "<br/>") // num2 = 21
 
 document.write("<br/>")
-// =========================================
+
+result = ++num2 // result = 22
+document.write(result, "<br/>") // 22
+document.write("result = ", result, "<br/>") //result = 22
+document.write("num2 = ", num2, "<br/>") // num2 = 22
+
+document.write("<br/>")
+document.write("============================================")
 document.write("<br/>")

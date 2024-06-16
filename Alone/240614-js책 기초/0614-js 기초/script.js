@@ -7,7 +7,7 @@ document.write("환영합니다2<br/>")
 document.write("hi2")
 
 document.write("<br/>")
-// =========================================
+document.write("============================================")
 document.write("<br/>")
 
 const booleanA = true
@@ -21,7 +21,7 @@ document.write(booleanC, "<br/>")
 document.write(booleanD, "<br/>")
 
 document.write("<br/>")
-// =========================================
+document.write("============================================")
 document.write("<br/>")
 
 const numA = 100

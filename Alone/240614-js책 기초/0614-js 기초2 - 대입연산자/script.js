@@ -16,7 +16,7 @@ document.write(num1, "<br/>") // 0
 
 
 document.write("<br/>")
-// =========================================
+document.write("============================================")
 document.write("<br/>")
 
 let str = "<table border='1'>"
@@ -27,7 +27,7 @@ str += "</table>"
 document.write(str)
 
 document.write("<br/>")
-// =========================================
+document.write("============================================")
 document.write("<br/>")
 
 let str2 = "<table border='2'>" // 2는 테이블 보더 두께
@@ -41,7 +41,7 @@ str2 += "</table>"
 document.write(str2)
 
 document.write("<br/>")
-// =========================================
+document.write("============================================")
 document.write("<br/>")
 
 let strA = "문자1"
