@@ -8,33 +8,21 @@
 
 // < 조건문 > : 조건식의 값이 참(true)인지, 거짓(false)인지에 따라 자바스크립트 코드를 제어한다
 
-// * else if문 - 두 가지 이상의 조건식과 정해 높은 조건을 만족하지 않았을 때 실행되는 코드로 이루어져 있다.
+// * else문 - 조건식을 만족(true)할 경우와 만족하지 않을(false) 경우에 따라 실행되는 코드가 달리진다.
 
-// if(조건식1) {
+// if(조건식) {
   // 자바스크립트 코드1
-// } else if(조건식2) {
+// } else {
   // 자바스크립트 코드2
-// } else if(조건식3) {
-  // 자바스크립트 코드3
-// } else if(조건식4) {
-  // 자바스크립트 코드4
-// } else if(조건식5) {
-  // 자바스크립트 코드5
-// }  else {
-  // 자바스크립트 코드6
 // }
 
 // ex)
-const month = prompt("현재 몇 월인가요?")
+const likeNum = prompt("당신이 좋아하는 숫자는?")
 
-if(month>=9 && month<=11) {
-  document.write("독서하기 좋은 계절 가을이네요!!")
-} else if(month>=6 && month<9) {
-  document.write("바다가기 좋은 계절 여름이네요!!")
-} else if(month>=3 && month<6) {
-  document.write("꽃놀이 가기 좋은 계절 봄이네요!!")
+if(likeNum % 2 == 0) {
+  document.write("당신은 짝수를 좋아하는군요")
 } else {
-  document.write("스키와 보드 타기 좋은 계절 겨울이네요!!")
+  document.write("당신은 홀수를 좋아하는군요")
 }
 
 document.write("<br/>")
@@ -42,3 +30,15 @@ document.write("============================================")
 document.write("<br/>")
 
 // ex.2)
+const result = confirm("힘드나요?")
+
+// if(result) {
+//   document.write("많이 힘들죠? 힘내라는 말밖에 할 말이 없네요. 좋은일 생기길 바랄게요")
+// } else {
+//   document.write("힘들지 않다니 다행이예요.")
+// }
+
+// 👇🏻 삼항 조건 여산자로
+
+result = result ?  document.write("많이 힘들죠? 힘내라는 말밖에 할 말이 없네요. 좋은일 생기길 바랄게요") :  document.write("힘들지 않다니 다행이예요.")
+// }
