@@ -93,11 +93,12 @@ document.write("<br/>")
 // ex.2) 중첩 for 문을 이용하여 5행 5열 표를 만들고, 데이터가 1부터 25까지 출력되도록 작성하라.
 // 내가 다시 해보기
 let number = 1;
-let table = "<table border = 2>"
+let table = "<table border = '1' style = 'border-color: red'>"
 for (let a = 1; a <= 5; a++) {
-  table += "<tr>"
+  table += "<tr border = '1' style = 'border-color: yellowgreen'>"
   for (let b = 1; b <= 5; b++) {
     table += "<td>" + number + "</td>"
+
     number++
   }
   table += "</tr>"
@@ -105,3 +106,7 @@ for (let a = 1; a <= 5; a++) {
 
 table += "</table>"
 document.write(table)
+
+document.write("<br/>")
+document.write("============================================")
+document.write("<br/>")
