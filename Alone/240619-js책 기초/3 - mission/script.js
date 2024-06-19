@@ -47,9 +47,13 @@ let t = "<table border = 1>";
 for (let i2 = 1; i2 <= 5; i2++) {
   t+= "<tr>";
   for (let k2 = 1; k2 <= 5; k2++) {
+
     // t+= "<td>", num, "</td>";
+
     t+= "<td>" + num + "</td>";
+
     // t += "<td>", num, "</td>"; 를 t += "<td>" + num + "</td>"; 로 변경했습니다. 이렇게 하면 num의 값을 문자열로 변환하여 <td> 태그 안에 포함시킬 수 있습니다.
+    
     num++;
   }
 
