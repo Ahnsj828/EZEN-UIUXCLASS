@@ -42,6 +42,7 @@ document.write("<br/>")
 //   }
 // }
 
+// 정답
 let num = 1;
 let t = "<table border = 1>";
 for (let i2 = 1; i2 <= 5; i2++) {
@@ -53,7 +54,7 @@ for (let i2 = 1; i2 <= 5; i2++) {
     t+= "<td>" + num + "</td>";
 
     // t += "<td>", num, "</td>"; 를 t += "<td>" + num + "</td>"; 로 변경했습니다. 이렇게 하면 num의 값을 문자열로 변환하여 <td> 태그 안에 포함시킬 수 있습니다.
-    
+
     num++;
   }
 
@@ -83,3 +84,24 @@ document.write(test3);   // 30
 console.log(test1);   // </td>
 console.log(test2);   // <td>20</td>
 console.log(test3);   // 30
+
+
+document.write("<br/>")
+document.write("============================================")
+document.write("<br/>")
+
+// ex.2) 중첩 for 문을 이용하여 5행 5열 표를 만들고, 데이터가 1부터 25까지 출력되도록 작성하라.
+// 내가 다시 해보기
+let number = 1;
+let table = "<table border = 2>"
+for (let a = 1; a <= 5; a++) {
+  table += "<tr>"
+  for (let b = 1; b <= 5; b++) {
+    table += "<td>" + number + "</td>"
+    number++
+  }
+  table += "</tr>"
+}
+
+table += "</table>"
+document.write(table)
