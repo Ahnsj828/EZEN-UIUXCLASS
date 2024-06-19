@@ -34,36 +34,48 @@ document.write("<br/>")
 document.write("============================================")
 document.write("<br/>")
 
-for (let i2 = 1; i2 <= 3; i2++) {
-  document.write(i2, "행")
-  for (let k2 = 1; k2 <=2; k2++) {
-    document.write(k2, "열")
+// ex.2) 중첩 for 문을 이용하여 5행 5열 표를 만들고, 데이터가 1부터 25까지 출력되도록 작성하라.
+// 밖 => 행 / 안 => 열
+// for(i2 = 1; i2 <= 5; i2++) {
+//   for(k2 = 1; k2 <= 5; k2++) {
+//     document.write()
+//   }
+// }
+
+let num = 1;
+let t = "<table border = 1>";
+for (let i2 = 1; i2 <= 5; i2++) {
+  t+= "<tr>";
+  for (let k2 = 1; k2 <= 5; k2++) {
+    // t+= "<td>", num, "</td>";
+    t+= "<td>" + num + "</td>";
+    // t += "<td>", num, "</td>"; 를 t += "<td>" + num + "</td>"; 로 변경했습니다. 이렇게 하면 num의 값을 문자열로 변환하여 <td> 태그 안에 포함시킬 수 있습니다.
+    num++;
   }
-  document.write("<br/>")
+
+  t+= "</tr>";
 }
+
+t+= "</table>";
+console.log(t);
+document.write(t);
 
 document.write("<br/>")
 document.write("============================================")
 document.write("<br/>")
 
-// 정답
-for (let i = 1; i <= 3; i++) {
-  for (let k = 1; k <=2; k++) {
-    document.write(i, "행", k, "열", "<br/>")
-  }
-  document.write("<br/>")
-}
+const testNum1 = 10
+const testNum2 = 20
+const testNum3 = 30
+const test1 =  ("<td>", testNum1, "</td>")
+const test2 =  "<td>" + testNum2 + "</td>"
+const test3 =  (testNum1, testNum2, testNum3)
 
+document.write(test1);
+document.write(test2);   // 20
 document.write("<br/>")
-document.write("============================================")
-document.write("<br/>")
+document.write(test3);   // 30
 
-// 정답에서 변형 -  같은 행끼리 한줄에 나열
-for (let i3 = 1; i3 <= 3; i3++) {
-  for (let k3 = 1; k3 <=2; k3++) {
-    // document.write(i3, "행", k3, "열", "<br/>")
-    document.write(i3, "행", k3, "열    ")
-  }
-  // document.write("<br/>")
-  document.write("<br/>", "<br/>")
-}
+console.log(test1);   // </td>
+console.log(test2);   // <td>20</td>
+console.log(test3);   // 30
