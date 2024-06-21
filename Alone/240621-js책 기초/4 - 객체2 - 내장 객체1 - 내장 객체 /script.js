@@ -8,6 +8,11 @@
 
 // 다음 예제에서는 new 키워드와 기본 객체 생성 함수 Object()를 이용해 객체를 생성한다. 생성된 객체는 변수 tv가 참조하고 있으며, 이를 이용해 객체의 속성과 메서드를 생성한다. 
 // 변수를 이용해 참조를 한다는 말은 앞으로 생성된 객체를 이용할 때 참조 변수를 사용하겠다는 의미다.
+
+document.write("<br/>")
+document.write("================ 첫번째 방법 ================")
+document.write("<br/>")
+
 const tv = new Object()
 tv.color = "black"
 tv.price = 300000
@@ -31,6 +36,33 @@ tv.info();
 document.write("<h1>car 객체 메서드 호출</h1>");
 car.info();
 
+// document.write("<br/>")
+// document.write("============================================")
+// document.write("<br/>")
+
 document.write("<br/>")
-document.write("============================================")
+document.write("================ 두번째 방법 ================")
 document.write("<br/>")
+
+const tv2 = {
+  color: "gray",
+  price: 400000,
+  info: function() {
+    document.write("tv2 색상: " + this.color,"<br/>");
+    document.write("tv2 가격: " + this.price,"<br/>");
+  }
+}
+
+const car2 = {
+  color: "red",
+  price: 6000000,
+  info: function() {
+    document.write("car2 색상: " + this.color,"<br/>");
+    document.write("car2 가격: " + this.price,"<br/>");
+  }
+}
+
+document.write("<h1>tv2 객체 메서드 호출</h1>");
+tv2.info();
+document.write("<h1>car2 객체 메서드 호출</h1>");
+car2.info();
