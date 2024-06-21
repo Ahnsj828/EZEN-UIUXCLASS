@@ -66,3 +66,55 @@ document.write("<h1>tv2 객체 메서드 호출</h1>");
 tv2.info();
 document.write("<h1>car2 객체 메서드 호출</h1>");
 car2.info();
+
+document.write("<br/>")
+document.write("================ 세번째 방법 ================")
+document.write("<br/>")
+
+const tv3 = new Object()
+tv3.color = "dark gray"
+tv3.price = 500000
+
+tv3.info = function() {
+  document.write("tv3 색상: " + this.color,"<br/>");
+  document.write("tv3 가격: " + this.price,"<br/>");
+}
+
+const car3 = new Object()
+car3.color = "blue"
+car3.price = 7000000
+
+car3.info = function() {
+  document.write("car3 색상: " + this.color,"<br/>");
+  document.write("car3 가격: " + this.price,"<br/>");
+}
+
+document.write("<h1>tv3 객체 메서드 호출</h1>");
+tv3.info();
+document.write("<h1>car3 객체 메서드 호출</h1>");
+car3.info();
+
+document.write("<br/>")
+document.write("================ 나혼자 ================")
+document.write("<br/>")
+
+const bag = new Object()
+bag.color = "bagie"
+bag.price = 100000
+
+bag.info = function() {
+  document.write("bag 색상: " + this.color, "<br/>")
+  document.write("bag 가격: " + this.price, "<br/>")
+}
+
+const clothes = {
+  color: "navy",
+  price: 50000,
+  info: function() {
+    document.write("clothes 색상: " + this.color, "<br/>")
+    document.write("clothes 가격: " + this.price, "<br/>")
+  }
+}
+
+document.write("<h1>bag 객체 메서드 호출</h1>")
+document.write("<h1>clothes 객체 메서드 호출</h1>")
