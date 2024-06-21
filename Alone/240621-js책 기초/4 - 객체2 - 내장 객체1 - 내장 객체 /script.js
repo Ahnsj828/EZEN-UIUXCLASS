@@ -117,4 +117,6 @@ const clothes = {
 }
 
 document.write("<h1>bag 객체 메서드 호출</h1>")
+bag.info()
 document.write("<h1>clothes 객체 메서드 호출</h1>")
+clothes.info()
