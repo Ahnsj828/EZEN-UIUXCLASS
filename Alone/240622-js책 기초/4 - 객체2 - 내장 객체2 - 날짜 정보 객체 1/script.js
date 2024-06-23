@@ -33,61 +33,43 @@
 // * 날짜 정보를 수정할 때(SET)
 // setFullYear() 연도 정보만 수정함
 // setMonth() 월 정보만 수정함(월 -1)
+// setDate() 일 정보만 수정함
+// '요일'은 날짜를 바꾸면 자동으로 바뀌므로 setDay()는 없다
+// setHours() 시 정보만 수정함
+// setMinutes() 분 정보만 수정함
+// setSeconds() 초 정보만 수정함
+// setMilliseconds() 밀리초 정보만 수정함
+// setTime() 1970년 1월 1일부터 경과된 시간을 밀리초로 수정함
+// toLocaleString() 운영 시스템 표기 방식으로 문자형 데이터로 반환함 
 
-document.write("<br/>")
-document.write("================ 첫번째 방법 ================")
-document.write("<br/>")
+// 
 
-const tv = new Object()
-tv.color = "black"
-tv.price = 300000
+// 다음은 현재 날짜 객체와 특정 날짜 객체를 이요하여 2002년 월드컵 날짜와 관련된 정보를 출력하는 예제
+let today = new Date();
+let nowMonth = today.getMonth() + 1,
+nowDate = today.getDate(),
+nowDay = today.getDay(); // 0 = 일요일, 1 = 월요일 ... 6 = 토요일
 
-tv.info = function() {
-  document.write("tv 색상: " + this.color,"<br/>");
-  document.write("tv 가격: " + this.price,"<br/>");
-}
+let days = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+let dayName = days[nowDay];
 
-const car = {
-  color: "white",
-  price: 5000000,
-  info: function() {
-    document.write("car 색상: " + this.color,"<br/>");
-    document.write("car 가격: " + this.price,"<br/>");
-  }
-}
+document.write("<h1>오늘 날짜 정보</h1>");
+document.write("현재 월: " + nowMonth, "<br/>");
+document.write("현재 일: " + nowDate, "<br/>");
+document.write("현재 요일: " + dayName, "<br/>");
 
-document.write("<h1>tv 객체 메서드 호출</h1>");
-tv.info();
-document.write("<h1>car 객체 메서드 호출</h1>");
-car.info();
+const worldCup = new Date(2002, 4, 31);
+let worldCupMonth = worldCup.getMonth() + 1 ,
+worldCupDate = worldCup.getDate(),
+worldCupDay = worldCup.getDay();
+
+let worldCupDayName = days[worldCupDay]
+
+document.write("<h1>월드컵 날짜 정보</h1>");
+document.write("2002년 월드컵 월: " + worldCupMonth, "<br/>");
+document.write("2002년 월드컵 일: " + worldCupDate, "<br/>")
+document.write("2002년 월드컵 요일: " + worldCupDayName, "<br/>")
 
 // document.write("<br/>")
 // document.write("============================================")
 // document.write("<br/>")
-
-document.write("<br/>")
-document.write("================ 두번째 방법 ================")
-document.write("<br/>")
-
-const tv2 = {
-  color: "gray",
-  price: 400000,
-  info: function() {
-    document.write("tv2 색상: " + this.color,"<br/>");
-    document.write("tv2 가격: " + this.price,"<br/>");
-  }
-}
-
-const car2 = {
-  color: "red",
-  price: 6000000,
-  info: function() {
-    document.write("car2 색상: " + this.color,"<br/>");
-    document.write("car2 가격: " + this.price,"<br/>");
-  }
-}
-
-document.write("<h1>tv2 객체 메서드 호출</h1>");
-tv2.info();
-document.write("<h1>car2 객체 메서드 호출</h1>");
-car2.info();
