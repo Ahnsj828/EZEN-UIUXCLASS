@@ -83,21 +83,21 @@ let days2 = ["일요일", "월요일", "화요일", "수요일", "목요일", "�
 let dayName2 = days2[nowDay2];
 
 document.write("<h1>오늘 날짜 정보</h1>");
-document.write("현재 월: " + nowMonth2, "<br/>");
-document.write("현재 일: " + nowDate2, "<br/>");
-document.write("현재 요일: " + dayName2, "<br/>");
+document.write("현재 월: " + nowMonth2, "<br>");
+document.write("현재 일: " + nowDate2, "<br>");
+document.write("현재 요일: " + dayName2, "<br>");
 
-const worldCup2 = new Date(2022, 4, 31);
-let worldCupMonth2 = worldCup2.getMonth() + 1 ,
-worldCupDate2 = worldCup2.getDate(),
-worldCupDay2 = worldCup2.getDay();
+let worldCup2 = new Date(2002, 4, 31);
+let worldCup2Month = worldCup2.getMonth() +1 ,
+worldCup2Date = worldCup2.getDate(),
+worldCup2Day = worldCup2.getDay();
 
-let worldCupDayName2 = days[worldCupDay2]
+let worldCup2DayName = days2[worldCup2Day];
 
-document.write("<h1>월드컵 날짜 정보</h1>")
-document.write("2002년 월드컵 월: " + worldCupMonth2, "<br/>")
-document.write("2002년 월드컵 일: " + worldCupDate2, "<br/>")
-document.write("2002년 월드컵 요일: " + worldCupDay2, "<br/>")
+document.write("<h1>2002년 월드컵 날짜</h1>")
+document.write("2002년 월드컵 월: " + worldCup2Month, "<br/>")
+document.write("2002년 월드컵 일: " + worldCup2Date, "<br/>")
+document.write("2002년 월드컵 요일: " + worldCup2DayName, "<br/>")
 
 // document.write("<br/>")
 // document.write("============================================")
