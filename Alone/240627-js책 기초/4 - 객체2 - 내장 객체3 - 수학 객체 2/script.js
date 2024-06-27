@@ -27,20 +27,48 @@ Math.random() * 10; // 0부터 10까지 난수를 반환한다.
 document.write("1. Math.random() * 10 ", " => 0부터 10까지 난수를 반환한다.", "<br/>")
 document.write(" => " + Math.random() * 10, "<br/>")
 // 
+// 
 document.write("<br/>")
+// 
 // 
 // 2. Math.floor()를 이용해서 0부터 10까지 정수로만 난수를 반환 / floor() 메서드는 값을 내리기 때문에 0이 아닌 11을 사용한다.
 Math.floor(Math.random() * 11) // 0부터 10까지 난수를 발생하여 소수점 값을 제거한다.
 // 10을 곱하면 0부터 9까지만 나온다
 document.write("2. Math.floor(Math.random() * 11) 사용", " => 0부터 10까지 난수를 발생하여 소수점 값을 제거한다.", "<br/>")
 document.write(" => " + Math.floor(Math.random() * 11), " => 10을 곱하면 0부터 9까지만 나온다", "<br/>")
+// 
+// 
+document.write("<br/>")
+// 
+// 
+// 3. Math.random()를 이용하여 120~150 사이의 난수를 정수로만 발생하게 하는 방법
+Math.floor(Math.random() * 31) // 0부터 30까지 정수로 난수를 발생한다.
+document.write("3-1. Math.floor(Math.random() * 31) 사용", " => 0부터 30까지 정수로 난수를 발생한다.", "<br/>")
+document.write(" => " + Math.floor(Math.random() * 31), "<br/>")
+// 
+document.write("<br/>")
+// 
+Math.floor(Math.random() * 31) + 120 // 120부터 150까지 정수로 난수를 발생한다.
+document.write("3-2. Math.floor(Math.random() * 31) + 120  사용", " => 120부터 150까지 정수로 난수를 발생한다.", "<br/>")
+document.write(" => " + (Math.floor(Math.random() * 31) + 120) , "<br/>")
 
 document.write("<br/>")
 document.write("============내가 해보기============")
 document.write("<br/>")
 
+document.write("1. 0~10사이의 난수 Math.random() : " + Math.random(), "<br/>")
+document.write("2. 0~10까지 난수를 발생하여 소수점 값 제거 Math.floor(Math.random() * 11) : " + Math.floor(Math.random() * 11), "<br/>")
+document.write("3-1. 0~30까지의 난수를 정수로 Math.floor(Math.random() * 31) : " + Math.floor(Math.random() * 31), "<br/>")
+document.write("3-2. 120~150까지의 난수를 정수로 Math.floor(Math.random() * 31)+120 : " + (Math.floor(Math.random() * 31)+120), "<br/>")
 
+// 
+// 
+document.write("<br/>")
+document.write("=====================================================================")
+document.write("<br/>")
+// 
+// 
 
-// document.write("<br/>")
-// document.write("============================================")
-// document.write("<br/>")
+// 즉, 난수를 발생하여 자신이 원하는 구간 사이에서 정수가 발생하게 하려면 다음과 같은 공식을 정용해야한다
+// < 난수를 발생하여 원하는 구간 정수의 값 구하기>
+// Math.floor(Math.random() * (최댓값 - 최솟값+1)) + 최솟값
