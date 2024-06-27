@@ -29,29 +29,39 @@ ceildNum = Math.ceil(num),
 rndNum = Math.random(),
 PINum = Math.PI;
 
-document.write("max num: ", maxNum, "  -> 최댓값", "<br/>")
-document.write("min num: ", minNum, "  -> 최솟값", "<br/>")
-document.write("round num: ", roundNum, "  -> 소수점 첫째 자리 반올림", "<br/>")
-document.write("floor num: ", floordNum, "  -> 소수점 첫째 자리 내림", "<br/>")
-document.write("ceil num: ", ceildNum, "  -> 소수점 첫째 자리 올림", "<br/>")
-document.write("random num: ", rndNum, "  -> 0과 1사이의 난수 발생", "<br/>")
-document.write("PI num: ", PINum, "  -> 원주율 상수를 반환", "<br/>")
+document.write("max num: ", maxNum, "  -> 최댓값", "<br/>")   // 30
+document.write("min num: ", minNum, "  -> 최솟값", "<br/>")   // 5
+document.write("round num: ", roundNum, "  -> 소수점 첫째 자리 반올림", "<br/>")   // 2
+document.write("floor num: ", floordNum, "  -> 소수점 첫째 자리 내림", "<br/>")   // 2
+document.write("ceil num: ", ceildNum, "  -> 소수점 첫째 자리 올림", "<br/>")   // 3
+document.write("random num: ", rndNum, "  -> 0과 1사이의 난수 발생", "<br/>")   //0.58808...
+document.write("PI num: ", PINum, "  -> 원주율 상수를 반환", "<br/>")   // 3.14
 
 document.write("<br/>")
 document.write("============내가 해보기============")
 document.write("<br/>")
 
-document.write("<br/>")
+const num2 = 5.712;
 
-let today2 = new Date();
-let nowYear2 = today2.getFullYear();
+const maxNum2 = Math.max(15, 231, 7, 87),
+minNum2 = Math.min(15, 231, 7, 87),
+powNum2 = Math.pow(3, 2),
+ceilNum2 = Math.ceil(num2),
+floorNum2 = Math.floor(num2),
+roundNum2 = Math.round(num2),
+sqrtNum2 = Math.sqrt(4),
+rndNum2 = Math.random(),
+PINum2 = Math.PI;
 
-let theDate2 = new Date(nowYear2, 11, 31);
-
-let diffDate2 = theDate2.getTime() - today2.getTime();
-
-let result2 = Math.ceil(diffDate2 / (1000 * 60 * 60 * 24));
-document.write("연말 D-day: " + result2 + "일 남았습니다.")
+document.write("max num2: ", maxNum2, "  -> 최댓값", "<br/>")
+document.write("min num2: ", minNum2, "  -> 최솟값", "<br/>")
+document.write("pow num2: (3, 2) => ", powNum2, "  -> 거듭제곱값", "<br/>")
+document.write("ceil num2: ", ceilNum2, "  -> 소수점 첫째 자리 올림", "<br/>")
+document.write("floor num2: ", floorNum2, "  -> 소수점 첫째 자리 내림", "<br/>")
+document.write("round num2: ", roundNum2, "  -> 소수점 첫째 자리 반올림", "<br/>")
+document.write("sqrt num2: 4=> ", sqrtNum2, "  -> 숫자의 제곱근값", "<br/>")
+document.write("random num2: ", rndNum2, "  -> 0과 1사이의 난수 발생", "<br/>")
+document.write("PI num2: ", PINum2, "  -> 원주율 상수를 반환", "<br/>")
 
 // document.write("<br/>")
 // document.write("============================================")
