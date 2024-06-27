@@ -23,15 +23,17 @@
 // random() 메서드를 사용하면 0과 1사이에서 난수가 발생한다. 그렇다면 0과 1사이가 아닌 임의로 지정한 숫자의 구간에서 난수를 정수로만 반환받으려면 어떻게 해야할까?
 
 // 1. Math.random()를 이용해서 0부터 10까지 난수를 반환
-// Math.random() * 10; // 0부터 10까지 난수를 반환한다.
-// const a = Math.random() * 10
-// document.write(a)
-
-// 2. Math.floor()를 이용해서
-// Math.floor(Math.random() * 11)
+Math.random() * 10; // 0부터 10까지 난수를 반환한다.
+document.write("1. Math.random() * 10 ", " => 0부터 10까지 난수를 반환한다.", "<br/>")
+document.write(" => " + Math.random() * 10, "<br/>")
+// 
+document.write("<br/>")
+// 
+// 2. Math.floor()를 이용해서 0부터 10까지 정수로만 난수를 반환 / floor() 메서드는 값을 내리기 때문에 0이 아닌 11을 사용한다.
+Math.floor(Math.random() * 11) // 0부터 10까지 난수를 발생하여 소수점 값을 제거한다.
 // 10을 곱하면 0부터 9까지만 나온다
-const b = Math.floor(Math.random() * 11)
-document.write(b)
+document.write("2. Math.floor(Math.random() * 11) 사용", " => 0부터 10까지 난수를 발생하여 소수점 값을 제거한다.", "<br/>")
+document.write(" => " + Math.floor(Math.random() * 11), " => 10을 곱하면 0부터 9까지만 나온다", "<br/>")
 
 document.write("<br/>")
 document.write("============내가 해보기============")
