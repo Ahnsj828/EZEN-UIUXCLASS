@@ -23,33 +23,21 @@
 // random() 메서드를 사용하면 0과 1사이에서 난수가 발생한다. 그렇다면 0과 1사이가 아닌 임의로 지정한 숫자의 구간에서 난수를 정수로만 반환받으려면 어떻게 해야할까?
 
 // 1. Math.random()를 이용해서 0부터 10까지 난수를 반환
-Math.random() * 10; // 0부터 10까지 난수를 반환한다.
+// Math.random() * 10; // 0부터 10까지 난수를 반환한다.
+// const a = Math.random() * 10
+// document.write(a)
+
+// 2. Math.floor()를 이용해서
+// Math.floor(Math.random() * 11)
+// 10을 곱하면 0부터 9까지만 나온다
+const b = Math.floor(Math.random() * 11)
+document.write(b)
 
 document.write("<br/>")
 document.write("============내가 해보기============")
 document.write("<br/>")
 
-const num2 = 5.712;
 
-const maxNum2 = Math.max(15, 231, 7, 87),
-minNum2 = Math.min(15, 231, 7, 87),
-powNum2 = Math.pow(3, 2),
-ceilNum2 = Math.ceil(num2),
-floorNum2 = Math.floor(num2),
-roundNum2 = Math.round(num2),
-sqrtNum2 = Math.sqrt(4),
-rndNum2 = Math.random(),
-PINum2 = Math.PI;
-
-document.write("max num2: ", maxNum2, "  -> 최댓값", "<br/>")
-document.write("min num2: ", minNum2, "  -> 최솟값", "<br/>")
-document.write("pow num2: (3, 2) => ", powNum2, "  -> 거듭제곱값", "<br/>")
-document.write("ceil num2: ", ceilNum2, "  -> 소수점 첫째 자리 올림", "<br/>")
-document.write("floor num2: ", floorNum2, "  -> 소수점 첫째 자리 내림", "<br/>")
-document.write("round num2: ", roundNum2, "  -> 소수점 첫째 자리 반올림", "<br/>")
-document.write("sqrt num2: 4=> ", sqrtNum2, "  -> 숫자의 제곱근값", "<br/>")
-document.write("random num2: ", rndNum2, "  -> 0과 1사이의 난수 발생", "<br/>")
-document.write("PI num2: ", PINum2, "  -> 원주율 상수를 반환", "<br/>")
 
 // document.write("<br/>")
 // document.write("============================================")
