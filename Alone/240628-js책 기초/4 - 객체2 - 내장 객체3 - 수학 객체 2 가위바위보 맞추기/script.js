@@ -16,7 +16,7 @@
 //   default: alert("잘못 입력하였습니다.");
 //   location.reload()
 // }
-// 
+
 // const computer = Math.ceil(Math.random() * 3)
 
 // document.write("<img src=\"images/game_" + gameNum + ".png\">")
