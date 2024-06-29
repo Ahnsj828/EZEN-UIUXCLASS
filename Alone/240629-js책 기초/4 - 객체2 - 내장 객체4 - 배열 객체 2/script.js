@@ -136,3 +136,26 @@ document.write("============================================")
 document.write("<br/>")
 // 
 // 
+
+// ex.2) 배열 객체 메서드인 splice(), push(), shift(), unshift()를 사용한 예제
+const greenArr = ["교대", "방배", "강남"];
+const yellowArr = ["미금", "정자", "수서"];
+
+greenArr.splice(2, 1, "서초", "역삼");
+console.log(greenArr);  // (4) ['교대', '방배', '서초', '역삼']
+// 2번 인덱스부터 1개의 데이터를 삭제한다. 그 다음 "서초", "역삼"을 삽입한다.
+
+const data1 = yellowArr.pop();
+console.log(data1)  // 수서
+// yellowArr 배열 마지막 인덱스의 데이터를 data1에 저장한다.
+const data2 = yellowArr.shift();
+console.log(data2)  // 미금
+// yellowArr 배열 가장 앞쪽 인덱스의 데이터를 data2에 저장한다.
+
+yellowArr.push(data2);
+console.log(yellowArr)  // (2) ['정자', '미금']
+// data2에 저장된 데이터를 yellowArr 배열의 마지막 인덱스에 밀어 넣는다.
+
+yellowArr.unshift(data1);
+console.log(yellowArr)  // (3) ['수서', '정자', '미금']
+// data1에 저장된 데이터를 yellowArr 배열의 가장 앞쪽 인덱스에 밀어 넣는다.
