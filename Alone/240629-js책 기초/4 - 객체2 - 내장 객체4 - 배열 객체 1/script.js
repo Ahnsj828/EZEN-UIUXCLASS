@@ -42,3 +42,29 @@ console.log(d3) // (3) [33, '따르릉3', true]
 // const arr = 30 "따르릉" true
 //     index   0     1     2
 
+// -------------------------------------------------------
+
+// < 배열 객체에 저장된 데이터 불러오기 >
+// 배열 객체에 저장된 데이터를 불러올 때는 다음과 같은 기본형을 사용한다
+// 참조변수[인덱스 번호];
+
+// ex) 배열객체에 저장된 값들을 모두 출력하는 예제. 3개의 실행문은 모두 같은 결과물을 출력한다
+const arr = [20, "꽥꽥이", true];
+
+// 배열객체에 저장된 값들을 모두 출력하는 실행문 1
+document.write("<h3>배열값 가져오기-1</h3>");
+document.write(arr[0], "<br/>");
+document.write(arr[1], "<br/>");
+document.write(arr[2], "<br/>");
+
+// 배열객체에 저장된 값들을 모두 출력하는 실행문 2
+document.write("<h3>배열값 가져오기-2</h3>");
+for (let i = 0; i < arr.length; i++) {
+  document.write(arr[i], "<br/>");
+}
+
+// 배열객체에 저장된 값들을 모두 출력하는 실행문 3
+document.write("<h3>배열값 가져오기-3</h3>");
+for (i in arr) {
+  document.write(arr[i], "<br/>");
+}
