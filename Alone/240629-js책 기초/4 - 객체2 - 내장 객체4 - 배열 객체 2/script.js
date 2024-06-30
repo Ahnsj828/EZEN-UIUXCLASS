@@ -159,3 +159,10 @@ console.log(yellowArr)  // (2) ['정자', '미금']
 yellowArr.unshift(data1);
 console.log(yellowArr)  // (3) ['수서', '정자', '미금']
 // data1에 저장된 데이터를 yellowArr 배열의 가장 앞쪽 인덱스에 밀어 넣는다.
+
+// 
+document.write("<br/>")
+document.write("============내가 해보기============")
+document.write("<br/>")
+// 
+
