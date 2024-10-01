@@ -1,6 +1,7 @@
 import React from "react";
 import { IToDo, toDoState, Categories } from "./atoms";
-import { useRecoilState, useSetRecoilState } from "recoil";
+// import { useRecoilState, useSetRecoilState } from "recoil";
+import { useSetRecoilState } from "recoil";
 // 카테고리가 바껴지면 id값도 바껴지게 하려고
 
 // React에서는 가상돔을 사용하다 보니, target보다는 currentTarget 값을 찾아오는 것이 보다 효율적이다
@@ -21,7 +22,6 @@ const Todo = ({ text, category, id }: IToDo) => {
       const targetIndex = oldToDos.findIndex((toDo) => toDo.id === id);
       // console.log(targetIndex);
 
-      const oldToDo = oldToDos[targetIndex];
       const newToDo = { id, text, category: name as any };
       // console.log(oldToDo, newToDo);
 

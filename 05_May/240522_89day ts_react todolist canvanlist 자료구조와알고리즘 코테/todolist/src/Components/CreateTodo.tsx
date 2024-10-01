@@ -18,7 +18,6 @@ const CreateTodo = () => {
     ]);
     setValue("toDo", "");
   };
-
   return (
     <form
       onSubmit={handleSubmit(handleValid)}

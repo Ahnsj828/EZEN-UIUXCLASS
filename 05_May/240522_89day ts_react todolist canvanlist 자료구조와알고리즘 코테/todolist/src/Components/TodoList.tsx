@@ -1,11 +1,11 @@
 import React from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { toDoState, toDoSelector, categoryState, Categories } from "./atoms";
+import { toDoSelector, categoryState, Categories } from "./atoms";
 import CreateTodo from "./CreateTodo";
 import Todo from "./Todo";
 
 const TodoList = () => {
-  const toDos = useRecoilValue(toDoState);
+  const toDos = useRecoilValue(toDoSelector);
   // const selectorOutput = useRecoilValue(toDoSelector);
   // console.log(selectorOutput);
 
@@ -16,7 +16,6 @@ const TodoList = () => {
     // console.log(event.currentTarget);
     setCategory(event.currentTarget.value as any);
   };
-
   return (
     <div>
       <h1>Todo's</h1>
@@ -48,7 +47,6 @@ const TodoList = () => {
       {/* 👇🏼 */}
       <CreateTodo />
       <select value={category} onInput={onInput}>
-        {/* <option value="To_Do">ToDo</option> */}
         <option value={Categories.TO_DO}>ToDo</option>
         <option value={Categories.DOING}>Doing</option>
         <option value={Categories.DONE}>Done</option>
